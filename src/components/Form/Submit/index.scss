@@ -1,0 +1,16 @@
+.form{
+    &__submit{
+        margin: 10px auto;
+
+        input[type="submit"]{
+            padding: .5rem 3rem;
+            background: #707070 0% 0% no-repeat padding-box !important;
+            color: #FFF;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+
+.button{
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+
+    &.is-primary{
+        background: #363232;
+        color: #FFF;
+    }
+}

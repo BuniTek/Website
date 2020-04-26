@@ -1,0 +1,16 @@
+input{
+    border: 1px solid grey !important;
+    border-bottom: none;
+    padding: 10px;
+    background: #FFF !important;
+
+    &:focus{
+        border-bottom: 1px solid grey !important;
+    }
+}
+
+.form__input{
+    label{
+        font-weight: bold !important;
+    }
+}
