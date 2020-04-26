@@ -1,0 +1,16 @@
+button.ant-btn{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 10px;
+    background: transparent;
+
+    &:hover{
+        background: transparent;
+    }
+
+    &:focus{
+        border: none;
+        background: transparent;
+    }
+}
