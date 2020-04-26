@@ -1,0 +1,43 @@
+
+.notfound{
+    &__container{
+        height: 70vh;
+        display: grid;
+        width: 100%;
+        place-content: center;
+        position: relative;
+
+        img{
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    &__text{
+        display: grid;
+        place-content: center;
+        transform: translateY(100%);
+        z-index: 1000;
+
+        @media(max-width: 768px){
+            transform: translateY(50%);
+            margin: auto 20%;
+        }
+    }
+
+    &__404{
+        top: 70%;
+        left: 45%;
+        width: 111px;
+        height: 101px;
+        position: absolute;
+
+        @media(max-width: 768px){
+            left: 40%;
+        }
+
+        h1{
+            font-weight: bold;
+        }
+    }
+}
