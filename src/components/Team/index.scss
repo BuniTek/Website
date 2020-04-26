@@ -1,0 +1,13 @@
+.team{
+    background: lighten(lightgrey, 5%);
+    padding: 70px;
+    height: 50vh !important;
+    &__list{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    height: 10vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}

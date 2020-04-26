@@ -1,0 +1,39 @@
+.about{
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+
+    &__intro{
+        display: grid;
+        place-content: center;
+        height: 50vh;
+        text-align: center;
+        margin: auto 10%;
+    }
+
+    &__description{
+        margin: auto 10%;
+    }
+
+    &__overlay{
+        &--1{
+            top: 20%;
+            left: 45%;
+            width: 1302px;
+            height: 787px;
+            opacity: 1;
+            position: absolute;
+            z-index: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media(max-width: 768px){
+                top: 80%;
+                left: 5%;
+            }
+        }
+    }
+}
+
+body{
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+}

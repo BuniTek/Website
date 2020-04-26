@@ -1,0 +1,9 @@
+.avatar{
+    width: 45px !important;
+    height: 45px !important;
+    outline: none !important;
+
+    &:hover{
+        border: 2px solid black;
+    }
+}
