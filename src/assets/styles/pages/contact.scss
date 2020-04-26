@@ -1,0 +1,35 @@
+.contact{
+    &__container{
+        margin: auto 10%;
+        display: grid;
+        place-content: center;
+        height: 100vh;
+    }
+
+    &__overlay{
+        &--1{
+            top: -35%;
+            left: -5%;
+            width: 400px;
+            height: 500px;
+            opacity: 1;
+            position: absolute;
+            z-index: -1;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &--2{
+            top: 40%;
+            left: 80%;
+            width: 619px;
+            height: 643px;
+            opacity: 1;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
