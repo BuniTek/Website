@@ -1,0 +1,47 @@
+.services{
+    &__container{
+        margin: auto 10%;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 40px auto;
+
+        @media(max-width: 768px){
+            grid-template-columns: 1fr;
+        }
+
+        &--item{
+            position: relative;
+            img{
+                position: relative;
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        &.grid--one{
+            .services__grid--item{
+                &:last-child{
+                    display: grid;
+                    place-content: center;
+                    margin: auto 10%;
+                }
+            }
+        }
+
+        &.grid--two{
+            border: 1px solid #707070;
+            padding: 10px;
+            .services__grid--item{
+                &:first-child{
+                    display: grid;
+                    place-content: center;
+                    margin: auto 10%;
+                }
+            }
+        }
+    }
+}
