@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import homeBanner from '../assets/images/undraw_dev_productivity_umsq.png';
 import '../assets/styles/pages/home.scss';
 import background from '../assets/images/home_top-left.svg';
+import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
 
 const IndexPage = () => (
   <Layout>
@@ -15,10 +16,15 @@ const IndexPage = () => (
         <div
           className="home__overlay--1"
           style={{
-            backgroundColor: background,
+            backgroundImage: `url(${background})`,
           }}
         />
-        <div className="home__overlay--2" />
+        <div
+          className="home__overlay--2"
+          style={{
+            backgroundImage: `url(${Overlay2Bg})`,
+          }}
+        />
         <div className="home__grid">
 
           <div className="home__grid--item">
