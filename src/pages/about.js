@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Team from '../components/Team';
+// import Team from '../components/Team';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import AboutMore from '../components/About/More';
@@ -34,7 +34,7 @@ const AboutUs = () => {
               consequatur harum. Debitis quos iusto similique ad sint.
             </p>
           </div>
-          <Team />
+          {/* <Team /> */}
         </div>
       </div>
     </Layout>
