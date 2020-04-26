@@ -1,0 +1,93 @@
+.home{
+    &__container{
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        background: transparent;
+        margin: auto 10%;
+        overflow-y: auto !important;
+    }
+
+    &__grid{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 70px;
+        position: relative;
+
+        @media(max-width: 768px){
+            grid-template-columns: 1fr;
+
+            &--item{
+                &:first-child{
+                    margin: 30px 20%;
+                }
+            }
+        }
+
+        &--item{
+
+            &:first-child{
+                transform: translateX(150px) translateY(80px);
+
+                @media(max-width: 768px){
+                    transform: translate(0);
+                }
+            }
+
+            .hero{
+                &__image{
+                    position: relative;
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+
+            &:last-child{
+                margin-left: 100px;
+            }
+        }
+    }
+
+    &__overlay--1{
+        top: -260px;
+        left: -180px;
+        width: 800px;
+        height: 552px;
+        background-position: center;
+        opacity: 1;
+        position: absolute;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media(max-width: 768px){
+            width: 300px;
+            height: 350px;
+            top: -180px;
+            left: 100px;
+        }
+    }
+
+    &__overlay--2{
+        top: 90%;
+        left: 10%;
+        width: 1047px;
+        height: 557px;
+        opacity: 1;
+        position: absolute;
+
+        @media(max-width: 768px){
+            width: 200px;
+            height: 200px;
+            top: 95%;
+        }
+    }
+}
+
+body.home{
+    overflow: auto;
+
+    @media(max-width: 768px){
+        overflow: auto;
+    }
+}

@@ -1,20 +1,50 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
+import Button from '../components/Button';
+
+import homeBanner from '../assets/images/undraw_dev_productivity_umsq.png';
+import '../assets/styles/pages/home.scss';
+import background from '../assets/images/home_top-left.svg';
+import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
+    <div className="home">
+      <div className="home__container">
+        <div
+          className="home__overlay--1"
+          style={{
+            backgroundImage: `url(${background})`,
+          }}
+        />
+        <div
+          className="home__overlay--2"
+          style={{
+            backgroundImage: `url(${Overlay2Bg})`,
+          }}
+        />
+        <div className="home__grid">
+
+          <div className="home__grid--item">
+            <h1>Let &apos; s create our own future together.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas adipisci quidem consequuntur commodi
+              nam maiores rem tempora repudiandae soluta nobis!
+            </p>
+            <span>
+              <Button type="primary" onClick={() => console.log('Clicked')}>Get involved</Button>
+            </span>
+          </div>
+          <div className="home__grid--item">
+            <img src={homeBanner} alt="Hero" className="hero__image" />
+          </div>
+        </div>
+
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
 

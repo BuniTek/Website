@@ -1,0 +1,15 @@
+.form{
+    &__textarea{
+       position: relative;
+       label{
+           font-weight: bold !important;
+       }
+       textarea{
+           height: 150px !important;
+           padding: 10px;
+           border: 1px solid grey !important;
+           outline: none !important;
+           background: #FFF !important;
+       }
+    }
+}
