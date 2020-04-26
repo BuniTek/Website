@@ -8,7 +8,9 @@
 - Clone this repository and cd into it
 - Install dependencies using `npm install` or `yarn` or `yarn install`
 - Write tests to ensure they are passing by using `npm test` or `yarn test`
-- Run the dev server using `npm start` or `yarn start`
+- Run the dev server using `npm run develop` or `yarn develop`
+- To generate an optimized production build, run `npm run build`
+- To deploy a production build, run `npm run deploy`
 
 ### How to contribute
 
