@@ -32,6 +32,7 @@ jobs:
               run: |
                 git config --global user.email "eliemugenzi@gmail.com"
                 git config --global user.name "eliemugenzi"
+                git remote set-url origin https://a05158547ac3437828ba54e0d81399279a05269e@github.com/Africa-I/Website
             - name: Deploy
               run: |
                 npm run deploy
