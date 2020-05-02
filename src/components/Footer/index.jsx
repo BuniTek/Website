@@ -12,14 +12,16 @@ import logo from '../../assets/images/africai.png';
 
 library.add(fab, faCoffee);
 const Footer = () => (
-  <footer>
-    <div className="flex_container">
-      <div className="col">
-        <img src={logo} alt="Africa I" className="footer_logo" />
+  <footer className="footer">
+    <div className="footer-container">
+      <div className="footer-subcontainer">
+        <Link to="/" className="brand-logo">
+          <img src={logo} alt="Africa I" className="footer-logo" />
+        </Link> 
       </div>
-      <div className="col">
-        <h4 className="sub_heading">Quick links</h4>
-        <ul className="links__list">
+      <div className="footer-subcontainer">
+        <h4 className="sub-heading">Quick links</h4>
+        <ul className="footer-subcontainer-list">
           <li>
             <Link to="/">Courses</Link>
           </li>
@@ -40,9 +42,9 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="col">
-        <h4 className="sub_heading">Follow us</h4>
-        <ul className="inline">
+      <div className="footer-subcontainer">
+        <h4 className="sub-heading">Follow us</h4>
+        <ul className="footer-subcontainer-list inline">
           <li>
             <a href="/"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
           </li>
@@ -55,13 +57,11 @@ const Footer = () => (
           <li>
             <a href="/"><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
           </li>
-
-
         </ul>
       </div>
     </div>
-    <hr className="footer_divider" />
-    <div className="flex_low">
+    <hr className="footer-divider" />
+    <div className="footer-container-low">
       <a href="/"><span>@Copyright Africai 2020</span></a>
 
       <a href="/"><span>Africai</span></a>
