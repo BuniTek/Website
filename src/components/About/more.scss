@@ -59,4 +59,13 @@
             }
         }
     }
+
+    &__image {
+        img{
+            cursor: pointer;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
 }
