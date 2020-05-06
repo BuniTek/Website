@@ -1,3 +1,7 @@
+
+@import "../utils.scss";
+@import "../colors.scss";
+
 .home{
     &__container{
         display: grid;
@@ -5,32 +9,53 @@
         height: 100vh;
         background: transparent;
         margin: auto 10%;
-        overflow-y: auto !important;
     }
 
     &__grid{
         display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 70px;
+        grid-template-columns: repeat(3,minmax(500px, 1fr));
+        grid-gap: 30px;
         position: relative;
+        margin-bottom: 5%;
 
         @media(max-width: 768px){
-            grid-template-columns: 1fr;
-
+            grid-gap: 0px;
+            margin-left: 20px;
             &--item{
                 &:first-child{
-                    margin: 30px 20%;
+                    margin: 20px 0 20px 40%;
                 }
             }
+        }
+        @media(min-width: 1920px){
+            grid-template-columns: repeat(3,minmax(800px, 1fr));
+            grid-gap: 200px;
         }
 
         &--item{
 
-            &:first-child{
-                transform: translateX(150px) translateY(80px);
-
+            &:nth-child(2){
+                transform:translateY(40px);
+                h1{
+                    font-family: $hfont !important;
+                    color: $h-color;
+                    font-size: 3.2em;
+                }
+                p{
+                    font-size: 1.4em;
+                    color: $p-color;
+                }
                 @media(max-width: 768px){
-                    transform: translate(0);
+                    transform: translateX(10px) translateY(-80px);
+                }
+                @media(min-width: 1920px){
+                    h1{
+                        font-size: 3.4em;
+                    }
+                    p{
+                        font-size: 1.8em;
+                        color: $p-color;
+                    }
                 }
             }
 
@@ -38,12 +63,19 @@
                 &__image{
                     position: relative;
                     width: 400px;
-                    height: 400px;
+                    @media(max-width: 768px){
+                        width: 200px;
+                    }
+                    @media(min-width: 1920px){
+                        width: 500px;
+                    }
                 }
             }
 
             &:last-child{
-                margin-left: 100px;
+                @media(min-width: 1920px){
+                    margin-left: -180px;
+                }
             }
         }
     }
@@ -66,20 +98,34 @@
             top: -180px;
             left: 100px;
         }
+        @media(min-width: 1920px){
+            width: 1100px;
+            height: 750px;
+            top: -380px;
+            left: -300px;
+        }
     }
 
     &__overlay--2{
         top: 90%;
-        left: 10%;
-        width: 1047px;
-        height: 557px;
+        left: -500px;
+        width: 2000px;
+        height: 400px;
         opacity: 1;
         position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         @media(max-width: 768px){
             width: 200px;
             height: 200px;
             top: 95%;
+        }
+        @media(min-width: 1920px){
+            top: 78%;
+            left: -800px;
+            width: 3000px;
+            height: 600px;
         }
     }
 }

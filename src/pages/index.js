@@ -26,7 +26,9 @@ const IndexPage = () => (
           }}
         />
         <div className="home__grid">
-
+           <div className="home__grid--item">
+     
+          </div>
           <div className="home__grid--item">
             <h1>Let &apos; s create our own future together.</h1>
             <p>
@@ -42,7 +44,6 @@ const IndexPage = () => (
             <img src={homeBanner} alt="Hero" className="hero__image" />
           </div>
         </div>
-
       </div>
     </div>
   </Layout>
