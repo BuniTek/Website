@@ -13,15 +13,15 @@ import logo from '../../assets/images/africai.png';
 library.add(fab, faCoffee);
 const Footer = () => (
   <footer className="footer">
-    <div className="footer-container">
-      <div className="footer-subcontainer">
+    <div className="footer__container">
+      <div className="footer__subcontainer">
         <Link to="/" className="brand-logo">
           <img src={logo} alt="Africa I" className="footer-logo" />
         </Link> 
       </div>
-      <div className="footer-subcontainer">
+      <div className="footer__subcontainer">
         <h4 className="sub-heading">Quick links</h4>
-        <ul className="footer-subcontainer-list">
+        <ul className="footer__subcontainer--list">
           <li>
             <Link to="/">Courses</Link>
           </li>
@@ -42,9 +42,9 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="footer-subcontainer">
+      <div className="footer__subcontainer">
         <h4 className="sub-heading">Follow us</h4>
-        <ul className="footer-subcontainer-list inline">
+        <ul className="footer__subcontainer--list inline">
           <li>
             <a href="/"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
           </li>
@@ -60,8 +60,8 @@ const Footer = () => (
         </ul>
       </div>
     </div>
-    <hr className="footer-divider" />
-    <div className="footer-container-low">
+    <hr className="footer__divider" />
+    <div className="footer__container--low">
       <a href="/"><span>@Copyright Africai 2020</span></a>
 
       <a href="/"><span>Africai</span></a>

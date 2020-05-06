@@ -7,7 +7,7 @@
     text-decoration: none;
     margin-top: 100px;
   
-    &-container{
+    &__container{
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -15,7 +15,7 @@
       padding: 40px 0 20px 0;
     }
 
-    &-subcontainer{
+    &__subcontainer{
       .brand-logo img.footer-logo{
         width: 200px;
       }
@@ -24,7 +24,7 @@
         font-size: 2em;
       }
       
-      &-list{
+      &--list{
         list-style: none;
         a{
           text-decoration: none;
@@ -45,12 +45,12 @@
       } 
     }
 
-    &-divider{
+    &__divider{
       width: 80vw;
       margin-bottom: 40px;
       border: .5px solid grey ;
     } 
-    &-container-low{
+    &__container--low{
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
