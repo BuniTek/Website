@@ -3,23 +3,20 @@ import React from 'react';
 import { Link } from 'gatsby';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
 
 import logo from '../../assets/images/africai.png';
 
-library.add(fab, faCoffee);
 const Footer = () => (
-  <footer>
-    <div className="flex_container">
-      <div className="col">
-        <img src={logo} alt="Africa I" className="footer_logo" />
+  <footer className="footer">
+    <div className="footer__container">
+      <div className="footer__subcontainer">
+        <Link to="/" className="brand-logo">
+          <img src={logo} alt="Africa I" className="footer-logo" />
+        </Link> 
       </div>
-      <div className="col">
-        <h4 className="sub_heading">Quick links</h4>
-        <ul className="links__list">
+      <div className="footer__subcontainer">
+        <h4 className="sub-heading">Quick links</h4>
+        <ul className="footer__subcontainer--list">
           <li>
             <Link to="/">Courses</Link>
           </li>
@@ -40,9 +37,9 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="col">
-        <h4 className="sub_heading">Follow us</h4>
-        <ul className="inline">
+      <div className="footer__subcontainer">
+        <h4 className="sub-heading">Follow us</h4>
+        <ul className="footer__subcontainer--list inline">
           <li>
             <a href="/"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
           </li>
@@ -55,13 +52,11 @@ const Footer = () => (
           <li>
             <a href="/"><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
           </li>
-
-
         </ul>
       </div>
     </div>
-    <hr className="footer_divider" />
-    <div className="flex_low">
+    <hr className="footer__divider" />
+    <div className="footer__container--low">
       <a href="/"><span>@Copyright Africai 2020</span></a>
 
       <a href="/"><span>Africai</span></a>

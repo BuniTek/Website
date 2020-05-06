@@ -10,11 +10,17 @@ import PropTypes from 'prop-types';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import 'semantic-ui-css/semantic.min.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import 'antd/dist/antd.css';
 // import { useStaticQuery, graphql } from 'gatsby';
 
 import SiteHeader from './Header/index';
 import Footer from './Footer/index';
 import './app.scss';
+
+library.add(fab, faCoffee);
 
 const Layout = ({ children }) => (
   <>

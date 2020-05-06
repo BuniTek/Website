@@ -10,7 +10,7 @@ const MemberInfo = ({ email, phoneNumber, titles }) => (
         <List.Content>
           <p>
             <strong>Email:</strong>
-            <p>{email}</p>
+            <span>{email}</span>
           </p>
         </List.Content>
       </List.Item>
