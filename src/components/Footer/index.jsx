@@ -3,14 +3,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
 
 import logo from '../../assets/images/africai.png';
 
-library.add(fab, faCoffee);
 const Footer = () => (
   <footer className="footer">
     <div className="footer__container">
