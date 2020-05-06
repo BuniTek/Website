@@ -1,19 +1,27 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 import './index.scss';
 import Sidebar from './Sidebar';
 
-import logo from '../../assets/images/logo_words.png';
+const Logo = styled.img`
+  width: 75px;
+  height: 75px;
+  padding-top: 30px;
+`;
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const logoUrl = useSelector((state) => state.ui.logoUrl);
+
   return (
     <>
       <nav>
         <div className="nav-wrapper">
           <div className="nav-wrapper__container">
             <Link to="/" className="brand-logo">
-              <img src={logo} alt="Africa I" className="nav-wrapper__logo" />
+              <Logo src={logoUrl} alt="Africa I" className="nav-wrapper__logo" />
             </Link>
             <ul
               id="nav-mobile"
