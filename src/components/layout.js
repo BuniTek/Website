@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import 'semantic-ui-css/semantic.min.css';
+import 'antd/dist/antd.css';
 // import { useStaticQuery, graphql } from 'gatsby';
 
 import SiteHeader from './Header/index';
