@@ -12,6 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "antd": "^4.1.5",
     "axios": "^0.19.2",
+    "classnames": "^2.2.6",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-manifest": "^2.3.5",
