@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BlogItem from '../components/Blog/BlogItem';
 import BlogSearch from '../components/Blog/Search';
+import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/blog.scss';
+import darkLogo from '../assets/images/africai.png';
 
 const lipsum = `
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
@@ -15,10 +18,10 @@ Various versions have evolved over the years, sometimes by accident,
 `;
 
 const Blog = () => {
+  const dispatch = useDispatch();
   useEffect(() => {
-    const body = document.querySelector('body');
-    body.classList.remove('home');
-  });
+    dispatch(setLogoUrl({ logo: darkLogo }));
+  }, []);
   return (
     <Layout>
       <SEO title="Blog" />

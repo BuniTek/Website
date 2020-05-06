@@ -1,3 +1,5 @@
+@import '../../assets/styles/mixins.scss';
+
 footer{
     position: absolute;
     bottom: 0 auto;
@@ -14,6 +16,12 @@ footer{
       flex-wrap: nowrap;
       justify-content: space-around;
       padding-top: 40px;
+
+      @include mediaMd{
+        display: block;
+        margin: auto 10%;
+        text-align: center;
+      }
   
       div img.footer_logo{
         width: 200px;
@@ -35,6 +43,10 @@ footer{
         flex-wrap: nowrap;
         justify-content: space-between;
         list-style: none;
+
+        @include mediaMd {
+          justify-content: space-evenly;
+        }
       }
     }
     hr.footer_divider{
@@ -53,6 +65,14 @@ footer{
         font-size: 1.5em;
         &:hover{
           color: grey;
+        }
+      }
+
+      @include mediaMd {
+        display: block;
+        a{
+          display: inline-block;
+          margin: 7px auto;
         }
       }
     }
