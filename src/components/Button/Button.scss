@@ -1,14 +1,22 @@
+.button {
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
 
-.button{
-    padding: 1rem 3rem;
-    border: none;
-    outline: none;
+  &.is-primary {
+    background: #363232;
     color: #fff;
-    border-radius: 15px;
-    cursor: pointer;
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
 
-    &.is-primary{
-        background: #363232;
-        color: #FFF;
+    &:hover {
+      box-shadow: 4px 10px 18px rgba(0, 0, 0, 0.2);
+      background: #10a5f5;
+      color: #fff;
+      transform: translateY(-3px);
+      transition: 0.4s;
     }
+  }
 }
