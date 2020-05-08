@@ -1,104 +1,105 @@
-@import '../../assets/styles/colors.scss';
-@import '../../assets/styles/utils.scss';
-@import '../../assets/styles/mixins.scss';
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/utils.scss";
+@import "../../assets/styles/mixins.scss";
 
-.header{
-    &__container{
-        margin: auto 10%;
-        display: flex;
-        justify-content: space-between;
+.header {
+  &__container {
+    margin: auto 10%;
+    display: flex;
+    justify-content: space-between;
 
-        @include mediaSm{
-            width: 100%;
-        }
+    @include mediaSm {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    list-style: none;
+
+    @include mediaSm {
+      display: none;
     }
 
-    &__nav{
-        display: flex;
-        justify-content: space-around;
-        padding-top: 40px;
-        list-style: none;
-
-        @include mediaSm{
-            display: none;
-        }
-
-        &--item{
-            margin-right: 30px;
-            a{
-                color: $dark;
-                font-size: 20px;
-            }
-        }
-    }
-
-    &__logo{
-        padding-top: 30px;
-        width: 35px;
-        height: 35px;
-    }
-}
-
-.toggle{
-     margin-top: 30px;
-     position: relative;
-     left: 85%;
-    display: none;
-    @include mediaSm{
-        display: block;
-        transform: translateY(10px);
-    }
-
-    @media(max-width: 768px){
-        display: inline;
-    }
-    .line{
-        width:35px;
-        height: 1px;
-        background: $dark;
-        margin-bottom: 8px;
-    }
-}
-
-
-.nav-wrapper{
-
-    background: transparent !important;
-    &__container{
-        margin: 1% 10%;
-    }
-
-    &--logo{
-        width: 30px;
-        height: 30px;
-    }
-
-}
-
-nav{
-    background-color: transparent !important;
-    color: $dark !important;
-
-    box-shadow: 0 0 0 rgba(0,0,0,0);
-
-    ul{
-        a{
-            color: $dark;
-        }
-    }
-
-    .brand-logo{
+    &--item {
+      margin-right: 30px;
+      a {
         color: $dark;
+        font-size: 20px;
+      }
     }
+  }
+
+  &__logo {
+    padding-top: 30px;
+    width: 35px;
+    height: 35px;
+  }
 }
 
-#nav-mobile{
-    li{
-        &:hover{
-            background: transparent !important;
-            a{
-                background-color: transparent;
-            }
-        }
+.toggle {
+  margin-top: 30px;
+  position: relative;
+  left: 85%;
+  display: none;
+  @include mediaSm {
+    display: block;
+    transform: translateY(10px);
+  }
+
+  @media (max-width: 768px) {
+    display: inline;
+  }
+  .line {
+    width: 35px;
+    height: 1px;
+    background: $dark;
+    margin-bottom: 8px;
+  }
+}
+
+.nav-wrapper {
+  background: transparent !important;
+  &__container {
+    margin: 1% 10%;
+  }
+
+  &--logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+nav {
+  background-color: transparent !important;
+  color: $dark !important;
+
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+  ul {
+    a {
+      color: $dark;
     }
+  }
+
+  .brand-logo {
+    color: $dark;
+  }
+}
+
+#nav-mobile {
+  li {
+    &:hover {
+      background: transparent !important;
+      a {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.nav__active {
+  color: #0066ff;
 }
