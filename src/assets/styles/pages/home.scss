@@ -12,6 +12,54 @@
         margin: auto 10%;
     }
 
+    &__topics {
+        margin: 30px 10%;
+        &--grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        &--title {
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+
+    &__news {
+        background: $dark;
+        padding: 20px;
+        z-index: 10;
+
+        &--title {
+            color: $white;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        &--grid {
+            margin: 80px 10%;
+            display: flex;
+            justify-content: space-evenly;
+
+            @media(max-width: 768px){
+                display: block;
+            }
+        }
+    }
+
+    &__newsletter {
+        margin: 30px 25%;
+        transform: translateY(30px);
+        form {
+            display: flex;
+
+            @media(max-width: 768px){
+                display: block;
+            }
+        }
+    }
+
     &__grid{
         display:grid;
         grid-template-columns: repeat(3,minmax(500px, 1fr));
