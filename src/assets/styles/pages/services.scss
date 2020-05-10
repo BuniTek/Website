@@ -9,8 +9,12 @@
         grid-gap: 10px;
         margin: 40px auto;
 
+        @media (max-width: 991px){
+        }
+
         @media(max-width: 768px){
             grid-template-columns: 1fr;
+            justify-items:center;
         }
 
         &--item{
@@ -23,7 +27,17 @@
         }
 
         &.grid--one{
+            @media (max-width: 991px){
+                
+            }
+            
             .services__grid--item{
+                @media (max-width: 991px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+               
                 &:last-child{
                     display: grid;
                     place-content: center;
@@ -36,11 +50,17 @@
             border: 1px solid #707070;
             padding: 10px;
             .services__grid--item{
+                @media (max-width: 991px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 &:first-child{
                     display: grid;
                     place-content: center;
                     margin: auto 10%;
                 }
+               
             }
         }
     }
