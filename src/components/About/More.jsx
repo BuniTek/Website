@@ -42,7 +42,7 @@ const AboutUsMore = () => {
       <div
         className="about__overlay--1"
         style={{
-          backgroundImage: aboutBg,
+          backgroundImage: `url(${aboutBg})`,
         }}
       />
       <div className="about__more--grid">

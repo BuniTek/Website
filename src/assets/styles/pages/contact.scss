@@ -1,9 +1,16 @@
 .contact{
+    margin: auto;
+
     &__container{
-        margin: auto 10%;
+        
         display: grid;
         place-content: center;
         height: 100vh;
+
+       
+        @media (max-width: 767px){
+            padding: 1em;
+        }
     }
 
     &__overlay{
@@ -39,6 +46,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+
             @media (max-width: 991px){
                 display: none;
             }
