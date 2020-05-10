@@ -5,6 +5,14 @@ $desktop-min: $tablet + 1px;
 $desktop-max: 1024px;
 
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@font-face{
+	font-family: titilium700;
+	src: url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+}
+@font-face{
+	font-family: opensans400;
+	src:url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
 
 *, html, body{
     font-family: 'Muli', sans-serif !important;
@@ -13,3 +21,7 @@ $desktop-max: 1024px;
 ul{
     list-style: none;
 }
+
+/*Variables*/
+$hfont:titilium700,sans-serif;
+$btnfont:opensans400,sans-serif;

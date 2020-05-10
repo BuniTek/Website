@@ -3,7 +3,7 @@ import Form from '../components/Form';
 import Input from '../components/Form/Input';
 import Textarea from '../components/Form/Textarea';
 import SubmitButton from '../components/Form/Submit';
-import Layout from '../components/layout';
+import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 
 import '../assets/styles/pages/contact.scss';

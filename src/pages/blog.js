@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import Layout from '../components/layout';
+import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import BlogItem from '../components/Blog/BlogItem';
 import BlogSearch from '../components/Blog/Search';
