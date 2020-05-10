@@ -1,6 +1,6 @@
 import React from 'react';
 import { List } from 'semantic-ui-react';
-import { List as AntList, Typography } from 'antd';
+import { List as AntList, Typography, Tag } from 'antd';
 import PropTypes from 'prop-types';
 
 const MemberInfo = ({ email, phoneNumber, titles }) => (
@@ -9,16 +9,16 @@ const MemberInfo = ({ email, phoneNumber, titles }) => (
       <List.Item>
         <List.Content>
           <p>
-            <strong>Email:</strong>
-            <span>{email}</span>
+            <strong>Email: &nbsp;</strong>
+            <Tag color="processing">{email}</Tag>
           </p>
         </List.Content>
       </List.Item>
       <List.Item>
         <List.Content>
           <Typography.Text>
-            <strong>Phone Number: </strong>
-            <p>{phoneNumber}</p>
+            <strong>Phone: &nbsp; </strong>
+            <Tag color="processing">{phoneNumber}</Tag>
           </Typography.Text>
         </List.Content>
       </List.Item>
@@ -26,9 +26,7 @@ const MemberInfo = ({ email, phoneNumber, titles }) => (
         dataSource={titles}
         header="Titles"
         renderItem={(item) => (
-          <AntList.Item>
-            <Typography.Text mark>{item}</Typography.Text>
-          </AntList.Item>
+          <Tag color="success">{item}</Tag>
         )}
       />
     </List>
