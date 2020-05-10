@@ -16,9 +16,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import 'antd/dist/antd.css';
 // import { useStaticQuery, graphql } from 'gatsby';
 
-import SiteHeader from './Header/index';
-import Footer from './Footer/index';
-import './app.scss';
+import SiteHeader from '../components/Header/index';
+import Footer from '../components/Footer/index';
+import './layout.css';
 
 library.add(fab, faCoffee);
 
