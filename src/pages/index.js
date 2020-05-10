@@ -11,22 +11,22 @@ import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+
     <div className="home">
-      <div className="home__container">
-        <div
+
+      <div className="home__overlay">
+       <div
           className="home__overlay--1"
           style={{
             backgroundImage: `url(${background})`,
           }}
         />
-        <div
-          className="home__overlay--2"
-          style={{
-            backgroundImage: `url(${Overlay2Bg})`,
-          }}
-        />
-        <div className="home__grid">
+      </div>
 
+      <div className="home__container">
+        <div className="home__grid">
+          <div className="home__grid--item">
+          </div>
           <div className="home__grid--item">
             <h1>Let &apos; s create our own future together.</h1>
             <p>
@@ -42,9 +42,19 @@ const IndexPage = () => (
             <img src={homeBanner} alt="Hero" className="hero__image" />
           </div>
         </div>
-
       </div>
+      
+      <div className="home__overlay">
+        <div
+          className="home__overlay--2"
+          style={{
+            backgroundImage: `url(${Overlay2Bg})`,
+          }}
+        />
+      </div>
+
     </div>
+    
   </Layout>
 );
 

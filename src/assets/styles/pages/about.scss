@@ -15,10 +15,9 @@
 
     &__overlay{
         &--1{
-            top: 20%;
-            left: 45%;
-            width: 1302px;
-            height: 787px;
+            width: 840px;
+            height: 500px;
+            left: 45vw;
             opacity: 1;
             position: absolute;
             z-index: 1;
@@ -26,9 +25,19 @@
             background-repeat: no-repeat;
             background-position: center;
 
-            @media(max-width: 768px){
-                top: 80%;
-                left: 5%;
+            @media (max-width: 991px){
+                width: 680px;
+                height: 400px;
+                margin-top: 800px;
+                margin-left: -280px;
+            }
+
+            @media (max-width: 767px){
+                padding:0;
+                width: 420px;
+                height: 240px;
+                margin-top: 600px;
+                margin-left: -280px;
             }
         }
     }
