@@ -40,9 +40,9 @@
 }
 
 .toggle{
-     margin-top: 30px;
-     position: relative;
-     left: 85%;
+    margin-top: 30px;
+    position: relative;
+    left: 85%;
     display: none;
     @include mediaSm{
         display: block;
@@ -54,8 +54,9 @@
     }
     .line{
         width:35px;
-        height: 1px;
-        background: $dark;
+        height: 4px;
+        border-radius: 20px;
+        background: lighten(gray, 40);
         margin-bottom: 8px;
     }
 }

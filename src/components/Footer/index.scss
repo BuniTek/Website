@@ -7,6 +7,10 @@
     color: white;
     text-decoration: none;
     margin-top: 100px;
+
+    @media(min-width: 320px) and (max-device-width: 667px){
+      width: 100%;
+    }
   
     &__container{
       display: flex;
@@ -15,18 +19,31 @@
       justify-content: space-around;
       padding: 40px 0 20px 0;
 
+      @media(min-width: 320px) and (max-device-width: 667px){
+        flex-direction: column;
+        text-align: center;
+      }
+
       &--low{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
         padding: 0 80px 40px 80px;
+
+        @media(min-width: 320px) and (max-device-width: 667px){
+          flex-direction: column;
+        }
+
         a{
           color: white;
           font-size: 1.5em;
           &:hover{
               color: grey;
               cursor: pointer;
+          }
+          @media(min-width: 320px) and (max-device-width: 667px){
+            font-size: 1em;
           }
         }
       }
@@ -35,10 +52,16 @@
     &__subcontainer{
       .brand-logo img.footer-logo{
         width: 200px;
+        @media(min-width: 320px) and (max-device-width: 667px){
+          width: 100px;
+        }
       }
       .sub-heading{
         color: white;
         font-size: 2em;
+        @media(min-width: 320px){
+          font-size: 1.8em;
+        }
       }
       
       &--list{
@@ -51,6 +74,9 @@
             color: grey;
             cursor: pointer;
           }
+          @media(min-width: 320px) and (max-device-width: 667px){
+            font-size: 1em;
+          }
         } 
       }
       .inline{
@@ -59,6 +85,9 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         list-style: none;
+        @media(min-width: 320px) and (max-device-width: 667px){
+          justify-content: space-around;
+        }
       } 
     }
 
