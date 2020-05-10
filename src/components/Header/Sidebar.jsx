@@ -26,10 +26,10 @@ const Sidebar = ({ open, setOpen }) => (
           <Link to="/services">Services</Link>
         </li>
         <li>
-          <Link to="/">About Us</Link>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
-          <Link to="/">Contact Us</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Team from '../components/Team';
-import Layout from '../components/layout';
+import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import AboutMore from '../components/About/More';
 

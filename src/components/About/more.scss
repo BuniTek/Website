@@ -10,14 +10,16 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 20px;
 
-            @media(max-width: 768px){
+            @media (max-width: 991px){
+                grid-template-columns: 1fr;
+            }
+
+            @media (max-width: 767px){
                 grid-template-columns: 1fr;
             }
         }
 
         &--item{
-
-            
 
             &:last-child{
                 margin: 20%;
@@ -41,7 +43,7 @@
                     height: 300px;
                     margin-top: 20px;
 
-                    @media(max-width: 768px){
+                    @media (max-width: 767px){
                         // display: block;
                         // width: 100%;
                         // position: relative;
