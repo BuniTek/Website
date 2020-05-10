@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import Layout from '../components/layout';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import Layout from '../layouts/layout';
 import SEO from '../components/seo';
-
-import BootcampAsset from '../assets/images/codingBootcamp.png';
-import CodingBcp from '../assets/images/codingBcp.png';
 import '../assets/styles/pages/services.scss';
 
 const Services = () => {
@@ -11,6 +10,27 @@ const Services = () => {
     const body = document.querySelector('body');
     body.classList.remove('home');
   });
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "codingBootcamp.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      placeholderImage2: file(relativePath: { eq: "codingBcp.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+    }
+  `);
+
+  
   return (
     <Layout>
       <SEO title="Our Services" />
@@ -18,7 +38,7 @@ const Services = () => {
         <div className="services__container">
           <div className="services__grid grid--one">
             <div className="services__grid--item">
-              <img src={BootcampAsset} alt="Services" />
+              <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Services" />
             </div>
             <div className="services__grid--item">
               <h2 className="services__title">
@@ -49,7 +69,7 @@ const Services = () => {
               </p>
             </div>
             <div className="services__grid--item">
-              <img src={CodingBcp} alt="Services" />
+              <Img fluid={data.placeholderImage2.childImageSharp.fluid} alt="Services" />
             </div>
           </div>
         </div>
