@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Button from '../components/Button';
@@ -35,7 +36,9 @@ const IndexPage = () => (
               nam maiores rem tempora repudiandae soluta nobis!
             </p>
             <span>
-              <Button type="primary" onClick={() => console.log('Clicked')}>Get involved</Button>
+              <Link to="/signup">
+                <Button type="primary" onClick={(e) => e.preventDefault()}>Get involved</Button>
+              </Link>
             </span>
           </div>
           <div className="home__grid--item">
