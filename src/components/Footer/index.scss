@@ -8,7 +8,7 @@
     text-decoration: none;
     margin-top: 100px;
 
-    @media(min-width: 320px) and (max-device-width: 667px){
+    @media (max-width: 767px){
       width: 100%;
     }
   
@@ -19,7 +19,7 @@
       justify-content: space-around;
       padding: 40px 0 20px 0;
 
-      @media(min-width: 320px) and (max-device-width: 667px){
+      @media (max-width: 767px){
         flex-direction: column;
         text-align: center;
       }
@@ -31,7 +31,7 @@
         justify-content: space-around;
         padding: 0 80px 40px 80px;
 
-        @media(min-width: 320px) and (max-device-width: 667px){
+        @media (max-width: 767px){
           flex-direction: column;
         }
 
@@ -42,7 +42,7 @@
               color: grey;
               cursor: pointer;
           }
-          @media(min-width: 320px) and (max-device-width: 667px){
+          @media (max-width: 767px){
             font-size: 1em;
           }
         }
@@ -52,7 +52,7 @@
     &__subcontainer{
       .brand-logo img.footer-logo{
         width: 200px;
-        @media(min-width: 320px) and (max-device-width: 667px){
+        @media (max-width: 767px){
           width: 100px;
         }
       }
@@ -74,7 +74,7 @@
             color: grey;
             cursor: pointer;
           }
-          @media(min-width: 320px) and (max-device-width: 667px){
+          @media (max-width: 767px){
             font-size: 1em;
           }
         } 
@@ -85,7 +85,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         list-style: none;
-        @media(min-width: 320px) and (max-device-width: 667px){
+        @media (max-width: 767px){
           justify-content: space-around;
         }
       } 
