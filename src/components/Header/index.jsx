@@ -21,26 +21,37 @@ const Header = () => {
         <div className="nav-wrapper">
           <div className="nav-wrapper__container">
             <Link to="/" className="brand-logo">
-              <Logo src={logoUrl} alt="Africa I" className="nav-wrapper__logo" />
+              <Logo
+                src={logoUrl}
+                alt="Africa I"
+                className="nav-wrapper__logo"
+              />
             </Link>
-            <ul
-              id="nav-mobile"
-              className="right hide-on-med-and-down"
-            >
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" activeClassName="nav__active">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/blog" activeClassName="nav__active">
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/services">Services</Link>
+                <Link to="/services" activeClassName="nav__active">
+                  Services
+                </Link>
               </li>
               <li>
-                <Link to="/about">About Us</Link>
+                <Link to="/about" activeClassName="nav__active">
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact" activeClassName="nav__active">
+                  Contact Us
+                </Link>
               </li>
             </ul>
             <button
