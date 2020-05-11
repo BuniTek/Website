@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import Input from '../components/Form/Input';
 import Textarea from '../components/Form/Textarea';
 import SubmitButton from '../components/Form/Submit';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
+import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/contact.scss';
 import contactTopLeft from '../assets/images/contact_top-left.svg';
 import contactMiddleRight from '../assets/images/contact_middle-right.svg';
+import logo from '../assets/images/africai.png';
 
 const Contact = () => {
   const [email, setEmail] = useState('');
@@ -46,10 +49,18 @@ const Contact = () => {
     setMessage(e.target.value);
   };
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     const body = document.querySelector('body');
     body.classList.remove('home');
-  });
+
+    dispatch(
+      setLogoUrl({
+        logo,
+      }),
+    );
+  }, []);
 
   return (
     <Layout>

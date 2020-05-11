@@ -1,15 +1,23 @@
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import Team from '../components/Team';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import AboutMore from '../components/About/More';
+import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
+import logo from '../assets/images/africai_dark.png';
 
 const AboutUs = () => {
+  const dispatch = useDispatch();
   useEffect(() => {
     const body = document.querySelector('body');
     body.classList.remove('home');
+
+    dispatch(setLogoUrl({
+      logo,
+    }));
   }, []);
   return (
     <Layout>
