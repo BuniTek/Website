@@ -1,0 +1,22 @@
+@import '../../assets/styles/colors.scss';
+
+.line {
+    width: 50px;
+    height: 150px;
+
+    &__dot {
+        width: 5px;
+        height: 5px;
+        background: $white;
+        margin: 10px auto;
+        border-radius: 100%;
+    }
+
+    &__main {
+        width: 3px;
+        height: 100%;
+        position: relative;
+        background: #707070;
+        transform: translateX(23.5px);
+    }
+}

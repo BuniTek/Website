@@ -10,6 +10,7 @@ import Form from '../components/Form';
 import Input from '../components/Form/Input';
 import Topic from '../components/Topic';
 import Testimonies from '../components/Testimonies';
+import Line from '../components/VerticalLine';
 import { setLogoUrl } from '../redux/actions';
 
 import homeBanner from '../assets/images/undraw_dev_productivity_umsq.png';
@@ -82,6 +83,7 @@ const IndexPage = () => {
               description="JC Billy, Alain Eros Prestige are organizing a dope stuff the next summer guys. Just be ready"
               link="/blog"
             />
+            <Line />
             <NewsCard
               title="Summer Hackathon 2020"
               description="JC Billy, Alain Eros Prestige are organizing a dope stuff the next summer guys. Just be ready"
