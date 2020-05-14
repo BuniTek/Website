@@ -4,11 +4,15 @@ import PropTypes from 'prop-types';
 import './Button.scss';
 
 const Button = ({
-  type, onClick, children, style,
+  type,
+  onClick,
+  children,
+  style,
+  bgColor,
 }) => (
   <button
     type="button"
-    className={`button is-${type}`}
+    className={`button is-${type} has-bg-${bgColor}`}
     onClick={onClick}
     style={style}
   >
@@ -22,11 +26,13 @@ Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
   style: PropTypes.instanceOf(Object),
+  bgColor: PropTypes.string,
 };
 
 Button.defaultProps = {
   type: 'primary',
   style: {},
+  bgColor: 'primary',
 };
 
 export default Button;

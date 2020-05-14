@@ -9,12 +9,14 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import 'antd/dist/antd.css';
 import SEO from '../components/seo';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import SiteHeader from '../components/Header/index';
 import Footer from '../components/Footer/index';
 import './layout.css';
 
-library.add(fab, faCoffee); 
+library.add(fab, faCoffee);
 
 const Layout = ({ children }) => (
   <>

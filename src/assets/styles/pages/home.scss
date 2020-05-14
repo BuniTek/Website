@@ -1,6 +1,7 @@
 
 @import "../utils.scss";
 @import "../colors.scss";
+@import '../mixins.scss';
 
 .home{
     margin: 0 auto;
@@ -13,16 +14,28 @@
     }
 
     &__topics {
-        margin: 30px 10%;
+        background: $white;
+        &--container {
+            margin: auto 10%;
+            padding: 50px auto;
+        }
         &--grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             grid-gap: 20px;
+            padding-bottom: 50px !important;
+
+            @include mediaMd {
+                grid-template-columns: 1fr;
+            }
         }
 
         &--title {
             text-align: center;
             text-decoration: underline;
+            margin-bottom: 100px;
+            margin-top: 50px;
+            padding-top: 50px !important;
         }
     }
 
@@ -42,7 +55,7 @@
             display: flex;
             justify-content: space-evenly;
 
-            @media(max-width: 768px){
+            @include mediaMd {
                 display: block;
             }
         }
@@ -54,8 +67,13 @@
         form {
             display: flex;
 
-            @media(max-width: 768px){
+            @include mediaMd {
                 display: block;
+
+                input[type="email"]{
+                    display: inline-block;
+                    width: 100%;
+                }
             }
         }
     }
@@ -154,18 +172,20 @@
 
     &__overlay{
 
+        width: 100vw;
+        position: absolute;
+        overflow: hidden;
+        margin-top: -10%;
+        z-index: -1;
+
         &--1{
-            top: -250px;
-            left: -300px;
-            width: 900px;
-            height: 600px;
-            background-position: center;
-            opacity: 1;
-            position: absolute;
-            z-index: -1;
             background-repeat: no-repeat;
             background-size: cover;
-            transform: scale(0.4);
+            background-position: center;
+            width: 900px;
+            height: 600px;
+            margin-top: -250px;
+            margin-left: -300px;
 
             @media (max-width: 1199px){
                 
@@ -183,13 +203,12 @@
             }
         }
         &--2{
-            top: 80%;
-            left: 10%;
-            width: 1047px;
-            height: 557px;
-            position: absolute;
             background-repeat: no-repeat;
-            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            width: 2000px;
+            height: 600px;
+            margin-left: -500px;
             
 
             @media (max-width: 1199px){

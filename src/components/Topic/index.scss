@@ -1,8 +1,34 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/mixins.scss';
 .topic {
     padding: 20px;
+    text-align: center;
 
     &__caption {
-        text-align: center;
+        display: inline-block;
         margin: 10px auto;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    img {
+        display: inline-block;
+        position: relative;
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    @include mediaMd {
+        margin: auto 10%;
+    }
+
+    .ant-popover-inner {
+        background: $dark !important;
+    }
+
+    &__popover {
+        a {
+            color: $dark;
+        }
     }
 }
