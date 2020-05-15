@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'AfricaI',
     description: 'Invent Future by bringing to cool, cut-edge technology to Africa Youth',
-    author: '@gatsbyjs',
+    author: '@Africa-I Dev',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -30,8 +30,15 @@ module.exports = {
         icon: 'src/assets/images/africai.png', // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+    },
   ],
 };

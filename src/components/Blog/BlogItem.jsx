@@ -6,10 +6,10 @@ import HeartIcon from '../../assets/images/heart-regular.png';
 
 import './blogitem.scss';
 
-const BlogItem = ({ title, description }) => (
+const BlogItem = ({ title, description, readMore }) => (
   <div className="blog__item">
     <div className="blog__item--heading">
-      <LinkAnchor to="/#">
+      <LinkAnchor to={readMore}>
         <h4 className="blog__item--title">{title}</h4>
       </LinkAnchor>
       <div className="blog__item--undefined" />
@@ -18,7 +18,7 @@ const BlogItem = ({ title, description }) => (
       {description}
     </div>
     <div className="blog__item--footer">
-      <LinkAnchor to="/#">Read More &gt; </LinkAnchor>
+      <LinkAnchor to={readMore}>Read More &gt; </LinkAnchor>
       <img src={HeartIcon} alt="Like" className="blog__like" />
     </div>
   </div>
