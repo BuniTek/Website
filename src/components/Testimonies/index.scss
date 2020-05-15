@@ -3,6 +3,10 @@
 .testimonies {
     margin: 50px 15%;
 
+    @include mediaMd {
+        margin: 50px 8%;
+    }
+
     &__title {
         text-align: center;
         text-decoration: underline;
@@ -49,8 +53,9 @@
         border-radius: 8px;
 
         @include mediaMd {
-            width: 150px;
+            width: 200px;
             height: 300px;
+            transform: translateX(-50px) translateY(100px);
             &--info {
                 padding: 0px;
             }
