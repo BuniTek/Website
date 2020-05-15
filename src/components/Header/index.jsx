@@ -16,7 +16,7 @@ const Header = () => {
   const logoUrl = useSelector((state) => state.ui.logoUrl);
 
   return (
-    <>
+    <header>
       <nav>
         <div className="nav-wrapper">
           <div className="nav-wrapper__container">
@@ -67,7 +67,7 @@ const Header = () => {
         </div>
       </nav>
       <Sidebar open={open} setOpen={setOpen} />
-    </>
+    </header>
   );
 };
 
