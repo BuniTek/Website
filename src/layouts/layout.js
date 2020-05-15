@@ -1,7 +1,5 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import 'materialize-css/dist/css/materialize.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
