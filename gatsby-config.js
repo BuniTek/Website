@@ -24,16 +24,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Africa-I',
+        name: 'AfricaI',
         short_name: 'AfricaI',
         start_url: '/',
         background_color: '#efefef',
-        theme_color: '#2f2d41',
+        theme_color: '#373333',
         display: 'standalone',
         icon: 'src/assets/images/africai.png', // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
