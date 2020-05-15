@@ -11,16 +11,19 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({
-  description, lang, meta, title,
+  description, lang, meta, title, keywords, image
 }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
+            defaultTitle:title
+            defaultDescription: description
             author
+            defaultImage: image
+            url
+            DefaultKeywords: keywords
           }
         }
       }
@@ -29,25 +32,32 @@ function SEO({
 
   const metaDescription = description || site.siteMetadata.description;
 
+  const seo = {
+    title: title || site.siteMetadata.defaultTitle,
+    description: description || site.siteMetadata.defaultDescription,
+    image: `${image? image:site.siteMetadata.url+ site.siteMetadata.defaultImage}`,
+    keywords: keywords || site.siteMetadata.DefaultKeywords, 
+  }
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={seo.title}
+      titleTemplate={`%s | ${site.siteMetadata.defaultTitle}`}
       meta={[
         {
           name: 'description',
-          content: metaDescription,
+          content: seo.description,
         },
         {
           property: 'og:title',
-          content: title,
+          content: seo.description,
         },
         {
           property: 'og:description',
-          content: metaDescription,
+          content: seo.description,
         },
         {
           property: 'og:type',
@@ -63,11 +73,23 @@ function SEO({
         },
         {
           name: 'twitter:title',
-          content: title,
+          content: seo.title,
         },
         {
           name: 'twitter:description',
-          content: metaDescription,
+          content: seo.description,
+        },
+        {
+          name: 'keywords',
+          content: seo.keywords,
+        },
+        {
+          name: 'robots',
+          content: 'index,follow',
+        },
+        {
+          name: 'image',
+          content: seo.image,
         },
       ].concat(meta)}
     />
