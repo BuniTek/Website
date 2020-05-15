@@ -8,17 +8,18 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import 'antd/dist/antd.css';
-// import { useStaticQuery, graphql } from 'gatsby';
+import SEO from '../components/seo';
 
 import SiteHeader from '../components/Header/index';
 import Footer from '../components/Footer/index';
 import './layout.css';
 
-library.add(fab, faCoffee);
+library.add(fab, faCoffee); 
 
 const Layout = ({ children }) => (
   <>
     <div>
+      <SEO />
       <SiteHeader />
       <main>{children}</main>
       <Footer />

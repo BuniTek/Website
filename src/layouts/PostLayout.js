@@ -13,6 +13,7 @@ import 'antd/dist/antd.css';
 import SiteHeader from '../components/Header/index';
 import Footer from '../components/Footer/index';
 import './layout.css';
+import SEO from '../components/seo';
 
 library.add(fab, faCoffee);
 
@@ -21,6 +22,10 @@ const PostLayout = ({ data }) => {
     const post = data.markdownRemark;
     return (
         <>
+        <SEO title = {post.frontmatter.title}
+            description = {post.excerpt}
+            image ={post.frontmatter.image}
+            keywords = {post.frontmatter.keywords}/>
           <div>
             <SiteHeader />
             <main>
@@ -45,9 +50,12 @@ export const query = graphql`
 
 query($slug: String!){
     markdownRemark(fields: {slug: {eq: $slug}}){
-        html
+        html, 
+        excerpt,
         frontmatter{
             title
+            keywords
+            image
         }
     }
 }
