@@ -24,15 +24,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Africa-I',
+        short_name: 'AfricaI',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
+        background_color: '#efefef',
+        theme_color: '#2f2d41',
+        display: 'standalone',
         icon: 'src/assets/images/africai.png', // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -43,13 +44,14 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-166771224-1',
+        head: false,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+      },
+    },
   ],
 };
-
-
-{/* <Helmet>
-  <title> </title>
-  <meta name="description" content = "" />
-  <meta name= "keywords" content = "" />
-  <meta name="robots" content="index,follow" />
-</Helmet> */}
