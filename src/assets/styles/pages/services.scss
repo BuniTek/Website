@@ -1,3 +1,5 @@
+@import '../mixins.scss';
+
 .services{
     &__container{
         margin: auto 10%;
@@ -23,6 +25,24 @@
                 position: relative;
                 width: 80%;
                 height: 80%;
+            }
+
+            .gatsby-image-wrapper {
+                @include mediaMd {
+                    img {
+                        position: relative !important;
+                    }
+                }
+            }
+
+            &:last-child {
+                .gatsby-image-wrapper {
+                    img {
+                        @include mediaMd {
+                            margin-top: -50%;
+                        }
+                    }
+                }
             }
         }
 
