@@ -67,13 +67,13 @@
         form {
             display: flex;
 
-            @include mediaMd {
+            @include mediaSm {
                 display: block;
 
                 input[type="email"]{
                     display: inline-block;
-                    width: 85%;
-                    transform: translateX(-60px);
+                    width: 100% !important;
+                    // transform: translateX(-80px);
                     margin-bottom: 20px;
                 }
             }

@@ -52,13 +52,18 @@
         transform: translateY(100px);
         border-radius: 8px;
 
-        @include mediaMd {
+        @include mediaSm {
             width: 200px;
             height: 300px;
             transform: translateX(-50px) translateY(100px);
             &--info {
                 padding: 0px;
             }
+        }
+
+        @include mediaMd {
+            width: 150px;
+            height: 300px;
         }
         &--avatar {
             position: relative;
@@ -73,6 +78,10 @@
                 height: 50px;
                 z-index: 2000;
                 border-radius: 100%;
+            }
+
+            @include mediaMd {
+                left: 30%;
             }
         }
 
