@@ -18,8 +18,24 @@ const Contact = () => {
     setEmail(e.target.value);
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const onSubmit = (ev) => {
+    //  if we decide to use ajax and not thirdparty recapture.
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
   };
 
   const onMessageChange = (e) => {
@@ -56,14 +72,18 @@ const Contact = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Itaque, fuga!
           </p>
-          <Form onSubmit={onSubmit}>
+          <form 
+          // onSubmit={onSubmit}
+          method="POST"
+          action="https://formspree.io/mpzyqpnp"
+          >
             <Input
               type="email"
               placeholder="Enter your email"
               label="Email"
               value={email}
               onChange={onEmailChange}
-              name="email"
+              name="_replyto"
             />
             <Textarea
               value={message}
@@ -72,8 +92,8 @@ const Contact = () => {
               label="Message"
               name="message"
             />
-            <SubmitButton value="Send" />
-          </Form>
+            <SubmitButton type="submit" value="Send" />
+          </form>
         </div>
       </div>
 
