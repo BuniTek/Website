@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Form from '../components/Form';
 import Input from '../components/Form/Input';
 import Textarea from '../components/Form/Textarea';
 import SubmitButton from '../components/Form/Submit';
@@ -13,11 +12,16 @@ import contactMiddleRight from '../assets/images/contact_middle-right.svg';
 const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  // eslint-disable-next-line no-unused-vars
+  const [state, setState] = useState({
+    status: 'ERROR',
+  });
 
   const onEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const onSubmit = (ev) => {
     //  if we decide to use ajax and not thirdparty recapture.
     ev.preventDefault();
@@ -25,14 +29,14 @@ const Contact = () => {
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: "SUCCESS" });
+        setState({ status: 'SUCCESS' });
       } else {
-        this.setState({ status: "ERROR" });
+        setState({ status: 'ERROR' });
       }
     };
     xhr.send(data);
@@ -72,10 +76,10 @@ const Contact = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Itaque, fuga!
           </p>
-          <form 
+          <form
           // onSubmit={onSubmit}
-          method="POST"
-          action="https://formspree.io/mpzyqpnp"
+            method="POST"
+            action="https://formspree.io/mpzyqpnp"
           >
             <Input
               type="email"
