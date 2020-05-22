@@ -20,7 +20,10 @@ const Sidebar = ({ open, setOpen }) => (
 
       <ul className="sidebar__menu">
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link to="/news">News</Link>
+        </li>
+        <li>
+          <Link to="/courses">Courses</Link>
         </li>
         <li>
           <Link to="/services">Services</Link>
