@@ -1,3 +1,4 @@
+@import '../../assets/styles/mixins.scss';
 .team{
     background: lighten(lightgrey, 5%);
     padding: 70px;
@@ -5,6 +6,10 @@
     &__list{
         display: flex;
         justify-content: space-evenly;
+
+        @include mediaSm {
+            display: block;
+        }
     }
     height: 10vh;
     display: grid;
@@ -13,5 +18,11 @@
 
     &__member{
         margin-right: 20px;
+
+        @include mediaSm {
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
     }
 }

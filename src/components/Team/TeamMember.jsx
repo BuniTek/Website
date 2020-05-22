@@ -23,7 +23,7 @@ const TeamMember = ({
   return (
     <div className="team__member">
       <Popover title={name} content={content} placement="bottomLeft">
-        <Button>
+        <Button className="hover-btn">
           <Avatar url={profileUrl} />
         </Button>
       </Popover>

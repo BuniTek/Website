@@ -35,7 +35,8 @@
         {
           "groups": ["builtin", "external", "internal"]
         }
-      ]
+      ],
+      "react/no-danger": false
     },
     "settings": {
       "import/resolver": {

@@ -1,0 +1,48 @@
+@import '../../assets/styles/colors.scss';
+.news {
+    &__card {
+        background: $white;
+        max-width: 30vw;
+        padding: 30px;
+        position: relative;
+        color: $dark;
+        &:last-child{
+            transform: translateY(80px);
+        }
+
+        @media(max-width: 768px){
+            max-width: 100%;
+        }
+
+        &--link{
+            float: right;
+            font-weight: bold;
+            color: $dark;
+            text-decoration: underline;
+        }
+
+        &--title {
+            margin-bottom: 10px;
+            &-link {
+                color: $dark;
+                text-decoration: underline;  
+                font-weight: bold;
+            }
+        }
+
+        &--description {
+            p {
+                line-height: 2.5;
+                font-size: 1.4rem;
+                font-family: 'Playfair Display', serif !important;
+                font-weight: 200 !important;
+            }
+        }
+
+        &--quote {
+            position: absolute;
+            top: -55px;
+            right: -25px;
+        }
+    }
+}

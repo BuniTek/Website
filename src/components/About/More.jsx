@@ -77,15 +77,14 @@ const AboutUsMore = () => {
         </div>
         <div className="about__more--item">
           <div className="more__item--overlay" />
-          <h2 className="about__more--title">AfricaI Community</h2>
+          <h2 className="about__more--title">A Purpose-Driven Company </h2>
           <p className="about__more--description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            aliquam nam cum earum. Ad tempore deleniti voluptate facilis
-            sapiente quos.
+
+            Create, offer, skills, simple, fun, movement, technology, future relavant 
           </p>
 
-          <LinkAnchor to="/signup">
-            Join the Community now &nbsp;
+          <LinkAnchor to="/about/#more">
+            Learn more &nbsp;
             <span>{'>'}</span>
           </LinkAnchor>
         </div>

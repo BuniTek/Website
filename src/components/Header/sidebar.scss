@@ -6,10 +6,10 @@
     height: 100%;
     background: #4B4949;
     color:#fff;
-    width: 30%;
+    width:50%;
     transform: translateX(100%);
     transition: .5s ease-out;
-    z-index: 20;
+    z-index: 2000;
 
     &.open{
         transform: translateX(0);
