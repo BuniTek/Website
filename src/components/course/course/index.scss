@@ -1,0 +1,16 @@
+.course{
+    &__image{
+      width: 100%;
+      display: block;
+    }
+    &__card--divider{
+      height: 5px;
+      background: #4B4949; 
+    }
+    &__content{
+      line-height: 1.5;
+      font-size: 0.9em;
+      padding: 15px;
+      background: #fafafa; 
+    }
+}
