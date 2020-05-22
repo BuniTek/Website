@@ -26,7 +26,7 @@ exports.createPages = ({graphql, actions}) => {
         }
       }
       `)
-      .then(result => {
+      .then((result) => {
             result.data.allMarkdownRemark.nodes.forEach( (node)=> {
                createPage({
                    path: node.fields.slug,
@@ -38,3 +38,16 @@ exports.createPages = ({graphql, actions}) => {
             })
       })
 }
+
+
+exports.createSchemaCustomization = ({ actions }) => {
+  actions.createTypes(`
+    type MarkdownRemark implements Node @infer {
+      frontmatter: MarkdownRemarkFrontmatter!
+    }
+
+    type MarkdownRemarkFrontmatter @infer {
+      date: Date @dateformat
+    }
+  `);
+};
