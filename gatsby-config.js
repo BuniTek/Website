@@ -30,7 +30,7 @@ module.exports = {
         background_color: '#efefef',
         theme_color: '#373333',
         display: 'standalone',
-        icon: 'src/assets/images/africai.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/icon.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

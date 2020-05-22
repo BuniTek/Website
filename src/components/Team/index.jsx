@@ -5,7 +5,7 @@ import './index.scss';
 
 const Team = () => (
   <div className="team">
-    <h2 className="team__title">Our Team</h2>
+    <h2 className="team__title">Meet Our Team</h2>
     <div className="team__list">
       <TeamMember
         titles={['Engineer', 'CEO', 'Founder']}
