@@ -1,15 +1,26 @@
 import React, { useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { useDispatch } from 'react-redux';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
+import { setLogoUrl } from '../redux/actions';
+import logo from '../assets/images/africai_dark.png';
+
 import '../assets/styles/pages/services.scss';
 
 const Services = () => {
+  const dispatch = useDispatch();
   useEffect(() => {
     const body = document.querySelector('body');
     body.classList.remove('home');
-  });
+
+    dispatch(
+      setLogoUrl({
+        logo,
+      }),
+    );
+  }, []);
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "codingBootcamp.png" }) {
@@ -30,7 +41,7 @@ const Services = () => {
     }
   `);
 
-  
+
   return (
     <Layout>
       <SEO title="Our Services" />

@@ -1,6 +1,7 @@
 
 @import "../utils.scss";
 @import "../colors.scss";
+@import '../mixins.scss';
 
 .home{
     margin: 0 auto;
@@ -10,6 +11,73 @@
         height: 100vh;
         background: transparent;
         margin: auto 10%;
+    }
+
+    &__topics {
+        background: $white;
+        &--container {
+            margin: auto 10%;
+            padding: 50px auto;
+        }
+        &--grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 20px;
+            padding-bottom: 50px !important;
+
+            @include mediaMd {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &--title {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 100px;
+            margin-top: 50px;
+            padding-top: 50px !important;
+        }
+    }
+
+    &__news {
+        background: $dark;
+        padding: 20px;
+        z-index: 10;
+
+        &--title {
+            color: $white;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        &--grid {
+            margin: 80px 10%;
+            display: flex;
+            justify-content: space-evenly;
+
+            @include mediaMd {
+                display: block;
+            }
+        }
+    }
+
+    &__newsletter {
+        margin: 30px 25%;
+        transform: translateY(30px);
+        form {
+            display: flex;
+
+            @include mediaSm {
+                display: block;
+
+                input[type="email"]{
+                    display: inline-block;
+                    width: 100% !important;
+                    // transform: translateX(-80px);
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 
     &__grid{
@@ -105,15 +173,12 @@
     }
 
     &__overlay{
+
         width: 100vw;
         position: absolute;
         overflow: hidden;
         margin-top: -10%;
         z-index: -1;
-
-        @media (max-width: 767px){
-            margin-top: -20%;
-        }
 
         &--1{
             background-repeat: no-repeat;
@@ -145,7 +210,8 @@
             background-position: center;
             width: 2000px;
             height: 600px;
-            margin-left: -600px;
+            margin-left: -500px;
+            
 
             @media (max-width: 1199px){
                 

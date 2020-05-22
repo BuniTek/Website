@@ -1,0 +1,102 @@
+@import '../../assets/styles/mixins.scss';
+
+.testimonies {
+    margin: 50px 15%;
+
+    @include mediaMd {
+        margin: 50px 8%;
+    }
+
+    &__title {
+        text-align: center;
+        text-decoration: underline;
+    }
+    &__slider {
+        &--item {
+            text-align: center;
+        }
+
+        .slick-next, .slick-prev {
+            &::before{
+                visibility: hidden;
+            }
+
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        .slick-current {
+            transform: scale(1.5);
+            margin-left: 20px;
+
+            @include mediaMd {
+                transform: scale(1);
+            }
+        }
+
+        .slick-list {
+            padding: 50px;
+        }
+    }
+}
+
+.testimony {
+    &__item {
+        background: white;
+        width: 200px;
+        height: 234px;
+        position: relative;
+        margin: auto 50px;
+        transform: translateY(100px);
+        border-radius: 8px;
+
+        @include mediaSm {
+            width: 200px;
+            height: 300px;
+            transform: translateX(-50px) translateY(100px);
+            &--info {
+                padding: 0px;
+            }
+        }
+
+        @include mediaMd {
+            width: 150px;
+            height: 300px;
+        }
+        &--avatar {
+            position: relative;
+            top: -30px;
+            left: 40%;
+            width: 40%;
+            text-align: center;
+
+            img {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                z-index: 2000;
+                border-radius: 100%;
+            }
+
+            @include mediaMd {
+                left: 30%;
+            }
+        }
+
+        &--info {
+            display: grid;
+            place-content: center;
+            padding: 20px;
+        }
+
+        &--author {
+            font-size: 1rem;
+            text-align: center;
+            margin-left: -50%;
+            margin-top: 10px;
+
+        }
+    }
+}

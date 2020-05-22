@@ -8,7 +8,7 @@ import { setLogoUrl } from '../redux/actions';
 import {graphql} from 'gatsby';
 
 import '../assets/styles/pages/blog.scss';
-import darkLogo from '../assets/images/africai.png';
+import darkLogo from '../assets/images/africai_dark.png';
 
 const Blog = ({data}) => {
   console.log(data);

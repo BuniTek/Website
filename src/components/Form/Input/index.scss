@@ -1,16 +1,19 @@
-input{
-    border: 1px solid grey !important;
-    border-bottom: none;
-    padding: 10px;
-    background: #FFF !important;
-
-    &:focus{
-        border-bottom: 1px solid grey !important;
-    }
-}
+@import '../../../assets/styles/mixins.scss';
 
 .form__input{
     label{
         font-weight: bold !important;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"]{
+        border: 1px solid grey !important;
+        border-bottom: none;
+        padding: 2px;
+        background: #FFF !important;
+        height: 2rem;
+    
+        &:focus{
+            border-bottom: 1px solid grey !important;
+        }
     }
 }

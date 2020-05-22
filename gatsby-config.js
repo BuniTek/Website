@@ -1,13 +1,13 @@
-const path = require('path')
+// const path = require('path');
 
 module.exports = {
   siteMetadata: {
     title: 'AfricaI',
-    description: "AfricaI is an organanization working to transform Tech Education in Africa youth. We inspire and teach cutting-edge technology to Africa Youth",
+    description: 'AfricaI is an organanization working to transform Tech Education in Africa youth. We inspire and teach cutting-edge technology to Africa Youth',
     author: '@AfricaI',
-    keywords: "AfricaI, Tech Education, digital skills, Youth, Rwanda, Kenya",
-    image:'src/assets/images/africai.png',
-    url: 'https://www.africai.site/'
+    keywords: 'AfricaI, Tech Education, digital skills, Youth, Rwanda, Kenya',
+    image: 'src/assets/images/africai.png',
+    url: 'https://www.africai.site/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -35,17 +35,17 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `pages`,
+        name: 'pages',
         path: `${__dirname}/src/`,
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-166771224-1',
         head: false,
