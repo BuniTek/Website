@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
-import NewsItem from '../components/News/NewsItem';
+import NewsItem from '../components/News/mainNews/NewsItem';
 import Search from '../components/Search';
 import { setLogoUrl } from '../redux/actions';
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LinkAnchor from '../Link';
+import LinkAnchor from '../../Link';
 
-import CodingBootcamp from '../../assets/images/codingBootCamp.png';
-import HeartIcon from '../../assets/images/heart-regular.png';
-import CommentIcon from '../../assets/images/commentIcon.svg';
+import CodingBootcamp from '../../../assets/images/codingBootCamp.png';
+import HeartIcon from '../../../assets/images/heart-regular.png';
+import CommentIcon from '../../../assets/images/commentIcon.svg';
 import './newsItem.scss';
+
 
 const NewsItem = ({ title, description }) => (
   <div className="news__item">
