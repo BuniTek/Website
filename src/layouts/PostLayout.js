@@ -32,6 +32,7 @@ const PostLayout = ({ data }) => {
         <main>
           <div>
             <h1>{post.frontmatter.title}</h1>
+            <i>Posted {post.frontmatter.date}</i>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
         </main>
@@ -58,6 +59,7 @@ query($slug: String!){
             title
             keywords
             image
+            date(fromNow: true)
         }
     }
 }
