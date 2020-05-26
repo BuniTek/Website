@@ -1,3 +1,4 @@
+@import "../mixins.scss";
 .contact{
     margin: auto;
 
@@ -34,6 +35,10 @@
                 width: 250px;
                 height: 250px;
             }
+
+            @include mediaLg {
+                top: -20%;
+            }
         }
 
         &--2{
@@ -48,6 +53,10 @@
             background-repeat: no-repeat;
 
             @media (max-width: 991px){
+                display: none;
+            }
+
+            @include mediaLg {
                 display: none;
             }
         }

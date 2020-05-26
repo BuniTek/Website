@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Input from '../components/Form/Input';
 import Textarea from '../components/Form/Textarea';
-import SubmitButton from '../components/Form/Submit';
+import Button from '../components/Button';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import { setLogoUrl } from '../redux/actions';
@@ -37,9 +37,9 @@ const Contact = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        setState({ status: 'SUCCESS' });
+        setState({ status: 'SUCCESS', ...state });
       } else {
-        setState({ status: 'ERROR' });
+        setState({ status: 'ERROR', ...state });
       }
     };
     xhr.send(data);
@@ -99,6 +99,10 @@ const Contact = () => {
               value={email}
               onChange={onEmailChange}
               name="_replyto"
+              style={{
+                height: 40,
+                width: '100%'
+              }}
             />
             <Textarea
               value={message}
@@ -107,7 +111,7 @@ const Contact = () => {
               label="Message"
               name="message"
             />
-            <SubmitButton type="submit" value="Send" />
+            <Button htmlType="submit" style={{marginTop: 10, width: '100%'}}>Send</Button>
           </form>
         </div>
       </div>
