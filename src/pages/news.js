@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import {graphql} from 'gatsby';
+
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import NewsItem from '../components/News/mainNews/NewsItem';
@@ -7,16 +9,9 @@ import Search from '../components/Search';
 import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/news.scss';
-import darkLogo from '../assets/images/africai.png';
+import darkLogo from '../assets/images/africai_dark.png';
 
-
-const lipsum = `
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
-'Content here...
-`;
-
-const News = () => {
+const News = ({data}) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setLogoUrl({ logo: darkLogo }));
@@ -29,27 +24,38 @@ const News = () => {
           <h2 className="news__heading">News</h2>
           <Search />
         </div>
-        <NewsItem
-          title="Python Encryption App"
-          description={lipsum}
-        />
-        <NewsItem
-          title="Advantage of Parcel over Webpack"
-          description={lipsum}
-        />
-        <NewsItem
-          title="Future of AfricaI"
-          description={lipsum}
-        />
-        <NewsItem
-          title="Meet JC Billy, our CEO and Founder"
-          description={lipsum}
-        />
+        {data.allMarkdownRemark.nodes.map(node => (
+          <NewsItem
+            title={node.frontmatter.title}
+            description={node.excerpt}
+            readMore = {node.fields.slug}
+          />
+        ))}
       </div>
 
     </Layout>
 
   );
 };
+
+export const query = graphql` {
+  allMarkdownRemark {
+    nodes {
+      frontmatter {
+        title
+        date
+        keywords
+        author
+        image
+      }
+      excerpt
+      html
+      fields {
+        slug
+      }
+    }
+  }
+}
+`
 
 export default News;

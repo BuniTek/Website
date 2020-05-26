@@ -13,12 +13,18 @@ import 'antd/dist/antd.css';
 import SiteHeader from '../components/Header/index';
 import Footer from '../components/Footer/index';
 import './layout.css';
+import './postLayout.scss';
+
 import SEO from '../components/seo';
 
 library.add(fab, faCoffee);
 
 const PostLayout = ({ data }) => {
   const post = data.markdownRemark;
+  const styles={
+        margin: 50,
+        padding: 20
+  }
   return (
     <>
       <SEO
@@ -30,10 +36,13 @@ const PostLayout = ({ data }) => {
       <div>
         <SiteHeader />
         <main>
-          <div>
-            <h1>{post.frontmatter.title}</h1>
+          <div className='post'>
+            <h1 className='post__title'>{post.frontmatter.title}</h1>
             <i>Posted {post.frontmatter.date}</i>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div
+               className='post__content'
+               dangerouslySetInnerHTML={{ __html: post.html }}
+              />
           </div>
         </main>
         <Footer />
