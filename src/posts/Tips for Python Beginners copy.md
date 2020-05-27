@@ -1,14 +1,15 @@
 ---
-title: Top things you need to know before starting python
+title: Rwanda, Kenya Online Tech Bootcamps for African Youth
+type: news
 author: AfricaI Team
-date: "2020-05-27"
+date: "2020-05-17"
 keywords: "AfricaI, Africa-I, Youth, Technology, Africa, Youth, Bootcamps, Tutoring, Online, Rwanda, Kenya"
 image: "https://theafricai.com/static/72cff5bdbc9091deb080c4cfb3a2bff4/39ef9/codingBootcamp.png"
 ---
 
 
 
-# Sample blog post
+# Dillinger
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 

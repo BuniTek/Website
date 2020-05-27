@@ -1,5 +1,6 @@
 ---
 title: Rwanda, Kenya Online Tech Bootcamps for African Youth
+type: news
 author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, Youth, Technology, Africa, Youth, Bootcamps, Tutoring, Online, Rwanda, Kenya"
