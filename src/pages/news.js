@@ -24,7 +24,9 @@ const News = ({data}) => {
           <h2 className="news__heading">News</h2>
           <Search />
         </div>
-        {data.allMarkdownRemark.nodes.map(node => (
+        {data.allMarkdownRemark.nodes
+         .filter((n)=>n.frontmatter.type === 'news')
+          .map(node => (
           <NewsItem
             title={node.frontmatter.title}
             description={node.excerpt}
@@ -43,6 +45,7 @@ export const query = graphql` {
     nodes {
       frontmatter {
         title
+        type
         date
         keywords
         author
