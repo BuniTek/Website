@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
@@ -6,54 +6,13 @@ import Search from '../components/Search';
 import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/courses.scss';
-import darkLogo from '../assets/images/africai.png';
+import darkLogo from '../assets/images/africai_dark.png';
 import Course from '../components/course/course';
 import Chip from '../components/chip';
 
 
-const Courses = () => {
-  const [courses, setCourses] = useState(
-    [
-      {
-        id: 1,
-        title: 'introduction to python',
-        image: 'https://fakeimg.pl/400x300/e3fca4/000/',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Cum nesciunt alias dolore dicta .',
-      },
-      {
-        id: 2,
-        title: 'intro to web development',
-        image: 'https://fakeimg.pl/400x300/e3fca4/000/',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nesciunt alias dolore dicta .',
-      },
-      {
-        id: 3,
-        title: 'video production',
-        image: 'https://fakeimg.pl/400x300/e3fca4/000/',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nesciunt alias dolore dicta .',
-      },
-      {
-        id: 4,
-        title: 'gatsby fundamentals',
-        image: 'https://fakeimg.pl/400x300/e3fca4/000/',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nesciunt alias dolore dicta .',
-      },
-      {
-        id: 5,
-        title: 'advanced react',
-        image: 'https://fakeimg.pl/400x300/e3fca4/000/',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nesciunt alias dolore dicta .',
-      },
-      {
-        id: 6,
-        title: 'artificial intelligence',
-        image: 'https://fakeimg.pl/400x300/e3fca4/000/',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nesciunt alias dolore dicta .',
-      },
-
-    ],
-  );
-
+const Courses = ({data}) => {
+ 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setLogoUrl({ logo: darkLogo }));
@@ -74,15 +33,16 @@ const Courses = () => {
             <Chip filter="duration" />
           </div>
           <div className="courses__container">
-            {courses.map((course) => (
-              <div key={course.id} className="course">
+            {data.allMarkdownRemark.nodes
+              .filter((n)=>n.frontmatter.type === 'course')
+                .map(node => (
                 <Course
-                  title={course.title}
-                  image={course.image}
-                  description={course.description}
+                  title={node.frontmatter.title}
+                  description={node.frontmatter.description}
+                  image={node.frontmatter.image}
+                  content = {node.fields.slug}
                 />
-              </div>
-            ))}
+        ))}
           </div>
         </div>
       </div>
@@ -90,5 +50,28 @@ const Courses = () => {
     </Layout>
   );
 };
+
+
+export const query = graphql` {
+  allMarkdownRemark {
+    nodes {
+      frontmatter {
+        title
+        type
+        date
+        keywords
+        author
+        description
+        image
+      }
+      excerpt
+      html
+      fields {
+        slug
+      }
+    }
+  }
+}
+`
 
 export default Courses;
