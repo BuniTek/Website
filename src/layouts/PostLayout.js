@@ -21,10 +21,7 @@ library.add(fab, faCoffee);
 
 const PostLayout = ({ data }) => {
   const post = data.markdownRemark;
-  const styles={
-        margin: 50,
-        padding: 20
-  }
+  console.log(post.frontmatter.type)
   return (
     <>
       <SEO
@@ -66,6 +63,7 @@ query($slug: String!){
         excerpt,
         frontmatter{
             title
+            type
             keywords
             image
             date(fromNow: true)
