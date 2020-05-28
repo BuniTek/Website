@@ -40,6 +40,7 @@ Course.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default Course;

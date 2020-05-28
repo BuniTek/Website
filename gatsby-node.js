@@ -1,5 +1,69 @@
 const path = require ('path')
 const { createFilePath } = require("gatsby-source-filesystem");
+
+const paginate = async ({graphql, actions, pathPrefix, component, reporter}) => {
+  const { errors, data } = await graphql(`
+     {
+       allMarkdownRemark {
+         totalCount
+       }
+     }
+  `);
+
+  if (errors) {
+    reporter.panicOnBuild('Error while running a GraphQL query!');
+    return;
+  }
+
+  const { totalCount } = data.allMarkdownRemark;
+
+  const pages = Math.ceil(totalCount / 10);
+
+  console.log('PAGES', pages, totalCount);
+
+  Array.from({ length: pages }).forEach((_, i) => {
+    actions.createPage({
+      path: `${pathPrefix}${i+1}`,
+      component,
+      context: {
+        skip: i * 10,
+        currentPage: i + 1,
+      }
+    })
+  })
+}
+
+const makePostsFromMdx = async ({graphql, actions, reporter}) => {
+  const { createPage } = actions;
+
+  const { error, data } = await graphql(`
+  {
+    allMarkdownRemark{
+      nodes {
+        fields {
+          slug
+        }
+      }
+    }
+  }
+  `);
+
+  if (error) {
+    reporter.panicOnBuild('There was an error while running a GraphQL query');
+    return;
+  }
+
+  data.allMarkdownRemark.nodes.forEach((node) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve('./src/layouts/PostLayout.js'),
+      context: {
+        slug: node.fields.slug
+      }
+    });
+  });
+}
+
 exports.onCreateNode = ({node, getNode, actions}) => {
     const { createNodeField } = actions;
 
@@ -13,30 +77,17 @@ exports.onCreateNode = ({node, getNode, actions}) => {
     }
 }
 
-exports.createPages = ({graphql, actions}) => {
-    const { createPage } = actions;
-    return graphql(`
-    {
-        allMarkdownRemark{
-          nodes {
-            fields {
-              slug
-            }
-          }
-        }
-      }
-      `)
-      .then((result) => {
-            result.data.allMarkdownRemark.nodes.forEach( (node)=> {
-               createPage({
-                   path: node.fields.slug,
-                   component: path.resolve('./src/layouts/PostLayout.js'),
-                   context: {
-                       slug: node.fields.slug
-                   }
-               }) 
-            })
-      })
+exports.createPages = async ({ graphql, actions, reporter}) => {  
+  return Promise.all([
+    makePostsFromMdx({ graphql, actions, reporter }),
+    paginate({
+      graphql,
+      actions,
+      pathPrefix: '/news',
+      component: path.resolve('./src/pages/news.js'),
+      reporter,
+    }),
+  ]);
 }
 
 
@@ -45,7 +96,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MarkdownRemark implements Node @infer {
       frontmatter: MarkdownRemarkFrontmatter!
     }
-
     type MarkdownRemarkFrontmatter @infer {
       date: Date @dateformat
     }

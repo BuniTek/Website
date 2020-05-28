@@ -21,17 +21,13 @@ const Courses = ({data}) => {
     <Layout>
       <SEO title="Courses" />
       <div className="course__page--wrapper">
-        <div className="course__page--header">
-          <h2 className="course__page--heading">Courses</h2>
+        <div className="course__page--heading">
+          <h2>new courses</h2>
+        </div>
+        <div className="course__search">
           <Search />
         </div>
         <div>
-          <div className="chips__container">
-            <Chip filter="newest" />
-            <Chip filter="popular" />
-            <Chip filter="tech" />
-            <Chip filter="duration" />
-          </div>
           <div className="courses__container">
             {data.allMarkdownRemark.nodes
               .filter((n)=>n.frontmatter.type === 'course')
