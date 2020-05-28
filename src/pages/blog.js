@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import BlogItem from '../components/Blog/BlogItem';
 import BlogSearch from '../components/Blog/Search';
 import { setLogoUrl } from '../redux/actions';
-import {graphql} from 'gatsby';
 
 import '../assets/styles/pages/blog.scss';
 import darkLogo from '../assets/images/africai_dark.png';
 
-const Blog = ({data}) => {
+const Blog = ({ data }) => {
   console.log(data);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -28,7 +29,8 @@ const Blog = ({data}) => {
           <BlogItem
             title={node.frontmatter.title}
             description={node.excerpt}
-            readMore = {node.fields.slug}
+            readMore={node.fields.slug}
+            featured={node.frontmatter.featuredImage}
           />
         ))}
        
@@ -50,6 +52,7 @@ export const query = graphql` {
         keywords
         author
         image
+        featuredImage
       }
       excerpt
       html

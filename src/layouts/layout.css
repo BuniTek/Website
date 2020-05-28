@@ -4,3 +4,10 @@
 *, html, body{
     font-family: 'Muli', sans-serif !important;
 }
+
+.post-featured {
+    width: 60%;
+    height: 10%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
