@@ -18,11 +18,6 @@ import SEO from '../components/seo';
 library.add(fab, faCoffee);
 
 const PostLayout = ({ data }) => {
-  const styles = {
-    margin: 50,
-    padding: 20,
-
-  };
   const post = data.markdownRemark;
   return (
     <>
@@ -35,7 +30,7 @@ const PostLayout = ({ data }) => {
       <div>
         <SiteHeader />
         <main>
-          <div style={styles}>
+          <div>
             <h1>{post.frontmatter.title}</h1>
             <i>
               Posted
