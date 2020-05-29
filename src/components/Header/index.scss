@@ -44,6 +44,9 @@
     position: relative;
     left: 85%;
     display: none;
+    border: none;
+    outline: none;
+    background: white;
     @include mediaSm{
         display: block;
         transform: translateY(10px);

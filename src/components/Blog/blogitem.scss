@@ -1,9 +1,12 @@
+@import "../../assets/styles/mixins.scss";
 .blog{
     &__item{
         background: #FFF;
         border: 1px solid #4B4949;
         margin: 50px 10%;
         padding: 20px;
+
+        $blogItem: &;
 
         &--undefined{
             width: 35px;
@@ -24,6 +27,31 @@
 
         &--title{
             font-weight: bold;
+        }
+
+        &--featured {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        &--grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+
+            @include mediaSm {
+                grid-template-columns: 1fr;
+            }
+
+            #{$blogItem}--footer {
+                position: relative;
+                bottom: -150px;
+
+                @include mediaSm {
+                    bottom: 0;
+                }
+            }
         }
     }
 
