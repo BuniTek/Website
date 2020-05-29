@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { setLogoUrl } from '../redux/actions';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
-import BlogItem from '../components/Blog/BlogItem';
 import BlogSearch from '../components/Blog/Search';
-import { setLogoUrl } from '../redux/actions';
+import Pagination from '../components/Pagination';
+import BlogItem from '../components/Blog/BlogItem';
+
 
 import '../assets/styles/pages/blog.scss';
 import darkLogo from '../assets/images/africai_dark.png';
 
-const Blog = ({ data }) => {
-  console.log(data);
+const Blog = ({data: { allMarkdownRemark: { totalCount, nodes } }, pageContext, path}) => {
+  console.log(nodes, pageContext, path);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setLogoUrl({ logo: darkLogo }));
@@ -25,7 +26,7 @@ const Blog = ({ data }) => {
           <h2 className="blog__heading">Blog</h2>
           <BlogSearch />
         </div>
-        {data.allMarkdownRemark.nodes.map(node => (
+        {nodes.map(node => (
           <BlogItem
             title={node.frontmatter.title}
             description={node.excerpt}
@@ -33,6 +34,8 @@ const Blog = ({ data }) => {
             featured={node.frontmatter.featuredImage}
           />
         ))}
+
+        <Pagination totalCount={totalCount} pathPrefix="/blog/" currentPage={pageContext.currentPage} />
        
       </div>
 
@@ -43,8 +46,12 @@ const Blog = ({ data }) => {
 
 export default Blog;
 
-export const query = graphql` {
-  allMarkdownRemark {
+export const query = graphql` query blogListQuery($skip: Int! =0) {
+  allMarkdownRemark(
+    sort: { fields: [frontmatter___date], order: DESC },
+    limit: 10,
+    skip: $skip
+  ) {
     nodes {
       frontmatter {
         title
@@ -60,6 +67,7 @@ export const query = graphql` {
         slug
       }
     }
+    totalCount
   }
 }
 `
