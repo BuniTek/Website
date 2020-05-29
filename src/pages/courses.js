@@ -23,10 +23,10 @@ const Courses = ({ data }) => {
       <SEO title="Courses" />
       <div className="course__page--wrapper">
         <div className="course__page--heading">
-          <h2>new courses</h2>
+          <h2>Available Courses</h2>
         </div>
         <div className="course__search">
-          <Search />
+          <Search placeholder="Search for a course" />
         </div>
         <div>
           <div className="courses__container">
