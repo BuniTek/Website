@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Search from '../components/Search';
+import Course from '../components/course/course';
 import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/courses.scss';
 import darkLogo from '../assets/images/africai_dark.png';
-import Course from '../components/course/course';
 
 
-const Courses = ({data}) => {
- 
+const Courses = ({ data }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setLogoUrl({ logo: darkLogo }));
@@ -29,15 +31,15 @@ const Courses = ({data}) => {
         <div>
           <div className="courses__container">
             {data.allMarkdownRemark.nodes
-              .filter((n)=>n.frontmatter.type === 'course')
-                .map(node => (
+              .filter((n) => n.frontmatter.type === 'course')
+              .map((node) => (
                 <Course
                   title={node.frontmatter.title}
                   description={node.frontmatter.description}
                   image={node.frontmatter.image}
-                  content = {node.fields.slug}
+                  content={node.fields.slug}
                 />
-        ))}
+              ))}
           </div>
         </div>
       </div>
@@ -67,6 +69,8 @@ export const query = graphql` {
     }
   }
 }
-`
-
+`;
+Courses.propTypes = {
+  data: PropTypes.element.isRequired,
+};
 export default Courses;

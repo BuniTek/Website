@@ -5,7 +5,9 @@ import { Link } from 'gatsby';
 import './index.scss';
 
 
-function Course({ title, image, description , content  }) {
+function Course({
+  title, image, description, content,
+}) {
   const [opacity, setOpacity] = useState(1);
   const styles = {
     opacity,
