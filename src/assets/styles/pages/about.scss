@@ -1,43 +1,192 @@
+@import "../mixins";
+@import "../colors.scss";
 .about{
     background: #EFEFEF 0% 0% no-repeat padding-box;
+    width: 100vw;
 
-    &__intro{
-        display: grid;
-        place-content: center;
-        height: 50vh;
-        text-align: center;
-        margin: auto 10%;
+    &__container {
+        margin: 40px 0;
     }
 
-    &__description{
+    &__flex {
+        display: flex;
+        justify-content: space-around;
         margin: auto 10%;
-    }
+        padding: 40px;
 
-    &__overlay{
-        &--1{
-            width: 840px;
-            height: 500px;
-            left: 45vw;
-            opacity: 1;
-            position: absolute;
-            z-index: 1;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+        @include mediaMd {
+            flex-direction: column;
+            margin: auto 0;
+        }
 
-            @media (max-width: 991px){
-                width: 680px;
-                height: 400px;
-                margin-top: 800px;
-                margin-left: -280px;
+        &--image {
+            flex-basis: 40%;
+            img {
+                width: 100%;
+                height: 100%;
+                border: 2px solid $dark;
             }
 
-            @media (max-width: 767px){
-                padding:0;
-                width: 420px;
-                height: 240px;
-                margin-top: 600px;
-                margin-left: -280px;
+            @include mediaMd {
+                margin-bottom: 50px;
+            }
+        }
+
+        &--description {
+            flex-basis: 60%;
+            display: grid;
+            place-content: center;
+            position: relative;
+            z-index: 5;
+
+            @include mediaMd {
+                margin: 20px 0;
+            }
+
+            &.flex-left {
+                margin-right: 10%;
+            }
+
+            &.flex-right {
+                margin-left: 10%;
+            }
+        }
+    }
+
+    &__story {
+      margin: 150px 0;
+      position: relative;
+      background: transparent;
+      z-index: 5;
+
+      &--quote {
+          position: absolute;
+          top: -20px;
+          right: 10%;
+
+          @include mediaMd {
+              top: 45%;
+              right: 3px;
+          }
+      }
+    }
+
+    &__community {
+        margin: 150px 0;
+        position: relative;
+        background: white;
+        padding: 80px;
+
+        @include mediaMd {
+            padding: 20px;
+            margin-right: -20px;
+        }
+
+        &--quote {
+            position: absolute;
+            transform: rotateY(180deg);
+            top: 50px;
+            left: 10%;
+
+            @include mediaMd {
+                top: 33%;
+                left: 0;
+            }
+        }
+
+        .about__flex {
+            @include mediaMd {
+                flex-direction: column-reverse;
+            }
+        }
+        
+    }
+
+    &__mission {
+        margin: 150px 0;
+        position: relative;
+        background: transparent;
+    }
+
+    &__shadow {
+        background: lighten($h-color, 50%);
+        height: 200px;
+
+        &.circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+        }
+
+        &.rounded {
+           width: 300px;
+           border-radius: 100px;
+
+           @include mediaMd {
+               width: 250px;
+               height: 100px;
+           }
+        }
+
+        &.absolute-right {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            z-index: -1;
+
+            @include mediaMd {
+                left: 0;
+                top: 70%;
+            }
+        }
+
+        &.absolute-left {
+            position: absolute;
+            z-index: -1;
+            top: 25%;
+
+            @include mediaMd {
+                left: 0;
+                top: 70%;
+            }
+        }
+    }
+}
+
+.partners {
+    background: lighten($h-color, 60%);
+
+    &__container {
+        padding: 50px;
+        margin-top: 100px;
+        margin-bottom: -100px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin: 30px 0;
+
+        @include mediaMd {
+            grid-template-columns: 1fr;
+        }
+
+        &--item {
+            width: 250px !important;
+
+            @include mediaMd {
+                width: 150px !important;
+            }
+
+            &:first-child {
+                transform: translateY(20px);
             }
         }
     }

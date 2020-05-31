@@ -1,15 +1,22 @@
 import React, { useEffect } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import { useDispatch } from 'react-redux';
+import Img from 'gatsby-image';
 import Team from '../components/Team';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
-import AboutMore from '../components/About/More';
+import Link from '../components/Link';
 import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
 import logo from '../assets/images/africai_dark.png';
+import quoteImage from '../assets/images/quote-right-solid.svg';
+import edinburghLogo from '../assets/images/edinburgh.png';
+import msLogo from '../assets/images/ms.png';
+import ibmLogo from '../assets/images/ibm.png';
+import armLogo from '../assets/images/arm.png';
 
-const AboutUs = () => {
+const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     const body = document.querySelector('body');
@@ -19,62 +26,98 @@ const AboutUs = () => {
       logo,
     }));
   }, []);
+
+  
   return (
     <Layout>
       <SEO title="About Us" />
       <div className="about">
-        <div className="about__shadow" />
         <div className="about__container">
-          <AboutMore />
-          <div className="about__intro" id="more">
-            <h3 className="about__heading">Changing The Ordinary </h3>
-            <p className="about__description">
-            At AfricaI, We are working to create a movement that will inspire and introduce cutting-edge technologies to young people and demonstrate the potential of those technologies through hands-on, fun and simple scheme. We aim to inspire young people to start solving local problems at a young age and to pursue technology-related fields. We envisage to create a community of confident technologists, creative thinkers, and thoughtful learners of our increasingly tech-enabled future.
-proprietary curriculum curated to be hands-on, fun and Africa specific; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and Africa-I invent lab which will be creating education-empowering tools to be shared with education institutions.
-
-            </p>
+          <div className="about__story">
+          <img src={quoteImage} className="about__story--quote" />
+            <div className="about__flex">
+              <div className="about__flex--image">
+                <Img fluid={storyImage.childImageSharp.fluid} alt="Our story" />
+              </div>
+              <div className="about__flex--description flex-right">
+                <div className="about__shadow rounded absolute-right" />
+                <h1>The story behind</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              </div>
+            </div>
           </div>
-
-          <div className="about__intro" id="more">
-            <h3 className="about__heading"> Africa-specific Services </h3>
-            <p className="about__description">
-              We developed proprietary curriculum curated to be hands-on, fun and Africa specific; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and Africa-I invent lab which will be creating education-empowering tools to be shared with education institutions.
-
-            </p>
+          <div className="about__community">
+            <img src={quoteImage} className="about__community--quote" />
+            <div className="about__flex">
+              <div className="about__flex--description flex-left">
+                <div className="about__shadow circle absolute-left" />
+                <h1>Community we want to build</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <Link to="/signup">Join the community now ></Link>
+              </div>
+              <div className="about__flex--image">
+                <Img fluid={schoolImage.childImageSharp.fluid} alt="Our Community" />
+              </div>
+            </div>
           </div>
-
-          
-
-
-          <div className="about__intro">
-            <h3 className="about__heading">Why African-I</h3>
-            <p className="about__description">
-            We realised that most young persons do not get a chance to discover or explore their passion in technology and to experiment on its possibilities since a young age; an occurrence that has made technology remain an alien concept to most of our young people in Africa.
--   	We realise that as industry 4.0 approaches, over 25% of jobs will come from the technology sector. Economic advancements will also be fully anchored on this sector. Therefore, if we are to create enough jobs for our growing working population, we need as many people as possible gaining tech mastery through specialising in areas that they love – this can only happen if they are given a fair chance to sample and experience and imagine what’s possible.
-            </p>
+          <div className="about__mission">
+          <img src={quoteImage} className="about__story--quote" />
+            <div className="about__flex">
+              <div className="about__flex--image">
+                <Img fluid={missionImage.childImageSharp.fluid} alt="Our Mission" />
+              </div>
+              <div className="about__flex--description flex-right">
+              <div className="about__shadow rounded absolute-right" />
+                <h1>Our Mission in short words</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              </div>
+            </div>
           </div>
-          <div className="about__intro" id="more">
-            <h3 className="about__heading">Who We Are</h3>
-            <p className="about__description">
-              proprietary curriculum curated to be hands-on, fun and Africa specific; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and Africa-I invent lab which will be creating education-empowering tools to be shared with education institutions.
-              We are a group of young, African, tech-passionate folks with interdispinary backgrounds. We have assorted those rich backgrounds to create teams that produce high quality resources that will make change the course of African in technology realm.
-              We also work with.
-            </p>
+        </div>
+        <Team />
+        <div className="partners">
+          <div className="partners__container">
+            <h1 className="partners__title">They will trust us</h1>
+            <div className="partners__grid">
+              <img className="partners__grid--item" src={edinburghLogo} />
+              <img className="partners__grid--item" src={msLogo} />
+              <img className="partners__grid--item" src={armLogo} />
+              <img className="partners__grid--item" src={ibmLogo} />
+            </div>
           </div>
-
-          <div className="about__intro" id="more">
-            <h3 className="about__heading">Our partners Logo</h3>
-            <ul>
-              <li>Edinburgh Innovations - https://edinburgh-innovations.ed.ac.uk/</li>
-              <li>Embeded and Robotics Society (Ears) - http://ears-edi.com/</li>
-              <li>Turing Trust - https://turingtrust.co.uk/</li>
-            </ul>
-          </div>
-          <Team />
         </div>
       </div>
     </Layout>
   );
 };
+
+export const query = graphql`
+query {
+  storyImage: file(relativePath: { eq: "arduino.png" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  schoolImage: file(relativePath: { eq: "school.png" }){
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  missionImage: file(relativePath : { eq: "coding.png" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;
+
 
 export default AboutUs;
