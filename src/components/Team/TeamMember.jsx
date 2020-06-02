@@ -4,44 +4,37 @@ import PropTypes from 'prop-types';
 import Avatar from './Avatar';
 import MemberInfo from './MemberInfo';
 
+import defaultProfile from '../../assets/images/user-profile.png';
 import './TeamMember.scss';
 
 const TeamMember = ({
   profileUrl,
-  email,
   titles,
-  phoneNumber,
   name,
 }) => {
   const content = (
     <MemberInfo
-      email={email}
-      titles={titles}
-      phoneNumber={phoneNumber}
+      name={name}
+      title={titles}
     />
   );
   return (
     <div className="team__member">
-      <Popover title={name} content={content} placement="bottomLeft">
-        <Button className="hover-btn">
-          <Avatar url={profileUrl} />
-        </Button>
-      </Popover>
+      <Avatar url={profileUrl} />
+      {content}
     </div>
   );
 };
 
 TeamMember.propTypes = {
   profileUrl: PropTypes.string,
-  email: PropTypes.string.isRequired,
   titles: PropTypes.instanceOf(Array).isRequired,
-  phoneNumber: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
 
 TeamMember.defaultProps = {
   profileUrl:
-    'https://react.semantic-ui.com/images/wireframe/square-image.png',
+    defaultProfile,
 };
 
 export default TeamMember;
