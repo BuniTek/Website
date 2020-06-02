@@ -1,14 +1,23 @@
 @import '../../assets/styles/mixins.scss';
 .team{
-    background: lighten(lightgrey, 5%);
-    padding: 70px;
-    height: 50vh !important;
+    padding: 200px;
+    background: lighten($h-color, 68%);
+    margin-bottom: -100px;
+    @include mediaMd {
+        margin: 150px 0;
+        height: 100vh;
+    }
     &__list{
-        display: flex;
-        justify-content: space-evenly;
-
-        @include mediaSm {
-            display: block;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        @include mediaMd {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin: 60px 0;
+            padding-bottom: 20px;
         }
     }
     height: 10vh;
@@ -24,5 +33,14 @@
             margin-right: auto;
             margin-bottom: 20px;
         }
+    }
+
+    &__info {
+        margin-top: 10px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        margin-top: 100px !important;
     }
 }

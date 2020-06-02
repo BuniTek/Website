@@ -1,42 +1,31 @@
 import React from 'react';
-import { List } from 'semantic-ui-react';
-import { List as AntList, Typography, Tag } from 'antd';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const MemberInfo = ({ email, phoneNumber, titles }) => (
+const Title = styled.h3`
+  font-weight: bolder;
+  font-size: 1.2rem;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
+
+const Subtitle = styled.p`
+  margin-top: -7px;
+`;
+
+const MemberInfo = ({ name, title }) => (
   <div className="team__info">
-    <List divided verticalAlign="middle">
-      <List.Item>
-        <List.Content>
-          <p>
-            <strong>Email: &nbsp;</strong>
-            <Tag color="processing">{email}</Tag>
-          </p>
-        </List.Content>
-      </List.Item>
-      <List.Item>
-        <List.Content>
-          <Typography.Text>
-            <strong>Phone: &nbsp; </strong>
-            <Tag color="processing">{phoneNumber}</Tag>
-          </Typography.Text>
-        </List.Content>
-      </List.Item>
-      <AntList
-        dataSource={titles}
-        header="Titles"
-        renderItem={(item) => (
-          <Tag color="success">{item}</Tag>
-        )}
-      />
-    </List>
+    <Title className="team__info--name">{name}</Title>
+    <Subtitle className="team__info--title">{title}</Subtitle>
   </div>
 );
 
 MemberInfo.propTypes = {
-  email: PropTypes.string.isRequired,
-  phoneNumber: PropTypes.string.isRequired,
-  titles: PropTypes.instanceOf(Array).isRequired,
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default MemberInfo;

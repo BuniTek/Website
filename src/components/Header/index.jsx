@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { MenuOutlined } from '@ant-design/icons';
 import './index.scss';
 import Sidebar from './Sidebar';
 
@@ -34,7 +35,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" activeClassName="nav__active">
+                <Link to="/blog" activeClassName="nav__active" partiallyActive>
                   Blog
                 </Link>
               </li>
@@ -59,9 +60,10 @@ const Header = () => {
               onClick={() => setOpen(!open)}
               type="button"
             >
-              <div className="line" />
-              <div className="line" />
-              <div className="line" />
+              <MenuOutlined style={{
+                padding: 8,
+                fontSize: 18
+              }} />
             </button>
           </div>
         </div>

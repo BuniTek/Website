@@ -9,9 +9,10 @@ const Button = ({
   children,
   style,
   bgColor,
+  htmlType
 }) => (
   <button
-    type="button"
+    type={htmlType}
     className={`button is-${type} has-bg-${bgColor}`}
     onClick={onClick}
     style={style}
@@ -27,12 +28,14 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   style: PropTypes.instanceOf(Object),
   bgColor: PropTypes.string,
+  htmlType: PropTypes.string
 };
 
 Button.defaultProps = {
   type: 'primary',
   style: {},
   bgColor: 'primary',
+  htmlType: 'button'
 };
 
 export default Button;

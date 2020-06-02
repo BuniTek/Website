@@ -12,6 +12,7 @@ const Textarea = ({
   cols,
   rows,
   name,
+  style,
 }) => (
   <div className="form__textarea">
     <label htmlFor={label}>{label}</label>
@@ -22,6 +23,7 @@ const Textarea = ({
       cols={cols}
       rows={rows}
       name={name}
+      style={style}
     />
   </div>
 );
