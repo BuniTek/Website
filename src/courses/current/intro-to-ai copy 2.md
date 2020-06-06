@@ -1,11 +1,12 @@
 ---
-title: intro python
+title: intro to AI
 author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
-description: " an introduction to python programming"
-image: "https://www.edureka.co/blog/wp-content/uploads/2017/06/Python-Programming-Edureka.png"
+description: " an introduction to Artificial intelligence and internet of things"
+category: available
+image: "https://undark.org/wp-content/uploads/2019/12/GettyImages-1152335789-crop.jpg"
 ---
 
 
@@ -255,15 +256,3 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
-
-
-
-
-
-
-
-
-
-
-
-

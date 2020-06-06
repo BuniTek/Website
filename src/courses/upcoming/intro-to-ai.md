@@ -4,8 +4,9 @@ author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
+category: upcoming
 description: " an introduction to Artificial intelligence and internet of things"
-image: "https://undark.org/wp-content/uploads/2019/12/GettyImages-1152335789-crop.jpg"
+image: "https://safebytes.com/wp-content/uploads/2017/02/comingsoon.png"
 ---
 
 

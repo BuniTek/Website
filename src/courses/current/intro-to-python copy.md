@@ -4,8 +4,9 @@ author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
-description: " an introduction to markdown and blogs"
-image: "https://lh5.googleusercontent.com/proxy/ALT16XVBE9h9ImLxcS8ks7yTCVAJpZ1OuaqxvEBunqrwPA2qrD4lvFIgLIIhLQTsvs8ikDvan-7-D32aFTPaAXGAOR0S4ti2ZNqzObL7TJsSeW_1qdbOfG-jrw"
+category: available
+description: " an introduction to python programming"
+image: "https://www.edureka.co/blog/wp-content/uploads/2017/06/Python-Programming-Edureka.png"
 ---
 
 
@@ -255,3 +256,15 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
+
+
+
+
+
+
+
+
+
+
+
+

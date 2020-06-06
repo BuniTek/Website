@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
@@ -7,15 +7,43 @@ import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Search from '../components/Search';
 import Course from '../components/course/course';
+import Chip from '../components/chip';
 import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/courses.scss';
 import darkLogo from '../assets/images/africai_dark.png';
 
 
-const Courses = ({ data }) => {
+const Courses = ({ data: { allMarkdownRemark: { nodes } } }) => {
+  const [state, setState] = useState({
+    activeFilter: {},
+    filters: [{
+      id: 1,
+      label: 'available',
+    },
+    {
+      id: 2,
+      label: 'upcoming',
+    }],
+  });
+
+  const filteredData = nodes
+    .filter((node) => node.frontmatter.category === state.activeFilter.label);
+
+  function toggleActiveFilter(index) {
+    setState({ ...state, activeFilter: state.filters[index] });
+  }
+
+  function toggleActiveStyles(index) {
+    if (state.filters[index] === state.activeFilter) {
+      return 'chip__filter';
+    }
+
+    return '';
+  }
   const dispatch = useDispatch();
   useEffect(() => {
+    setState({ ...state, activeFilter: state.filters[0] });
     dispatch(setLogoUrl({ logo: darkLogo }));
   }, []);
   return (
@@ -28,18 +56,26 @@ const Courses = ({ data }) => {
         <div className="course__search">
           <Search placeholder="Search for a course" />
         </div>
-        <div>
+        <div className="chips__container">
+          {state.filters.map(({ label }, index) => (
+            <Chip
+              label={label}
+              index={index}
+              toggleActiveFilter={toggleActiveFilter}
+              toggleActiveStyles={toggleActiveStyles}
+            />
+          ))}
+        </div>
+        <div className="wrapper">
           <div className="courses__container">
-            {data.allMarkdownRemark.nodes
-              .filter((n) => n.frontmatter.type === 'course')
-              .map((node) => (
-                <Course
-                  title={node.frontmatter.title}
-                  description={node.frontmatter.description}
-                  image={node.frontmatter.image}
-                  content={node.fields.slug}
-                />
-              ))}
+            {filteredData.map((node) => (
+              <Course
+                title={node.frontmatter.title}
+                description={node.frontmatter.description}
+                image={node.frontmatter.image}
+                content={node.fields.slug}
+              />
+            ))}
           </div>
         </div>
       </div>
@@ -48,12 +84,12 @@ const Courses = ({ data }) => {
   );
 };
 
-
 export const query = graphql` {
-  allMarkdownRemark {
+  allMarkdownRemark(filter: { frontmatter: { type: { eq: "course" } } }) {
     nodes {
       frontmatter {
         title
+        category
         type
         date
         keywords
@@ -71,6 +107,6 @@ export const query = graphql` {
 }
 `;
 Courses.propTypes = {
-  data: PropTypes.element.isRequired,
+  data: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 export default Courses;

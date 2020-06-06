@@ -1,9 +1,10 @@
 ---
-title: intro mard-down
+title: intro python
 author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
+category: available
 description: " an introduction to python programming"
 image: "https://www.edureka.co/blog/wp-content/uploads/2017/06/Python-Programming-Edureka.png"
 ---

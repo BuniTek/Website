@@ -1,0 +1,23 @@
+@mixin activeFilter{
+    background-color: #707070;
+    color: #fff;
+}
+
+.chip{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0 15px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 25px;
+    color:black;
+    cursor: pointer;
+
+    &__filter{
+        @include activeFilter()
+    }
+    &:hover{
+        @include activeFilter()
+    }
+}
