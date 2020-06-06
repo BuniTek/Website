@@ -40,6 +40,11 @@ const Header = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/courses" activeClassName="nav__active">
+                  Courses
+                </Link>
+              </li>
+              <li>
                 <Link to="/services" activeClassName="nav__active">
                   Services
                 </Link>
