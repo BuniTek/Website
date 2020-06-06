@@ -15,3 +15,11 @@ button.hover-btn{
         background: transparent;
     }
 }
+
+.team {
+    &__info {
+        &--title {
+            font-weight: 100;
+        }
+    }
+}

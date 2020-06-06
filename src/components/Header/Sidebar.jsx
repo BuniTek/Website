@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import { CloseOutlined } from '@ant-design/icons';
 
 import './sidebar.scss';
 
@@ -13,8 +14,11 @@ const Sidebar = ({ open, setOpen }) => (
         onClick={() => setOpen(!open)}
       >
         <div className="cross">
-          <div className="line" />
-          <div className="line" />
+          <CloseOutlined style={{
+            textAlign: 'center',
+            display: 'inline-block',
+            fontSize: 23
+          }} />
         </div>
       </button>
 

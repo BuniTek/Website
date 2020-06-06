@@ -1,26 +1,26 @@
-import React, { useEffect } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import { useDispatch } from 'react-redux';
-import Layout from '../layouts/layout';
-import SEO from '../components/seo';
-import { setLogoUrl } from '../redux/actions';
-import logo from '../assets/images/africai_dark.png';
+import React, { useEffect } from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import { useDispatch } from "react-redux"
+import Layout from "../layouts/layout"
+import SEO from "../components/seo"
+import { setLogoUrl } from "../redux/actions"
+import logo from "../assets/images/africai_dark.png"
 
-import '../assets/styles/pages/services.scss';
+import "../assets/styles/pages/services.scss"
 
 const Services = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
   useEffect(() => {
-    const body = document.querySelector('body');
-    body.classList.remove('home');
+    const body = document.querySelector("body")
+    body.classList.remove("home")
 
     dispatch(
       setLogoUrl({
         logo,
-      }),
-    );
-  }, []);
+      })
+    )
+  }, [])
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "codingBootcamp.png" }) {
@@ -37,10 +37,8 @@ const Services = () => {
           }
         }
       }
-
     }
   `);
-
 
   return (
     <Layout>
@@ -72,23 +70,23 @@ const Services = () => {
               </h2>
               <p className="services__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur vitae ad maxime quos iste! Fugiat temporibus
-                tenetur blanditiis perferendis reiciendis ex ad qui minima
-                accusamus aliquid voluptatem rerum dolorum, soluta
-                eligendi nesciunt dolores fugit natus eos, facere earum
-                vero eius?
+                Pariatur vitae ad maxime quos iste! Fugiat temporibus tenetur
+                blanditiis perferendis reiciendis ex ad qui minima accusamus
+                aliquid voluptatem rerum dolorum, soluta eligendi nesciunt
+                dolores fugit natus eos, facere earum vero eius?
               </p>
             </div>
             <div className="services__grid--item">
-              <Img fluid={data.placeholderImage2.childImageSharp.fluid} alt="Services" />
+              <Img
+                fluid={data.placeholderImage2.childImageSharp.fluid}
+                alt="Services"
+              />
             </div>
           </div>
         </div>
       </div>
-
     </Layout>
+  )
+}
 
-  );
-};
-
-export default Services;
+export default Services
