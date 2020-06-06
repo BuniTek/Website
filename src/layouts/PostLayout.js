@@ -49,6 +49,10 @@ const PostLayout = ({ data }) => {
           <div>
             <h1 className="post__title">{post.frontmatter.title}</h1>
             <h3 className="post__author">{post.frontmatter.author}</h3>
+            <i>
+              Posted
+              {post.frontmatter.date}
+            </i>
             {post.frontmatter.featuredImage && <img className="post-featured" src={post.frontmatter.featuredImage} />}
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
