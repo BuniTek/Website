@@ -50,7 +50,14 @@ export const query = graphql` query blogListQuery($skip: Int! =0) {
   allMarkdownRemark(
     sort: { fields: [frontmatter___date], order: DESC },
     limit: 10,
-    skip: $skip
+    skip: $skip,
+    filter: {
+      frontmatter: {
+        type: {
+          eq: "post"
+        }
+      }
+    }
   ) {
     nodes {
       frontmatter {

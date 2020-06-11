@@ -1,14 +1,14 @@
 const path = require ('path')
 const { createFilePath } = require("gatsby-source-filesystem");
 
-const paginate = async ({graphql, actions, pathPrefix, component, reporter, category}) => {
+const paginate = async ({graphql, actions, pathPrefix, component, reporter, type}) => {
   const { errors, data } = await graphql(`
      {
        allMarkdownRemark(
          filter: {
            frontmatter: {
-             category: {
-               eq: "${category}"
+             type: {
+               eq: "${type}"
              }
            }
          }
@@ -27,7 +27,7 @@ const paginate = async ({graphql, actions, pathPrefix, component, reporter, cate
 
   const pages = Math.ceil(totalCount / 10);
 
-  console.log('PAGES', pages, totalCount);
+  console.log('PAGES', pages, totalCount, type);
 
   Array.from({ length: pages }).forEach((_, i) => {
     actions.createPage({
@@ -41,12 +41,18 @@ const paginate = async ({graphql, actions, pathPrefix, component, reporter, cate
   })
 }
 
-const makePostsFromMdx = async ({graphql, actions, reporter}) => {
+const makePagesFromMdx = async ({graphql, actions, reporter, type}) => {
   const { createPage } = actions;
 
   const { error, data } = await graphql(`
   {
-    allMarkdownRemark{
+    allMarkdownRemark(filter: {
+      frontmatter: {
+        type: {
+          eq: "${type}"
+        }
+      }
+    }){
       nodes {
         fields {
           slug
@@ -61,10 +67,19 @@ const makePostsFromMdx = async ({graphql, actions, reporter}) => {
     return;
   }
 
+  const postComponent = path.resolve(__dirname, 'src/layouts/PostLayout.js');
+
+  const contentTypes = {
+    post: postComponent,
+    course: postComponent,
+  }
+
+  
+
   data.allMarkdownRemark.nodes.forEach((node) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve('./src/layouts/PostLayout.js'),
+      component: contentTypes[type],
       context: {
         slug: node.fields.slug
       }
@@ -87,14 +102,15 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 
 exports.createPages = async ({ graphql, actions, reporter}) => {  
   return Promise.all([
-    makePostsFromMdx({ graphql, actions, reporter }),
+    makePagesFromMdx({ graphql, actions, reporter, type: 'post' }),
+    makePagesFromMdx({ graphql, actions, reporter, type:'course' }),
     paginate({
       graphql,
       actions,
       pathPrefix: '/blog/',
       component: path.resolve('./src/pages/blog.js'),
       reporter,
-      category: 'posts'
+      type: 'post'
     }),
   ]);
 }
