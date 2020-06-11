@@ -1,10 +1,18 @@
 const path = require ('path')
 const { createFilePath } = require("gatsby-source-filesystem");
 
-const paginate = async ({graphql, actions, pathPrefix, component, reporter}) => {
+const paginate = async ({graphql, actions, pathPrefix, component, reporter, category}) => {
   const { errors, data } = await graphql(`
      {
-       allMarkdownRemark {
+       allMarkdownRemark(
+         filter: {
+           frontmatter: {
+             category: {
+               eq: "${category}"
+             }
+           }
+         }
+       ) {
          totalCount
        }
      }
@@ -86,6 +94,7 @@ exports.createPages = async ({ graphql, actions, reporter}) => {
       pathPrefix: '/blog/',
       component: path.resolve('./src/pages/blog.js'),
       reporter,
+      category: 'posts'
     }),
   ]);
 }

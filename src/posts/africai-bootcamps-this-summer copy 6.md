@@ -4,6 +4,7 @@ author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, Youth, Technology, Africa, Youth, Bootcamps, Tutoring, Online, Rwanda, Kenya"
 image: "https://theafricai.com/static/72cff5bdbc9091deb080c4cfb3a2bff4/39ef9/codingBootcamp.png"
+category: posts
 ---
 
 
