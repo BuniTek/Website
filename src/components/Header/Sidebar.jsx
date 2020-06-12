@@ -24,13 +24,10 @@ const Sidebar = ({ open, setOpen }) => (
 
       <ul className="sidebar__menu">
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog">News</Link>
         </li>
         <li>
           <Link to="/courses">Courses</Link>
-        </li>
-        <li>
-          <Link to="/services">Services</Link>
         </li>
         <li>
           <Link to="/about">About Us</Link>

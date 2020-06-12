@@ -9,7 +9,6 @@
 
     &__title {
         text-align: center;
-        text-decoration: underline;
     }
     &__slider {
         &--item {
@@ -31,8 +30,9 @@
             transform: scale(1.5);
             margin-left: 20px;
 
-            @include mediaMd {
-                transform: scale(1);
+            @include mediaLg {
+                transform: scale(1.1);
+                margin: 0 30px;
             }
         }
 

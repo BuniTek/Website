@@ -1,7 +1,9 @@
 /* eslint-disable no-console */
 import React, { useEffect } from 'react';
-import { Link } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import { useDispatch } from 'react-redux';
+import Typed from 'react-typed';
+import Img from 'gatsby-image';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Button from '../components/Button';
@@ -13,13 +15,12 @@ import Testimonies from '../components/Testimonies';
 import Line from '../components/VerticalLine';
 import { setLogoUrl } from '../redux/actions';
 
-import homeBanner from '../assets/images/undraw_dev_productivity_umsq.png';
 import lightLogo from '../assets/images/africai.png';
 import background from '../assets/images/home_top-left.svg';
 import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
 import '../assets/styles/pages/home.scss';
 
-const IndexPage = () => {
+const IndexPage = ({ data: { videoPreview } }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(
@@ -47,22 +48,22 @@ const IndexPage = () => {
           <div className="home__grid">
             <div className="home__grid--item" />
             <div className="home__grid--item">
-              <h1>Let &apos; s create our own future together.</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptas adipisci quidem consequuntur commodi nam maiores rem
-                tempora repudiandae soluta nobis!
-              </p>
+              <Typed
+                className="home__typed"
+                strings={["A cool way", "A cool way to learn", "A cool way to learn about technology", "A cool way to learn about technology from home", "A cool way to learn about technology from home in a more fun way?"]}
+                typeSpeed={40}
+              />
               <span>
-                <Link to="/signup">
-                  <Button type="primary" onClick={(e) => e.preventDefault()}>
+                <Button type="primary" onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/signup/');
+              }}>
                     Get involved
                   </Button>
-                </Link>
               </span>
             </div>
             <div className="home__grid--item">
-              <img src={homeBanner} alt="Hero" className="hero__image" />
+              <Img fluid={videoPreview.childImageSharp.fluid} alt="Hero" className="hero__image" />
             </div>
           </div>
         </div>
@@ -75,7 +76,7 @@ const IndexPage = () => {
           />
         </div>
         <div className="home__news">
-          <h1 className="home__news--title">Latest News</h1>
+          <h1 className="home__news--title">Read more about what's coming</h1>
 
           <div className="home__news--grid">
             <NewsCard
@@ -95,16 +96,15 @@ const IndexPage = () => {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                style={{ width: '300px', marginRight: 20 }}
               />
               <Button
                 type="submit"
                 style={{
                   width: 160,
                   marginLeft: -10,
-                  backgroundColor: '#363333',
                   height: 40,
-                  marginTop: -10,
+                  marginTop: -5,
+                  backgroundColor: '#4B4949',
                 }}
               >
                 Subscribe
@@ -115,7 +115,7 @@ const IndexPage = () => {
 
         <div className="home__topics">
           <div className="home__topics--container">
-            <h1 className="home__topics--title">Topics</h1>
+            <h1 className="home__topics--title">Some of the things we offer</h1>
             <div className="home__topics--grid">
               <Topic caption="testing" link="/testing" />
               <Topic caption="courses" link="/courses" />
@@ -130,5 +130,21 @@ const IndexPage = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+{
+  videoPreview: file(
+    relativePath: {
+      eq: "video-preview.png"
+    }
+  ) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;
 
 export default IndexPage;

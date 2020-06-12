@@ -53,7 +53,7 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
                 <div className="about__shadow circle absolute-left" />
                 <h1>Community we want to build</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                <Link to="/signup">Join the community now ></Link>
+                <Link to="/signup">Join the community now &gt;</Link>
               </div>
               <div className="about__flex--image">
                 <Img fluid={schoolImage.childImageSharp.fluid} alt="Our Community" />
