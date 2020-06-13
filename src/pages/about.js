@@ -6,7 +6,7 @@ import Team from '../components/Team';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Link from '../components/Link';
-import { setLogoUrl } from '../redux/actions';
+import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
 import logo from '../assets/images/africai_dark.png';
@@ -25,6 +25,7 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
     dispatch(setLogoUrl({
       logo,
     }));
+    setFooterVisible({ visible: true })(dispatch);
   }, []);
 
   

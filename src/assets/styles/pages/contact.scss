@@ -1,3 +1,4 @@
+@import '../colors.scss';
 @import "../mixins.scss";
 .contact{
     margin: auto;
@@ -7,11 +8,18 @@
         display: grid;
         place-content: center;
         height: 100vh;
+        margin-left: 30%;
 
        
-        @media (max-width: 767px){
+        @include mediaMd {
             padding: 1em;
+            margin-left: 0;
         }
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: bolder;
     }
 
     &__overlay{
@@ -60,5 +68,30 @@
                 display: none;
             }
         }
+    }
+}
+
+.faq {
+    height: 50vh;
+    background: $dark;
+    color: $white;
+    padding: 20px;
+
+    &__container {
+        margin: auto 10%;
+    }
+
+    &__heading {
+        color: $white;
+        text-align: center;
+    }
+
+    .ant-collapse-header {
+        color: white !important;
+        font-size: 1.2rem;
+    }
+
+    .ant-collapse-content-box p {
+        color: $white;
     }
 }

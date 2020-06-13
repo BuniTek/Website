@@ -13,7 +13,7 @@ import Input from '../components/Form/Input';
 import Topic from '../components/Topic';
 import Testimonies from '../components/Testimonies';
 import Line from '../components/VerticalLine';
-import { setLogoUrl } from '../redux/actions';
+import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import lightLogo from '../assets/images/africai.png';
 import background from '../assets/images/home_top-left.svg';
@@ -28,6 +28,9 @@ const IndexPage = ({ data: { videoPreview } }) => {
         logo: lightLogo,
       }),
     );
+    setFooterVisible({
+      visible: true,
+    })(dispatch);
   }, []);
 
   return (

@@ -162,29 +162,18 @@
                     position: relative;
                     width: 400px;
 
-                    @media (max-width: 1199px){
-                        
-                    }
+                    @include mediaMd {
+                        margin-top: 50px !important;
+                        width: 200px !important;
 
-                    @media (max-width: 991px){
-                       
-                    }
-
-                    @media (max-width: 767px){
-                        width: 60vw;
                     }
 
                 }
             }
 
             &:last-child{
-                @media (max-width: 1199px){
-                }
-                @media (max-width: 991px){
-                    grid-row:1;   
-                }
-                @media (max-width: 767px){
-                    grid-row:1;
+                @include mediaMd {
+                    grid-row: 1;
                 }
             }
         }
