@@ -104,10 +104,11 @@ const IndexPage = ({ data: { videoPreview } }) => {
                 type="submit"
                 style={{
                   width: 160,
-                  marginLeft: -10,
                   height: 40,
                   marginTop: -5,
                   backgroundColor: '#4B4949',
+                  display: 'grid',
+                  placeContent: 'center',
                 }}
               >
                 Subscribe
