@@ -3,6 +3,26 @@
 .contact{
     margin: auto;
 
+    &__social {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+        &--button {
+            background: $dark;
+            color: $white;
+            border-radius: 8px;
+
+            &:first-child {
+                background: #4267B2;
+            }
+
+            &:nth-child(2){
+                background: radial-gradient(circle at 30% 80%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            }
+        }
+    }
+
     &__container{
         
         display: grid;

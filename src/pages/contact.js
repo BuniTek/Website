@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react"
-import { useDispatch } from "react-redux"
-import { Collapse } from "antd"
-import { PlusOutlined, MinusOutlined } from "@ant-design/icons"
+import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { Collapse, Button as AntBtn } from "antd";
+import { PlusOutlined, MinusOutlined, FacebookOutlined, InstagramOutlined } from "@ant-design/icons";
 
-import Input from "../components/Form/Input"
-import Textarea from "../components/Form/Textarea"
-import Button from "../components/Button"
-import Layout from "../layouts/layout"
-import SEO from "../components/seo"
-import { setLogoUrl, setFooterVisible } from "../redux/actions"
+import Input from "../components/Form/Input";
+import Textarea from "../components/Form/Textarea";
+import Button from "../components/Button";
+import Layout from "../layouts/layout";
+import SEO from "../components/seo";
+import { setLogoUrl, setFooterVisible } from "../redux/actions";
 
-import "../assets/styles/pages/contact.scss"
-import contactTopLeft from "../assets/images/contact_top-left.svg"
-import contactMiddleRight from "../assets/images/contact_middle-right.svg"
-import logo from "../assets/images/africai.png"
+import "../assets/styles/pages/contact.scss";
+import contactTopLeft from "../assets/images/contact_top-left.svg";
+import contactMiddleRight from "../assets/images/contact_middle-right.svg";
+import logo from "../assets/images/africai.png";
 
 const { Panel } = Collapse;
 
@@ -102,6 +102,11 @@ const Contact = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
             fuga!
           </p>
+          <div className="contact__social">
+            <AntBtn className="contact__social--button"> <FacebookOutlined /> Facebook</AntBtn>
+            <AntBtn className="contact__social--button"> <InstagramOutlined /> Instagram</AntBtn>
+            <AntBtn className="contact__social--button">FAQ</AntBtn>
+          </div>
           <form
             // onSubmit={onSubmit}
             method="POST"
