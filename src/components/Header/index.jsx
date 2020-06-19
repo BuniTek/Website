@@ -40,7 +40,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/courses" activeClassName="nav__active">
+                <Link to="/courses" activeClassName="nav__active" partiallyActive>
                   Courses
                 </Link>
               </li>
@@ -67,8 +67,9 @@ const Header = () => {
             >
               <MenuOutlined style={{
                 padding: 8,
-                fontSize: 18
-              }} />
+                fontSize: 18,
+              }}
+              />
             </button>
           </div>
         </div>
