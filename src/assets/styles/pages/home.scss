@@ -14,6 +14,15 @@
         margin: auto 10%;
     }
 
+    &__typed {
+        font-size: 1.5rem;
+        margin-bottom: 40px !important;
+        display: inline-block;
+        margin-left: 10%;
+        line-height: 2;
+        font-weight: bolder;
+    }
+
     &__topics {
         background: $white;
         &--container {
@@ -33,7 +42,11 @@
 
         &--title {
             text-align: center;
+<<<<<<< HEAD
             margin-bottom: 50px;
+=======
+            margin-bottom: 100px;
+>>>>>>> 8323ef8043f8d1bb592998024c728828fe9a061f
             margin-top: 50px;
             padding-top: 50px !important;
             font-family: $title-font !important;
@@ -49,7 +62,10 @@
         &--title {
             color: $light-grey;
             text-align: center;
+<<<<<<< HEAD
             font-family: $title-font !important;
+=======
+>>>>>>> 8323ef8043f8d1bb592998024c728828fe9a061f
         }
 
         &--grid {
@@ -65,24 +81,31 @@
 
     &__newsletter {
         margin: 40px 30%;
-        transform: translateY(30px);
+
+        text-align: center;
         form {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items:center;
-            
+            display: inline-block;
+            margin-left: 100px;
+            margin-top: 20px;
+            text-align: center;
 
             @include mediaSm {
-                display: block;
+                transform: translateX(-130px);
+            }
 
-                input[type="email"]{
-                    display: inline-block;
-                    width: 100% !important;
-                    // transform: translateX(-80px);
-                    margin-bottom: 20px;
+            input[type="email"]{
+                display: inline-block;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                width: 400px;
+
+                @include mediaMd {
+                    width: 200px !important;
                 }
+            }
+
+            button[type="submit"] {
+                display: inline-block;
             }
         }
     }
@@ -151,29 +174,18 @@
                     position: relative;
                     width: 400px;
 
-                    @media (max-width: 1199px){
-                        
-                    }
+                    @include mediaMd {
+                        margin-top: 50px !important;
+                        width: 200px !important;
 
-                    @media (max-width: 991px){
-                       
-                    }
-
-                    @media (max-width: 767px){
-                        width: 60vw;
                     }
 
                 }
             }
 
             &:last-child{
-                @media (max-width: 1199px){
-                }
-                @media (max-width: 991px){
-                    grid-row:1;   
-                }
-                @media (max-width: 767px){
-                    grid-row:1;
+                @include mediaMd {
+                    grid-row: 1;
                 }
             }
         }

@@ -34,8 +34,9 @@
             transform: scale(1.5);
             margin-left: 20px;
 
-            @include mediaMd {
-                transform: scale(1);
+            @include mediaLg {
+                transform: scale(1.05);
+                margin: 0 30px;
             }
         }
 

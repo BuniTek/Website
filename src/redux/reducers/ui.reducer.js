@@ -2,6 +2,7 @@
 const actionTypes = [
   'ui/CHANGING_LOGO',
   'ui/CHANGED_LOGO',
+  'ui/SET_FOOTER_VISIBILITY'
 ];
 
 export default (state = {}, { type, payload }) => {
@@ -10,6 +11,11 @@ export default (state = {}, { type, payload }) => {
       return {
         ...state,
         logoUrl: payload,
+      };
+    case actionTypes[2]:
+      return {
+        ...state,
+        footerVisible: payload,
       };
 
     default:

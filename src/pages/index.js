@@ -1,7 +1,9 @@
 /* eslint-disable no-console */
 import React, { useEffect } from 'react';
-import { Link } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import { useDispatch } from 'react-redux';
+import Typed from 'react-typed';
+import Img from 'gatsby-image';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Button from '../components/Button';
@@ -11,9 +13,10 @@ import Input from '../components/Form/Input';
 import Topic from '../components/Topic';
 import Testimonies from '../components/Testimonies';
 import Line from '../components/VerticalLine';
-import { setLogoUrl } from '../redux/actions';
+import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import homeBanner from '../assets/images/undraw_web_developer_p3e5.svg';
+
 import lightLogo from '../assets/images/africai.png';
 import background from '../assets/images/home_top-left.svg';
 import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
@@ -21,7 +24,7 @@ import Overlay3Bg from '../assets/images/home-middle_second.png';
 import Overlay4Bg from '../assets/images/home-middle_third.png';
 import '../assets/styles/pages/home.scss';
 
-const IndexPage = () => {
+const IndexPage = ({ data: { videoPreview } }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(
@@ -29,6 +32,9 @@ const IndexPage = () => {
         logo: lightLogo,
       }),
     );
+    setFooterVisible({
+      visible: true,
+    })(dispatch);
   }, []);
 
   return (
@@ -49,22 +55,23 @@ const IndexPage = () => {
           <div className="home__grid">
             <div className="home__grid--item" />
             <div className="home__grid--item">
-              <h1>Let &apos; s create our own future together.</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptas adipisci quidem consequuntur commodi nam maiores rem
-                tempora repudiandae soluta nobis!
-              </p>
+              <Typed
+                className="home__typed"
+                strings={["Africa-Imagination", "Africa-Invent", "Africa-Intelligence", "Africa-Impact", "Africa-I can", "Africa-I"]}
+                typeSpeed={40}
+              />
+              
               <span>
-                <Link to="/signup">
-                  <Button type="primary" onClick={(e) => e.preventDefault()}>
+                <Button type="primary" onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/signup/');
+              }}>
                     Get involved
                   </Button>
-                </Link>
               </span>
             </div>
             <div className="home__grid--item">
-              <img src={homeBanner} alt="Hero" className="hero__image" />
+              <Img fluid={videoPreview.childImageSharp.fluid} alt="Hero" className="hero__image" />
             </div>
           </div>
         </div>
@@ -97,16 +104,23 @@ const IndexPage = () => {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                style={{ width: '300px', marginRight: 20 }}
               />
               <Button
                 type="submit"
                 style={{
                   width: 160,
+<<<<<<< HEAD
                   marginLeft: 150,
                   backgroundColor: '#363333',
                   height: 40,
                   marginTop: 10,
+=======
+                  height: 40,
+                  marginTop: -5,
+                  backgroundColor: '#4B4949',
+                  display: 'grid',
+                  placeContent: 'center',
+>>>>>>> 8323ef8043f8d1bb592998024c728828fe9a061f
                 }}
               >
               Subscribe
@@ -147,5 +161,21 @@ const IndexPage = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+{
+  videoPreview: file(
+    relativePath: {
+      eq: "video-preview.png"
+    }
+  ) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;
 
 export default IndexPage;

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { graphql } from 'gatsby';
-import { setLogoUrl } from '../redux/actions';
+import { setLogoUrl, setFooterVisible } from '../redux/actions';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import BlogSearch from '../components/Blog/Search';
@@ -17,6 +17,7 @@ const Blog = ({data: { allMarkdownRemark: { totalCount, nodes } }, pageContext, 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setLogoUrl({ logo: darkLogo }));
+    setFooterVisible({ visible: true })(dispatch);
   }, []);
   return (
     <Layout>
