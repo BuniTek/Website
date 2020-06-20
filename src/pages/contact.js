@@ -10,6 +10,7 @@ import Layout from "../layouts/layout";
 import SEO from "../components/seo";
 import { setLogoUrl, setFooterVisible } from "../redux/actions";
 
+
 import "../assets/styles/pages/contact.scss";
 import contactTopLeft from "../assets/images/contact_top-left.svg";
 import contactMiddleRight from "../assets/images/contact_middle-right.svg";
@@ -18,9 +19,7 @@ import logo from "../assets/images/africai.png";
 const { Panel } = Collapse;
 
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+  Contact us at Info@AfricaI.site
 `;
 
 const Contact = () => {
@@ -99,11 +98,10 @@ const Contact = () => {
             Contact us by sending us an email here.
           </h1>
           <p className="contact__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-            fuga!
+            We are Available on different platform, don't hesitate to contact us if you need any assistant 
           </p>
           <div className="contact__social">
-            <AntBtn className="contact__social--button"> <FacebookOutlined /> Facebook</AntBtn>
+            <AntBtn className="contact__social--button"> <FacebookOutlined />  Facebook</AntBtn>
             <AntBtn className="contact__social--button"> <InstagramOutlined /> Instagram</AntBtn>
             <AntBtn className="contact__social--button">FAQ</AntBtn>
           </div>
@@ -155,7 +153,7 @@ const Contact = () => {
             }}
           >
             <Panel
-              header="What do I need to setup an account?"
+              header="How do I enroll in a course?"
               key="1"
               className="site-collapse-custom-panel"
               style={{
