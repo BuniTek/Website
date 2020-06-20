@@ -13,10 +13,12 @@ import Testimonies from '../components/Testimonies';
 import Line from '../components/VerticalLine';
 import { setLogoUrl } from '../redux/actions';
 
-import homeBanner from '../assets/images/undraw_dev_productivity_umsq.png';
+import homeBanner from '../assets/images/undraw_web_developer_p3e5.svg';
 import lightLogo from '../assets/images/africai.png';
 import background from '../assets/images/home_top-left.svg';
 import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
+import Overlay3Bg from '../assets/images/home-middle_second.png';
+import Overlay4Bg from '../assets/images/home-middle_third.png';
 import '../assets/styles/pages/home.scss';
 
 const IndexPage = () => {
@@ -75,7 +77,7 @@ const IndexPage = () => {
           />
         </div>
         <div className="home__news">
-          <h1 className="home__news--title">Latest News</h1>
+          <h1 className="home__news--title">Read more about what's coming</h1>
 
           <div className="home__news--grid">
             <NewsCard
@@ -101,21 +103,28 @@ const IndexPage = () => {
                 type="submit"
                 style={{
                   width: 160,
-                  marginLeft: -10,
+                  marginLeft: 150,
                   backgroundColor: '#363333',
                   height: 40,
-                  marginTop: -10,
+                  marginTop: 10,
                 }}
               >
-                Subscribe
+              Subscribe
               </Button>
             </Form>
           </div>
         </div>
-
+         <div className="home__overlay">
+          <div
+            className="home__overlay--3"
+            style={{
+              backgroundImage: `url(${Overlay3Bg})`,
+            }}
+          />
+        </div>
         <div className="home__topics">
           <div className="home__topics--container">
-            <h1 className="home__topics--title">Topics</h1>
+            <h1 className="home__topics--title">Some of the things we offer</h1>
             <div className="home__topics--grid">
               <Topic caption="testing" link="/testing" />
               <Topic caption="courses" link="/courses" />
@@ -124,6 +133,14 @@ const IndexPage = () => {
               <Topic caption="science" link="/science" />
             </div>
           </div>
+        </div>
+        <div className="home__overlay">
+          <div
+            className="home__overlay--4"
+            style={{
+              backgroundImage: `url(${Overlay4Bg})`,
+            }}
+          />
         </div>
       </div>
       <Testimonies />

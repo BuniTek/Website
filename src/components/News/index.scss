@@ -1,9 +1,10 @@
 @import '../../assets/styles/colors.scss';
+@import '../../assets/styles/fonts.scss';
 .news {
     &__card {
         background: $white;
         max-width: 30vw;
-        padding: 30px;
+        padding: 30px 30px 40px 30px;
         position: relative;
         color: $dark;
         &:last-child{
@@ -16,13 +17,14 @@
 
         &--link{
             float: right;
+            font-family: $heading-font;
             font-weight: bold;
             color: $dark;
             text-decoration: underline;
         }
 
         &--title {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             &-link {
                 color: $dark;
                 text-decoration: underline;  
@@ -32,10 +34,10 @@
 
         &--description {
             p {
-                line-height: 2.5;
-                font-size: 1.4rem;
+                line-height: 1.8;
+                font-size: 1.3rem;
                 font-family: 'Playfair Display', serif !important;
-                font-weight: 200 !important;
+                font-weight: 100 !important;
             }
         }
 

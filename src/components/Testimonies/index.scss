@@ -1,7 +1,9 @@
 @import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/fonts.scss';
 
 .testimonies {
-    margin: 50px 15%;
+    margin: 200px 5%;
 
     @include mediaMd {
         margin: 50px 8%;
@@ -9,7 +11,8 @@
 
     &__title {
         text-align: center;
-        text-decoration: underline;
+        font-family: $title-font !important;
+        color: $dark;
     }
     &__slider {
         &--item {
@@ -46,7 +49,7 @@
     &__item {
         background: white;
         width: 200px;
-        height: 234px;
+        height: 200px;
         position: relative;
         margin: auto 50px;
         transform: translateY(100px);
@@ -88,14 +91,14 @@
         &--info {
             display: grid;
             place-content: center;
-            padding: 20px;
+            padding: 0px 20px;
         }
 
         &--author {
             font-size: 1rem;
             text-align: center;
             margin-left: -50%;
-            margin-top: 10px;
+            margin-top: 4px;
 
         }
     }
