@@ -6,4 +6,11 @@ export const setLogoUrl = ({ logo }) => (dispatch) => {
   });
 };
 
+export const setFooterVisible = ({ visible }) => (dispatch) => {
+  dispatch({
+    type: 'ui/SET_FOOTER_VISIBILITY',
+    payload: visible,
+  });
+}
+
 export default setLogoUrl;

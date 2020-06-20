@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
-import { setLogoUrl } from '../redux/actions';
+import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/notfound.scss';
 
@@ -17,6 +17,7 @@ const NotFoundPage = () => {
     dispatch(setLogoUrl({
       logo,
     }));
+    setFooterVisible({ visible: true })(dispatch);
   });
   return (
     <Layout>

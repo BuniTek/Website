@@ -52,7 +52,7 @@ const Testimonies = () => {
   };
   return (
     <div className="testimonies">
-      <h2 className="testimonies__title">Testimonies</h2>
+      <h2 className="testimonies__title">What others think</h2>
       <div className="testimonies__slider">
         <Slick {...settings}>
           <Testimony
