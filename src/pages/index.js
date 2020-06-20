@@ -109,18 +109,12 @@ const IndexPage = ({ data: { videoPreview } }) => {
                 type="submit"
                 style={{
                   width: 160,
-<<<<<<< HEAD
-                  marginLeft: 150,
-                  backgroundColor: '#363333',
-                  height: 40,
-                  marginTop: 10,
-=======
+
                   height: 40,
                   marginTop: -5,
-                  backgroundColor: '#4B4949',
+                  backgroundColor: '#363333',
                   display: 'grid',
                   placeContent: 'center',
->>>>>>> 8323ef8043f8d1bb592998024c728828fe9a061f
                 }}
               >
               Subscribe
