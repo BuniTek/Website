@@ -98,7 +98,7 @@ const Contact = () => {
             Contact us by sending us an email here.
           </h1>
           <p className="contact__description">
-            We are Available on different platform, don't hesitate to contact us if you need any assistant 
+            You can reach us various platforms, don't hesitate to contact us if you need any assistance 
           </p>
           <div className="contact__social">
             <AntBtn className="contact__social--button"> <FacebookOutlined />  Facebook</AntBtn>

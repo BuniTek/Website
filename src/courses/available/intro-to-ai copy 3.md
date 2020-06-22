@@ -1,6 +1,6 @@
 ---
 title: intro to AI
-author: AfricaI Team
+author: Africa-I Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
