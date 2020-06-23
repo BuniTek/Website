@@ -44,10 +44,11 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
                 <div className="about__shadow rounded absolute-right" />
                 <h1>A Purpose-Driven Company</h1>
                 <p>
-                We belive everyone can learn tech and can use it to create, and impact his/her community</p>
+                We belive everyone can learn tech and can use it to create, and impact his/her community. 
+                </p>
                  
 
-                <p>Create, offer, skills, simple, fun, movement,technology, future relavant</p>
+                <p>We create and deliver hands-On, fun, future-relavant tech courses</p>
               </div>
             </div>
           </div>
