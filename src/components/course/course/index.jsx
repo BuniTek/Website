@@ -31,7 +31,6 @@ function Course({
         </div>
       </div>
     </Link>
-
   );
 }
 Course.propTypes = {

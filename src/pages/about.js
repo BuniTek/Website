@@ -43,10 +43,7 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
               <div className="about__flex--description flex-right">
                 <div className="about__shadow rounded absolute-right" />
                 <h1>A Purpose-Driven Company</h1>
-                <p>
-                We belive everyone can learn tech and can use it to create, and impact his/her community</p>
-                 
-
+                <p>We belive everyone can learn tech and can use it to create, and impact his/her community</p>
                 <p>Create, offer, skills, simple, fun, movement,technology, future relavant</p>
               </div>
             </div>
@@ -97,7 +94,6 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
               </div>
             </div>
           </div>
-
         </div>
         <Team />
         <div className="partners">
