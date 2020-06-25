@@ -20,11 +20,7 @@ function Course({
   }
   return (
     <Link to={content}>
-      <div
-        className="course"
-        onMouseEnter={handleOpacityChange}
-        onMouseLeave={handleOpacityRevert}
-      >
+      <div className="course">
         <img src={image} alt="couse_image" className="course__image" style={styles} />
         <div className="course__card--divider" />
         <div className="course__content">
