@@ -1,8 +1,9 @@
 @import '../../assets/styles/colors.scss';
+@import '../../assets/styles/fonts.scss';
 .button{
     position: relative;
     width: 80%;
-    height: 18%;
+    height: 20%;
     padding: 1rem 3rem;
     border: none;
     outline: none;
@@ -11,6 +12,7 @@
     border-radius: 50px;
     cursor: pointer;
     margin:0 auto;
+    font-family: $title-font !important;
 
     &.is-primary{
         background: $dark !important;
@@ -40,7 +42,7 @@
     height: 100%;
     border-radius:50px;
     margin:0 auto;
-    background:#707070;
-    opacity: 0.5;
-    z-index: 100;
+    background:red;
+    opacity: 1;
+    z-index: 10000;
 }

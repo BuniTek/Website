@@ -1,25 +1,26 @@
 @import '../colors.scss';
+@import '../fonts.scss';
 @import "../mixins.scss";
+
 .contact{
     margin: auto;
 
     &__social {
         display: flex;
-        justify-content: space-around;
-        margin: 20px 0;
-
+        justify-content: flex-start;
+        margin-bottom: 20px;
         &--button {
             background: $dark;
             color: $white;
-            border-radius: 8px;
-
+            border-radius: 50px;
+/*
             &:first-child {
                 background: #4267B2;
             }
 
             &:nth-child(2){
                 background: radial-gradient(circle at 30% 80%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-            }
+            }*/
         }
     }
 
@@ -28,7 +29,6 @@
         display: grid;
         place-content: center;
         height: 100vh;
-        margin-left: 30%;
 
        
         @include mediaMd {
@@ -38,14 +38,20 @@
     }
 
     &__heading {
-        font-size: 24px;
-        font-weight: bolder;
+        font-size: 2em;
+        font-family: $title-font !important;
+        color: $h-color;
+    }
+    &__description{
+        font-size: 1.2em;
+        font-family: $text-font !important;
+        color: $p-color;
     }
 
     &__overlay{
         &--1{
             top: -35%;
-            left: -5%;
+            left: -10%;
             width: 500px;
             height: 500px;
             opacity: 1;
@@ -102,16 +108,20 @@
     }
 
     &__heading {
-        color: $white;
+        color: $border-color;
         text-align: center;
+        font-size: 2em;
+        font-family: $title-font !important;
     }
 
     .ant-collapse-header {
-        color: white !important;
+        color: $border-color !important;
         font-size: 1.2rem;
+        font-family: $heading-font !important;
     }
 
     .ant-collapse-content-box p {
         color: $white;
+        font-family: $text-font !important;
     }
 }
