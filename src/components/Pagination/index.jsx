@@ -24,12 +24,16 @@ const PaginationStyles = styled.div`
        text-decoration: none;
        padding: 4px;
        margin: 0;
-       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+       
    }
+
 
    a[disabled]{
        pointer-events: none;
        cursor: not-allowed;
+       &:hover{
+        color:$dark;
+       }
    }
 `;
 

@@ -21,14 +21,14 @@ const BlogItem = ({ title, description, readMore, featured }) => (
           <h4 className="blog__item--title">{title}</h4>
         </LinkAnchor>
         <div className="blog__item--undefined" />
-      </div>
-      <div className="blog__description">
-        {description}
-      </div>
-      <div className="blog__item--footer">
-        <LinkAnchor to={readMore}>Read More &gt; </LinkAnchor>
-        <img src={HeartIcon} alt="Like" className="blog__like" />
-      </div>
+        </div>
+        <div className="blog__description">
+          {description}
+        </div>
+        <div className="blog__item--footer">
+          <img src={HeartIcon} alt="Like" className="blog__like" />
+          <LinkAnchor to={readMore}>Read More</LinkAnchor>
+        </div>
       </div>
     </div>
     

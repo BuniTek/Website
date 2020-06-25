@@ -15,7 +15,8 @@
     }
 
     &__typed {
-        font-size: 1.5rem;
+        font-size: 2.5em;
+        font-family: $heading-font !important;
         margin-bottom: 40px !important;
         display: inline-block;
         margin-left: 10%;
@@ -223,7 +224,7 @@
             width: 1800px;
             height: 400px;
             margin-left: -500px;
-            
+
 
             @media (max-width: 1199px){
                 
