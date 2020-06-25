@@ -17,17 +17,20 @@ const BlogItem = ({ title, description, readMore, featured }) => (
       
       <div className="blog__item--grid-item">
         <div className="blog__item--heading">
-        <LinkAnchor to={readMore}>
-          <h4 className="blog__item--title">{title}</h4>
-        </LinkAnchor>
-        <div className="blog__item--undefined" />
+          <LinkAnchor to={readMore}>
+            <h4 className="blog__item--title">{title}</h4>
+          </LinkAnchor>
+          <div className="blog__item--undefined" />
         </div>
         <div className="blog__description">
           {description}
         </div>
         <div className="blog__item--footer">
-          <img src={HeartIcon} alt="Like" className="blog__like" />
-          <LinkAnchor to={readMore}>Read More</LinkAnchor>
+          <div className="blog__item--footer--reaction">
+            <img src={HeartIcon} alt="Like" className="blog__like" />
+            <span>22</span>
+          </div>
+          <LinkAnchor to={readMore}>Read more</LinkAnchor>
         </div>
       </div>
     </div>

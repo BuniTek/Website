@@ -1,6 +1,8 @@
+@import "../../assets/styles/colors.scss";
 .link{
     color: #3F3D56;
     text-decoration: underline;
+    text-decoration-color: lightgray;
     font-weight: bold;
     font-size: 1.3rem;
 }
