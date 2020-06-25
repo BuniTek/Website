@@ -1,8 +1,8 @@
 ---
-title: Missoion of Africa-I
+title: Mission Statement of Africa-I
 author: Africa-I Team
 date: "2020-06-20"
-keywords: "AfricaI, Africa-I, Youth, Technology, Africa, Youth, Bootcamps, Tutoring, Online, Rwanda, Kenya"
+keywords: "AfricaI, Africa-I, Youth, Technology, Africa, Youth, Mission, Vision, Online, Rwanda, Kenya"
 featuredImage: "https://www.africandevmag.com/wp-content/uploads/2017/08/kids.jpg"
 type: post
 ---
@@ -70,6 +70,6 @@ living standards of people in their
 communities and foster Africa's economic
 growth in the long run.
 
-### Others
+### Our Tutors
 
-> Besides helping the kids, it is also our mission to help the student tutors grow their skills. In preparation for their lessons, we will provide them with trainings and support they need need to provide firstrate education. And they also will need to research and go beyond their school degree requirements. Hence, this will improve their professional work experience and even better help the understand their capabilities as well. Expand on your previous description of how your social venture will address the issue you have identified. Please address the strengths and unique aspects of the As we discussed previously in our social venture description , we will be organising seasonal bootcamps in different places in Africa to provide a ground for kids to experiment with a wide range of technology concepts.
+> Besides helping the kids, it is also our mission to help the student tutors grow their skills. In preparation for their lessons, we will provide them with trainings and support they need need to provide firstrate education. And they also will need to research and go beyond their school degree requirements. Hence, this will improve their professional work experience and even better help the understand their capabilities as well.
