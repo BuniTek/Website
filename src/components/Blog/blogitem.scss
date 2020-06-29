@@ -10,6 +10,14 @@
         margin: 50px 10%;
         padding: 0;
 
+        &:hover{
+            cursor: pointer;
+            border-color:$dark;
+        }
+        &:hover &--featured{
+            border-color: $dark;
+        }
+
         $blogItem: &;
 
         &--undefined{

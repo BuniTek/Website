@@ -21,7 +21,9 @@ function Course({
   return (
     <Link to={content}>
       <div className="course">
-        <img src={image} alt="couse_image" className="course__image" style={styles} />
+        <div className="course__header">
+          <img src={image} alt="couse_image" className="course__image" style={styles} />
+        </div>
         <div className="course__card--divider" />
         <div className="course__content">
           <h3 className="course__title">{title}</h3>
