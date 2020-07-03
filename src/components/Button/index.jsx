@@ -18,7 +18,6 @@ const Button = ({
     style={style}
   >
     {children}
-    <span className="btn__overlay" />
   </button>
 );
 

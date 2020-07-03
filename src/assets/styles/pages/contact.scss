@@ -1,17 +1,45 @@
+@import '../colors.scss';
 @import "../mixins.scss";
 .contact{
     margin: auto;
+
+    &__social {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+        &--button {
+            background: $dark;
+            color: $white;
+            border-radius: 8px;
+
+            &:first-child {
+                background: #4267B2;
+            }
+
+            &:nth-child(2){
+                background: radial-gradient(circle at 30% 80%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            }
+        }
+    }
 
     &__container{
         
         display: grid;
         place-content: center;
         height: 100vh;
+        margin-left: 30%;
 
        
-        @media (max-width: 767px){
+        @include mediaMd {
             padding: 1em;
+            margin-left: 0;
         }
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: bolder;
     }
 
     &__overlay{
@@ -60,5 +88,30 @@
                 display: none;
             }
         }
+    }
+}
+
+.faq {
+    height: 50vh;
+    background: $dark;
+    color: $white;
+    padding: 20px;
+
+    &__container {
+        margin: auto 10%;
+    }
+
+    &__heading {
+        color: $white;
+        text-align: center;
+    }
+
+    .ant-collapse-header {
+        color: white !important;
+        font-size: 1.2rem;
+    }
+
+    .ant-collapse-content-box p {
+        color: $white;
     }
 }
