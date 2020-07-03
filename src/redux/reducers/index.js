@@ -4,5 +4,5 @@ import searchReducer from './search.reducer';
 
 export default combineReducers({
   ui: uiReducer,
-  query: searchReducer,
+  search: searchReducer,
 });
