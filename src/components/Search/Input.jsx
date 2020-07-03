@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './input.scss';
 
 const SearchInput = ({ onChange, value, placeholder }) => (
-  <input className="content__search--input" type="search" placeholder={placeholder} value={value} onChange={onChange} />
+  <input className="content__search--input" type="search" name="search"  placeholder={placeholder} value={value} onChange={onChange} />
 );
 
 SearchInput.propTypes = {
