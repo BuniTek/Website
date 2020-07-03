@@ -6,7 +6,7 @@ keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
 description: " an introduction to Artificial intelligence and internet of things"
 category: available
-image: "https://undark.org/wp-content/uploads/2019/12/GettyImages-1152335789-crop.jpg"
+image: "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80"
 ---
 
 

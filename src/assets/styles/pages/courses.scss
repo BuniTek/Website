@@ -1,13 +1,29 @@
+@import "../colors.scss";
+
 .chips__container{
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
     margin: 10px 10%;
 }
 .course{
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-                0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.12), 
-                0 8px 8px rgba(0,0,0,0.12),
-                0 16px 16px rgba(0,0,0,0.12);
-    cursor:pointer;
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+	  transition: box-shadow 0.3s ease-in-out;
+
+	  &__notFound{
+		 text-align: center;
+		 margin: 30px;
+		 font-style: italic;
+	  }
+	  &:hover{
+        cursor: pointer;
+	    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+	  }
+}
+.search__query{
+	background-color: $dark-grey;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0 5px;
+	color: $white;
+
 }
