@@ -1,11 +1,16 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import CoursesLayout from '../../layouts/courses/CoursesLayout';
 import Course from '../../components/course';
 import '../../assets/styles/pages/courses.scss';
+import { resetSearchState } from '../../redux/actions/search.action';
 
 function UpcomingCourses({ data: { allMarkdownRemark: { nodes } } }) {
   const query = useSelector((state) => state.query.query);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(resetSearchState());
+  }, []);
 
   let courses = nodes;
 

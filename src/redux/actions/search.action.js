@@ -4,3 +4,9 @@ export const searchContent = (query) => (dispatch) => {
     payload: query,
   });
 };
+
+export const resetSearchState = () => (dispatch) => {
+  dispatch({
+    type: 'RESET_SEARCH_STATE',
+  });
+};

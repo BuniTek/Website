@@ -6,6 +6,12 @@ export default (state = {}, { type, payload }) => {
         query: payload,
       };
 
+    case 'RESET_SEARCH_STATE':
+      return {
+        ...state,
+        query: '',
+      };
+
     default:
       return state;
   }
