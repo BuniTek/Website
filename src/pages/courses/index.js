@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 import CoursesLayout from '../../layouts/courses/CoursesLayout';
 import Course from '../../components/course';
@@ -8,26 +10,34 @@ import { changeCoursePageHeading } from '../../redux/actions';
 
 import '../../assets/styles/pages/courses.scss';
 
+
 function AvailableCourses({ data: { allMarkdownRemark: { nodes } } }) {
   const query = useSelector((state) => state.search.query);
   const dispatch = useDispatch();
-  let courses = nodes;
+
+  const [searchResults, setSearchResults] = useState([]);
+
+  const allCourses = nodes;
 
   useEffect(() => {
     dispatch(resetSearchState());
     dispatch(changeCoursePageHeading('Available courses'));
   }, []);
 
-  if (query) {
-    const searchResults = nodes.filter((node) => {
+  useEffect(() => {
+    setSearchResults(nodes.filter((node) => {
       const { description, title } = node.frontmatter;
       return (
         description.toLowerCase().includes(query.trim().toLowerCase())
       || title.toLowerCase().includes(query.trim().toLowerCase())
       );
-    });
-    courses = searchResults;
-  }
+    }));
+  }, [query, nodes]);
+
+  const hasSearchResults = searchResults && query !== '';
+  const courses = hasSearchResults ? searchResults : allCourses;
+
+
   return (
     <div>
       <CoursesLayout>
@@ -48,9 +58,7 @@ function AvailableCourses({ data: { allMarkdownRemark: { nodes } } }) {
               <h3>
                 Sorry,we could not find results matching
                 <span className="search__query">
-                  "
-                  {query}
-                  "
+                  {`"${query}"`}
                 </span>
               </h3>
             </div>
@@ -60,7 +68,9 @@ function AvailableCourses({ data: { allMarkdownRemark: { nodes } } }) {
     </div>
   );
 }
-
+AvailableCourses.propTypes = {
+  data: PropTypes.objectOf(PropTypes.object).isRequired,
+};
 
 export const query = graphql` {
     allMarkdownRemark(filter: { 

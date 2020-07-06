@@ -1,4 +1,9 @@
-export default (state = {}, { type, payload }) => {
+
+const INITIAL_STATE = {
+  query: '',
+};
+
+export default (state = INITIAL_STATE, { type, payload }) => {
   switch (type) {
     case 'SEARCH_CONTENT':
       return {
