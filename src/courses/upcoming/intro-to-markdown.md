@@ -6,7 +6,7 @@ keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
 category: upcoming
 description: " an introduction to markdown and blogs"
-image: "https://safebytes.com/wp-content/uploads/2017/02/comingsoon.png"
+image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsabe.io%2Fclasses%2Fjavascript%2Fhero.png&f=1&nofb=1"
 ---
 
 

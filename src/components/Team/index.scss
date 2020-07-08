@@ -1,7 +1,10 @@
 @import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/fonts.scss';
 .team{
     padding: 200px;
     background: lighten($h-color, 68%);
+    margin-top: -160px;
     margin-bottom: -100px;
     @include mediaMd {
         margin: 150px 0;
@@ -41,6 +44,9 @@
 
     &__title {
         margin-bottom: 50px;
-        margin-top: 100px !important;
+        margin-top: 50px !important;
+        font-size: 2em;
+        font-family: $title-font !important;
+        color: $h-color;
     }
 }

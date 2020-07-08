@@ -1,11 +1,19 @@
+@import '../../../assets/styles/mixins.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/fonts.scss';
+
 .form{
     &__textarea{
        position: relative;
        label{
-           font-weight: bold !important;
+          color: $h-color;
+          font-family: $heading-font !important;
+          font-weight: 700;
+          font-size: 1.4em;
        }
        textarea{
            height: 150px !important;
+           font-size: 1.2em;
            padding: 10px;
            border: 1px solid grey !important;
            outline: none !important;

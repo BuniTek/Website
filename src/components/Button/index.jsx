@@ -17,6 +17,7 @@ const Button = ({
     onClick={onClick}
     style={style}
   >
+  <div className="btn__overlay"></div>
     {children}
   </button>
 );

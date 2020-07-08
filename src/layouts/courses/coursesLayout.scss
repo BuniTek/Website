@@ -1,3 +1,6 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
+
 .chips__container{
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
@@ -16,7 +19,12 @@
         &--heading{
             display: flex;
             justify-content: center;
-            margin: 20px 10%;
+            margin: 40px 10%;
+            h2{
+                font-size: 2em;
+                font-family: $title-font !important;
+                color: $h-color;
+            }
             @media (max-width: 767px){
                 flex-direction: column;
                 justify-content: flex-start;

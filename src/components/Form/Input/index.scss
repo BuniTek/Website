@@ -1,12 +1,18 @@
 @import '../../../assets/styles/mixins.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/fonts.scss';
 
 .form__input{
     label{
-        font-weight: bold !important;
+        color: $h-color;
+        font-family: $heading-font !important;
+        font-weight: 700;
+        font-size: 1.4em;
     }
 
     input[type="text"], input[type="email"], input[type="password"]{
         border: 1px solid grey !important;
+        font-size: 1.2em;
         border-bottom: none;
         padding: 2px;
         background: #FFF !important;

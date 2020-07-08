@@ -1,5 +1,6 @@
 @import "../mixins";
 @import "../colors.scss";
+@import "../fonts.scss";
 .about{
     background: #EFEFEF 0% 0% no-repeat padding-box;
     width: 100vw;
@@ -45,10 +46,30 @@
 
             &.flex-left {
                 margin-right: 10%;
+                 h1{
+                    color: $h-color;
+                    font-family: $title-font !important;
+                    font-size: 2.2em;
+                }
+                p{
+                    color: $dark;
+                    font-family: $mincho-font !important;
+                    font-size: 1.4em;
+                }
             }
 
             &.flex-right {
                 margin-left: 10%;
+                h1{
+                    color: $h-color;
+                    font-family: $title-font !important;
+                    font-size: 2.2em;
+                }
+                p{
+                    color: $dark;
+                    font-family: $mincho-font !important;
+                    font-size: 1.4em;
+                }
             }
         }
     }
@@ -110,18 +131,17 @@
 
     &__shadow {
         background: lighten($h-color, 50%);
-        height: 200px;
+        height: 300px;
 
         &.circle {
-            width: 150px;
-            height: 150px;
+            width: 300px;
+            height: 300px;
             border-radius: 100%;
         }
 
         &.rounded {
-           width: 300px;
-           border-radius: 100px;
-
+           width: 400px;
+           border-radius: 300px;
            @include mediaMd {
                width: 250px;
                height: 100px;
@@ -130,7 +150,7 @@
 
         &.absolute-right {
             position: absolute;
-            top: 25%;
+            top: 15%;
             left: 50%;
             z-index: -1;
 
@@ -143,7 +163,8 @@
         &.absolute-left {
             position: absolute;
             z-index: -1;
-            top: 25%;
+            top: 15%;
+            left: -15%;
 
             @include mediaMd {
                 left: 0;
@@ -165,7 +186,11 @@
     }
 
     &__title {
+        font-size: 2em;
+        font-family: $title-font !important;
+        color: $h-color;
         text-align: center;
+
     }
 
     &__grid {

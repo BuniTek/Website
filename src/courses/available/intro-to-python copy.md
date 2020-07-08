@@ -6,7 +6,7 @@ keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
 category: available
 description: " an introduction to python programming"
-image: "https://www.edureka.co/blog/wp-content/uploads/2017/06/Python-Programming-Edureka.png"
+image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.d27A5K4i63BktGDEg25hqAHaEl%26pid%3DApi&f=1"
 ---
 
 
