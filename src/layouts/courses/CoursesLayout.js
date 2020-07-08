@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch ,useSelector} from 'react-redux';
 
 import Layout from '../layout';
 import SEO from '../../components/seo';
@@ -13,6 +13,8 @@ import darkLogo from '../../assets/images/africai_dark.png';
 
 
 const CoursesLayout = ({ children }) => {
+  const heading = useSelector((state) => state.ui.heading);
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setLogoUrl({ logo: darkLogo }));
@@ -23,7 +25,7 @@ const CoursesLayout = ({ children }) => {
       <SEO title="Courses" />
       <div className="course__page--wrapper">
         <div className="course__page--heading">
-          <h2>Available Courses</h2>
+  <h2>{heading}</h2>
         </div>
         <div className="course__search">
           <Search placeholder="Search for a course" />

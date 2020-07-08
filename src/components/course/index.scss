@@ -1,19 +1,35 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
+
 .course{
+    &__header{
+      width: 100%;
+      height: 140px;
+      overflow: hidden;
+    }
     &__image{
       width: 100%;
       height: auto;
       display: block;
     }
     &__card--divider{
-      height: 5px;
-      background: #4B4949; 
+      height: 8px;
+      background: $dark-grey; 
+    }
+    &__title{
+      font-weight: bold;
+      color: $h-color;
+      font-family: $title-font !important;
+      
     }
     &__content{
+      font-family: $text-font;
       line-height: 1.5;
-      font-size: 0.9em;
+      font-size: 1em;
       padding: 15px;
-      background: #fafafa; 
-      color: #000000;
+      height: 140px;
+      background: $white; 
+      color: $h-color;
       
     }
 }

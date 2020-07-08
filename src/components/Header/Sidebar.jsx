@@ -30,6 +30,9 @@ const Sidebar = ({ open, setOpen }) => (
           <Link to="/courses">Courses</Link>
         </li>
         <li>
+          <Link to="/services">Services</Link>
+        </li>
+        <li>
           <Link to="/about">About Us</Link>
         </li>
         <li>

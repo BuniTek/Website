@@ -1,27 +1,74 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+
+
 import CoursesLayout from '../../layouts/courses/CoursesLayout';
-import Course from '../../components/course/course';
+import Course from '../../components/course';
+import { resetSearchState } from '../../redux/actions/search.action';
+import { changeCoursePageHeading } from '../../redux/actions';
+
 import '../../assets/styles/pages/courses.scss';
 
 function UpcomingCourses({ data: { allMarkdownRemark: { nodes } } }) {
+  const query = useSelector((state) => state.search.query);
+  const dispatch = useDispatch();
+
+  const [searchResults, setSearchResults] = useState([]);
+  const allCourses = nodes;
+
+  useEffect(() => {
+    dispatch(resetSearchState());
+    dispatch(changeCoursePageHeading('Upcoming courses'));
+  }, []);
+
+  useEffect(() => {
+    setSearchResults(nodes.filter((node) => {
+      const { description, title } = node.frontmatter;
+      return (
+        description.toLowerCase().includes(query.trim().toLowerCase())
+      || title.toLowerCase().includes(query.trim().toLowerCase())
+      );
+    }));
+  }, [query, nodes]);
+
+  const hasSearchResults = searchResults && query !== '';
+  const courses = hasSearchResults ? searchResults : allCourses;
+
   return (
     <div>
       <CoursesLayout>
-        <div className="courses__container">
-          {nodes.map((node) => (
-            <Course
-              title={node.frontmatter.title}
-              description={node.frontmatter.description}
-              image={node.frontmatter.image}
-              content={node.fields.slug}
-            />
-          ))}
-        </div>
+        {
+          courses[0] ? (
+            <div className="courses__container">
+              {courses.map((course) => (
+                <Course
+                  title={course.frontmatter.title}
+                  description={course.frontmatter.description}
+                  image={course.frontmatter.image}
+                  content={course.fields.slug}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="course__notFound">
+              <h3>
+                Sorry,we could not find results matching
+                <span className="search__query">
+                  {`"${query}"`}
+                </span>
+              </h3>
+            </div>
+          )
+        }
       </CoursesLayout>
     </div>
   );
 }
-
+UpcomingCourses.propTypes = {
+  data: PropTypes.objectOf(PropTypes.object).isRequired,
+};
 
 export const query = graphql` {
     allMarkdownRemark(filter: { 

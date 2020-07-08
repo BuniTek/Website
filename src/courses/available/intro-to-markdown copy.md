@@ -1,5 +1,5 @@
 ---
-title: intro mard-down
+title: intro mark-down
 author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, mark-down, blogs"
