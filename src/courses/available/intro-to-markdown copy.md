@@ -1,12 +1,12 @@
 ---
-title: intro mard-down
+title: intro mark-down
 author: AfricaI Team
 date: "2020-05-17"
 keywords: "AfricaI, Africa-I, mark-down, blogs"
 type: course
 category: available
 description: " an introduction to markdown and blogs"
-image: "https://lh5.googleusercontent.com/proxy/ALT16XVBE9h9ImLxcS8ks7yTCVAJpZ1OuaqxvEBunqrwPA2qrD4lvFIgLIIhLQTsvs8ikDvan-7-D32aFTPaAXGAOR0S4ti2ZNqzObL7TJsSeW_1qdbOfG-jrw"
+image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0_tO8HgJiLQ%2Fmaxresdefault.jpg&f=1&nofb=1"
 ---
 
 

@@ -24,7 +24,7 @@ const Blog = ({data: { allMarkdownRemark: { totalCount, nodes } }, pageContext, 
       <SEO title="Blog" />
       <div className="blog">
         <div className="blog__header">
-          <h2 className="blog__heading">Blog</h2>
+          <h2 className="blog__heading">Latest News</h2>
           <BlogSearch />
         </div>
         {nodes.map(node => (

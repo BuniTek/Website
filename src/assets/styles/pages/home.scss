@@ -1,4 +1,5 @@
 
+@import "../fonts.scss";
 @import "../utils.scss";
 @import "../colors.scss";
 @import '../mixins.scss';
@@ -14,12 +15,13 @@
     }
 
     &__typed {
-        font-size: 1.5rem;
+        font-size: 3.5em;
+        font-family: $heading-font !important;
+        font-weight:900;
         margin-bottom: 40px !important;
         display: inline-block;
         margin-left: 10%;
         line-height: 2;
-        font-weight: bolder;
     }
 
     &__topics {
@@ -44,6 +46,8 @@
             margin-bottom: 100px;
             margin-top: 50px;
             padding-top: 50px !important;
+            font-family: $title-font !important;
+            color: $dark;
         }
     }
 
@@ -53,8 +57,9 @@
         z-index: 10;
 
         &--title {
-            color: $white;
+            color: $light-grey;
             text-align: center;
+            font-family: $title-font !important;
         }
 
         &--grid {
@@ -70,10 +75,10 @@
 
     &__newsletter {
         margin: 40px 30%;
+
         text-align: center;
         form {
             display: inline-block;
-            margin-left: 100px;
             margin-top: 20px;
             text-align: center;
 
@@ -94,6 +99,8 @@
 
             button[type="submit"] {
                 display: inline-block;
+                font-family: $title-font !important;
+                color: $h-color;
             }
         }
     }
@@ -128,7 +135,7 @@
 
             &:nth-child(2){
                 h1{
-                    font-family: $hfont !important;
+                    font-family: $heading-font !important;
                     color: $h-color;
                     font-size: 3.2em;
                 }
@@ -215,10 +222,55 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: 2000px;
-            height: 600px;
+            width: 1800px;
+            height: 400px;
             margin-left: -500px;
-            
+
+
+            @media (max-width: 1199px){
+                
+            }
+
+            @media (max-width: 991px){
+               
+            }
+           
+            @media (max-width: 767px){
+                margin-left: -800px;
+            }
+
+        }
+        &--3{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 1987px;
+            left: -110.20897674560547px;
+            width: 2673px;
+            height: 388px;
+            z-index: 2 !important;
+
+            @media (max-width: 1199px){
+                
+            }
+
+            @media (max-width: 991px){
+               
+            }
+           
+            @media (max-width: 767px){
+                margin-left: -800px;
+            }
+
+        }
+        &--4{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 2000px;
+            left: -105.20897674560547px;
+            width: 2037px;
+            height: 310px;
 
             @media (max-width: 1199px){
                 
@@ -236,6 +288,7 @@
     }
 
 }
+
 
 body.home{
     overflow: auto;

@@ -1,6 +1,12 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
 .link{
-    color: #3F3D56;
-    text-decoration: underline;
-    font-weight: bold;
+	border-bottom: 2px solid $border-color;
+	border-radius:1px;
+    color: $h-color;
+    font-family: $title-font !important;
     font-size: 1.3rem;
+}
+.link:hover{
+	border:none;
 }

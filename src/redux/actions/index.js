@@ -13,4 +13,11 @@ export const setFooterVisible = ({ visible }) => (dispatch) => {
   });
 }
 
+export const changeCoursePageHeading = (heading) => (dispatch) => {
+  dispatch({
+    type: 'ui/CHANGE_HEADING',
+    payload: heading,
+  });
+}
+
 export default setLogoUrl;
