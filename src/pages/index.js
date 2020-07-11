@@ -73,14 +73,6 @@ const IndexPage = ({ data: { videoPreview } }) => {
             </div>
           </div>
         </div>
-        <div className="home__overlay">
-          <div
-            className="home__overlay--2"
-            style={{
-              backgroundImage: `url(${Overlay2Bg})`,
-            }}
-          />
-        </div>
         <div className="home__news">
           <h1 className="home__news--title">Read more about what's coming</h1>
 
