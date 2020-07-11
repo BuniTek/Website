@@ -22,6 +22,8 @@ import background from '../assets/images/home_top-left.svg';
 import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
 import Overlay3Bg from '../assets/images/home-middle_second.png';
 import Overlay4Bg from '../assets/images/home-middle_third.png';
+import ImgSecond from '../assets/images/IMG_2390.jpg';
+import IllustrationThird from '../assets/images/undraw_having_fun_iais.svg';
 import '../assets/styles/pages/home.scss';
 
 const IndexPage = ({ data: { videoPreview } }) => {
@@ -42,83 +44,92 @@ const IndexPage = ({ data: { videoPreview } }) => {
       <SEO title="Home" />
 
       <div className="home">
-        <div className="home__overlay">
-          <div
-            className="home__overlay--1"
-            style={{
-              backgroundImage: `url(${background})`,
-            }}
-          />
-        </div>
+          <div className="home__overlay">
+            <div
+              className="home__overlay--1"
+              style={{
+                backgroundImage: `url(${background})`,
+              }}
+            />
+          </div>
 
-        <div className="home__container">
-          <div className="home__grid">
-            <div className="home__grid--item">
-              <Typed
-                className="home__typed"
-                strings={["Africa-Imagination", "Africa-Invent", "Africa-Intelligence", "Africa-Impact", "Africa-I can", "Africa-I"]}
-                typeSpeed={40}
-              />
-              <span>
-                <Button type="primary" onClick={(e) => {
-                  e.preventDefault();
-                  navigate('/signup/');
-              }}>
-                    Get involved
-                  </Button>
-              </span>
-            </div>
-            <div className="home__grid--item">
-              <Img fluid={videoPreview.childImageSharp.fluid} alt="Hero" className="hero__image" />
+          <div className="home__container">
+            <div className="home__grid">
+              <div className="home__grid--item">
+                <Typed
+                  className="home__typed"
+                  strings={["Africa-Imagination", "Africa-Invent", "Africa-Intelligence", "Africa-Impact", "Africa-I can", "Africa-I"]}
+                  typeSpeed={40}
+                />
+                <span>
+                  <Button type="primary" onClick={(e) => {
+                    e.preventDefault();
+                    navigate('/signup/');
+                }}>
+                      Get involved
+                    </Button>
+                </span>
+              </div>
+              <div className="home__grid--item">
+                <Img fluid={videoPreview.childImageSharp.fluid} alt="Hero" className="hero__image" />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="home__news">
-          <h1 className="home__news--title">Read more about what's coming</h1>
-
-          <div className="home__news--grid">
-            <NewsCard
-              title="Summer Hackathon 2020"
-              description="JC Billy, Alain Eros Prestige are organizing a dope stuff the next summer guys. Just be ready"
-              link="/blog"
-            />
+          <div className="home__second">
+            <div className="home__second__left">
+              <div className="home__second__left--item">
+                <div></div><p>Give every young person a glimpse of what's possible</p>
+              </div>
+              <div className="home__second__left--item">
+                <div></div><p>Give you a chance to interact with and create technology</p>
+              </div>
+            </div>
             <Line />
-            <NewsCard
-              title="Summer Hackathon 2020"
-              description="JC Billy, Alain Eros Prestige are organizing a dope stuff the next summer guys. Just be ready"
-              link="/blog"
-            />
-          </div>
-          <div className="home__newsletter">
-            <Form onSubmit={(e) => e.preventDefault()}>
-              <Input
-                type="email"
-                placeholder="Enter your email"
-              />
-              <Button
-                type="submit"
+            <div className="home__second__right">
+              <div className="home__second__right--image"
                 style={{
-                  width: 160,
-
-                  height: 40,
-                  marginTop: -5,
-                  backgroundColor: '#363333',
-                  display: 'grid',
-                  placeContent: 'center',
-                }}
-              >
-              Subscribe
-              </Button>
-            </Form>
-          </div>
+                    backgroundImage: `url(${ImgSecond})`,
+                  }}
+              />
+            </div>
+          </div>  
         </div>
-         <div className="home__overlay">
+        <div className="home__overlay">
           <div
             className="home__overlay--3"
             style={{
               backgroundImage: `url(${Overlay3Bg})`,
             }}
           />
+        </div>
+        <div className="home__third">
+          <div className="home__third__left">
+
+            <h1 className="home__third__left--title">A project for students by the students</h1>
+            <div className="home__third__left--item">
+              <div></div><p>An EdTech Venture by STEM students and young draduates from various universities across the world.</p>
+            </div>
+            <div className="home__third__left--item">
+              <div></div><p>Commited to introducing every young African to technology in a relatable way.</p>
+            </div>
+
+            <h1 className="home__third__left--title">Technology Doesn't Have To sound Exotic</h1>
+            <div className="home__third__left--item">
+              <div></div><p>Technology relates to our everyday life, wherever we are from.</p>
+            </div>
+            <div className="home__third__left--item">
+              <div></div><p>We are offering you simplified, carefully selected, hands on and contextualised technology course.</p>
+            </div>
+          </div>
+
+          <div className="home__third__right">
+            <div className="home__third__right--image"
+              style={{
+                  backgroundImage: `url(${IllustrationThird})`,
+                }}
+            />
+          </div>
+
         </div>
         <div className="home__topics">
           <div className="home__topics--container">
@@ -140,7 +151,6 @@ const IndexPage = ({ data: { videoPreview } }) => {
             }}
           />
         </div>
-      </div>
       <Testimonies />
     </Layout>
   );
