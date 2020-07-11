@@ -53,14 +53,12 @@ const IndexPage = ({ data: { videoPreview } }) => {
 
         <div className="home__container">
           <div className="home__grid">
-            <div className="home__grid--item" />
             <div className="home__grid--item">
               <Typed
                 className="home__typed"
                 strings={["Africa-Imagination", "Africa-Invent", "Africa-Intelligence", "Africa-Impact", "Africa-I can", "Africa-I"]}
                 typeSpeed={40}
               />
-              
               <span>
                 <Button type="primary" onClick={(e) => {
                   e.preventDefault();
