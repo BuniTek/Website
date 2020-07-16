@@ -12,6 +12,7 @@
         height: 100vh;
         background: transparent;
         margin: auto 10%;
+
     }
 
     &__typed {
@@ -27,6 +28,7 @@
     &__topics {
         background: $white;
         &--container {
+            height: 100vh;
             margin: auto 10%;
             padding: 50px auto;
         }
@@ -52,7 +54,7 @@
     }
 
     &__second {
-        height: 800px;
+        height: 100vh;
         background: $dark;
         padding: 20px 20px 50px 20px;
         display: flex;
@@ -72,13 +74,13 @@
                 flex-wrap: nowrap;
                 justify-content: space-between;
                 padding:10px;
-                div{
+                .point{
                     margin: 5px;
                     width: 30px;
                     height: 15px;
                     border: 1px solid $border-color;
                     background-color:$border-color;
-                    border-radius: 20px;
+                    border-radius:50%;
                 }
                 p{
                     font-family: $mincho-font !important;
@@ -103,6 +105,7 @@
         }
     }
     &__third{
+        height: 100vh;
         background: $white;
         padding: 20px 40px 50px 40px;
         display: flex;
@@ -114,7 +117,7 @@
         &__left{
             font-size:1.4em;
             max-width: 800px;
-            margin-top: 200px;
+            margin-top: 3%;
             &--title{
                 font-size: 1.6em;
                 font-family: $title-font !important;
@@ -143,10 +146,84 @@
         &__right{
             width: 1000px;
             height: 800px;
+            margin-top: -5%;
             &--image{
                 position: absolute;
                 width: 1000px;
                 height: 800px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:contain;
+            }
+            
+        }
+    }
+
+    &__fourth{
+        height: 100vh;
+        padding: 20px 40px 50px 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        color: $dark;
+
+        &__left{
+            font-size:1em;
+            max-width: 800px;
+            margin-top: 100px;
+            
+            &--item{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+                &--header{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    align-items:center;
+                    padding:10px;
+
+                    .plus{
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size:contain;
+                        width: 20px;
+                        height: 20px;
+                        margin:10px;
+                    }
+                    h2{
+                        font-size: 1.2em;
+                        font-family: $title-font !important;
+                        color: $h-color;
+                        background:$white;
+                        border-radius:50px;
+                        padding:10px;
+                    }
+                }
+                &--body{
+                    color: $white;
+                    background:$not-grey;
+                    padding:20px;
+                    border-radius:100px;
+                    p{
+                        font-family: $mincho-font !important;
+                    }
+                }
+            }
+
+        }
+        &__right{
+            width: 1000px;
+            height: 800px;
+            &--image{
+                position: absolute;
+                width: 700px;
+                height: 100%;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size:contain;
@@ -326,11 +403,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            top: 1987px;
-            left: -110.20897674560547px;
-            width: 2673px;
-            height: 388px;
-            z-index: 2 !important;
+            top: 2000px;
+            left: -105.20897674560547px;
+            width: 2037px;
+            height: 310px;
 
             @media (max-width: 1199px){
                 

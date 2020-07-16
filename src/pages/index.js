@@ -24,6 +24,11 @@ import Overlay3Bg from '../assets/images/home-middle_second.png';
 import Overlay4Bg from '../assets/images/home-middle_third.png';
 import ImgSecond from '../assets/images/IMG_2390.jpg';
 import IllustrationThird from '../assets/images/undraw_having_fun_iais.svg';
+import IllustrationFourth from '../assets/images/undraw_researching_22gp.svg';
+import point from '../assets/images/point.svg';
+import plus from '../assets/images/plus-solid-1.png';
+import homeMiddleThird from '../assets/images/homeMiddleThird.svg';
+
 import '../assets/styles/pages/home.scss';
 
 const IndexPage = ({ data: { videoPreview } }) => {
@@ -78,10 +83,22 @@ const IndexPage = ({ data: { videoPreview } }) => {
           <div className="home__second">
             <div className="home__second__left">
               <div className="home__second__left--item">
-                <div></div><p>Give every young person a glimpse of what's possible</p>
+                <div
+                  className="point"
+                  style={{
+                    backgroundImage: `url(${point})`,
+                  }}
+                />
+              <p>Give every young person a glimpse of what's possible</p>
               </div>
               <div className="home__second__left--item">
-                <div></div><p>Give you a chance to interact with and create technology</p>
+                 <div
+                  className="point"
+                  style={{
+                    backgroundImage: `url(${point})`,
+                  }}
+                />
+                <p>Give you a chance to interact with and create technology</p>
               </div>
             </div>
             <Line />
@@ -98,7 +115,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
           <div
             className="home__overlay--3"
             style={{
-              backgroundImage: `url(${Overlay3Bg})`,
+              backgroundImage: `url(${homeMiddleThird})`,
             }}
           />
         </div>
@@ -107,18 +124,42 @@ const IndexPage = ({ data: { videoPreview } }) => {
 
             <h1 className="home__third__left--title">A project for students by the students</h1>
             <div className="home__third__left--item">
-              <div></div><p>An EdTech Venture by STEM students and young draduates from various universities across the world.</p>
+               <div
+                className="point"
+                style={{
+                  backgroundImage: `url(${point})`,
+                }}
+              />
+              <p>An EdTech Venture by STEM students and young draduates from various universities across the world.</p>
             </div>
             <div className="home__third__left--item">
-              <div></div><p>Commited to introducing every young African to technology in a relatable way.</p>
+               <div
+                className="point"
+                style={{
+                  backgroundImage: `url(${point})`,
+                }}
+              />
+              <p>Commited to introducing every young African to technology in a relatable way.</p>
             </div>
 
             <h1 className="home__third__left--title">Technology Doesn't Have To sound Exotic</h1>
             <div className="home__third__left--item">
-              <div></div><p>Technology relates to our everyday life, wherever we are from.</p>
+              <div
+                className="point"
+                style={{
+                  backgroundImage: `url(${point})`,
+                }}
+              />
+              <p>Technology relates to our everyday life, wherever we are from.</p>
             </div>
             <div className="home__third__left--item">
-              <div></div><p>We are offering you simplified, carefully selected, hands on and contextualised technology course.</p>
+               <div
+                className="point"
+                style={{
+                  backgroundImage: `url(${point})`,
+                }}
+              />
+              <p>We are offering you simplified, carefully selected, hands on and contextualised technology course.</p>
             </div>
           </div>
 
@@ -131,9 +172,68 @@ const IndexPage = ({ data: { videoPreview } }) => {
           </div>
 
         </div>
+
+        <div className="home__fourth">
+          <div className="home__fourth__left">
+
+            <div className="home__fourth__left--item">
+               <div className="home__fourth__left--item--header">
+                  <div
+                    className="plus"
+                    style={{
+                      backgroundImage: `url(${plus})`,
+                    }}
+                  />
+                  <h2>Learn at your convinience</h2>
+               </div>
+               <div className="home__fourth__left--item--body">
+                  <p>We have various innovation ways to support your learning regardless of you circumstances.</p>
+               </div>
+            </div>
+            <div className="home__fourth__left--item">
+               <div className="home__fourth__left--item--header">
+                  <div
+                    className="plus"
+                    style={{
+                      backgroundImage: `url(${plus})`,
+                    }}
+                  />
+                  <h2>Learn from your future selves</h2>
+               </div>
+               <div className="home__fourth__left--item--body">
+                  <p>An EdTech Venture by STEM students and young draduates from various universities across the world.</p>
+               </div>
+            </div>
+            <div className="home__fourth__left--item">
+               <div className="home__fourth__left--item--header">
+                  <div
+                    className="plus"
+                    style={{
+                      backgroundImage: `url(${plus})`,
+                    }}
+                  />
+                  <h2>Learn to imagine and create</h2>
+               </div>
+               <div className="home__fourth__left--item--body">
+                  <p>An EdTech Venture by STEM students and young draduates from various universities across the world.</p>
+               </div>
+            </div>
+
+          </div>
+
+          <div className="home__fourth__right">
+            <div className="home__fourth__right--image"
+              style={{
+                  backgroundImage: `url(${IllustrationFourth})`,
+                }}
+            />
+          </div>
+
+        </div>
+
         <div className="home__topics">
           <div className="home__topics--container">
-            <h1 className="home__topics--title">Some of the things we offer</h1>
+            <h1 className="home__topics--title">Our courses</h1>
             <div className="home__topics--grid">
               <Topic caption="testing" link="/testing" />
               <Topic caption="courses" link="/courses" />
@@ -143,15 +243,9 @@ const IndexPage = ({ data: { videoPreview } }) => {
             </div>
           </div>
         </div>
-        <div className="home__overlay">
-          <div
-            className="home__overlay--4"
-            style={{
-              backgroundImage: `url(${Overlay4Bg})`,
-            }}
-          />
-        </div>
+        
       <Testimonies />
+
     </Layout>
   );
 };
