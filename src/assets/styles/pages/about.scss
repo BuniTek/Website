@@ -3,10 +3,97 @@
 @import "../fonts.scss";
 .about{
     background: #EFEFEF 0% 0% no-repeat padding-box;
-    width: 100vw;
-
+    
     &__container {
         margin: 40px 0;
+        margin: 100px 0;
+    }
+
+    &__first-section{
+        display: grid;
+        grid-template-columns: 35% 65%;
+                margin: 0 150px;
+                padding: 10px;
+                grid-gap:40px;
+                
+        @include mediaMd {
+           display: block;
+           margin: 5px ;
+           
+        }
+    }
+
+    &__second-section{
+
+        &-container{
+            background-color: $white;
+            padding-bottom: 70px;
+            margin: 50px 0;
+          
+        }
+        
+
+           display: grid;
+           grid-template-columns: 65% 35%;
+           margin: 0 150px;
+           padding: 10px;
+           grid-gap:40px;
+           margin-top:150px;
+           align-content: center;
+           padding: 100px 10px;
+        @include mediaMd {
+            display: block;
+            margin: 5px ;
+    
+ }
+    }
+
+    &__third-section{
+
+        &-container{
+            margin: 150 0;
+            overflow: hidden;
+            position: relative;
+            padding: 40px;
+            height: 600px;
+            @include mediaMd {
+                padding: 20px;
+              }
+        }
+        
+        margin: 0px 10%;
+        padding: 0 150px;
+        line-height: 30px;
+        
+        @include mediaMd {
+            margin: auto 0;
+           
+        }
+    }
+
+    &__fourth--section{
+
+        &-container{
+            background: white;
+            overflow: hidden;
+        }
+
+        margin: 30px 0;
+        padding: 60px;
+    
+        @include mediaMd {
+            padding: 20px;
+            margin-right: -20px;
+        }
+    }
+
+    &__fifth--section{
+        padding: 100px 60px;
+    
+        @include mediaMd {
+            padding: 20px;
+            margin-right: -20px;
+        }
     }
 
     &__flex {
@@ -41,26 +128,11 @@
             z-index: 5;
 
             @include mediaMd {
-                margin: 20px 0;
-            }
-
-            &.flex-left {
-                margin-right: 10%;
-                 h1{
-                    color: $h-color;
-                    font-family: $title-font !important;
-                    font-size: 2.2em;
-                }
-                p{
-                    color: $dark;
-                    font-family: $mincho-font !important;
-                    font-size: 1.4em;
-                }
-            }
-
-            &.flex-right {
-                margin-left: 10%;
-                h1{
+             margin: 20px 0;
+            
+         }
+          &.flex-right {
+                     h1{
                     color: $h-color;
                     font-family: $title-font !important;
                     font-size: 2.2em;
@@ -72,70 +144,15 @@
                 }
             }
         }
-    }
-
-    &__story {
-      margin: 150px 0;
-      position: relative;
-      background: transparent;
-      z-index: 5;
-
-      &--quote {
-          position: absolute;
-          top: -20px;
-          right: 10%;
-
-          @include mediaMd {
-              top: 45%;
-              right: 3px;
-          }
-      }
-    }
-
-    &__community {
-        margin: 150px 0;
-        position: relative;
-        background: white;
-        padding: 80px;
-
-        @include mediaMd {
-            padding: 20px;
-            margin-right: -20px;
-        }
-
-        &--quote {
-            position: absolute;
-            transform: rotateY(180deg);
-            top: 50px;
-            left: 10%;
-
-            @include mediaMd {
-                top: 33%;
-                left: 0;
-            }
-        }
-
-        .about__flex {
-            @include mediaMd {
-                flex-direction: column-reverse;
-            }
-        }
-        
-    }
-
-    &__mission {
-        margin: 150px 0;
-        position: relative;
-        background: transparent;
     }
 
     &__shadow {
         background: lighten($h-color, 50%);
-        height: 300px;
+        height: 250px;
 
         &.circle {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border-radius: 100%;
         }
 
@@ -147,32 +164,91 @@
                height: 100px;
            }
         }
-
         &.absolute-right {
             position: absolute;
-            top: 15%;
-            left: 50%;
+            top: 40%;
+            left: 60%;
             z-index: -1;
 
             @include mediaMd {
-                left: 0;
-                top: 70%;
+                left: 20%;
+                top: 60%;
             }
         }
+        
 
         &.absolute-left {
             position: absolute;
             z-index: -1;
-            top: 15%;
-            left: -15%;
-
-            @include mediaMd {
-                left: 0;
-                top: 70%;
+            top: 130%;
+            left: 20%;
+           @include mediaMd {
+              left: 0;
+              top: 30%;
             }
-        }
+      }
     }
 }
+
+.section{
+    &__title{
+
+        &--container{
+            padding-bottom: 20px;  
+        }
+
+        color: $h-color;
+        font-family: $title-font !important;
+        font-size: 2.2em;
+        position: relative;
+        top: 30px;
+    }
+    &__content{
+        z-index: 5;
+        @include mediaMd {
+            position: relative;  
+         }
+         &-description{
+            padding-left: 60px;
+        }
+        
+    }
+    &__three-grid{
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 80px;
+        
+        font-size: 12px;
+        @include mediaMd {
+          display: block;  
+       }
+      
+      }
+      &__grid{
+
+        &-item{
+            padding: 0 60px;
+            display:grid;
+            grid-gap: 60px;
+            margin: 0 auto;
+        @include mediaMd {
+            padding: 0;
+            
+         }
+        }
+        &-line-divider{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__sub-content{
+        padding: 0 25px;
+    }
+    
+}
+
 
 .partners {
     background: lighten($h-color, 60%);
@@ -219,4 +295,21 @@
 
 body{
     background: #EFEFEF 0% 0% no-repeat padding-box;
+}
+
+
+.imglist li 
+{   
+    padding-top: 30px;
+    list-style-image: url(../../images/plus-solid-6.png);
+    font-size:16px;
+  
+}
+li span{
+    position: relative;
+    top:-10px;
+}
+
+.quote__heading-rotated{
+    transform: rotateY(180deg)
 }
