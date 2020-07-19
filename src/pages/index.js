@@ -92,7 +92,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
               description="JC Billy, Alain Eros Prestige are organizing a dope stuff the next summer guys. Just be ready"
               link="/blog"
             />
-            <Line />
+            <Line color="white" />
             <NewsCard
               title="Summer Hackathon 2020"
               description="JC Billy, Alain Eros Prestige are organizing a dope stuff the next summer guys. Just be ready"
