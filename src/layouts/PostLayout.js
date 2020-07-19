@@ -21,7 +21,7 @@ import './layout.css';
 import './postLayout.scss';
 
 import { setLogoUrl } from '../redux/actions';
-import logo from '../assets/images/africai_dark.png';
+import logo from '../assets/images/BuniTek_dark.png';
 
 
 

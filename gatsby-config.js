@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'AfricaI',
-    description: 'Africa-I is an organanization working to transform Tech Education in Africa youth. We inspire and teach cutting-edge technology to Africa Youth',
-    author: '@AfricaI',
-    keywords: 'AfricaI, Tech Education, digital skills, Youth, Rwanda, Kenya',
-    image: 'src/assets/images/africai.png',
-    url: 'https://www.africai.site/',
+    title: 'BuniTek',
+    description: 'BuniTek is an organanization working to transform Tech Education in Africa youth. We inspire and teach cutting-edge technology to Africa Youth',
+    author: '@BuniTek',
+    keywords: 'BuniTek, Tech Education, digital skills, Youth, Rwanda, Kenya',
+    image: 'src/assets/images/BuniTek.png',
+    url: 'https://www.BuniTek.site/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Africa-I',
-        short_name: 'AfricaI',
+        name: 'BuniTek',
+        short_name: 'BuniTek',
         start_url: '/',
         background_color: '#efefef',
         theme_color: '#373333',

@@ -1,7 +1,7 @@
 {
-  "name": "africa-i",
+  "name": "BuniTek",
   "private": true,
-  "description": "Africa-I frontend app",
+  "description": "BuniTek frontend app",
   "version": "0.1.0",
   "author": "Elie Mugenzi <eliemugenzi@gmail.com>",
   "dependencies": {
@@ -74,9 +74,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Africa-I/Website/"
+    "url": "https://github.com/BuniTek/Website/"
   },
   "bugs": {
-    "url": "https://github.com/Africa-I/Website/issues"
+    "url": "https://github.com/BuniTek/Website/issues"
   }
 }

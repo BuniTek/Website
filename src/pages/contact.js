@@ -14,12 +14,12 @@ import { setLogoUrl, setFooterVisible } from "../redux/actions";
 import "../assets/styles/pages/contact.scss";
 import contactTopLeft from "../assets/images/contact_top-left.svg";
 import contactMiddleRight from "../assets/images/contact_middle-right.svg";
-import logo from "../assets/images/africai.png";
+import logo from "../assets/images/BuniTek.png";
 
 const { Panel } = Collapse;
 
 const text = `
-  Contact us at Info@AfricaI.site
+  Contact us at Info@BuniTek.site
 `;
 
 const Contact = () => {

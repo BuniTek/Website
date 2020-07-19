@@ -9,7 +9,7 @@ const Team = () => (
     <div className="team__list">
       <TeamMember
         titles="Engineer"
-        email="elie@theafricai.com"
+        email="elie@theBuniTek.com"
         phoneNumber="+250785844487"
         name="Elie Mugenzi"
         profileUrl="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -17,35 +17,35 @@ const Team = () => (
 
       <TeamMember
         titles="Designer"
-        email="alain@theafricai.com"
+        email="alain@theBuniTek.com"
         phoneNumber="+250785844487"
         name="Alain Eros Prestige"
       />
 
       <TeamMember
         titles="CEO"
-        email="billy@theafricai.com"
+        email="billy@theBuniTek.com"
         phoneNumber="+250785844487"
         name="Billy Jason"
       />
 
       <TeamMember
         titles="Engineer"
-        email="willy@theafricai.com"
+        email="willy@theBuniTek.com"
         phoneNumber="+250785844487"
         name="Willy Serge"
         profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
       />
       <TeamMember
         titles="The main man"
-        email="daniel@africai.site"
+        email="daniel@BuniTek.site"
         phoneNumber="+250785844487"
         name="Daniel"
         profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
       />
       <TeamMember
         titles="Retired Member"
-        email="willy@theafricai.com"
+        email="willy@theBuniTek.com"
         phoneNumber="+250785844487"
         name="Erastus"
         profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"

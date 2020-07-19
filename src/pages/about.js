@@ -9,7 +9,7 @@ import Link from '../components/Link';
 import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
-import logo from '../assets/images/africai_dark.png';
+import logo from '../assets/images/BuniTek_dark.png';
 import quoteImage from '../assets/images/quote-right-solid.svg';
 import edinburghLogo from '../assets/images/edinburgh.png';
 import msLogo from '../assets/images/ms.png';
@@ -55,7 +55,7 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
                 <div className="about__shadow circle absolute-left" />
                 <h1>Africa-specific Services</h1>
                 <p> 
-                We developed proprietary curriculum curated to be hands-on, fun and Africa speci c; through clubs in various schools across Africa at which A Purpose-Driven Company Create, offer, skills, simple, fun, movement, technology, future relavant Learn more > Africa speci c; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and Africa-I invent lab which will be creating education-empowering tools to be shared with education institutions.
+                We developed proprietary curriculum curated to be hands-on, fun and Africa speci c; through clubs in various schools across Africa at which A Purpose-Driven Company Create, offer, skills, simple, fun, movement, technology, future relavant Learn more > Africa speci c; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and BuniTek invent lab which will be creating education-empowering tools to be shared with education institutions.
                 </p>
                 <Link to="/contact">Contact us &gt;</Link>
               </div>
@@ -74,7 +74,7 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
               <div className="about__shadow rounded absolute-right" />
                 <h1>Changing The Ordinary</h1>
                 <p>
-                At AfricaI, We are working to create a movement that will inspire and introduce cutting-edge technologies to young people and demonstrate the potential of those technologies through hands-on, fun and simple scheme. We aim to inspire young people to start solving local problems at a young age and to pursue technology-related  elds. We envisage to create a community of con dent technologists, creative thinkers, and thoughtful learners of our increasingly tech-enabled future. proprietary curriculum curated to be hands-on, fun and Africa speci c; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and Africa-I invent lab which will be creating educationempowering tools to be shared with education institutions.
+                At BuniTek, We are working to create a movement that will inspire and introduce cutting-edge technologies to young people and demonstrate the potential of those technologies through hands-on, fun and simple scheme. We aim to inspire young people to start solving local problems at a young age and to pursue technology-related  elds. We envisage to create a community of con dent technologists, creative thinkers, and thoughtful learners of our increasingly tech-enabled future. proprietary curriculum curated to be hands-on, fun and Africa speci c; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and BuniTek invent lab which will be creating educationempowering tools to be shared with education institutions.
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
             <div className="about__flex">
               <div className="about__flex--description flex-left">
                 <div className="about__shadow circle absolute-left" />
-                <h1>Why Africa-I?</h1>
+                <h1>Why BuniTek?</h1>
                 <p>
                 We realised that most young persons do not get a chance to discover or explore their passion in technology and to experiment on its possibilities since a young age; an occurrence that has made technology remain an alien concept to most of our young people in Africa. - We realise that as industry 4.0 approaches, over 25% of jobs will come from the technology sector. Economic advancements will also be fully anchored on this sector. Therefore, if we are to create enough jobs for our growing working population, we need as many people as possible gaining tech mastery through specialising in areas that they love – this can only happen if they are given a fair chance to sample and experience and imagine what’s possible.
                 </p>
