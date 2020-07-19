@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import logo from '../../assets/images/africai.png';
+import logo from '../../assets/images/BuniTek.png';
 
 const Footer = () => {
   const footerVisible = useSelector(state => state.ui.footerVisible);
@@ -60,9 +60,9 @@ const Footer = () => {
       </div>
       <hr className="footer__divider" />
       <div className="footer__container--low">
-        <a href="/"><span>@Copyright Africai 2020</span></a>
+        <a href="/"><span>@Copyright BuniTek 2020</span></a>
   
-        <a href="/"><span>Africai</span></a>
+        <a href="/"><span>BuniTek</span></a>
         <a href="/"><span>Terms and conditions</span></a>
         <a href="/"><span>Emergency policy</span></a>
   

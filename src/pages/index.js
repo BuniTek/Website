@@ -17,7 +17,7 @@ import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import homeBanner from '../assets/images/undraw_web_developer_p3e5.svg';
 
-import lightLogo from '../assets/images/africai.png';
+import lightLogo from '../assets/images/BuniTek.png';
 import background from '../assets/images/home_top-left.svg';
 import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
 import Overlay3Bg from '../assets/images/home-middle_second.png';
@@ -57,7 +57,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
             <div className="home__grid--item">
               <Typed
                 className="home__typed"
-                strings={["Africa-Imagination", "Africa-Invent", "Africa-Intelligence", "Africa-Impact", "Africa-I can", "Africa-I"]}
+                strings={["BuniTekmagination", "BuniTeknvent", "BuniTekntelligence", "BuniTekmpact", "BuniTek can", "BuniTek"]}
                 typeSpeed={40}
               />
               
