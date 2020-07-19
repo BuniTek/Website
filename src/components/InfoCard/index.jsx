@@ -2,15 +2,13 @@ import React from 'react';
 
 import './index.scss';
 
-function InfoCard() {
+function InfoCard({ title, description }) {
   return (
     <div className="info__card">
       <div>
-        <h3>About Courses</h3>
+        <h3>{ title}</h3>
         <p>
-          this is course content this is course content this is course content
-          this is course content this is course content this is course content
-          this is course content this is course content this is course content
+          { description}
         </p>
       </div>
     </div>

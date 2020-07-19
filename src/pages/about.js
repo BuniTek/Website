@@ -54,9 +54,15 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
                     <img src={quoteImage} alt="quote" />
                   </div>
                   <div>
-                    <p>proprietary curriculum curated to be hands-on, fun and Africa specifkjfjfnkjfnjkfnfjnf fofnjfnfifnfofnfoinffif</p>
-                    <p>proprietary curriculum curated to be hands-on, fun and Africa specifkjfjfnkjfnjkfnfjnf fofnjfnfifnfofnfoinffif</p>
-                    <p>proprietary curriculum curated to be hands-on, fun and Africa specifkjfjfnkjfnjkfnfjnf fofnjfnfifnfofnfoinffif</p>
+                    <p>
+                      Africa-I is a digital literacy venture  working to createa movement
+                      that will inspire and introduce new technology to young people and demonstrate
+                      its potential through hands-on and cutting-edge technologies
+                    </p>
+                    <p>
+                      We are creating a community of confident technologists, creative thinkers,
+                      and thoughtful learners of our increasingly tech-enabled future
+                    </p>
                   </div>
                 </div>
               </div>
@@ -74,9 +80,11 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
                     <span className="section__title">Our Mission ?</span>
                   </div>
                   <div className="section__content-description " style={{ paddingLeft: 90, paddingTop: 60 }}>
-                    <p>proprietary curriculum curated to be hands-on, fun and Africa specifkjfjfnkjfnjkfnfjnf fofnjfnfifnfofnfoinffif</p>
-                    <p>proprietary curriculum curated to be hands-on, fun and Africa specifkjfjfnkjfnjkfnfjnf fofnjfnfifnfofnfoinffif</p>
-                    <p>proprietary curriculum curated to be hands-on, fun and Africa specifkjfjfnkjfnjkfnfjnf fofnjfnfifnfofnfoinffif</p>
+                    <p>
+                      To inspire, encourage and give African high school students a fair
+                      shot at discovering technology potential and provide ground for them
+                      to explore and employ their skills to solve problems and invent the future.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -101,16 +109,15 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
 
                     <li>
                       <span>
-                        We belive everyone can learn tech and can use it to create, and impact his/her community
-                        We belive everyone can learn tech and can use it to create, and impact his/her community
-                        We belive everyone can learn tech and can use it to create, and impact his/her community
+                        To give students a chance to discover or explore their passion in technology
+                        and to experiment on its possibilities at a younger age so that it doesn't feel
+                        like an exotic concept.
                       </span>
                     </li>
                     <li>
                       <span>
-                        We belive everyone can learn tech and can use it to create, and impact his/her community
-                        We belive everyone can learn tech and can use it to create, and impact his/her community
-                        We belive everyone can learn tech and can use it to create, and impact his/her community
+                        To enable you africans to optimise on the benefits of industry 4.0 during which over
+                        25% of jobs will come from the technology sector.
                       </span>
                     </li>
                   </ol>
@@ -131,13 +138,37 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
 
               <div className="section__three-grid">
                 <div className="section__grid-item">
-                  <InfoCard />
-                  <InfoCard />
+                  <InfoCard
+                    title="Simplified and Insightful"
+                    description="Our courses are simple and tought at a higher level
+                   focusing on introducing concepts while providing the bigger picture rather than
+                   the fine,low level details
+                   "
+                  />
+                  <InfoCard
+                    title="Online Courses"
+                    description="We wil offer you the material, guidance and support to satisy
+                    your tech curiosity online throgh a series of lectures, demonstrations and challenges
+                    with immediate feedback.
+                   "
+                  />
                 </div>
                 <div className="section__grid-line-divider"><Line color="black" /></div>
                 <div className="section__grid-item">
-                  <InfoCard />
-                  <InfoCard />
+                  <InfoCard
+                    title="Tailer Made For You"
+                    description="Our courses are simple and tought at a higher level
+                   focusing on introducing concepts while providing the bigger picture rather than
+                   the fine,low level details
+                   "
+                  />
+                  <InfoCard
+                    title="Online Courses"
+                    description="Our courses are simple and tought at a higher level
+                   focusing on introducing concepts while providing the bigger picture rather than
+                   the fine,low level details
+                   "
+                  />
                 </div>
               </div>
             </div>
@@ -154,13 +185,37 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
 
               <div className="section__three-grid">
                 <div className="section__grid-item">
-                  <InfoCard />
-                  <InfoCard />
+                  <InfoCard
+                    title="Simplified and Insightful"
+                    description="Our courses are simple and tought at a higher level
+                   focusing on introducing concepts while providing the bigger picture rather than
+                   the fine,low level details
+                   "
+                  />
+                  <InfoCard
+                    title="Simplified and Insightful"
+                    description="Our courses are simple and tought at a higher level
+                   focusing on introducing concepts while providing the bigger picture rather than
+                   the fine,low level details
+                   "
+                  />
                 </div>
                 <div className="section__grid-line-divider"><Line color="black" /></div>
                 <div className="section__grid-item">
-                  <InfoCard />
-                  <InfoCard />
+                  <InfoCard
+                    title="Simplified and Insightful"
+                    description="Our courses are simple and tought at a higher level
+                   focusing on introducing concepts while providing the bigger picture rather than
+                   the fine,low level details
+                   "
+                  />
+                  <InfoCard
+                    title="Simplified and Insightful"
+                    description="Our courses are simple and tought at a higher level
+                   focusing on introducing concepts while providing the bigger picture rather than
+                   the fine,low level details
+                   "
+                  />
                 </div>
               </div>
             </div>
