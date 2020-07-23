@@ -1,88 +1,77 @@
-@import '../../assets/styles/mixins.scss';
-@import '../../assets/styles/colors.scss';
-@import '../../assets/styles/fonts.scss';
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
 
 .testimonies {
-    width: 100vw;
-    min-height: 100vh;
-    background:$dark;
+  width: 100vw;
+  min-height: 60vh;
 
-    @include mediaMd {
-        margin: 50px 8%;
-    }
+  @include mediaMd {
+    margin: 50px 8%;
+  }
 
-    &__title {
-        padding-top: 5%;
-        text-align: center;
-        font-family: $title-font !important;
-        color: $white;
+  &__title {
+    padding-top: 5%;
+    text-align: center;
+    font-family: $title-font !important;
+    color: $dark;
+  }
+  &__slider {
+    &--item {
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
     }
-    &__slider {
-        &--item {
-            width: 100vw;
-            height: 100vh;
-            text-align: center;
-        }
-    }
+  }
 }
 
 .testimony {
-    &__item {
-        width:100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-between;
-        justify-items:center;
-        align-items:center;
-        padding:10px;
+  &__item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
 
-        &__left{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            color: $white;
-            max-width: 40vw;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      color: $dark;
+      max-width: 40vw;
 
-            &--info{
-                font-size: 1.2em;
-                font-family: $mincho-font !important;
-            }
-            &--author{
-                color: $white;
-                font-family: $title-font !important;
-            }
-        }
-        &__right{
-
-        }
-
-
-        @include mediaSm {
-        }
-
-        @include mediaMd {
-
-        }
-        &--avatar {
-           
-
-            img {
-               
-            }
-
-            @include mediaMd {
-
-            }
-        }
-
-        &--info {
-           
-        }
-
-        &--author {
-           
-
-        }
+      &--info {
+        font-size: 1.2em;
+        font-family: $mincho-font !important;
+      }
+      &--author {
+        color: $dark;
+        font-family: $title-font !important;
+      }
     }
+    &__right {
+    }
+
+    @include mediaSm {
+    }
+
+    @include mediaMd {
+    }
+    &--avatar {
+      img {
+      }
+
+      @include mediaMd {
+      }
+    }
+
+    &--info {
+    }
+
+    &--author {
+    }
+  }
 }
