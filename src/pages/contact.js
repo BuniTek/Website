@@ -101,9 +101,9 @@ const Contact = () => {
             You can reach us various platforms, don't hesitate to contact us if you need any assistance 
           </p>
           <div className="contact__social">
-            <AntBtn className="contact__social--button"> <FacebookOutlined />  Facebook</AntBtn>
-            <AntBtn className="contact__social--button"> <InstagramOutlined /> Instagram</AntBtn>
-            <AntBtn className="contact__social--button">FAQ</AntBtn>
+            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> <FacebookOutlined />  Facebook</AntBtn></a>
+            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> <InstagramOutlined /> Instagram</AntBtn></a>
+            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button">FAQ</AntBtn></a>
           </div>
           <form
             // onSubmit={onSubmit}

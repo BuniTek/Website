@@ -44,16 +44,16 @@ const Footer = () => {
           <h4 className="sub-heading">Follow us</h4>
           <ul className="footer__subcontainer--list inline">
             <li>
-              <a href="/"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
+              <a href="https://fb.me/buniteki/" target="_blank"><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
             </li>
             <li>
-              <a href="/"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+              <a href="https://twitter.com/buni_tek/" target="_blank"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
             </li>
             <li>
-              <a href="/"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+              <a href="https://www.instagram.com/buni_tek/" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
             </li>
             <li>
-              <a href="/"><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
+              <a href="https://www.youtube.com/channel/UCWDD2ng7wAvEGgsZrnRDBcA/" target="_blank"><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
             </li>
           </ul>
         </div>
