@@ -148,8 +148,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   />
                   <InfoCard
                     title="Online Courses"
-                    description="We wil offer you the material, guidance and support to satisy
-                    your tech curiosity online throgh a series of lectures, demonstrations and challenges
+                    description="We will offer you the material , guidance and support to satisfy
+                    your tech curiosity online through a series of lectures, demonstrations and chalenges
                     with immediate feedback.
                    "
                   />
@@ -157,10 +157,10 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                 <div className="section__grid-line-divider"><Line color="black" /></div>
                 <div className="section__grid-item">
                   <InfoCard
-                    title="Tailer Made For You"
-                    description="Our courses are simple and tought at a higher level
-                   focusing on introducing concepts while providing the bigger picture rather than
-                   the fine,low level details
+                    title="Tailer-Made for You"
+                    description="We will offer you the material , guidance and support to satisfy
+                    your tech curiosity online through a series of lectures, demonstrations and chalenges
+                    with immediate feedback.
                    "
                   />
                   <InfoCard
