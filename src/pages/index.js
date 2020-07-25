@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import Button from "../components/Button"
 import NewsCard from "../components/News"
 import Form from "../components/Form"
-import Collapsible from "../components/Collapsible"
+import Reaveler from "../components/Reaveler"
 import Input from "../components/Form/Input"
 import Topic from "../components/Topic"
 import Testimonies from "../components/Testimonies"
@@ -27,6 +27,7 @@ import ImgSecond from "../assets/images/IMG_2390.jpg"
 import IllustrationThird from "../assets/images/undraw_having_fun_iais.svg"
 import IllustrationFourth from "../assets/images/undraw_researching_22gp.svg"
 import point from "../assets/images/point.svg"
+import play from "../assets/images/play.svg"
 import homeMiddleThird from "../assets/images/homeMiddleThird.svg"
 
 import "../assets/styles/pages/home.scss"
@@ -83,6 +84,12 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							</span>
 						</div>
 						<div className="home__grid--item">
+							<div
+								className="hero__play"
+								style={{
+									backgroundImage: `url(${play})`,
+								}}
+							/>
 							<Img
 								fluid={videoPreview.childImageSharp.fluid}
 								alt="Hero"
@@ -200,15 +207,15 @@ const IndexPage = ({ data: { videoPreview } }) => {
 			</div>
 			<div className="home__fourth">
 				<div className="home__fourth__left">
-					<Collapsible
+					<Reaveler
 						heading="Learn at your convinience"
 						content="We have various innovation ways to support your learning regardless of you circumstances."
 					/>
-					<Collapsible
+					<Reaveler
 						heading="Learn from your future selves"
 						content="An EdTech Venture by STEM students and young draduates from various universities across the world."
 					/>
-					<Collapsible
+					<Reaveler
 						heading="Learn to imagine and create"
 						content="An EdTech Venture by STEM students and young draduates from various universities across the world."
 					/>

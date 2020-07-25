@@ -5,7 +5,7 @@ import "./index.scss"
 import plus from "../../assets/images/plus-solid-1.png"
 import minus from "../../assets/images/minus-solid.svg"
 
-function Collapsible({ heading, content }) {
+function Reaveler({ heading, content }) {
   const initialState = false
   const [state, setState] = useState(initialState)
 
@@ -14,31 +14,26 @@ function Collapsible({ heading, content }) {
   }
 
   const hideParagraph = () => {
-    if (state) return "unhide"
-    else return "hide"
+    if (state) return "revealer__content--unhide"
+    else return "revealer__content--hide"
   }
 
   return (
-    <div className="collapsible">
-      <div className="collapsible__header">
+    <div className="revealer">
+      <div className="revealer__header">
         <div
-          className="collapsible__header__icon"
+          className="revealer__header__icon"
           style={{
             backgroundImage: `url(${state == true ? minus : plus})`,
-            color: "#BFBFBF",
           }}
         />
-        <div className="collapsible__header__heading" onClick={toggleParagraph}>
+        <div className="revealer__header__heading" onClick={toggleParagraph}>
           <span>{heading}</span>
         </div>
       </div>
-      <div
-        className={`collapsible__content collapsible__content--hide ${hideParagraph()}`}
-      >
-        {content}
-      </div>
+      <div className={`revealer__content ${hideParagraph()}`}>{content}</div>
     </div>
   )
 }
 
-export default Collapsible
+export default Reaveler

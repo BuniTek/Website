@@ -18,19 +18,21 @@
     grid-template-columns: repeat(2, minmax(500px, 1fr));
     grid-gap: 30px;
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 5vh;
     align-items: center;
 
-    @media (max-width: 1199px) {
+    @include mediaXXL {
     }
-
-    @media (max-width: 991px) {
+    @include mediaXL {
+    }
+    @include mediaLg {
+    }
+    @include mediaMd {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
       justify-items: center;
     }
-
-    @media (max-width: 767px) {
+    @include mediaSm {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
       justify-items: center;
@@ -38,24 +40,16 @@
 
     &--item {
       &:nth-child(2) {
-        h1 {
-          font-family: $heading-font !important;
-          color: $h-color;
-          font-size: 3.2em;
+        @include mediaXXL {
         }
-        p {
-          font-size: 1.4em;
-          color: $p-color;
+        @include mediaXL {
         }
-
-        @media (max-width: 1199px) {
+        @include mediaLg {
         }
-
-        @media (max-width: 991px) {
+        @include mediaMd {
           grid-row: 2;
         }
-
-        @media (max-width: 767px) {
+        @include mediaSm {
           grid-row: 2;
           text-align: center;
           h1 {
@@ -70,11 +64,27 @@
       .hero {
         &__image {
           position: relative;
-          width: 400px;
+          width: 40vw;
 
           @include mediaMd {
             margin-top: 50px !important;
             width: 200px !important;
+          }
+        }
+        &__play {
+          position: absolute;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 5rem;
+          height: 100%;
+          z-index: 2;
+          margin-left: 20vw;
+
+          &:hover {
+            cursor: pointer;
+            width: 5.4rem;
+            color: grey;
           }
         }
       }
@@ -97,19 +107,18 @@
   }
 
   &__second {
+    padding: 0 5vw;
     min-height: 60vh;
     background: $dark;
-    padding: 20px 20px 50px 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 30px;
     align-items: center;
     color: $white;
 
     &__left {
-      font-size: 1.4em;
-      max-width: 300px;
+      max-width: 30vw;
       &--item {
         display: flex;
         flex-direction: row;
@@ -117,23 +126,23 @@
         justify-content: space-between;
         padding: 10px;
         .point {
-          margin: 5px;
-          width: 30px;
-          height: 15px;
-          border: 1px solid $border-color;
-          background-color: $border-color;
-          border-radius: 50%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin: 0.5rem;
+          width: 1.2rem;
+          width: 1.2rem;
         }
         p {
           font-family: $mincho-font !important;
+          font-size: 1.4rem;
         }
       }
     }
 
     &__right {
       &--image {
-        width: 300px;
-        height: 300px;
+        width: 20vw;
+        height: 30vh;
         border: 4px solid $border-color;
         background-repeat: no-repeat;
         background-size: cover;
@@ -147,7 +156,7 @@
   &__third {
     height: 100vh;
     background: $white;
-    padding: 20px 40px 50px 40px;
+    padding: 0 5vw;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -156,10 +165,9 @@
     color: $dark;
 
     &__left {
-      font-size: 1.4em;
-      max-width: 600px;
+      max-width: 50vw;
       &--title {
-        font-size: 1.6em;
+        font-size: 1.6rem;
         font-family: $title-font !important;
         color: $h-color;
       }
@@ -169,27 +177,28 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         padding: 10px;
-        div {
-          margin: 5px;
-          width: 30px;
-          height: 15px;
-          border: 1px solid $border-color;
-          background-color: $border-color;
-          border-radius: 20px;
+        .point {
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin: 0.5rem;
+          width: 1.2rem;
+          width: 1.2rem;
         }
         p {
           font-family: $mincho-font !important;
+          font-size: 1.4rem;
         }
       }
     }
     &__right {
-      width: 1000px;
-      height: 100%;
+      width: 50vw;
+      height: 80vh;
 
       &--image {
         position: absolute;
-        width: 1000px;
+        width: 100vw;
         height: 80vh;
+        margin-left: -20vw;
 
         background-repeat: no-repeat;
         background-position: center;
@@ -200,7 +209,7 @@
 
   &__fourth {
     height: 100vh;
-    padding: 20px 40px 50px 40px;
+    padding: 0 5vw;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -209,22 +218,14 @@
     color: $dark;
 
     &__left {
-      font-size: 1em;
-      max-width: 800px;
-
-      &--item {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-      }
+      max-width: 40vw;
     }
     &__right {
-      width: 1000px;
-      height: 800px;
+      width: 60vw;
+      height: 100vh;
       &--image {
         position: absolute;
-        width: 700px;
+        width: 50vw;
         height: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -237,16 +238,14 @@
     background: $white;
     min-height: 60vh;
     &--container {
-      margin: auto 10%;
-      padding: 50px auto;
+      margin: auto 5vw;
     }
     &--grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
       grid-gap: 20px;
       align-items: center;
-      justify-items: center;
-      padding-bottom: 50px !important;
 
       @include mediaMd {
         grid-template-columns: 1fr;
@@ -254,15 +253,14 @@
     }
 
     &--title {
+      font-size: 1.8rem;
       text-align: center;
-      margin-bottom: 100px;
-      margin-top: 50px;
-      padding-top: 50px !important;
+      margin-top: 5vh;
+      padding-top: 5vh !important;
       font-family: $title-font !important;
       color: $dark;
     }
   }
-
   &__overlay {
     width: 100vw;
     &--1 {
@@ -275,25 +273,19 @@
   }
 }
 
-.hide {
-  display: none;
-  transition-timing-function: ease-in;
-}
-.unhide {
-  display: block;
-  transition-timing-function: ease-in;
-}
-
 body.home {
   overflow: auto;
   height: 100vh;
   width: 100vw;
 
-  @media (max-width: 1199px) {
+  @include mediaXXL {
   }
-
-  @media (max-width: 991px) {
+  @include mediaXL {
   }
-  @media (max-width: 767px) {
+  @include mediaLg {
+  }
+  @include mediaMd {
+  }
+  @include mediaSm {
   }
 }

@@ -4,15 +4,17 @@
 
 .testimonies {
   width: 100vw;
-  min-height: 60vh;
-
+  padding: 0 5vw;
+  min-height: 80vh;
   @include mediaMd {
     margin: 50px 8%;
   }
 
   &__title {
-    padding-top: 5%;
+    font-size: 1.8rem;
     text-align: center;
+    margin-top: 5vh;
+    padding-top: 5vh !important;
     font-family: $title-font !important;
     color: $dark;
   }
@@ -30,10 +32,9 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
     justify-items: center;
     align-items: center;
-    padding: 10px;
+    grid-gap: 30px;
 
     &__left {
       display: flex;
@@ -44,7 +45,7 @@
       max-width: 40vw;
 
       &--info {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         font-family: $mincho-font !important;
       }
       &--author {
@@ -53,6 +54,11 @@
       }
     }
     &__right {
+      width: 20vw;
+      height: 30vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     @include mediaSm {

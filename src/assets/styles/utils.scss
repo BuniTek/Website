@@ -13,16 +13,16 @@ body {
 		font-size: 10px;
 	}
 	@media (max-width: $tablet) {
-		font-size: 12px;
+		font-size: 11px;
 	}
 	@media (max-width: $desktop-max) and (min-width: $tablet+1) {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	@media (min-width: $desktop-max+1) and (min-width: $desktop-umax) {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	@media (min-width: $desktop-umax) {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 

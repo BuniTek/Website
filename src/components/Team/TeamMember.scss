@@ -1,37 +1,38 @@
-button.hover-btn{
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    padding: 10px;
+button.hover-btn {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 10px;
+  background: transparent;
+
+  &:hover {
     background: transparent;
+    border: none;
+  }
 
-    &:hover{
-        background: transparent;
-        border: none;
-    }
-
-    &:focus{
-        border: none;
-        background: transparent;
-    }
+  &:focus {
+    border: none;
+    background: transparent;
+  }
 }
 
 .team {
-    &__info {
-        &--title {
-            font-weight: 100;
-        }
+  &__info {
+    &--title {
+      font-weight: 100;
     }
+  }
 }
 
 .avatar__button {
-    background: transparent;
-     border: none;
-     outline: none;
+  background: transparent;
+  border: none;
+  outline: none;
 
-     &:hover, &:focus {
-         border: none;
-         outline: none;
-         background: transparent;
-     }
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
 }
