@@ -1,26 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 @import "../mixins";
 @import "../colors.scss";
 @import "../fonts.scss";
+
+
 .about{
     background: #EFEFEF 0% 0% no-repeat padding-box;
     
-    &__container {
-        margin: 40px 0;
+    &__container {   
         margin: 100px 0;
     }
 
     &__first-section{
         display: grid;
         grid-template-columns: 35% 65%;
-                margin: 0 150px;
-                padding: 10px;
-                grid-gap:40px;
+        margin: 0 150px;
+        padding: 10px;
+        grid-gap:40px;
                 
         @include mediaMd {
            display: block;
-           margin: 5px ;
-           
+           margin: 5px;
+           padding: 0;      
         }
+
+        &-image{
+          @include mediaMd {
+         margin-bottom: 30px;
+            
+        }
+     }
+     &-description{
+        z-index: 5;
+        position: relative; 
+        font-size: 20px;
+     }
     }
 
     &__second-section{
@@ -31,7 +46,12 @@
             margin: 50px 0;
           
         }
-        
+
+        &-image{
+            @include mediaMd {
+                margin-top: 40px;     
+               }
+        }
 
            display: grid;
            grid-template-columns: 65% 35%;
@@ -44,50 +64,70 @@
         @include mediaMd {
             display: block;
             margin: 5px ;
-    
- }
+        }
+
+      p{
+        padding-left: 90px;
+        padding-top: 60px;
+
+        @include mediaMd {
+            padding-left: 0;
+        }
+
+      }
+      @include mediaMd {
+        padding: 0 ;
+        padding-top: 30px;
+    }
     }
 
     &__third-section{
 
-        &-container{
-            margin: 150 0;
-            overflow: hidden;
-            position: relative;
-            padding: 40px;
-            height: 600px;
-            @include mediaMd {
-                padding: 20px;
-              }
-        }
+     z-index: 5;
+     position: relative; 
+
+    &-content{
+        padding: 0 25%;
+        padding-bottom: 10%;
+        z-index: 5;
+        position: relative; 
+       @include mediaMd {
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+    }
         
-        margin: 0px 10%;
-        padding: 0 150px;
-        line-height: 30px;
-        
-        @include mediaMd {
-            margin: auto 0;
-           
-        }
     }
 
     &__fourth--section{
 
         &-container{
             background: white;
-            overflow: hidden;
+             
+          @include mediaMd {
+            margin: 50px 0;
+            padding: 50px 0; 
+         }
         }
 
         margin: 30px 0;
         padding: 60px;
     
         @include mediaMd {
-            padding: 20px;
+            padding: 0 20px;
             margin-right: -20px;
         }
+
     }
 
     &__fifth--section{
+
+        &-container{   
+          @include mediaMd {
+            margin: 50px 0;
+            padding: 20px 0 50px 0;
+         }
+        }
         padding: 100px 60px;
     
         @include mediaMd {
@@ -96,55 +136,6 @@
         }
     }
 
-    &__flex {
-        display: flex;
-        justify-content: space-around;
-        margin: auto 10%;
-        padding: 40px;
-
-        @include mediaMd {
-            flex-direction: column;
-            margin: auto 0;
-        }
-
-        &--image {
-            flex-basis: 40%;
-            img {
-                width: 100%;
-                height: 100%;
-                border: 2px solid $dark;
-            }
-
-            @include mediaMd {
-                margin-bottom: 50px;
-            }
-        }
-
-        &--description {
-            flex-basis: 60%;
-            display: grid;
-            place-content: center;
-            position: relative;
-            z-index: 5;
-
-            @include mediaMd {
-             margin: 20px 0;
-            
-         }
-          &.flex-right {
-                     h1{
-                    color: $h-color;
-                    font-family: $title-font !important;
-                    font-size: 2.2em;
-                }
-                p{
-                    color: $dark;
-                    font-family: $mincho-font !important;
-                    font-size: 1.4em;
-                }
-            }
-        }
-    }
 
     &__shadow {
         background: lighten($h-color, 50%);
@@ -157,18 +148,24 @@
         }
 
         &.rounded {
-           width: 400px;
+           width: 433px;
            border-radius: 300px;
            @include mediaMd {
                width: 250px;
-               height: 100px;
+               height: 150px;
            }
         }
         &.absolute-right {
             position: absolute;
-            top: 40%;
-            left: 60%;
+            top: 0;
+            left: 40%;
             z-index: -1;
+            &-third-section{
+                position: absolute;
+                top: 0;
+                left: 60%;
+                z-index: -1;
+            }
 
             @include mediaMd {
                 left: 20%;
@@ -180,12 +177,9 @@
         &.absolute-left {
             position: absolute;
             z-index: -1;
-            top: 120%;
-            left: 20%;
-           @include mediaMd {
-              left: 0;
-              top: 30%;
-            }
+            top: 15%;
+            left: 0;
+           
       }
     }
 }
@@ -194,35 +188,36 @@
     &__title{
 
         &--container{
-            padding-bottom: 20px;  
+            padding-bottom: 20px;
+              
         }
-
+        &-centered{
+            text-align: center;
+        }
         color: $h-color;
-        font-family: $title-font !important;
+        font-family: 'Archivo Black', sans-serif !important;
         font-size: 2.2em;
         position: relative;
         top: 30px;
-    }
-    &__content{
-        z-index: 5;
         @include mediaMd {
-            position: relative;  
-         }
-         &-description{
-            padding-left: 60px;
+            font-size: 2em;
+            
         }
-        
     }
+    &__image{
+        border: 3px solid $dark;
+    }
+    
     &__three-grid{
         display: grid;
         grid-template-columns: 45% 10% 45%;
         justify-content: center;
         align-items: center;
         margin: 50px 80px;
-        
-        font-size: 12px;
+        font-size: 18px;
         @include mediaMd {
-          display: block;  
+          display: block; 
+          margin: 25px; 
        }
       
       }
@@ -234,7 +229,9 @@
             grid-gap: 60px;
             margin: 0 auto;
         @include mediaMd {
+            grid-gap: 30px;
             padding: 0;
+            margin-bottom: 30px;
             
          }
         }
@@ -302,7 +299,8 @@ body{
 {   
     padding-top: 30px;
     list-style-image: url(../../images/plus-solid-6.png);
-    font-size:16px;
+    font-size: 20px;
+    
   
 }
 li span{
@@ -310,6 +308,30 @@ li span{
     top:-10px;
 }
 
-.quote__heading-rotated{
-    transform: rotateY(180deg)
+.quote{
+    &-visibility{
+        @include mediaMd {
+            display: none;
+        }
+    }
+    &__heading-rotated{
+        transform: rotateY(180deg);
+    
+        &-shrinkable{
+            transform: rotateY(180deg);
+            @include mediaMd {
+                width: 50px !important;
+                height: 44px !important;
+            }
+        }
+    
+    }
+    
+}
+
+.section__content-description{
+    z-index: 5;
+    position: relative; 
+    font-size: 20px;
+
 }

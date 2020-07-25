@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import { useDispatch } from 'react-redux';
 import Img from 'gatsby-image';
 
@@ -21,7 +21,7 @@ import ibmLogo from '../assets/images/ibm.png';
 import armLogo from '../assets/images/arm.png';
 
 
-const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
+const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     const body = document.querySelector('body');
@@ -39,26 +39,26 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
       <SEO title="About Us" />
       <div className="about">
         <div className="about__container">
-
-
           <section>
             <div className="about__first-section">
-              <div className="first-section__image">
-                <Img fluid={storyImage.childImageSharp.fluid} alt="Our story" style={{ border: '2px solid black' }} />
+              <div className="first-section__image about__first-section-image">
+                <Img fluid={firstSectionImage.childImageSharp.fluid} alt="Our story" className="section__image" />
               </div>
               <div className="section__content">
-                <div className="about__shadow rounded absolute-right" />
                 <div className="section__sub-content">
                   <div className="section__title--container">
                     <span className="section__title">Who Are WE ?</span>
                     <img src={quoteImage} alt="quote" />
                   </div>
-                  <div>
-                    <p>
-                      Africa-I is a digital literacy venture  working to createa movement
-                      that will inspire and introduce new technology to young people and demonstrate
-                      its potential through hands-on and cutting-edge technologies
-                    </p>
+                  <div className="about__first-section-description">
+                    <div className="about__shadow rounded absolute-right" />
+                    <div>
+                      <p>
+                        Bunitek is a digital literacy venture  working to createa movement
+                        that will inspire and introduce new technology to young people and demonstrate
+                        its potential through hands-on and cutting-edge technologies
+                      </p>
+                    </div>
                     <p>
                       We are creating a community of confident technologists, creative thinkers,
                       and thoughtful learners of our increasingly tech-enabled future
@@ -72,67 +72,68 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
           <section className="about__second-section-container">
             <div className="about__second-section">
               <div className="section__content">
-                <div className="about__shadow circle absolute-left" />
                 <div className="section__sub-content">
                   <div className="section__title--container">
 
                     <img src={quoteImage} alt="quote" className="quote__heading-rotated" />
-                    <span className="section__title">Our Mission ?</span>
+                    <span className="section__title">Our Mission</span>
                   </div>
-                  <div className="section__content-description " style={{ paddingLeft: 90, paddingTop: 60 }}>
-                    <p>
-                      To inspire, encourage and give African high school students a fair
-                      shot at discovering technology potential and provide ground for them
-                      to explore and employ their skills to solve problems and invent the future.
-                    </p>
+                  <div className="section__content-description ">
+                    <div className="about__shadow circle absolute-left" />
+                    <div>
+                      <p>
+                        To inspire, encourage and give African high school students a fair
+                        shot at discovering technology potential and provide ground for them
+                        to explore and employ their skills to solve problems and invent the future.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div>
-                <Img fluid={storyImage.childImageSharp.fluid} alt="Our story" style={{ border: '2px solid black' }} />
+              <div className="about__second-section-image">
+                <Img fluid={secondSectionImage.childImageSharp.fluid} alt="Our story" className="section__image" />
               </div>
             </div>
           </section>
 
 
-          <div className="about__third-section-container">
-            <div className="about__third-section">
-              <div className="section__title--container" style={{ textAlign: 'center' }}>
-                <span className="section__title">Why Are We Doing This?</span>
-                <img src={quoteImage} alt="quote" />
-              </div>
-              <div className="about__flex--description flex-right">
-                <div className="about__shadow rounded absolute-right" />
+          <div className="about__third-section">
+            <div className="section__title--container section__title-centered">
+              <span className="section__title">Why are we Doing This?</span>
+              <img src={quoteImage} alt="quote" className="quote-visibility" />
+            </div>
 
-                <div>
-                  <ol className="imglist">
+            <div className="about__third-section-content">
+              <div className="about__shadow rounded absolute-right" />
 
-                    <li>
-                      <span>
-                        To give students a chance to discover or explore their passion in technology
-                        and to experiment on its possibilities at a younger age so that it doesn't feel
-                        like an exotic concept.
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        To enable you africans to optimise on the benefits of industry 4.0 during which over
-                        25% of jobs will come from the technology sector.
-                      </span>
-                    </li>
-                  </ol>
+              <div>
+                <ol className="imglist">
 
-                </div>
+                  <li>
+                    <span>
+                      To give students a chance to discover or explore their passion in technology
+                      and to experiment on its possibilities at a younger age so that it doesn't feel
+                      like an exotic concept.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      To enable you africans to optimise on the benefits of industry 4.0 during which over
+                      25% of jobs will come from the technology sector.
+                    </span>
+                  </li>
+                </ol>
+
               </div>
             </div>
-          </div>
 
+          </div>
 
           <section className="about__fourth--section-container">
 
             <div className="about__fourth--section">
-              <div className="section__title--container" style={{ textAlign: 'center' }}>
-                <img src={quoteImage} className="quote__heading-rotated" alt="quote" />
+              <div className="section__title--container section__title-centered">
+                <img src={quoteImage} className="quote__heading-rotated-shrinkable" alt="quote" />
                 <span className="section__title">About Our Courses</span>
               </div>
 
@@ -177,7 +178,7 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
           <section className="about__fifth--section-container">
 
             <div className="about__fifth--section">
-              <div className="section__title--container" style={{ textAlign: 'center' }}>
+              <div className="section__title--container section__title-centered">
 
                 <span className="section__title">Content Delivery</span>
                 <img src={quoteImage} alt="quote" />
@@ -242,7 +243,8 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage } }) => {
 
 export const query = graphql`
 query {
-  storyImage: file(relativePath: { eq: "arduino.png" }) {
+
+  firstSectionImage: file(relativePath: { eq: "about-image2.jpg" }) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid
@@ -250,7 +252,7 @@ query {
     }
   }
 
-  schoolImage: file(relativePath: { eq: "school.png" }){
+  secondSectionImage: file(relativePath: { eq: "about-image.jpg" }) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid
@@ -258,13 +260,6 @@ query {
     }
   }
 
-  missionImage: file(relativePath : { eq: "coding.png" }) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
 }
 `;
 
