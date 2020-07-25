@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 @import '../../assets/styles/mixins.scss';
 @import '../../assets/styles/colors.scss';
 @import '../../assets/styles/fonts.scss';
 .team{
-    padding: 200px;
+    padding: 250px;
     background: lighten($h-color, 68%);
     margin-top: -160px;
     margin-bottom: -100px;
     @include mediaMd {
-        margin: 150px 0;
+        padding: 200px;
         height: 100vh;
     }
     &__list{
@@ -45,8 +47,8 @@
     &__title {
         margin-bottom: 50px;
         margin-top: 50px !important;
-        font-size: 2em;
-        font-family: $title-font !important;
+        font-size: 2.2em;
+        font-family: 'Archivo Black', sans-serif !important;
         color: $h-color;
     }
 }
