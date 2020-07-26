@@ -1,99 +1,114 @@
-@import '../../assets/styles/mixins.scss';
-.footer{
-    position: absolute;
-    bottom: 0 auto;
-    width: 100%;
-    background-color: #363333;
-    color: white;
-    text-decoration: none;
-    margin-top: 100px;
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/fonts.scss";
+@import "../../assets/styles/utils.scss";
+@import "../../assets/styles/colors.scss";
 
-    @media (max-width: 767px){
-      width: 100%;
+.footer {
+  position: absolute;
+  bottom: 0 auto;
+  width: 100%;
+  background-color: #363333;
+  color: white;
+  text-decoration: none;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 40px 0 20px 0;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
     }
-  
-    &__container{
+
+    &--low {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-around;
-      padding: 40px 0 20px 0;
+      padding: 0 80px 40px 80px;
 
-      @media (max-width: 767px){
+      @include mediaSm{
         flex-direction: column;
-        text-align: center;
+        min-width: 100%;
       }
 
-      &--low{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        padding: 0 80px 40px 80px;
-
-        @media (max-width: 767px){
-          flex-direction: column;
-        }
-
-        a{
-          color: white;
-          font-size: 1.5em;
-          &:hover{
-              color: grey;
-              cursor: pointer;
-          }
-          @media (max-width: 767px){
-            font-size: 1em;
-          }
-        }
-      }
-    }
-
-    &__subcontainer{
-      .brand-logo img.footer-logo{
-        width: 200px;
-        @media (max-width: 767px){
-          width: 100px;
-        }
-      }
-      .sub-heading{
+      a {
         color: white;
-        font-size: 2em;
-        @media(min-width: 320px){
-          font-size: 1.8em;
+        font-size: 1.2rem;
+        &:hover {
+          color: grey;
+          cursor: pointer;
+        }
+        @media (max-width: 767px) {
+          font-size: 1rem;
         }
       }
-      
-      &--list{
-        list-style: none;
-        a{
-          text-decoration: none;
-          color: white;
-          font-size: 1.2em;
-          &:hover{
-            color: grey;
-            cursor: pointer;
-          }
-          @media (max-width: 767px){
-            font-size: 1em;
-          }
-        } 
+    }
+  }
+
+  &__subcontainer {
+    display: flex;
+    flex-direction: column;
+    .brand-logo img.footer-logo {
+      width: 200px;
+
+      @media (max-width: 767px) {
+        width: 100px;
       }
-      .inline{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        list-style: none;
-        @media (max-width: 767px){
-          justify-content: space-around;
-        }
-      } 
+    }
+    .footer-phrase{
+      max-width: 20vw;
+      padding-top:1rem;
+      @include mediaSm{
+        min-width: 100%;
+        padding:1rem;
+      }
+    }
+    .sub-heading {
+      color: white;
+      font-size: 2rem;
+      @media (min-width: 320px) {
+        font-size: 1.4rem;
+      }
     }
 
-    &__divider{
-      width: 80vw;
-      margin-bottom: 40px;
-      border: .5px solid grey ;
-    } 
-}  
+    &--list {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        &:hover {
+          color: grey;
+          cursor: pointer;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.2em;
+        }
+      }
+    }
+    .inline {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      list-style: none;
+      @media (max-width: 767px) {
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__divider {
+    width: 80vw;
+    margin-bottom: 40px;
+    border: 0.5px solid grey;
+  }
+}

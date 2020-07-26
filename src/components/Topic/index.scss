@@ -7,23 +7,24 @@
 
     &__caption {
         display: inline-block;
-        font-family: $heading-font !important;
-        font-size: 1em;
+        font-family: $title-font !important;
+        font-size: 1.2rem;
         color: $dark;
         margin: 10px auto;
-        text-transform: uppercase;
     }
-
-    img {
-        display: inline-block;
-        position: relative;
-        width: 100px !important;
-        height: 100px !important;
+    &__icon{
+        img {
+            display: inline-block;
+            position: relative;
+            width: 5rem !important;
+            height: 5rem !important;
+            fill: $dark !important;
+        }
+        @include mediaMd {
+            margin: auto 10%;
+        }
     }
-
-    @include mediaMd {
-        margin: auto 10%;
-    }
+  
 
     .ant-popover-inner {
         background: $dark !important;
@@ -32,6 +33,8 @@
     &__popover {
         a {
             color: $dark;
+            font-family: $title-font !important;
+            font-weight: bold;
         }
     }
 }

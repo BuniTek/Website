@@ -7,22 +7,22 @@ import './index.scss';
 
 import atomIcon from '../../assets/images/atom-solid.svg';
 import laptopIcon from '../../assets/images/laptop-code-solid.svg';
-import electronicsIcon from '../../assets/images/microscope-solid.svg';
 import scienceIcon from '../../assets/images/vial-solid.svg';
+import electronicsIcon from '../../assets/images/electronics.svg';
 import usersIcon from '../../assets/images/users-solid.svg';
 
 const Topic = ({ caption, link }) => {
   const getIcon = (caption) => {
     switch (caption) {
-      case 'testing':
-        return atomIcon;
-      case 'courses':
+      case 'Testing':
+        return scienceIcon;
+      case 'Courses':
         return laptopIcon;
-      case 'electronics':
+      case 'Electronics':
         return electronicsIcon;
       case 'science':
         return scienceIcon;
-      case 'school clubs':
+      case 'School clubs':
         return usersIcon;
       default:
         return atomIcon;
@@ -44,7 +44,6 @@ const Topic = ({ caption, link }) => {
         <h3 className="topic__caption">{caption}</h3>
       </div>
     </Popover>
-
   );
 };
 

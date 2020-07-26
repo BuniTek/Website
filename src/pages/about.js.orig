@@ -43,17 +43,8 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
               <div className="about__flex--description flex-right">
                 <div className="about__shadow rounded absolute-right" />
                 <h1>A Purpose-Driven Company</h1>
-<<<<<<< HEAD
                 <p>We belive everyone can learn tech and can use it to create, and impact his/her community</p>
                 <p>Create, offer, skills, simple, fun, movement,technology, future relavant</p>
-=======
-                <p>
-                We belive everyone can learn tech and can use it to create, and impact his/her community. 
-                </p>
-                 
-
-                <p>We create and deliver hands-On, fun, future-relavant tech courses</p>
->>>>>>> 3995c555fa81a66bba7061777db8dc3f0b1baf13
               </div>
             </div>
           </div>
