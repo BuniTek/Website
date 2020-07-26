@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import { useDispatch } from 'react-redux';
 import Img from 'gatsby-image';
+
 import Team from '../components/Team';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
-import Link from '../components/Link';
+import InfoCard from '../components/InfoCard';
+import Line from '../components/VerticalLine';
 import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
@@ -14,7 +16,8 @@ import quoteImage from '../assets/images/quote-right-solid.svg';
 import earsLogo from '../assets/images/partner-ears.png';
 import cgiLogo from '../assets/images/partner-cgi.png';
 
-const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
+
+const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     const body = document.querySelector('body');
@@ -26,72 +29,196 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
     setFooterVisible({ visible: true })(dispatch);
   }, []);
 
-  
+
   return (
     <Layout>
       <SEO title="About Us" />
       <div className="about">
         <div className="about__container">
-          <div className="about__story">
-          <img src={quoteImage} className="about__story--quote" />
-            <div className="about__flex">
-              <div className="about__flex--image">
-                <Img fluid={storyImage.childImageSharp.fluid} alt="Our story" />
+          <section>
+            <div className="about__first-section">
+              <div className="first-section__image about__first-section-image">
+                <Img fluid={firstSectionImage.childImageSharp.fluid} alt="Our story" className="section__image" />
               </div>
-              <div className="about__flex--description flex-right">
-                <div className="about__shadow rounded absolute-right" />
-                <h1>A Purpose-Driven Company</h1>
-                <p>We belive everyone can learn tech and can use it to create, and impact his/her community</p>
-                <p>We create and deliver hands-On, fun, future-relavant tech courses</p>
+              <div className="section__content">
+                <div className="section__sub-content">
+                  <div className="section__title--container">
+                    <span className="section__title">Who Are WE?</span>
+                    <img src={quoteImage} alt="quote" />
+                  </div>
+                  <div className="about__first-section-description">
+                    <div className="about__shadow rounded absolute-right" />
+                    <div>
+                      <p>
+                        <span className="company__name">BuniTek </span>
+                        {' '}
+                        is a digital literacy venture working to create
+                        a movement that will inspire and introduce new technology to young people and demonstrate
+                        its potential through hands-on and cutting-edge technologies.
+                      </p>
+
+                      <p>
+                        We are creating a community of confident technologists, creative thinkers,
+                        and thoughtful learners of our increasingly tech-enabled future.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="about__community">
-            <img src={quoteImage} className="about__community--quote" />
-            <div className="about__flex">
-              <div className="about__flex--description flex-left">
-                <div className="about__shadow circle absolute-left" />
-                <h1>Africa-specific Services</h1>
-                <p> 
-                We developed proprietary curriculum curated to be hands-on, fun and Africa speci c; through clubs in various schools across Africa at which A Purpose-Driven Company Create, offer, skills, simple, fun, movement, technology, future relavant Learn more > Africa speci c; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and BuniTek invent lab which will be creating education-empowering tools to be shared with education institutions.
-                </p>
-                <Link to="/contact">Contact us &gt;</Link>
+          </section>
+
+          <section className="about__second-section-container">
+            <div className="about__second-section">
+              <div className="section__content">
+                <div className="section__sub-content">
+                  <div className="section__title--container">
+
+                    <img src={quoteImage} alt="quote" className="quote__heading-rotated" />
+                    <span className="section__title">Our Mission</span>
+                  </div>
+                  <div className="section__content-description ">
+                    <div className="about__shadow circle absolute-left" />
+                    <div>
+                      <p>
+                        To inspire, encourage and give African high school students a fair shot
+                        at discovering technology potential and provide a ground for them to
+                        explore and employ their skills to solve problems and invent the future.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="about__flex--image">
-                <Img fluid={schoolImage.childImageSharp.fluid} alt="Our Community" />
+              <div className="about__second-section-image">
+                <Img fluid={secondSectionImage.childImageSharp.fluid} alt="Our story" className="section__image" />
               </div>
             </div>
-          </div>
-          <div className="about__mission">
-          <img src={quoteImage} className="about__story--quote" />
-            <div className="about__flex">
-              <div className="about__flex--image">
-                <Img fluid={missionImage.childImageSharp.fluid} alt="Our Mission" />
-              </div>
-              <div className="about__flex--description flex-right">
+          </section>
+
+
+          <div className="about__third-section">
+            <div className="section__title--container section__title-centered">
+              <span className="section__title">Why are we Doing This?</span>
+              <img src={quoteImage} alt="quote" className="quote-visibility" />
+            </div>
+
+            <div className="about__third-section-content">
               <div className="about__shadow rounded absolute-right" />
-                <h1>Changing The Ordinary</h1>
-                <p>
-                At BuniTek, We are working to create a movement that will inspire and introduce cutting-edge technologies to young people and demonstrate the potential of those technologies through hands-on, fun and simple scheme. We aim to inspire young people to start solving local problems at a young age and to pursue technology-related  elds. We envisage to create a community of con dent technologists, creative thinkers, and thoughtful learners of our increasingly tech-enabled future. proprietary curriculum curated to be hands-on, fun and Africa speci c; through clubs in various schools across Africa at which the community will start; seasonal boot-camps; private tutoring; hackathons and challenges; and BuniTek invent lab which will be creating educationempowering tools to be shared with education institutions.
-                </p>
+
+              <div>
+                <ol className="imglist">
+
+                  <li>
+                    <span>
+                      To give students a chance to discover or explore their passion in technology
+                      and to experiment on its possibilities at a younger age so that it doesn't feel
+                      like an exotic concept.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      To enable young Africans to optimise on the benefits of Industry 4.0 during
+                      which over 25% of jobs will come from the technology sector.
+                    </span>
+                  </li>
+                </ol>
+
               </div>
             </div>
+
           </div>
-          <div className="about__community">
-            <img src={quoteImage} className="about__community--quote" />
-            <div className="about__flex">
-              <div className="about__flex--description flex-left">
-                <div className="about__shadow circle absolute-left" />
-                <h1>Why BuniTek?</h1>
-                <p>
-                We realised that most young persons do not get a chance to discover or explore their passion in technology and to experiment on its possibilities since a young age; an occurrence that has made technology remain an alien concept to most of our young people in Africa. - We realise that as industry 4.0 approaches, over 25% of jobs will come from the technology sector. Economic advancements will also be fully anchored on this sector. Therefore, if we are to create enough jobs for our growing working population, we need as many people as possible gaining tech mastery through specialising in areas that they love – this can only happen if they are given a fair chance to sample and experience and imagine what’s possible.
-                </p>
+
+          <section className="about__fourth--section-container">
+
+            <div className="about__fourth--section">
+              <div className="section__title--container section__title-centered">
+                <img src={quoteImage} className="quote__heading-rotated-shrinkable" alt="quote" />
+                <span className="section__title">About Our Courses</span>
               </div>
-              <div className="about__flex--image">
-                <Img fluid={schoolImage.childImageSharp.fluid} alt="Our Community" />
+
+              <div className="section__three-grid">
+                <div className="section__grid-item">
+                  <InfoCard
+                    title="Simplified and Insightful"
+                    description="Our courses are simple and taught at a higher level focussing
+                     on introducing concepts while providing the bigger picture rather than the fine,
+                      low level details.
+                   "
+                  />
+                  <InfoCard
+                    title="A Constantly Evolving Curriculum"
+                    description="Technology is changing every day. We are constantly updating
+                     our courses to ensure that you are up to date with the latest technologies and advancements.
+                   "
+                  />
+                </div>
+                <div className="section__grid-line-divider"><Line color="black" /></div>
+                <div className="section__grid-item">
+                  <InfoCard
+                    title="Tailer-Made for You"
+                    description="Where possible, we will explain ideas in your local language. We will also use examples
+                     and project that you can relate with from your sorrounding.
+                   "
+                  />
+                  <InfoCard
+                    title="Practical and Creative"
+                    description="The power of technology is in creating. We have matched every lesson
+                     is accompanied by a relatable practical activities which gives you are chance to
+                      play around with your imagination.
+                   "
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          <section className="about__fifth--section-container">
+
+            <div className="about__fifth--section">
+              <div className="section__title--container section__title-centered">
+
+                <span className="section__title">Content Delivery</span>
+                <img src={quoteImage} alt="quote" />
+              </div>
+
+              <div className="section__three-grid">
+                <div className="section__grid-item">
+                  <InfoCard
+                    title="Online Courses"
+                    description="We will offer you the material, guidance and support
+                     to satisfy your tech curiosity online through a series of lectures,
+                      demonstrations and challenges with immediate feedback.
+                   "
+                  />
+                  <InfoCard
+                    title="Bootcamps"
+                    description="This a chance to physically meet our brilliant tutors,
+                     use our exceptional learning tools and meet a community of young like
+                      minded people close to you.
+                   "
+                  />
+                </div>
+                <div className="section__grid-line-divider"><Line color="black" /></div>
+                <div className="section__grid-item">
+                  <InfoCard
+                    title="BuniTek Clubs"
+                    description="We believe that learning shouldn’t just be limited by the classroom.
+                     We are giving you opportunity and support to build a club in your school
+                      and keep on experimenting with technology.
+                   "
+                  />
+                  <InfoCard
+                    title="Private Tutoring"
+                    description="You do not have to wait for our biannual bootcamps to learn.
+                    We can assign you a personal tutor if you wish.
+                   "
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+
         </div>
         <Team />
         <div className="partners">
@@ -112,7 +239,8 @@ const AboutUs = ({ data: { storyImage, schoolImage, missionImage} }) => {
 
 export const query = graphql`
 query {
-  storyImage: file(relativePath: { eq: "arduino.png" }) {
+
+  firstSectionImage: file(relativePath: { eq: "about-image2.jpg" }) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid
@@ -120,7 +248,7 @@ query {
     }
   }
 
-  schoolImage: file(relativePath: { eq: "school.png" }){
+  secondSectionImage: file(relativePath: { eq: "about-image.jpg" }) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid
@@ -128,13 +256,6 @@ query {
     }
   }
 
-  missionImage: file(relativePath : { eq: "coding.png" }) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
 }
 `;
 

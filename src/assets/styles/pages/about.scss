@@ -1,178 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 @import "../mixins";
 @import "../colors.scss";
 @import "../fonts.scss";
+
+
 .about{
     background: #EFEFEF 0% 0% no-repeat padding-box;
-    width: 100vw;
-
-    &__container {
-        margin: 40px 0;
+    
+    &__container {   
+        margin: 100px 0;
     }
 
-    &__flex {
-        display: flex;
-        justify-content: space-around;
-        margin: auto 10%;
-        padding: 40px;
+    &__first-section{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        margin: 0 150px;
+        padding: 10px;
+        grid-gap:40px;
+                
+        @include mediaMd {
+           display: block;
+           margin: 5px;
+           padding: 0;      
+        }
+
+        &-image{
+          @include mediaMd {
+         margin-bottom: 30px;
+            
+        }
+     }
+     &-description{
+        z-index: 5;
+        position: relative; 
+        font-size: 20px;
+     }
+    }
+
+    &__second-section{
+
+        &-container{
+            background-color: $white;
+            padding-bottom: 70px;
+            margin: 50px 0;
+          
+        }
+
+        &-image{
+            @include mediaMd {
+                margin-top: 40px;     
+               }
+        }
+
+           display: grid;
+           grid-template-columns: 65% 35%;
+           margin: 0 150px;
+           padding: 10px;
+           grid-gap:40px;
+           margin-top:150px;
+           align-content: center;
+           padding: 100px 10px;
+        @include mediaMd {
+            display: block;
+            margin: 5px ;
+        }
+
+      p{
+        padding-left: 90px;
+        padding-top: 60px;
 
         @include mediaMd {
-            flex-direction: column;
-            margin: auto 0;
+            padding-left: 0;
         }
 
-        &--image {
-            flex-basis: 40%;
-            img {
-                width: 100%;
-                height: 100%;
-                border: 2px solid $dark;
-            }
-
-            @include mediaMd {
-                margin-bottom: 50px;
-            }
-        }
-
-        &--description {
-            flex-basis: 60%;
-            display: grid;
-            place-content: center;
-            position: relative;
-            z-index: 5;
-
-            @include mediaMd {
-                margin: 20px 0;
-            }
-
-            &.flex-left {
-                margin-right: 10%;
-                 h1{
-                    color: $h-color;
-                    font-family: $title-font !important;
-                    font-size: 2.2em;
-                }
-                p{
-                    color: $dark;
-                    font-family: $mincho-font !important;
-                    font-size: 1.4em;
-                }
-            }
-
-            &.flex-right {
-                margin-left: 10%;
-                h1{
-                    color: $h-color;
-                    font-family: $title-font !important;
-                    font-size: 2.2em;
-                }
-                p{
-                    color: $dark;
-                    font-family: $mincho-font !important;
-                    font-size: 1.4em;
-                }
-            }
-        }
-    }
-
-    &__story {
-      margin: 150px 0;
-      position: relative;
-      background: transparent;
-      z-index: 5;
-
-      &--quote {
-          position: absolute;
-          top: -20px;
-          right: 10%;
-
-          @include mediaMd {
-              top: 45%;
-              right: 3px;
-          }
       }
+      @include mediaMd {
+        padding: 0 ;
+        padding-top: 30px;
+    }
     }
 
-    &__community {
-        margin: 150px 0;
-        position: relative;
-        background: white;
-        padding: 80px;
+    &__third-section{
 
+     z-index: 5;
+     position: relative; 
+
+    &-content{
+        padding: 0 25%;
+        padding-bottom: 10%;
+        z-index: 5;
+        position: relative; 
+       @include mediaMd {
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+    }
+        
+    }
+
+    &__fourth--section{
+
+        &-container{
+            background: white;
+             
+          @include mediaMd {
+            margin: 50px 0;
+            padding: 50px 0; 
+         }
+        }
+
+        margin: 30px 0;
+        padding: 60px;
+    
+        @include mediaMd {
+            padding: 0 20px;
+            margin-right: -20px;
+        }
+
+    }
+
+    &__fifth--section{
+
+        &-container{   
+          @include mediaMd {
+            margin: 50px 0;
+            padding: 20px 0 50px 0;
+         }
+        }
+        padding: 100px 60px;
+    
         @include mediaMd {
             padding: 20px;
             margin-right: -20px;
         }
-
-        &--quote {
-            position: absolute;
-            transform: rotateY(180deg);
-            top: 50px;
-            left: 10%;
-
-            @include mediaMd {
-                top: 33%;
-                left: 0;
-            }
-        }
-
-        .about__flex {
-            @include mediaMd {
-                flex-direction: column-reverse;
-            }
-        }
-        
     }
 
-    &__mission {
-        margin: 150px 0;
-        position: relative;
-        background: transparent;
-    }
 
     &__shadow {
         background: lighten($h-color, 50%);
-        height: 300px;
+        height: 250px;
 
         &.circle {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border-radius: 100%;
         }
 
         &.rounded {
-           width: 400px;
+           width: 433px;
            border-radius: 300px;
            @include mediaMd {
                width: 250px;
-               height: 100px;
+               height: 150px;
            }
         }
-
         &.absolute-right {
             position: absolute;
-            top: 15%;
-            left: 50%;
+            top: 0;
+            left: 40%;
             z-index: -1;
+            &-third-section{
+                position: absolute;
+                top: 0;
+                left: 60%;
+                z-index: -1;
+            }
 
             @include mediaMd {
-                left: 0;
-                top: 70%;
+                left: 20%;
+                top: 60%;
             }
         }
+        
 
         &.absolute-left {
             position: absolute;
             z-index: -1;
             top: 15%;
-            left: -15%;
-
-            @include mediaMd {
-                left: 0;
-                top: 70%;
-            }
-        }
+            left: 0;
+           
+      }
     }
 }
+
+.section{
+    &__title{
+
+        &--container{
+            padding-bottom: 20px;
+              
+        }
+        &-centered{
+            text-align: center;
+        }
+        color: $h-color;
+        font-family: 'Archivo Black', sans-serif !important;
+        font-size: 2.2em;
+        position: relative;
+        top: 30px;
+        @include mediaMd {
+            font-size: 2em;
+            
+        }
+    }
+    &__image{
+        border: 3px solid $dark;
+    }
+    
+    &__three-grid{
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 80px;
+        font-size: 18px;
+        @include mediaMd {
+          display: block; 
+          margin: 25px; 
+       }
+      
+      }
+      &__grid{
+
+        &-item{
+            padding: 0 60px;
+            display:grid;
+            grid-gap: 60px;
+            margin: 0 auto;
+        @include mediaMd {
+            grid-gap: 30px;
+            padding: 0;
+            margin-bottom: 30px;
+            
+         }
+        }
+        &-line-divider{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__sub-content{
+        padding: 0 25px;
+    }
+    
+}
+
 
 .partners {
     background: lighten($h-color, 60%);
@@ -219,4 +292,50 @@
 
 body{
     background: #EFEFEF 0% 0% no-repeat padding-box;
+}
+
+
+.imglist li 
+{   
+    padding-top: 30px;
+    list-style-image: url(../../images/plus-solid-6.png);
+    font-size: 20px;
+    
+  
+}
+li span{
+    position: relative;
+    top:-10px;
+}
+
+.quote{
+    &-visibility{
+        @include mediaMd {
+            display: none;
+        }
+    }
+    &__heading-rotated{
+        transform: rotateY(180deg);
+    
+        &-shrinkable{
+            transform: rotateY(180deg);
+            @include mediaMd {
+                width: 50px !important;
+                height: 44px !important;
+            }
+        }
+    
+    }
+    
+}
+
+.section__content-description{
+    z-index: 5;
+    position: relative; 
+    font-size: 20px;
+
+}
+
+.company__name{
+    font-family: 'Archivo Black', sans-serif !important; 
 }

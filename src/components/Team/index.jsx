@@ -1,11 +1,11 @@
 import React from 'react';
 import TeamMember from './TeamMember';
-
+import Button from '../Button';
 import './index.scss';
 
 const Team = () => (
   <div className="team">
-    <h1 className="team__title">The development Team</h1>
+    <h1 className="team__title">Our Team</h1>
     <div className="team__list">
       <TeamMember
         titles="Engineer"
@@ -50,6 +50,9 @@ const Team = () => (
         name="Erastus"
         profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
       />
+    </div>
+    <div className="join__team-button">
+      <Button>Join Team</Button>
     </div>
   </div>
 );
