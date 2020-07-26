@@ -3,12 +3,29 @@ $mobile: 480px;
 $tablet: 768px;
 $desktop-min: $tablet + 1px;
 $desktop-max: 1024px;
+$desktop-umax: 1201px;
 
-
-*, html, body{
-    font-family: 'Muli', sans-serif !important;
+*,
+html,
+body {
+	font-family: "Muli", sans-serif !important;
+	@media (max-width: $mobile) {
+		font-size: 10px;
+	}
+	@media (max-width: $tablet) {
+		font-size: 11px;
+	}
+	@media (max-width: $desktop-max) and (min-width: $tablet+1) {
+		font-size: 12px;
+	}
+	@media (min-width: $desktop-max+1) and (min-width: $desktop-umax) {
+		font-size: 14px;
+	}
+	@media (min-width: $desktop-umax) {
+		font-size: 16px;
+	}
 }
 
-ul{
-    list-style: none;
+ul {
+	list-style: none;
 }

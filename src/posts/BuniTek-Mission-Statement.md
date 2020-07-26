@@ -1,13 +1,13 @@
 ---
-title: Mission Statement of Africa-I
-author: Africa-I Team
+title: Mission Statement of BuniTek
+author: BuniTek Team
 date: "2020-06-20"
-keywords: "AfricaI, Africa-I, Youth, Technology, Africa, Youth, Mission, Vision, Online, Rwanda, Kenya"
+keywords: "BuniTek, BuniTek, Youth, Technology, Africa, Youth, Mission, Vision, Online, Rwanda, Kenya"
 featuredImage: "https://www.africandevmag.com/wp-content/uploads/2017/08/kids.jpg"
 type: post
 ---
 
-### Why Africa-I?
+ Why BuniTek?
 
 > Most young children in Africa don't
 encounter a computer until they get into

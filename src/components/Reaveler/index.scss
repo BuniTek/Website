@@ -1,0 +1,62 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
+
+.revealer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	&__header {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		min-width: 30vw;
+		height: 40px;
+		margin-bottom: 10px;
+
+		&__icon {
+			width: 20px;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 20px;
+		}
+		&__heading {
+			padding: 10px;
+			margin-left: 10px;
+			background: $white;
+			border-radius: 50px;
+			height: 40px;
+			text-align: center;
+			span {
+				font-size: 1.2em;
+				font-family: $title-font !important;
+				color: $dark;
+			}
+
+			&:hover {
+				cursor: pointer;
+				background: $light-grey;
+			}
+		}
+	}
+	&__content {
+		color: $white;
+		background: $not-grey;
+		padding: 20px;
+		border-radius: 100px;
+		p {
+			font-family: $mincho-font !important;
+		}
+		&--hide {
+			display: none;
+		}
+		&--unhide {
+			display: block;
+		}
+	}
+}

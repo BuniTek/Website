@@ -1,8 +1,8 @@
 ---
 title: intro to AI
-author: AfricaI Team
+author: BuniTek Team
 date: "2020-05-17"
-keywords: "AfricaI, Africa-I, mark-down, blogs"
+keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 category: upcoming
 description: " an introduction to Artificial intelligence and internet of things"

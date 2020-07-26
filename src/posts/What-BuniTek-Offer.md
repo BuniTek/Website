@@ -1,13 +1,13 @@
 ---
-title: Services Africa-I Offers and Will Be Offering in the Future
-author: Africa-I Team
+title: Services BuniTek Offers and Will Be Offering in the Future
+author: BuniTek Team
 date: "2020-06-22"
-keywords: "AfricaI, Africa-I, Youth, Technology, Africa, Youth, Bootcamps, Tutoring, Servieces, Rwanda, Kenya"
+keywords: "BuniTek, BuniTek, Youth, Technology, Africa, Youth, Bootcamps, Tutoring, Servieces, Rwanda, Kenya"
 featuredImage: "https://i2.wp.com/www.techgistafrica.com/wp-content/uploads/2018/09/AFRICAN-tech.jpg"
 type: post
 ---
 
-> The core facet of our social venture is developing curricula that are simple, educative, and fun, suited for people at a young age. One of the reason technology is still treated as alien in Africa is mainly because it is taught in foreign languages while most young kids haven't even gotten enough time to master a secondary language. That’s why the majority prefer to get into tech later in life. So, Africa-I will be delivering all of our content in a variety of languages of the areas at which the bootcamps will be taking place, and we will be translating most of the tools in their languages while also making sure the content is comprehensive, yet interactive, simple and fun. 
+> The core facet of our social venture is developing curricula that are simple, educative, and fun, suited for people at a young age. One of the reason technology is still treated as alien in Africa is mainly because it is taught in foreign languages while most young kids haven't even gotten enough time to master a secondary language. That’s why the majority prefer to get into tech later in life. So, BuniTek will be delivering all of our content in a variety of languages of the areas at which the bootcamps will be taking place, and we will be translating most of the tools in their languages while also making sure the content is comprehensive, yet interactive, simple and fun. 
 
 ### Diversity of our content
 > We will be offering a wide variety of content, not just programming, mobile development, or solely using specific tools, rather we acknowledge that people have different interests and talents. Thus, we will be offering various kind of packages where young people will learn various skills and discover their talents from problem-solving, critical thinking, Web technologies, Python to Java, Robotics, 3D Printing, Digital Music Production, video game design, app design, creative design, Vlogging/Blogging, among others as we expand. Our venture will be a hub where technology, artistic skills, humanities intertwine. For instance, design thinking skill is a main factor for delivery of a great user experience (UX) and user interfaces. And the knowledge about drawing highly influences graphic designing skill. 

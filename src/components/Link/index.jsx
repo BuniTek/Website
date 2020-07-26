@@ -16,7 +16,7 @@ LinkAnchor.propTypes = {
 };
 
 LinkAnchor.defaultProps = {
-  to: 'http://theafricai.com',
+  to: 'http://theBuniTek.com',
 };
 
 export default LinkAnchor;

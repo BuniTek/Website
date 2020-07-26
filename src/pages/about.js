@@ -11,14 +11,10 @@ import Line from '../components/VerticalLine';
 import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
-import logo from '../assets/images/africai_dark.png';
+import logo from '../assets/images/BuniTek_dark.png';
 import quoteImage from '../assets/images/quote-right-solid.svg';
-
-
-import edinburghLogo from '../assets/images/edinburgh.png';
-import msLogo from '../assets/images/ms.png';
-import ibmLogo from '../assets/images/ibm.png';
-import armLogo from '../assets/images/arm.png';
+import earsLogo from '../assets/images/partner-ears.png';
+import cgiLogo from '../assets/images/partner-cgi.png';
 
 
 const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
@@ -229,10 +225,10 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
           <div className="partners__container">
             <h1 className="partners__title">They will trust us</h1>
             <div className="partners__grid">
-              <img className="partners__grid--item" src={edinburghLogo} />
-              <img className="partners__grid--item" src={msLogo} />
-              <img className="partners__grid--item" src={armLogo} />
-              <img className="partners__grid--item" src={ibmLogo} />
+              <img className="partners__grid--item" src="https://800664.smushcdn.com/1566666/wp-content/uploads/2018/09/EI-Top-Logo.png?size=500x300" alt="Edinburgh Innovations"/>
+              <img className="partners__grid--item" src={earsLogo} alt="Embedded and Robotics Society"/>
+              <img className="partners__grid--item" src="https://theturingtrust.files.wordpress.com/2017/08/tt-logo-new-final-300dpi.png?w=500" alt="Turing Trust"/>
+              <img className="partners__grid--item" src={cgiLogo} />
             </div>
           </div>
         </div>

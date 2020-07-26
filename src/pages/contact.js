@@ -1,38 +1,43 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { Collapse, Button as AntBtn } from "antd";
-import { PlusOutlined, MinusOutlined, FacebookOutlined, InstagramOutlined } from "@ant-design/icons";
+import React, { useState, useEffect } from "react"
+import { useDispatch } from "react-redux"
+import { Collapse, Button as AntBtn } from "antd"
+import {
+  PlusOutlined,
+  MinusOutlined,
+  FacebookOutlined,
+  InstagramOutlined,
+} from "@ant-design/icons"
 
-import Input from "../components/Form/Input";
-import Textarea from "../components/Form/Textarea";
-import Button from "../components/Button";
-import Layout from "../layouts/layout";
-import SEO from "../components/seo";
-import { setLogoUrl, setFooterVisible } from "../redux/actions";
+import Input from "../components/Form/Input"
+import Textarea from "../components/Form/Textarea"
+import Button from "../components/Button"
+import Layout from "../layouts/layout"
+import SEO from "../components/seo"
+import { setLogoUrl, setFooterVisible } from "../redux/actions"
 
+import "../assets/styles/pages/contact.scss"
+import contactTopLeft from "../assets/images/contact_top-left.svg"
+import contactMiddleRight from "../assets/images/contact_middle-right.svg"
+import logo from "../assets/images/BuniTek.png"
 
-import "../assets/styles/pages/contact.scss";
-import contactTopLeft from "../assets/images/contact_top-left.svg";
-import contactMiddleRight from "../assets/images/contact_middle-right.svg";
-import logo from "../assets/images/africai.png";
-
-const { Panel } = Collapse;
+const { Panel } = Collapse
 
 const text = `
   Contact us at Info@AfricaI.site
-`;
+`
+
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
   // eslint-disable-next-line no-unused-vars
   const [state, setState] = useState({
     status: "ERROR",
-  });
+  })
 
   const onEmailChange = e => {
-    setEmail(e.target.value);
-  };
+    setEmail(e.target.value)
+  }
 
   // eslint-disable-next-line no-unused-vars
   const onSubmit = ev => {
@@ -73,7 +78,7 @@ const Contact = () => {
 
     setFooterVisible({
       visible: false,
-    })(dispatch);
+    })(dispatch)
   }, [])
 
   return (
@@ -98,12 +103,14 @@ const Contact = () => {
             Contact us by sending us an email here.
           </h1>
           <p className="contact__description">
-            You can reach us various platforms, don't hesitate to contact us if you need any assistance 
+            You can reach us various platforms, don't hesitate to contact us if
+            you need any assistance
           </p>
           <div className="contact__social">
-            <AntBtn className="contact__social--button"> <FacebookOutlined />  Facebook</AntBtn>
-            <AntBtn className="contact__social--button"> <InstagramOutlined /> Instagram</AntBtn>
-            <AntBtn className="contact__social--button">FAQ</AntBtn>
+
+            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook</AntBtn></a>
+            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> {" "} <InstagramOutlined /> Instagram</AntBtn></a>
+            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button">FAQ</AntBtn></a>
           </div>
           <form
             // onSubmit={onSubmit}
@@ -144,12 +151,12 @@ const Contact = () => {
             bordered={false}
             defaultActiveKey={["1"]}
             expandIcon={({ isActive }) => {
-              return isActive ? <MinusOutlined /> : <PlusOutlined />;
+              return isActive ? <MinusOutlined /> : <PlusOutlined />
             }}
             className="site-collapse-custom-collapse"
             style={{
-              backgroundColor: '#312F2F',
-              color: 'white'
+              backgroundColor: "#312F2F",
+              color: "white",
             }}
           >
             <Panel
@@ -157,12 +164,16 @@ const Contact = () => {
               key="1"
               className="site-collapse-custom-panel"
               style={{
-                color: 'white'
+                color: "white",
               }}
             >
-              <p style={{
-                color: 'white'
-              }}>{text}</p>
+              <p
+                style={{
+                  color: "white",
+                }}
+              >
+                {text}
+              </p>
             </Panel>
             <Panel
               header="What are the requirements to start learning?"

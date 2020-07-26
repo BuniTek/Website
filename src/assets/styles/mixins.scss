@@ -1,45 +1,61 @@
-@import './colors.scss';
-@import './utils.scss';
-@mixin easeIn($s){
-    transition: $s ease-in;
+@import "./colors.scss";
+@import "./utils.scss";
+@mixin easeIn($s) {
+  transition: $s ease-in;
 }
-@mixin ease($s){
-    transition: $s ease;
+@mixin ease($s) {
+  transition: $s ease;
 }
-@mixin easeInOut($s){
-    transition: $s ease-in-out;
+
+@mixin easeInOut($s) {
+  transition: $s ease-in-out;
 }
-@mixin transDelay($s){
-    transition-delay: $s;
+@mixin transDelay($s) {
+  transition-delay: $s;
 }
 @mixin easeOut($s) {
-    transition: $s ease-out;
+  transition: $s ease-out;
 }
 
 //Small Devices
 @mixin mediaSm {
-    @media (max-width: $mobile) {
-      @content;
-    }
+  @media (max-width: $mobile) {
+    @content;
   }
-  
-  //Medium (tablets)
-  @mixin mediaMd {
-    @media (max-width: $tablet) {
-      @content;
-    }
+}
+
+//Medium (tablets)
+@mixin mediaMd {
+  @media (max-width: $tablet) {
+    @content;
   }
-  
-  //Small laptops and desktops
-  @mixin mediaLg {
-    @media (max-width: $desktop-max) and (min-width: $tablet+1) {
-      @content;
-    }
+}
+
+//Small laptops and desktops
+@mixin mediaLg {
+  @media (max-width: $desktop-max) and (min-width: $tablet+1) {
+    @content;
   }
-  
-  //Large devices
-  @mixin mediaXL {
-    @media (min-width: $desktop-max) and (min-width: $desktop-min) {
-      @content;
-    }
+}
+
+//Large devices
+@mixin mediaXL {
+  @media (min-width: $desktop-max+1) and (min-width: $desktop-umax) {
+    @content;
   }
+}
+//XLarge devices
+@mixin mediaXXL {
+  @media (min-width: $desktop-umax+1) {
+    @content;
+  }
+}
+
+@mixin overlayItem {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+  z-index: -1;
+}

@@ -25,24 +25,24 @@
             padding-bottom: 20px;
         }
     }
-    height: 10vh;
-    display: grid;
-    place-content: center;
-    text-align: center;
+  height: 10vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
 
-    &__member{
-        margin-right: 20px;
+  &__member {
+    margin-right: 20px;
 
-        @include mediaSm {
-            margin-top: 20px;
-            margin-right: auto;
-            margin-bottom: 20px;
-        }
+    @include mediaSm {
+      margin-top: 20px;
+      margin-right: auto;
+      margin-bottom: 20px;
     }
+  }
 
-    &__info {
-        margin-top: 10px;
-    }
+  &__info {
+    margin-top: 10px;
+  }
 
     &__title {
         margin-bottom: 50px;
