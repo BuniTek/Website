@@ -47,22 +47,25 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
               <div className="section__content">
                 <div className="section__sub-content">
                   <div className="section__title--container">
-                    <span className="section__title">Who Are WE ?</span>
+                    <span className="section__title">Who Are WE?</span>
                     <img src={quoteImage} alt="quote" />
                   </div>
                   <div className="about__first-section-description">
                     <div className="about__shadow rounded absolute-right" />
                     <div>
                       <p>
-                        Bunitek is a digital literacy venture  working to createa movement
-                        that will inspire and introduce new technology to young people and demonstrate
-                        its potential through hands-on and cutting-edge technologies
+                        <span className="company__name">BuniTek </span>
+                        {' '}
+                        is a digital literacy venture working to create
+                        a movement that will inspire and introduce new technology to young people and demonstrate
+                        its potential through hands-on and cutting-edge technologies.
+                      </p>
+
+                      <p>
+                        We are creating a community of confident technologists, creative thinkers,
+                        and thoughtful learners of our increasingly tech-enabled future.
                       </p>
                     </div>
-                    <p>
-                      We are creating a community of confident technologists, creative thinkers,
-                      and thoughtful learners of our increasingly tech-enabled future
-                    </p>
                   </div>
                 </div>
               </div>
@@ -82,9 +85,9 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                     <div className="about__shadow circle absolute-left" />
                     <div>
                       <p>
-                        To inspire, encourage and give African high school students a fair
-                        shot at discovering technology potential and provide ground for them
-                        to explore and employ their skills to solve problems and invent the future.
+                        To inspire, encourage and give African high school students a fair shot
+                        at discovering technology potential and provide a ground for them to
+                        explore and employ their skills to solve problems and invent the future.
                       </p>
                     </div>
                   </div>
@@ -118,8 +121,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   </li>
                   <li>
                     <span>
-                      To enable you africans to optimise on the benefits of industry 4.0 during which over
-                      25% of jobs will come from the technology sector.
+                      To enable young Africans to optimise on the benefits of Industry 4.0 during
+                      which over 25% of jobs will come from the technology sector.
                     </span>
                   </li>
                 </ol>
@@ -141,16 +144,15 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                 <div className="section__grid-item">
                   <InfoCard
                     title="Simplified and Insightful"
-                    description="Our courses are simple and tought at a higher level
-                   focusing on introducing concepts while providing the bigger picture rather than
-                   the fine,low level details
+                    description="Our courses are simple and taught at a higher level focussing
+                     on introducing concepts while providing the bigger picture rather than the fine,
+                      low level details.
                    "
                   />
                   <InfoCard
-                    title="Online Courses"
-                    description="We will offer you the material , guidance and support to satisfy
-                    your tech curiosity online through a series of lectures, demonstrations and chalenges
-                    with immediate feedback.
+                    title="A Constantly Evolving Curriculum"
+                    description="Technology is changing every day. We are constantly updating
+                     our courses to ensure that you are up to date with the latest technologies and advancements.
                    "
                   />
                 </div>
@@ -158,16 +160,15 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                 <div className="section__grid-item">
                   <InfoCard
                     title="Tailer-Made for You"
-                    description="We will offer you the material , guidance and support to satisfy
-                    your tech curiosity online through a series of lectures, demonstrations and chalenges
-                    with immediate feedback.
+                    description="Where possible, we will explain ideas in your local language. We will also use examples
+                     and project that you can relate with from your sorrounding.
                    "
                   />
                   <InfoCard
-                    title="Online Courses"
-                    description="Our courses are simple and tought at a higher level
-                   focusing on introducing concepts while providing the bigger picture rather than
-                   the fine,low level details
+                    title="Practical and Creative"
+                    description="The power of technology is in creating. We have matched every lesson
+                     is accompanied by a relatable practical activities which gives you are chance to
+                      play around with your imagination.
                    "
                   />
                 </div>
@@ -187,34 +188,33 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
               <div className="section__three-grid">
                 <div className="section__grid-item">
                   <InfoCard
-                    title="Simplified and Insightful"
-                    description="Our courses are simple and tought at a higher level
-                   focusing on introducing concepts while providing the bigger picture rather than
-                   the fine,low level details
+                    title="Online Courses"
+                    description="We will offer you the material, guidance and support
+                     to satisfy your tech curiosity online through a series of lectures,
+                      demonstrations and challenges with immediate feedback.
                    "
                   />
                   <InfoCard
-                    title="Simplified and Insightful"
-                    description="Our courses are simple and tought at a higher level
-                   focusing on introducing concepts while providing the bigger picture rather than
-                   the fine,low level details
+                    title="Bootcamps"
+                    description="This a chance to physically meet our brilliant tutors,
+                     use our exceptional learning tools and meet a community of young like
+                      minded people close to you.
                    "
                   />
                 </div>
                 <div className="section__grid-line-divider"><Line color="black" /></div>
                 <div className="section__grid-item">
                   <InfoCard
-                    title="Simplified and Insightful"
-                    description="Our courses are simple and tought at a higher level
-                   focusing on introducing concepts while providing the bigger picture rather than
-                   the fine,low level details
+                    title="BuniTek Clubs"
+                    description="We believe that learning shouldn’t just be limited by the classroom.
+                     We are giving you opportunity and support to build a club in your school
+                      and keep on experimenting with technology.
                    "
                   />
                   <InfoCard
-                    title="Simplified and Insightful"
-                    description="Our courses are simple and tought at a higher level
-                   focusing on introducing concepts while providing the bigger picture rather than
-                   the fine,low level details
+                    title="Private Tutoring"
+                    description="You do not have to wait for our biannual bootcamps to learn.
+                    We can assign you a personal tutor if you wish.
                    "
                   />
                 </div>

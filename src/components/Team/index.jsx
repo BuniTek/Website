@@ -5,7 +5,7 @@ import './index.scss';
 
 const Team = () => (
   <div className="team">
-    <h1 className="team__title">The development Team</h1>
+    <h1 className="team__title">Our Team</h1>
     <div className="team__list">
       <TeamMember
         titles="Engineer"
