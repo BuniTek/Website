@@ -7,7 +7,7 @@ featuredImage: "https://www.africandevmag.com/wp-content/uploads/2017/08/kids.jp
 type: post
 ---
 
-### Why BuniTek?
+ Why BuniTek?
 
 > Most young children in Africa don't
 encounter a computer until they get into
