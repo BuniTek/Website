@@ -1,106 +1,73 @@
-@import '../../assets/styles/mixins.scss';
-@import '../../assets/styles/colors.scss';
-@import '../../assets/styles/fonts.scss';
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
 
 .testimonies {
-    margin: 200px 5%;
+  width: 100vw;
+  padding: 10vh 5vw;
+  @include mediaMd {
+    margin-right: 5vw;
+    padding: 10vh 10vw;
+  }
 
-    @include mediaMd {
-        margin: 50px 8%;
+
+  &__title {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: $title-font !important;
+    color: $dark;
+  }
+  &__slider {
+    &--item {
+      
     }
-
-    &__title {
-        text-align: center;
-        font-family: $title-font !important;
-        color: $dark;
-    }
-    &__slider {
-        &--item {
-            text-align: center;
-        }
-
-        .slick-next, .slick-prev {
-            &::before{
-                visibility: hidden;
-            }
-
-            img {
-                width: 35px;
-                height: 35px;
-            }
-        }
-
-        .slick-current {
-            transform: scale(1.5);
-            margin-left: 20px;
-
-            @include mediaLg {
-                transform: scale(1.05);
-                margin: 0 30px;
-            }
-        }
-
-        .slick-list {
-            padding: 50px;
-        }
-    }
+  }
 }
 
 .testimony {
-    &__item {
-        background: white;
-        width: 200px;
-        height: 200px;
-        position: relative;
-        margin: auto 50px;
-        transform: translateY(100px);
-        border-radius: 8px;
-
-        @include mediaSm {
-            width: 200px;
-            height: 300px;
-            transform: translateX(-50px) translateY(100px);
-            &--info {
-                padding: 0px;
-            }
-        }
-
-        @include mediaMd {
-            width: 150px;
-            height: 300px;
-        }
-        &--avatar {
-            position: relative;
-            top: -30px;
-            left: 40%;
-            width: 40%;
-            text-align: center;
-
-            img {
-                position: relative;
-                width: 50px;
-                height: 50px;
-                z-index: 2000;
-                border-radius: 100%;
-            }
-
-            @include mediaMd {
-                left: 30%;
-            }
-        }
-
-        &--info {
-            display: grid;
-            place-content: center;
-            padding: 0px 20px;
-        }
-
-        &--author {
-            font-size: 1rem;
-            text-align: center;
-            margin-left: -50%;
-            margin-top: 4px;
-
-        }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    @include mediaSm{
+      flex-direction: column-reverse;
+      width: 90vw;
     }
+    .line{
+      @include mediaSm{
+        display: none;
+      }
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      color: $dark;
+      width: 20vw;
+      @include mediaSm{
+        width: 80vw;
+        margin: 1rem;
+      }
+
+      &--info {
+        font-size: 1.2rem;
+        font-family: $mincho-font !important;
+      }
+      &--author {
+        color: $dark;
+        font-family: $title-font !important;
+      }
+    }
+    &__right {
+      width: 20vw;
+      height: 30vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }

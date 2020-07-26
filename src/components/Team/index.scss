@@ -1,52 +1,52 @@
-@import '../../assets/styles/mixins.scss';
-@import '../../assets/styles/colors.scss';
-@import '../../assets/styles/fonts.scss';
-.team{
-    padding: 200px;
-    background: lighten($h-color, 68%);
-    margin-top: -160px;
-    margin-bottom: -100px;
-    @include mediaMd {
-        margin: 150px 0;
-        height: 100vh;
-    }
-    &__list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-        margin-top: 30px;
-        margin-bottom: 100px;
-        @include mediaMd {
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            margin: 60px 0;
-            padding-bottom: 20px;
-        }
-    }
-    height: 10vh;
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
+.team {
+  padding: 200px;
+  background: lighten($h-color, 68%);
+  margin-top: -160px;
+  margin-bottom: -100px;
+  @include mediaMd {
+    margin: 150px 0;
+    height: 100vh;
+  }
+  &__list {
     display: grid;
-    place-content: center;
-    text-align: center;
-
-    &__member{
-        margin-right: 20px;
-
-        @include mediaSm {
-            margin-top: 20px;
-            margin-right: auto;
-            margin-bottom: 20px;
-        }
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    @include mediaMd {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      margin: 60px 0;
+      padding-bottom: 20px;
     }
+  }
+  height: 10vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
 
-    &__info {
-        margin-top: 10px;
-    }
+  &__member {
+    margin-right: 20px;
 
-    &__title {
-        margin-bottom: 50px;
-        margin-top: 50px !important;
-        font-size: 2em;
-        font-family: $title-font !important;
-        color: $h-color;
+    @include mediaSm {
+      margin-top: 20px;
+      margin-right: auto;
+      margin-bottom: 20px;
     }
+  }
+
+  &__info {
+    margin-top: 10px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    margin-top: 50px !important;
+    font-size: 2em;
+    font-family: $title-font !important;
+    color: $h-color;
+  }
 }
