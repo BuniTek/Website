@@ -26,6 +26,8 @@ import Overlay4Bg from "../assets/images/home-middle_third.png"
 import ImgSecond from "../assets/images/IMG_2390.jpg"
 import IllustrationThird from "../assets/images/undraw_having_fun_iais.svg"
 import IllustrationFourth from "../assets/images/undraw_researching_22gp.svg"
+import IllustrationThird2 from "../assets/images/illfour2.svg"
+import IllustrationThird3 from "../assets/images/illfour3.svg"
 import point from "../assets/images/point.svg"
 import play from "../assets/images/play.svg"
 import homeMiddleThird from "../assets/images/homeMiddleThird.svg"
@@ -200,7 +202,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
 					<div
 						className="home__third__right--image"
 						style={{
-							backgroundImage: `url(${IllustrationThird})`,
+							backgroundImage: `url(${IllustrationThird2})`,
 						}}
 					/>
 				</div>
@@ -235,11 +237,11 @@ const IndexPage = ({ data: { videoPreview } }) => {
 				<div className="home__topics--container">
 					<h1 className="home__topics--title">Our courses</h1>
 					<div className="home__topics--grid">
-						<Topic caption="testing" link="/testing" />
-						<Topic caption="courses" link="/courses" />
-						<Topic caption="electronics" link="/electronics" />
-						<Topic caption="school clubs" link="/school-clubs" />
-						<Topic caption="science" link="/science" />
+						<Topic caption="Testing" link="/testing" />
+						<Topic caption="Courses" link="/courses" />
+						<Topic caption="Electronics" link="/electronics" />
+						<Topic caption="School clubs" link="/school-clubs" />
+						<Topic caption="Science" link="/science" />
 					</div>
 				</div>
 			</div>

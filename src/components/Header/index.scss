@@ -20,9 +20,7 @@
     padding-top: 5%;
     list-style: none;
 
-    @include mediaSm {
-      display: none;
-    }
+    
 
     &--item {
       margin-right: 30px;
@@ -43,6 +41,7 @@
   outline: none;
   background: white;
   @include mediaSm {
+    margin-top: -30px;
     display: block;
     transform: translateY(10px);
   }
@@ -63,7 +62,10 @@
   background: transparent !important;
   &__container {
     margin: 1vw 5vw;
+    @include mediaSm{
+    }
   }
+  
 }
 
 nav {
@@ -81,6 +83,9 @@ nav {
 
   .brand-logo {
     left: 2rem;
+    @include mediaSm{
+      left:3rem;
+    }
   }
 }
 

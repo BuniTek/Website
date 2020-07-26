@@ -18,24 +18,6 @@ const Testimonies = () => {
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 8000,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-    ],
   }
   return (
     <div className="testimonies">
@@ -49,8 +31,8 @@ const Testimonies = () => {
 I want to study Software Engineering at the university, a course I previously didn’t even know existed."
           />
           <Testimony
-            avatar="https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U"
-            author="Test"
+            avatar="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80"
+            author="Clementine"
             text="Before starting Africa-I, I had always felt technology wasn’t for me. A month down the lane, I am a proficient web developer and have built my mom a small website for her clothing business. 
 I want to study Software Engineering at the university, a course I previously didn’t even know existed."
           />

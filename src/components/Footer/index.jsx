@@ -17,6 +17,9 @@ const Footer = () => {
             <Link to="/" className="brand-logo">
               <img src={logo} alt="Africa I" className="footer-logo" />
             </Link>
+            <span className="footer-phrase">Our mission is to introduce high school students to technology 
+            concepts and to inspire them to explore and use their imagination to 
+            solve local problems.</span>
           </div>
           <div className="footer__subcontainer">
             <h4 className="sub-heading">Quick links</h4>

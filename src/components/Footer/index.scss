@@ -34,8 +34,9 @@
       justify-content: space-around;
       padding: 0 80px 40px 80px;
 
-      @media (max-width: 767px) {
+      @include mediaSm{
         flex-direction: column;
+        min-width: 100%;
       }
 
       a {
@@ -53,11 +54,21 @@
   }
 
   &__subcontainer {
+    display: flex;
+    flex-direction: column;
     .brand-logo img.footer-logo {
       width: 200px;
 
       @media (max-width: 767px) {
         width: 100px;
+      }
+    }
+    .footer-phrase{
+      max-width: 20vw;
+      padding-top:1rem;
+      @include mediaSm{
+        min-width: 100%;
+        padding:1rem;
       }
     }
     .sub-heading {

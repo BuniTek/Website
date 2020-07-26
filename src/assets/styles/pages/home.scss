@@ -80,6 +80,9 @@
           height: 100%;
           z-index: 2;
           margin-left: 20vw;
+          @include mediaSm{
+            margin-top: -10vh;
+          }
 
           &:hover {
             cursor: pointer;
@@ -98,6 +101,7 @@
   }
 
   &__typed {
+    min-width: 100%;
     font-size: 2.5rem;
     font-family: $heading-font !important;
     margin-bottom: 2rem;
@@ -107,8 +111,7 @@
   }
 
   &__second {
-    padding: 0 5vw;
-    min-height: 60vh;
+    padding: 10vh 5vw;
     background: $dark;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -116,6 +119,9 @@
     grid-gap: 30px;
     align-items: center;
     color: $white;
+    @include mediaSm{
+      grid-template-columns: 1fr;
+    }
 
     &__left {
       max-width: 30vw;
@@ -137,9 +143,13 @@
           font-size: 1.4rem;
         }
       }
+      @include mediaSm{
+        min-width: 100%;
+      }
     }
 
     &__right {
+      padding: 0 5vw;;
       &--image {
         width: 20vw;
         height: 30vh;
@@ -147,22 +157,28 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        @include mediaSm{
+          width: 80vw;
+        }
       }
+     
     }
     @include mediaMd {
       display: block;
     }
   }
   &__third {
-    height: 100vh;
     background: $white;
-    padding: 0 5vw;
+    padding: 10vh 5vw;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: $dark;
+    @include mediaSm{
+      flex-direction: column-reverse;
+    }
 
     &__left {
       max-width: 50vw;
@@ -189,10 +205,20 @@
           font-size: 1.4rem;
         }
       }
+      
+      @include mediaSm{
+        min-width: 100%;
+        grid-row: 2;
+      }
     }
     &__right {
       width: 50vw;
       height: 80vh;
+      @include mediaSm{
+        margin: 5vh 0;
+        max-width: 90vw;
+        height: 30vh;
+      }
 
       &--image {
         position: absolute;
@@ -203,26 +229,40 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        @include mediaSm{
+          max-width: 90vw;
+          height: 30vh;
+        }
       }
     }
   }
 
   &__fourth {
-    height: 100vh;
-    padding: 0 5vw;
+    padding: 10vh 5vw;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     color: $dark;
+    @include mediaSm{
+      flex-direction: column-reverse;
+    }
 
     &__left {
       max-width: 40vw;
+      @include mediaSm{
+        min-width: 100%;
+      }
     }
     &__right {
       width: 60vw;
       height: 100vh;
+      @include mediaSm{
+        margin: 5vh 0;
+        width: 90vw;
+        height: 30vh;
+      }
       &--image {
         position: absolute;
         width: 50vw;
@@ -230,15 +270,18 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        @include mediaSm{
+          width: 90vw;
+          height: 30vh;
+        }
       }
     }
   }
 
   &__topics {
     background: $white;
-    min-height: 60vh;
     &--container {
-      margin: auto 5vw;
+      padding:10vh 5vw;
     }
     &--grid {
       display: grid;
@@ -255,8 +298,6 @@
     &--title {
       font-size: 1.8rem;
       text-align: center;
-      margin-top: 5vh;
-      padding-top: 5vh !important;
       font-family: $title-font !important;
       color: $dark;
     }
@@ -269,6 +310,10 @@
       height: 100vh;
       margin-top: -60vh;
       margin-left: -22vw;
+      @include mediaSm{
+        width: 90vw;
+        height: 100vh;
+      }
     }
   }
 }

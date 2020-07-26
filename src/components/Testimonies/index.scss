@@ -4,37 +4,42 @@
 
 .testimonies {
   width: 100vw;
-  padding: 0 5vw;
-  min-height: 80vh;
+  padding: 10vh 5vw;
   @include mediaMd {
-    margin: 50px 8%;
+    margin-right: 5vw;
+    padding: 10vh 10vw;
   }
+
 
   &__title {
     font-size: 1.8rem;
     text-align: center;
-    margin-top: 5vh;
-    padding-top: 5vh !important;
     font-family: $title-font !important;
     color: $dark;
   }
   &__slider {
     &--item {
-      width: 100vw;
-      height: 100vh;
-      text-align: center;
+      
     }
   }
 }
 
 .testimony {
   &__item {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     align-items: center;
-    grid-gap: 30px;
+    @include mediaSm{
+      flex-direction: column-reverse;
+      width: 90vw;
+    }
+    .line{
+      @include mediaSm{
+        display: none;
+      }
+    }
 
     &__left {
       display: flex;
@@ -42,7 +47,11 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       color: $dark;
-      max-width: 40vw;
+      width: 20vw;
+      @include mediaSm{
+        width: 80vw;
+        margin: 1rem;
+      }
 
       &--info {
         font-size: 1.2rem;
@@ -59,25 +68,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-    }
-
-    @include mediaSm {
-    }
-
-    @include mediaMd {
-    }
-    &--avatar {
-      img {
-      }
-
-      @include mediaMd {
-      }
-    }
-
-    &--info {
-    }
-
-    &--author {
     }
   }
 }
