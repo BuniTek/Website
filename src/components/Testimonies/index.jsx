@@ -3,21 +3,44 @@ import React from "react"
 import Slick from "react-slick"
 
 import Testimony from "./Testimony"
-
-import nextArrowIcon from "../../assets/images/angle-right-solid.svg"
-import prevArrowIcon from "../../assets/images/angle-left-solid.svg"
 import "./index.scss"
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#565287" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#565287" }}
+      onClick={onClick}
+    />
+  );
+}
+
 
 const Testimonies = () => {
   const settings = {
     infinite: true,
-    dots: false,
+    fade: true,
+    dots: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 8000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   }
   return (
     <div className="testimonies">

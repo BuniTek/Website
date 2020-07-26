@@ -6,7 +6,7 @@ import plus from "../../assets/images/plus-solid-1.png"
 import minus from "../../assets/images/minus-solid.svg"
 
 function Reaveler({ heading, content }) {
-  const initialState = false
+  const initialState = true
   const [state, setState] = useState(initialState)
 
   const toggleParagraph = () => {
