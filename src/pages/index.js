@@ -18,11 +18,12 @@ import { setLogoUrl, setFooterVisible } from "../redux/actions"
 
 import homeBanner from "../assets/images/undraw_web_developer_p3e5.svg"
 
-import lightLogo from "../assets/images/africai.png"
-import background from "../assets/images/home_top-left.svg"
-import Overlay2Bg from "../assets/images/home_bottom-middle.svg"
-import Overlay3Bg from "../assets/images/home-middle_second.png"
-import Overlay4Bg from "../assets/images/home-middle_third.png"
+
+import lightLogo from '../assets/images/BuniTek.png';
+import background from '../assets/images/home_top-left.svg';
+import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
+import Overlay3Bg from '../assets/images/home-middle_second.png';
+import Overlay4Bg from '../assets/images/home-middle_third.png';
 import ImgSecond from "../assets/images/IMG_2390.jpg"
 import IllustrationThird from "../assets/images/undraw_having_fun_iais.svg"
 import IllustrationFourth from "../assets/images/undraw_researching_22gp.svg"
@@ -33,6 +34,7 @@ import play from "../assets/images/play.svg"
 import homeMiddleThird from "../assets/images/homeMiddleThird.svg"
 
 import "../assets/styles/pages/home.scss"
+
 
 const IndexPage = ({ data: { videoPreview } }) => {
 	const dispatch = useDispatch()
@@ -60,7 +62,6 @@ const IndexPage = ({ data: { videoPreview } }) => {
 						}}
 					/>
 				</div>
-
 				<div className="home__container">
 					<div className="home__grid">
 						<div className="home__grid--item">
@@ -169,6 +170,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							relatable way.
 						</p>
 					</div>
+
 
 					<h1 className="home__third__left--title">
 						Technology Doesn't Have To sound Exotic

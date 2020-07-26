@@ -1,8 +1,8 @@
 ---
 title: intro python
-author: AfricaI Team
+author: BuniTek Team
 date: "2020-05-17"
-keywords: "AfricaI, Africa-I, mark-down, blogs"
+keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 category: available
 description: " an introduction to python programming"
