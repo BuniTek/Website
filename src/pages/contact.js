@@ -110,7 +110,7 @@ const Contact = () => {
 
             <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook</AntBtn></a>
             <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> {" "} <InstagramOutlined /> Instagram</AntBtn></a>
-            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button">FAQ</AntBtn></a>
+            <a href="#FAQ" ><AntBtn className="contact__social--button">FAQ</AntBtn></a>
           </div>
           <form
             // onSubmit={onSubmit}
@@ -144,7 +144,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="faq">
+      <div className="faq" id="FAQ">
         <div className="faq__container">
           <h1 className="faq__heading">Questions? We've got answers</h1>
           <Collapse
