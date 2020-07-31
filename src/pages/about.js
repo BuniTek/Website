@@ -228,7 +228,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
               
               <div>
                 <img className="partners__grid--item" src={earsLogo} alt="Embedded and Robotics Society"/>
-                <h4 style={{textAlign:'center'}}>Embedded and Robotics Society</h4>
+                <h4 className="robotics-society-logo__title">Embedded and Robotics Society</h4>
               </div>
               <div>
                 <img className="partners__grid--item" src={cgiLogo} />
