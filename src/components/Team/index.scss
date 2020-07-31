@@ -8,20 +8,21 @@
     background: lighten($h-color, 68%);
     margin-top: -160px;
     margin-bottom: -100px;
+    padding-bottom: 300px;
     @include mediaMd {
-        padding: 200px;
+        padding: 150px;
+        padding-bottom: 250px;
         height: 100vh;
     }
     &__list{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         margin-top: 30px;
         margin-bottom: 100px;
         @include mediaMd {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
-            margin: 60px 0;
             padding-bottom: 20px;
         }
     }
