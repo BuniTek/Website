@@ -10,10 +10,17 @@
     margin-bottom: -100px;
     padding-bottom: 300px;
     @include mediaMd {
-        padding: 150px;
-        padding-bottom: 250px;
-        height: 100vh;
+        padding: 100px;
+        padding-bottom: 300px;
+        padding-top: 250px;
+        height: 60vh;
     }
+    @include mediaSm {
+      padding: 150px;
+      padding-bottom: 300px;
+      padding-top: 250px;
+      height: 120vh;
+  }
     &__list{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -22,9 +29,14 @@
         margin-bottom: 100px;
         @include mediaMd {
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
+            grid-gap: 30px;
             padding-bottom: 20px;
         }
+        @include mediaSm {
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px;
+          padding-bottom: 20px;
+      }
     }
   height: 10vh;
   display: grid;
@@ -39,6 +51,7 @@
       margin-right: auto;
       margin-bottom: 20px;
     }
+    
   }
 
   &__info {

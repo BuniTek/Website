@@ -19,14 +19,25 @@
         padding: 10px;
         grid-gap:40px;
                 
-        @include mediaMd {
+        @include mediaSm {
            display: block;
-           margin: 5px;
+           margin: 15px;
            padding: 0;      
         }
+        @include mediaMd {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            
+            .section__title--container{
+                margin-top: 40px;
+            }
+         }
+        
+        
 
         &-image{
-          @include mediaMd {
+          @include mediaSm {
          margin-bottom: 30px;
             
         }
@@ -35,6 +46,9 @@
         z-index: 5;
         position: relative; 
         font-size: 20px;
+        @include mediaSm {
+            font-size: 17px;    
+         }
      }
      
     }
@@ -49,7 +63,7 @@
         }
 
         &-image{
-            @include mediaMd {
+            @include mediaSm {
                 margin-top: 40px;     
                }
         }
@@ -62,9 +76,16 @@
            margin-top:150px;
            align-content: center;
            padding: 100px 10px;
+        @include mediaSm {
+            display: block;
+            margin: 15px ;
+        }
         @include mediaMd {
             display: block;
-            margin: 5px ;
+            margin: 15px ;
+            .about__second-section-image{
+                margin-top: 70px;
+            }
         }
 
       p{
@@ -72,12 +93,13 @@
         padding-top: 60px;
         font-size: 20px;
 
-        @include mediaMd {
+        @include mediaSm {
             padding-left: 0;
+            font-size: 17px;
         }
 
       }
-      @include mediaMd {
+      @include mediaSm {
         padding: 0 ;
         padding-top: 30px;
     }
@@ -89,15 +111,23 @@
      position: relative; 
      line-height: 1.5;
 
+     @include mediaSm {
+       margin: 5px;
+    }
     &-content{
         padding: 0 25%;
         padding-bottom: 10%;
         z-index: 5;
         position: relative; 
-       @include mediaMd {
+       @include mediaSm {
         padding: 20px;
         padding-bottom: 60px;
     }
+    @include mediaMd {
+        padding: 0 40px;
+        padding-bottom: 60px;
+    }
+
     }
         
     }
@@ -107,35 +137,49 @@
         &-container{
             background: white;
              
-          @include mediaMd {
+          
+         @include mediaMd {
             margin: 50px 0;
             padding: 50px 0; 
-         }
+         }  
         }
 
         margin: 30px 0;
         padding: 60px;
     
+        
         @include mediaMd {
-            padding: 0 20px;
-            margin-right: -20px;
+            padding: 0 20px;  
         }
+        
+        
 
     }
 
     &__fifth--section{
 
+        padding: 100px 60px;
+        padding-top: 40px;
+
         &-container{   
-          @include mediaMd {
+          @include mediaSm {
             margin: 50px 0;
             padding: 20px 0 50px 0;
+            
+         }
+         @include mediaMd {
+            margin: 50px 0;
+            padding: 30px 0; 
+            padding-bottom: 70px;
          }
         }
-        padding: 100px 60px;
+        
     
-        @include mediaMd {
+        @include mediaSm {
             padding: 20px;
-            margin-right: -20px;
+        }
+        @include mediaMd {
+            padding: 0 20px;  
         }
     }
 
@@ -153,7 +197,7 @@
         &.rounded {
            width: 433px;
            border-radius: 300px;
-           @include mediaMd {
+           @include mediaSm {
                width: 250px;
                height: 150px;
            }
@@ -170,7 +214,7 @@
                 z-index: -1;
             }
 
-            @include mediaMd {
+            @include mediaSm {
                 left: 20%;
                 top: 60%;
             }
@@ -192,7 +236,7 @@
 
         &--container{
             padding-bottom: 20px;
-              
+            
         }
         &-centered{
             text-align: center;
@@ -202,8 +246,8 @@
         font-size: 2.2em;
         position: relative;
         top: 30px;
-        @include mediaMd {
-            font-size: 2em;
+        @include mediaSm {
+            font-size: 1.6em;
             
         }
     }
@@ -218,11 +262,17 @@
         align-items: center;
         margin: 50px 80px;
         font-size: 18px;
-        @include mediaMd {
+        @include mediaSm {
           display: block; 
           margin: 25px; 
           margin-top: 50px;
+          font-size: 17px;
        }
+       @include mediaMd {
+        display: block; 
+        margin: 25px; 
+        margin-top: 50px;
+     }
       
       }
       &__grid{
@@ -232,7 +282,7 @@
             display:grid;
             grid-gap: 60px;
             margin: 0 auto;
-        @include mediaMd {
+        @include mediaSm {
             grid-gap: 30px;
             padding: 0;
             margin-bottom: 30px;
@@ -258,7 +308,7 @@
         padding: 100px 120px;
         
         margin-top: 100px;
-        @include mediaMd {
+        @include mediaSm {
             padding: 60px 20px;  
             
         }
@@ -283,7 +333,7 @@
         grid-gap: 20px;
         padding:0 60px;
 
-        @include mediaMd {
+        @include mediaSm {
             grid-template-columns: 1fr;
         }
 
@@ -317,11 +367,14 @@ li span{
     position: relative;
     top:-10px;
     font-size: 20px;
+    @include mediaSm {
+        font-size: 17px;
+    }
 }
 
 .quote{
     &-visibility{
-        @include mediaMd {
+        @include mediaSm {
             display: none;
         }
     }
@@ -330,7 +383,7 @@ li span{
     
         &-shrinkable{
             transform: rotateY(180deg);
-            @include mediaMd {
+            @include mediaSm {
                 width: 50px !important;
                 height: 44px !important;
             }
@@ -357,7 +410,7 @@ li span{
     
     img{
         
-        @include mediaMd {
+        @include mediaSm {
            margin: 40px 0;
            
         }  
