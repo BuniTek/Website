@@ -33,10 +33,10 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
   return (
     <Layout>
       <SEO title="About Us" />
-      <div className="about">
+      <div className="about" >
         <div className="about__container">
           <section>
-            <div className="about__first-section">
+            <div className="about__first-section" >
               <div className="first-section__image about__first-section-image">
                 <Img fluid={firstSectionImage.childImageSharp.fluid} alt="Our story" className="section__image" />
               </div>
@@ -49,7 +49,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   <div className="about__first-section-description">
                     <div className="about__shadow rounded absolute-right" />
                     <div>
-                      <p>
+                      <p >
                         <span className="company__name">BuniTek </span>
                         {' '}
                         is a digital literacy venture working to create
@@ -105,8 +105,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
             <div className="about__third-section-content">
               <div className="about__shadow rounded absolute-right" />
 
-              <div>
-                <ol className="imglist">
+              <div >
+                <ol className="imglist" >
 
                   <li>
                     <span>
@@ -177,7 +177,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
             <div className="about__fifth--section">
               <div className="section__title--container section__title-centered">
 
-                <span className="section__title">Content Delivery</span>
+                <span className="section__title" >Content Delivery</span>
                 <img src={quoteImage} alt="quote" />
               </div>
 
@@ -225,10 +225,20 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
           <div className="partners__container">
             <h1 className="partners__title">They will trust us</h1>
             <div className="partners__grid">
-              <img className="partners__grid--item" src="https://800664.smushcdn.com/1566666/wp-content/uploads/2018/09/EI-Top-Logo.png?size=500x300" alt="Edinburgh Innovations"/>
-              <img className="partners__grid--item" src={earsLogo} alt="Embedded and Robotics Society"/>
-              <img className="partners__grid--item" src="https://theturingtrust.files.wordpress.com/2017/08/tt-logo-new-final-300dpi.png?w=500" alt="Turing Trust"/>
-              <img className="partners__grid--item" src={cgiLogo} />
+              
+              <div>
+                <img className="partners__grid--item" src={earsLogo} alt="Embedded and Robotics Society"/>
+                <h4 className="robotics-society-logo__title">Embedded and Robotics Society</h4>
+              </div>
+              <div>
+                <img className="partners__grid--item" src={cgiLogo} />
+              </div>
+              <div className="partners__logo--grouped">
+                <img className="partners__grid--item" src="https://800664.smushcdn.com/1566666/wp-content/uploads/2018/09/EI-Top-Logo.png?size=500x300" alt="Edinburgh Innovations"/>
+                <img className="partners__grid--item" src="https://theturingtrust.files.wordpress.com/2017/08/tt-logo-new-final-300dpi.png?w=500" alt="Turing Trust"/>
+              </div>
+             
+              
             </div>
           </div>
         </div>
