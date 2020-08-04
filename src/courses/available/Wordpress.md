@@ -1,12 +1,12 @@
 ---
-title: intro to AI
+title: Wordpress
 author: BuniTek Team
 date: "2020-05-17"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
-description: " an introduction to Artificial intelligence and internet of things"
+description: " An introduction to Web Development with Wordpress"
 category: available
-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mAAO8ICbzlA096hZc43AvwHaE7%26pid%3DApi&f=1"
+image: "https://strawbees.com/app/uploads/2020/05/Strawbees_strong_partnership_with_microbit.jpg"
 ---
 
 

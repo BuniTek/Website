@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React, { useEffect } from "react"
+import React, { useEffect, useState} from "react"
 import { graphql, navigate } from "gatsby"
 import { useDispatch } from "react-redux"
 import Typed from "react-typed"
@@ -15,6 +15,7 @@ import Topic from "../components/Topic"
 import Testimonies from "../components/Testimonies"
 import Line from "../components/VerticalLine"
 import { setLogoUrl, setFooterVisible } from "../redux/actions"
+import Video from "../components/YTVideo"
 
 import homeBanner from "../assets/images/undraw_web_developer_p3e5.svg"
 
@@ -48,6 +49,9 @@ const IndexPage = ({ data: { videoPreview } }) => {
 			visible: true,
 		})(dispatch)
 	}, [])
+	const [state, setState] = useState({
+		isOpened: false,
+	  });
 
 	return (
 		<Layout>
@@ -87,17 +91,28 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							</span>
 						</div>
 						<div className="home__grid--item">
-							<div
+						   <div
 								className="hero__play"
 								style={{
-									backgroundImage: `url(${play})`,
+									backgroundImage: `url(${!state.isOpened? play:'none'})`
 								}}
+								onClick={(e) => {
+									setState({
+									  isOpened: true,
+									});
+									e.preventDefault();
+								  }}
 							/>
+							{!state.isOpened && (
 							<Img
 								fluid={videoPreview.childImageSharp.fluid}
 								alt="Hero"
 								className="hero__image"
-							/>
+							/> )}
+							{state.isOpened && (
+							<Video videoSrcURL="https://www.youtube.com/embed/w7VSXm4SsNw?controls=0"videoTitle="Official Music Video on YouTube" />
+							)}
+							
 						</div>
 					</div>
 				</div>
@@ -166,8 +181,18 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							}}
 						/>
 						<p>
-							Commited to introducing every young African to technology in a
-							relatable way.
+						We are an Edtech Venture by STEM Students & recent graduates from various universities across the world 
+						</p>
+					</div>
+					<div className="home__third__left--item">
+						<div
+							className="point"
+							style={{
+								backgroundImage: `url(${point})`,
+							}}
+						/>
+						<p>
+						We are committed to introducing every African High School Student to Technology in a relatable way
 						</p>
 					</div>
 
@@ -183,7 +208,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							}}
 						/>
 						<p>
-							Technology relates to our everyday life, wherever we are from.
+						Technology relates to our every day life, wherever we come from.
 						</p>
 					</div>
 					<div className="home__third__left--item">
@@ -194,10 +219,11 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							}}
 						/>
 						<p>
-							We are offering you simplified, carefully selected, hands on and
-							contextualised technology course.
+						Our courses are simplified, carefully curated, hands-on, and fun.
 						</p>
 					</div>
+					
+					
 				</div>
 
 				<div className="home__third__right">

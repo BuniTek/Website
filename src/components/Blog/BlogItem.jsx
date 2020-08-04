@@ -26,10 +26,10 @@ const BlogItem = ({ title, description, readMore, featured }) => (
           {description}
         </div>
         <div className="blog__item--footer">
-          <div className="blog__item--footer--reaction">
+          {/* <div className="blog__item--footer--reaction">
             <img src={HeartIcon} alt="Like" className="blog__like" />
             <span>22</span>
-          </div>
+          </div> */}
           <LinkAnchor to={readMore}>Read more</LinkAnchor>
         </div>
       </div>
