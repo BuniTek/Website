@@ -18,12 +18,12 @@ import { setLogoUrl, setFooterVisible } from "../redux/actions"
 import "../assets/styles/pages/contact.scss"
 import contactTopLeft from "../assets/images/contact_top-left.svg"
 import contactMiddleRight from "../assets/images/contact_middle-right.svg"
-import logo from "../assets/images/BuniTek.png"
+import logo from "../assets/images/BuniTek_dark.png"
 
 const { Panel } = Collapse
 
 const text = `
-  Contact us at Info@AfricaI.site
+  Contact us at info@buni.tech
 `
 
 
@@ -108,8 +108,8 @@ const Contact = () => {
           </p>
           <div className="contact__social">
 
-            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook</AntBtn></a>
-            <a href="https://m.me/buniteki" target="_blank"><AntBtn className="contact__social--button"> {" "} <InstagramOutlined /> Instagram</AntBtn></a>
+            <a href="https://m.me/buniteki/" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook</AntBtn></a>
+            <a href="https://www.instagram.com/buni_tek/" target="_blank"><AntBtn className="contact__social--button"> {" "} <InstagramOutlined /> Instagram</AntBtn></a>
             <a href="#FAQ" ><AntBtn className="contact__social--button">FAQ</AntBtn></a>
           </div>
           <form

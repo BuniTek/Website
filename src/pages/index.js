@@ -20,7 +20,7 @@ import Video from "../components/YTVideo"
 import homeBanner from "../assets/images/undraw_web_developer_p3e5.svg"
 
 
-import lightLogo from '../assets/images/BuniTek.png';
+import lightLogo from '../assets/images/BuniTek_dark.png';
 import background from '../assets/images/home_top-left.svg';
 import Overlay2Bg from '../assets/images/home_bottom-middle.svg';
 import Overlay3Bg from '../assets/images/home-middle_second.png';
@@ -110,7 +110,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
 								className="hero__image"
 							/> )}
 							{state.isOpened && (
-							<Video videoSrcURL="https://www.youtube.com/embed/w7VSXm4SsNw?controls=0"videoTitle="Official Music Video on YouTube" />
+							<Video videoSrcURL="https://www.youtube.com/embed/w7VSXm4SsNw?controls=0&rel=0"videoTitle="Official Music Video on YouTube" />
 							)}
 							
 						</div>

@@ -23,8 +23,8 @@ const Sidebar = ({ open, setOpen }) => (
       </button>
 
       <ul className="sidebar__menu">
-        <li>
-          <Link to="/blog">News</Link>
+      <li>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/courses">Courses</Link>
@@ -34,6 +34,9 @@ const Sidebar = ({ open, setOpen }) => (
         </li>
         <li>
           <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <Link to="/blog">posts</Link>
         </li>
         <li>
           <Link to="/contact">Contact Us</Link>
