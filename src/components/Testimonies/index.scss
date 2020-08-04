@@ -33,7 +33,6 @@
     align-items: center;
     @include mediaSm{
       flex-direction: column-reverse;
-      width: 90vw;
     }
     .line{
       @include mediaSm{
@@ -68,6 +67,9 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      @include mediaSm{
+        width: 80vw;
+      }
     }
   }
 }

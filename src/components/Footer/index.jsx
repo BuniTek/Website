@@ -26,22 +26,13 @@ const Footer = () => {
             <h4 className="sub-heading">Quick links</h4>
             <ul className="footer__subcontainer--list">
               <li>
-                <Link to="/">Courses</Link>
+                <Link to="/courses">Courses</Link>
               </li>
               <li>
-                <Link to="/">Camp Events</Link>
+                <Link to="/contact">Contact Us</Link>
               </li>
               <li>
-                <Link to="/">Locations</Link>
-              </li>
-              <li>
-                <Link to="/">News and blogs</Link>
-              </li>
-              <li>
-                <Link to="/">Contact Us</Link>
-              </li>
-              <li>
-                <Link to="/">Help/FAQs</Link>
+                <Link to="/contact#FAQ">Help/FAQs</Link>
               </li>
             </ul>
           </div>

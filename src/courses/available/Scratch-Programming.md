@@ -1,12 +1,12 @@
 ---
-title: intro mark-down
+title: Scratch
 author: BuniTek Team
 date: "2020-05-17"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 category: available
-description: " an introduction to markdown and blogs"
-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0_tO8HgJiLQ%2Fmaxresdefault.jpg&f=1&nofb=1"
+description: " An introduction to Scratch Programming"
+image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.d27A5K4i63BktGDEg25hqAHaEl%26pid%3DApi&f=1"
 ---
 
 
@@ -256,3 +256,15 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
+
+
+
+
+
+
+
+
+
+
+
+

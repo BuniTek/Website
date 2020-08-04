@@ -35,6 +35,7 @@
 			span {
 				font-size: 1.2em;
 				font-family: $title-font !important;
+				font-weight: bold;
 				color: $dark;
 			}
 
@@ -48,6 +49,7 @@
 		color: $white;
 		background: $not-grey;
 		padding: 20px;
+		margin-bottom: 1rem;
 		border-radius: 100px;
 		p {
 			font-family: $mincho-font !important;

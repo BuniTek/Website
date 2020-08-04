@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#565287" }}
+      style={{ ...style, display: "block", background: "#363333",borderRadius:"100%" }}
       onClick={onClick}
     />
   );
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#565287" }}
+      style={{ ...style, display: "block", background: "#363333",borderRadius:"100%" }}
       onClick={onClick}
     />
   );
@@ -40,7 +40,16 @@ const Testimonies = () => {
     autoplay: true,
     autoplaySpeed: 8000,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   }
   return (
     <div className="testimonies">
