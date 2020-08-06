@@ -47,4 +47,9 @@
     background:$dark-grey;
     opacity: 0.4;
     z-index: 2;
+    transition: opacity .5s ease-in-out;
+
+    &:hover{
+        opacity: 0;
+    }
 }
