@@ -66,6 +66,7 @@
     .footer-phrase{
       max-width: 20vw;
       padding-top:1rem;
+      font-family: $mincho-font !important;
       @include mediaSm{
         min-width: 100%;
         padding:1rem;

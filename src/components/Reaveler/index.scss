@@ -51,9 +51,8 @@
 		padding: 20px;
 		margin-bottom: 1rem;
 		border-radius: 100px;
-		p {
-			font-family: $mincho-font !important;
-		}
+		font-family: $mincho-font !important;
+		
 		&--hide {
 			display: none;
 		}
