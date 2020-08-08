@@ -10,7 +10,10 @@
         flex-direction: column;
         justify-content: space-around;
         align-items:center;
-        margin: 40px 10%;
+        margin: 1rem 10%;
+        @include mediaSm{
+            width: 100vw;
+        }
         h2{
             font-size: 2em;
             font-family: $title-font !important;

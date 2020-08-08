@@ -81,7 +81,7 @@
           z-index: 2;
           margin-left: 20vw;
           @include mediaSm{
-            margin-top: -10vh;
+            margin-top: -20vh;
           }
 
           &:hover {
@@ -113,6 +113,9 @@
     p{
       font-size: 1.4rem;
       font-family: $mincho-font !important;
+      @include mediaSm{
+        bottom: 1rem;
+      }
     }
     @include mediaMd{
       min-height: 30vh;
@@ -334,7 +337,7 @@
       margin-top: -60vh;
       margin-left: -22vw;
       @include mediaSm{
-        width: 90vw;
+        width: 92vw;
         height: 100vh;
       }
     }
