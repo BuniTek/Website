@@ -46,7 +46,7 @@ const PostLayout = ({ data }) => {
       <div>
         <SiteHeader />
         <main className="post">
-          <div>
+          <div className="course_page">
             <h1 className="post__title">{post.frontmatter.title}</h1>
             <h3 className="post__author">{post.frontmatter.author}</h3>
             <i>
