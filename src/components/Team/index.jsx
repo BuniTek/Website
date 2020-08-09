@@ -52,7 +52,7 @@ const Team = () => (
       <TeamMember
         titles="UI/UX DEVELOPER"
         email="xx@BuniTek.site"
-        name="ABIGAIL AGYEMANG"
+        name="ADWOA KONADU"
         profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
       />
       <TeamMember
@@ -82,7 +82,7 @@ const Team = () => (
      <TeamMember
         titles="DESIGNER"
         email="xx@BuniTek.site"
-        name="ADWOA KONADU"
+        name="ABIGAIL AGYEMANG"
         profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
       />
        <TeamMember
