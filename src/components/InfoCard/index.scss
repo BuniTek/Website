@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/fonts.scss';
 
 p{
     line-height: 1.6;
 }
 h3{
     text-align: center;
-    font-family: 'Archivo Black', sans-serif !important;
+    font-family: $title-font !important;
 }
 

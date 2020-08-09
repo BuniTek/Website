@@ -235,14 +235,14 @@
     &__title{
 
         &--container{
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             
         }
         &-centered{
             text-align: center;
         }
         color: $h-color;
-        font-family: 'Archivo Black', sans-serif !important;
+        font-family: $title-font !important;
         font-size: 2.2em;
         position: relative;
         top: 30px;
@@ -305,7 +305,7 @@
     background: lighten($h-color, 60%);
 
     &__container {
-        padding: 100px 120px;
+        padding: 100px 200px;
         
         margin-top: 100px;
         @include mediaSm {
@@ -315,10 +315,11 @@
     }
 
     &__title {
-        font-size: 2em;
+        font-size: 2.5em;
         font-family: $title-font !important;
         color: $h-color;
         text-align: center;
+        padding-bottom: 40px;
 
     }
     &__logo--grouped{
@@ -419,4 +420,7 @@ li span{
         }  
     }
     
+}
+.robotics-society-logo__title{
+    padding: 30px 0;
 }

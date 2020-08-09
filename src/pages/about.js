@@ -223,7 +223,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
         <Team />
         <div className="partners">
           <div className="partners__container">
-            <h1 className="partners__title">They will trust us</h1>
+            <h1 className="partners__title">Our Partners</h1>
             <div className="partners__grid">
               
               <div>
