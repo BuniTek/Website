@@ -5,7 +5,7 @@ import { useSelector } from "react-redux"
 import "./index.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import logo from '../../assets/images/BuniTek_dark.png';
+import logo from '../../assets/images/milkish.png';
 
 
 const Footer = () => {

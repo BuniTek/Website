@@ -8,7 +8,7 @@ import { setLogoUrl, setFooterVisible } from '../redux/actions';
 import '../assets/styles/pages/notfound.scss';
 
 import ServerDown from '../assets/images/server-down.png';
-import logo from '../assets/images/BuniTek_dark.png';
+import logo from '../assets/images/milkish.png';
 
 const NotFoundPage = () => {
   const dispatch = useDispatch();
