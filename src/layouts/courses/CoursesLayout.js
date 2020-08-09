@@ -9,7 +9,7 @@ import Chip from '../../components/chip';
 import { setLogoUrl } from '../../redux/actions';
 
 import './coursesLayout.scss';
-import darkLogo from '../../assets/images/BuniTek_dark.png';
+import darkLogo from '../../assets/images/milkish.png';
 
 
 const CoursesLayout = ({ children }) => {
