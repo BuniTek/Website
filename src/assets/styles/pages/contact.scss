@@ -48,28 +48,15 @@
 
   &__overlay {
     &--1 {
-      top: -35%;
-      left: -10%;
-      width: 500px;
-      height: 500px;
-      opacity: 1;
-      position: absolute;
-      z-index: -1;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      @media (max-width: 991px) {
-        left: -20%;
-      }
-      @media (max-width: 767px) {
-        top: -15%;
-        left: -15%;
-        width: 250px;
-        height: 250px;
-      }
-
-      @include mediaLg {
-        top: -20%;
+      @include overlayItem;
+      width: 40vw;
+      height: 100vh;
+      margin-top: -70vh;
+      margin-left: -20vw;
+      @include mediaSm{
+        width: 80vw;
+        height: 100vh;
+        margin-left: -25vw;
       }
     }
 
@@ -96,10 +83,14 @@
 }
 
 .faq {
-  height: 50vh;
+  height: 80vh;
   background: $dark;
   color: $white;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  @include mediaSm{
+    height: 100vh;
+  }
 
   &__container {
     margin: auto 10%;
@@ -108,18 +99,34 @@
   &__heading {
     color: $border-color;
     text-align: center;
-    font-size: 2em;
+    font-size: 3rem;
     font-family: $title-font !important;
+    @include mediaSm{
+      font-size: 2rem;
+    }
   }
 
   .ant-collapse-header {
     color: $border-color !important;
-    font-size: 1.2rem;
-    font-family: $heading-font !important;
+    font-size: 2rem;
+    font-family: $title-font !important;
+    @include mediaSm{
+      font-size: 1.2rem;
+    }
   }
 
   .ant-collapse-content-box p {
     color: $white;
-    font-family: $text-font !important;
+    font-size: 1.4rem;
+    font-family: $mincho-font !important;
+    @include mediaSm{
+      font-size: 1rem;
+    }
+  }
+  [data-theme='compact'] .site-collapse-custom-collapse .site-collapse-custom-panel,
+  .site-collapse-custom-collapse .site-collapse-custom-panel {
+    border: 0px;
+    overflow: hidden;
   }
 }
+

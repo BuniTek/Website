@@ -60,9 +60,13 @@
 
 .nav-wrapper {
   background: transparent !important;
+  @include mediaSm{
+    margin-left: 4vw;
+  }
   &__container {
     margin: 1vw 5vw;
     @include mediaSm{
+      
     }
   }
   

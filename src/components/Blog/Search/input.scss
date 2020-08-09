@@ -1,3 +1,6 @@
+
+@import "../../../assets/styles/mixins.scss";
+
 .blog__search{
     &--input{
         &[type="search"]{
@@ -8,6 +11,9 @@
           height: 28px !important;
           outline: none !important;
           padding: 5px !important;
+          @include mediaSm{
+            width: 60vw !important;
+          }
           &::placeholder{
              padding: 20px;
           }

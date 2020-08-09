@@ -155,11 +155,12 @@ const Contact = () => {
             }}
             className="site-collapse-custom-collapse"
             style={{
-              backgroundColor: "#312F2F",
+              backgroundColor: "#363333",
               color: "white",
             }}
           >
             <Panel
+            bordered={false}
               header="How do I enroll in a course?"
               key="1"
               className="site-collapse-custom-panel"

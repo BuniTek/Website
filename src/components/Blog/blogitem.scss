@@ -10,6 +10,10 @@
         margin: 50px 10%;
         padding: 0;
 
+        @include mediaSm{
+            
+        }
+
         &:hover{
             cursor: pointer;
             border-color:$dark;
@@ -26,6 +30,10 @@
             background: #4B4949;
             border-radius: 100%;
             margin-bottom:10px;
+            
+            @include mediaSm{
+                display:  none;
+            }
         }
 
         &--heading{
@@ -33,6 +41,10 @@
             justify-content: space-between;
             align-items:center;
             margin: 20px 10px 5px 10px;
+
+            @include mediaSm{
+                margin: 1vh 4vw 2vh 4vw;
+            }
 
         }
 
@@ -69,6 +81,10 @@
             width: 100%;
             height: 100%;
             border-right: 5px solid $border-color;
+            @include mediaSm{
+                border-right:none;
+                border-bottom: 5px solid $border-color;
+            }
         }
 
         &--grid {
@@ -87,7 +103,7 @@
                 margin-right: 20px;
 
                 @include mediaSm {
-                    bottom: 0;
+                    bottom: 1rem;
                 }
             }
         }
