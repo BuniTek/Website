@@ -54,6 +54,7 @@ const Testimonies = () => {
   }
   return (
     <div className="testimonies">
+    
       <h2 className="testimonies__title">What Others Think</h2>
       <div className="testimonies__slider">
         <Slick {...settings}>
@@ -65,7 +66,7 @@ I want to study Software Engineering at the university, a course I previously di
             country="Kenya"
           />
           <Testimony
-            avatar={DanielsAvatar}
+            avatar="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
             author="Clementine"
             text="Before starting Africa-I, I had always felt technology wasn’t for me. A month down the lane, I am a proficient web developer and have built my mom a small website for her clothing business. 
 I want to study Software Engineering at the university, a course I previously didn’t even know existed."

@@ -63,13 +63,16 @@
       }
     }
     &__right {
-      width: 20vw;
-      height: 30vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      @include mediaSm{
-        width: 80vw;
+      &--image{
+        width: 20vw;
+        height: 30vh;
+        border: 4px solid $border-color;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include mediaSm{
+          width: 80vw;
+        }
       }
     }
   }

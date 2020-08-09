@@ -9,11 +9,11 @@ const Testimony = ({ avatar, author, text, country }) => (
   <div className="testimony__item">
     <div className="testimony__item__left">
       <p className="testimony__item__left--info">{text}</p>
-      <h2 className="testimony__item__left--author">~ {author} - {country}</h2>
+      <h2 className="testimony__item__left--author"> ~ {author} - {country}</h2>
     </div>
     <Line />
     <div className="testimony__item__right">
-      <div className="home__second__right--image"
+      <div className="testimony__item__right--image"
         style={{
             backgroundImage: `url(${avatar})`,
           }}
