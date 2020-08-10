@@ -49,9 +49,6 @@ const IndexPage = ({ data: { videoPreview } }) => {
 			visible: true,
 		})(dispatch)
 	}, [])
-	const [state, setState] = useState({
-		isOpened: false,
-	  });
 
 	return (
 		<Layout>
@@ -88,28 +85,8 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							</span>
 						</div>
 						<div className="home__grid--item">
-						   <div
-								className="hero__play"
-								style={{
-									backgroundImage: `url(${!state.isOpened? play:'none'})`
-								}}
-								onClick={(e) => {
-									setState({
-									  isOpened: true,
-									});
-									e.preventDefault();
-								  }}
-							/>
-							{!state.isOpened && (
-							<Img
-								fluid={videoPreview.childImageSharp.fluid}
-								alt="Hero"
-								className="hero__image"
-							/> )}
-							{state.isOpened && (
-							<Video videoSrcURL="https://www.youtube.com/embed/w7VSXm4SsNw?controls=0&rel=0"videoTitle="Official Music Video on YouTube" />
-							)}
-							
+							<Video videoSrcURL="https://www.youtube.com/embed/w7VSXm4SsNw?rel=0"videoTitle="Official Music Video on YouTube" />
+
 						</div>
 					</div>
 				</div>
