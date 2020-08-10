@@ -83,7 +83,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
 										navigate("/signup/")
 									}}
 								>
-									Get involved
+									View our Courses
 								</Button>
 							</span>
 						</div>
