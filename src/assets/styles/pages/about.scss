@@ -46,6 +46,10 @@
         z-index: 5;
         position: relative; 
         font-size: 20px;
+        
+        p{
+            font-family: $mincho-font !important;
+        }
         @include mediaSm {
             font-size: 17px;    
          }
@@ -243,6 +247,7 @@
         }
         color: $h-color;
         font-family: $title-font !important;
+        font-weight: bold;
         font-size: 2.2em;
         position: relative;
         top: 30px;
@@ -282,11 +287,22 @@
             display:grid;
             grid-gap: 60px;
             margin: 0 auto;
+            .info__card{
+                h3{
+                    font-size: 1.5rem;
+                    font-family: $title-font !important;
+                    font-weight: bold;
+                    color:$h-color;
+                }
+                p{
+                    font-size: 1.3rem;
+                    font-family: $mincho-font !important;
+                }
+            }
         @include mediaSm {
             grid-gap: 30px;
             padding: 0;
             margin-bottom: 30px;
-            
          }
         }
         &-line-divider{
@@ -360,9 +376,10 @@ body{
 {   
     padding-top: 30px;
     list-style-image: url(../../images/plus-solid-6.png);
-    font-size: 20px;
-    
-  
+    span{
+        font-size: 1.6rem;
+        font-family: $mincho-font !important;
+    }
 }
 li span{
     position: relative;
@@ -398,6 +415,9 @@ li span{
     z-index: 5;
     position: relative; 
     font-size: 20px;
+    p{
+        font-family: $mincho-font !important;
+    }
 
 }
 
