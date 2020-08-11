@@ -10,7 +10,7 @@ import BlogItem from '../components/Blog/BlogItem';
 
 
 import '../assets/styles/pages/blog.scss';
-import darkLogo from '../assets/images/milkish.png';
+import darkLogo from '../assets/images/darkish.png';
 
 const Blog = ({data: { allMarkdownRemark: { totalCount, nodes } }, pageContext, path}) => {
   console.log(nodes, pageContext, path);

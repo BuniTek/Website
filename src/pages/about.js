@@ -11,7 +11,7 @@ import Line from '../components/VerticalLine';
 import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
-import logo from '../assets/images/milkish.png';
+import logo from '../assets/images/darkish.png';
 import quoteImage from '../assets/images/quote-right-solid.svg';
 import earsLogo from '../assets/images/partner-ears.png';
 import cgiLogo from '../assets/images/partner-cgi.png';
