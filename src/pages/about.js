@@ -43,7 +43,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
               <div className="section__content">
                 <div className="section__sub-content">
                   <div className="section__title--container">
-                    <span className="section__title">Who Are WE?</span>
+                    <span className="section__title">Who are WE?</span>
                     <img src={quoteImage} alt="quote" />
                   </div>
                   <div className="about__first-section-description">
