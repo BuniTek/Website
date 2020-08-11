@@ -77,7 +77,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
 									type="primary"
 									onClick={e => {
 										e.preventDefault()
-										navigate("/signup/")
+										navigate("/courses")
 									}}
 								>
 									View our Courses
