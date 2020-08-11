@@ -18,7 +18,7 @@ import { setLogoUrl, setFooterVisible } from "../redux/actions"
 import "../assets/styles/pages/contact.scss"
 import contactTopLeft from "../assets/images/contact_top-left.svg"
 import contactMiddleRight from "../assets/images/contact_middle-right.svg"
-import logo from "../assets/images/BuniTek_dark.png"
+import logo from "../assets/images/milkish.png"
 
 const { Panel } = Collapse
 
@@ -155,11 +155,12 @@ const Contact = () => {
             }}
             className="site-collapse-custom-collapse"
             style={{
-              backgroundColor: "#312F2F",
+              backgroundColor: "#363333",
               color: "white",
             }}
           >
             <Panel
+            bordered={false}
               header="How do I enroll in a course?"
               key="1"
               className="site-collapse-custom-panel"

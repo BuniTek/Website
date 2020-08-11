@@ -11,7 +11,7 @@ import Line from '../components/VerticalLine';
 import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
-import logo from '../assets/images/BuniTek_dark.png';
+import logo from '../assets/images/darkish.png';
 import quoteImage from '../assets/images/quote-right-solid.svg';
 import earsLogo from '../assets/images/partner-ears.png';
 import cgiLogo from '../assets/images/partner-cgi.png';
@@ -43,7 +43,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
               <div className="section__content">
                 <div className="section__sub-content">
                   <div className="section__title--container">
-                    <span className="section__title">Who Are WE?</span>
+                    <span className="section__title">Who are WE?</span>
                     <img src={quoteImage} alt="quote" />
                   </div>
                   <div className="about__first-section-description">
@@ -223,7 +223,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
         <Team />
         <div className="partners">
           <div className="partners__container">
-            <h1 className="partners__title">They will trust us</h1>
+            <h1 className="partners__title">Our Partners</h1>
             <div className="partners__grid">
               
               <div>

@@ -1,3 +1,6 @@
+
+@import "../../assets/styles/mixins.scss";
+
 .content__search{
     &--input{
         &[type="search"]{
@@ -7,6 +10,9 @@
           height: 28px !important;
           outline: none !important;
           padding: 5px !important;
+          @include mediaSm{
+            width: 80vw !important;
+          }
           &::placeholder{
              padding: 20px;
           }

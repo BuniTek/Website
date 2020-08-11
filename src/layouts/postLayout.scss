@@ -1,8 +1,124 @@
 
 .post {
-    margin: 40px 15%;
+    margin: 40px 8%;
 
     &__author {
         font-weight: bolder;
     }
 }
+
+.post__content {
+    top: 0px;
+    left: 0px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.post__title {
+    color: var(--unnamed-color-4b4949);
+    text-align: left;
+    font: Bold 50px/50px Titillium Web;
+    letter-spacing: 0px;
+    color: #4B4949;
+    opacity: 1;
+}
+
+.post__date{
+    color: var(--unnamed-color-a1a0ac);
+    text-align: left;
+    font: Regular 30px/36px SimSun;
+    letter-spacing: 0px;
+    color: #A1A0AC;
+    opacity: 1;
+}
+
+.markdown__content{
+    padding-top: 30px;
+}
+.markdown__section {
+    color: var(--unnamed-color-3f3d56);
+    text-align: left;
+    font: Bold 30px/30px Titillium Web;
+    letter-spacing: 0px;
+    color: #3F3D56;
+    opacity: 1;
+    text-decoration: underline #a0a0a0;
+}
+
+
+.markdown__sub-section{
+    color: var(--unnamed-color-3f3d56);
+    text-align: left;
+    font: Bold 20px/20px  Titillium Web;
+    letter-spacing: 0px;
+    color: #3F3D56;
+    opacity: 1;
+
+}
+.markdown__sub-section > span{
+    background-color: #3f3d5659;
+    padding: 3px;
+    border-radius: 1px;
+}
+
+
+
+
+.markdown_paragraph{
+    color: var(--unnamed-color-605f60);
+    text-align: left;
+    font: Regular 30px/36px SimSun;
+    letter-spacing: 0px;
+    color: #605F60;
+    opacity: 1;
+}
+
+
+
+
+
+@import '../assets/styles/colors.scss';
+@import '../assets/styles/fonts.scss';
+.markdown__button{
+    position: relative;
+    width: 80%;
+    height: 20%;
+    padding: 1.4rem 3rem;
+    border: none;
+    outline: none;
+    color: $white;
+    font-size: 1.4em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin:0 auto;
+    font-family: $title-font !important;
+
+    &.is-primary{
+        background: $dark !important;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &:hover{
+        opacity: 0.5;
+    }
+
+    &.has-bg-primary {
+       background: $dark !important;
+       border-color:$dark-grey !important;
+       border:1px solid $dark-grey;
+       color: $white;
+    }
+    @media(min-width: 1920px){
+        width: 60%;
+        height: 14%;
+
+    }
+}
+
+
+
