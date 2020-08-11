@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-e177b560e9dc8fb9c8f6.js"
+    "url": "webpack-runtime-5f292745b468c1f05834.js"
   },
   {
     "url": "framework-fca5a6c89ebf46562859.js"
   },
   {
-    "url": "app-689038b1c294ab42cb88.js"
+    "url": "app-8cf3a87a3ac688c3f950.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "3c4bd5ca1b1ada44cf937f9015422361"
+    "revision": "6a891c59e6282bb9ffd77e8987337a50"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-24649253816c017d9bf7.js"
@@ -53,8 +53,7 @@ self.__precacheManifest = [
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\/page-data\/app-data\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\/page-data\/.*\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
@@ -140,7 +139,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-689038b1c294ab42cb88.js`))) {
+  if (!resources || !(await caches.match(`/app-8cf3a87a3ac688c3f950.js`))) {
     return await fetch(event.request)
   }
 
