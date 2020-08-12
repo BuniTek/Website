@@ -11,6 +11,7 @@ import alainPicture from '../../assets/images/team/alainCropped.jpg';
 import brendaPicture from '../../assets/images/team/brendaCropped2.jpg';
 import ivyPicture from '../../assets/images/team/ivyCropped.jpg';
 import elysePicture from '../../assets/images/team/elyseCropped.jpeg';
+import abbyPicture from '../../assets/images/team/AbbyCropped.jpg';
 
 const Team = () => (
   <div className="team">
@@ -83,7 +84,7 @@ const Team = () => (
         titles="DESIGNER"
         email="xx@BuniTek.site"
         name="ABIGAIL AGYEMANG"
-        profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        profileUrl={abbyPicture}
       />
        <TeamMember
         titles="DESIGNER"
