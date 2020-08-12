@@ -81,7 +81,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                     <div className="about__shadow circle absolute-left" />
                     <div>
                       <p>
-                        To inspire, encourage and give African high school students a fair shot
+                        To inspire, encourage and give African young people a fair shot
                         at discovering technology potential and provide a ground for them to
                         explore and employ their skills to solve problems and invent the future.
                       </p>
@@ -110,8 +110,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
 
                   <li>
                     <span>
-                      To give students a chance to discover or explore their passion in technology
-                      and to experiment on its possibilities at a younger age so that it doesn't feel
+                      To give students a chance to discover and explore their passion in technology
+                      and experiment its possibilities at a younger age so that it doesn't feel
                       like an exotic concept.
                     </span>
                   </li>
@@ -140,7 +140,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                 <div className="section__grid-item">
                   <InfoCard
                     title="Simplified and Insightful"
-                    description="Our courses are simple and taught at a higher level focussing
+                    description="Our courses are simple and taught at a high level focussing
                      on introducing concepts while providing the bigger picture rather than the fine,
                       low level details.
                    "

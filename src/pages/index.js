@@ -168,7 +168,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
 							}}
 						/>
 						<p>
-							We are committed to introducing every African High School Student to Technology in a relatable way.
+							We are committed to introducing every African African young people to Technology in a relatable way.
 						</p>
 					</div>
 
