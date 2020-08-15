@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
-
 import CoursesLayout from '../../layouts/courses/CoursesLayout';
 import Course from '../../components/course';
 import { resetSearchState } from '../../redux/actions/search.action';
@@ -53,27 +52,27 @@ function UpcomingCourses({ data: { allMarkdownRemark: { nodes } } }) {
             </div>
           ) : (
             <div>
-            <div className="course__notFound">
-              <h3>
-                Sorry,we could not find results matching
-                <span className="search__query">
-                  {`"${query}"`}
-                </span>
-              </h3>
-            </div>
-            <div>
-             <h2 className="suggested__courses--title">Suggested courses:</h2>
-              <div className="courses__container">
-              {allCourses.map((course) => (
-                <Course
-                  title={course.frontmatter.title}
-                  description={course.frontmatter.description}
-                  image={course.frontmatter.image}
-                  content={course.fields.slug}
-                />
-              ))}
-            </div>
-            </div>
+              <div className="course__notFound">
+                <h3>
+                  Sorry,we could not find results matching
+                  <span className="search__query">
+                    {`"${query}"`}
+                  </span>
+                </h3>
+              </div>
+              <div>
+                <h2 className="suggestions__header">Suggested courses</h2>
+                <div className="courses__container">
+                  {allCourses.map((course) => (
+                    <Course
+                      title={course.frontmatter.title}
+                      description={course.frontmatter.description}
+                      image={course.frontmatter.image}
+                      content={course.fields.slug}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           )
         }
