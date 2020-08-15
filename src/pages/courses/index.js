@@ -10,7 +10,6 @@ import { changeCoursePageHeading } from '../../redux/actions';
 
 import '../../assets/styles/pages/courses.scss';
 
-
 function AvailableCourses({ data: { allMarkdownRemark: { nodes } } }) {
   const query = useSelector((state) => state.search.query);
   const dispatch = useDispatch();
@@ -37,7 +36,6 @@ function AvailableCourses({ data: { allMarkdownRemark: { nodes } } }) {
   const hasSearchResults = searchResults && query !== '';
   const courses = hasSearchResults ? searchResults : allCourses;
 
-
   return (
     <div>
       <CoursesLayout>
@@ -55,27 +53,27 @@ function AvailableCourses({ data: { allMarkdownRemark: { nodes } } }) {
             </div>
           ) : (
             <div>
-            <div className="course__notFound">
-              <h3>
-                Sorry,we could not find results matching
-                <span className="search__query">
-                  {`"${query}"`}
-                </span>
-              </h3>
-            </div>
-            <div>
-             <h2 className="suggested__courses--title">Suggested courses:</h2>
-              <div className="courses__container">
-              {allCourses.map((course) => (
-                <Course
-                  title={course.frontmatter.title}
-                  description={course.frontmatter.description}
-                  image={course.frontmatter.image}
-                  content={course.fields.slug}
-                />
-              ))}
-            </div>
-            </div>
+              <div className="course__notFound">
+                <h3>
+                  Sorry,we could not find results matching
+                  <span className="search__query">
+                    {`"${query}"`}
+                  </span>
+                </h3>
+              </div>
+              <div>
+                <h2 className="suggestions__header">Suggested courses</h2>
+                <div className="courses__container">
+                  {allCourses.map((course) => (
+                    <Course
+                      title={course.frontmatter.title}
+                      description={course.frontmatter.description}
+                      image={course.frontmatter.image}
+                      content={course.fields.slug}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           )
         }
@@ -88,7 +86,7 @@ AvailableCourses.propTypes = {
 };
 
 export const query = graphql` {
-    allMarkdownRemark(filter: { 
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC },filter: { 
         frontmatter: { 
             type: { eq: "course" },
             category: { eq: "available" } 
