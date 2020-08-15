@@ -1,7 +1,9 @@
+@import "../assets/styles/colors.scss";
+@import "../assets/styles/fonts.scss";
+@import "../assets/styles/mixins.scss";
 
 .post {
     margin: 40px 8%;
-
     &__author {
         font-weight: bolder;
     }
@@ -10,8 +12,6 @@
 .post__content {
     top: 0px;
     left: 0px;
-    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 20px;
     padding: 2%;
@@ -20,10 +20,21 @@
 .post__title {
     color: var(--unnamed-color-4b4949);
     text-align: left;
-    font: Bold 50px/50px Titillium Web;
+    font-family: $title-font !important;
+    font-weight:bold;
+    font-size:2rem;
+    padding:0;
+    margin:0;
     letter-spacing: 0px;
-    color: #4B4949;
+    color: $h-color;
     opacity: 1;
+    
+}
+.post__author{
+    color:$h-color;
+    letter-spacing: 0px;
+    margin:0;
+    padding:0;
 }
 
 .post__date{
@@ -34,57 +45,78 @@
     color: #A1A0AC;
     opacity: 1;
 }
+.markdown__image{
+    box-shadow:none;
+    margin-bottom:1rem;
+}
 
 .markdown__content{
-    padding-top: 30px;
+    padding-top: 5vh;
 }
 .markdown__section {
+    padding-top:1rem;
     color: var(--unnamed-color-3f3d56);
     text-align: left;
-    font: Bold 30px/30px Titillium Web;
+    font-family: $title-font !important;        
+    font-weight: bold;
     letter-spacing: 0px;
-    color: #3F3D56;
+    color: $h-color;
     opacity: 1;
-    text-decoration: underline #a0a0a0;
+    border-bottom: 4px solid $border-color;
+    border-radius:2px;
+    display: inline-block;
+    padding-bottom: 2px;
+    
+    font-size:1.2rem;
+    .test{
+        font-family: $title-font !important;
+        font-weight: bold;
+    }
 }
 
 
 .markdown__sub-section{
+    padding-top:1rem;
     color: var(--unnamed-color-3f3d56);
     text-align: left;
-    font: Bold 20px/20px  Titillium Web;
     letter-spacing: 0px;
     color: #3F3D56;
     opacity: 1;
-
 }
 .markdown__sub-section > span{
-    background-color: #3f3d5659;
-    padding: 3px;
+    background-color: #E0D3D3;
+    font-family:$title-font !important;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding:3px;
     border-radius: 1px;
+    margin-bottom:-2px;
+    
 }
 
 
 
 
 .markdown_paragraph{
+    padding-top:0.2rem;
     color: var(--unnamed-color-605f60);
     text-align: left;
     font: Regular 30px/36px SimSun;
     letter-spacing: 0px;
     color: #605F60;
+    font-size:1.1rem;
     opacity: 1;
+}
+
+ol{
+    font-size:1.2rem;
 }
 
 
 
-
-
-@import '../assets/styles/colors.scss';
-@import '../assets/styles/fonts.scss';
 .markdown__button{
     position: relative;
-    width: 80%;
+    width: 60%;
     height: 20%;
     padding: 1.4rem 3rem;
     border: none;
@@ -95,6 +127,7 @@
     cursor: pointer;
     margin:0 auto;
     font-family: $title-font !important;
+    font-weight:bold;
 
     &.is-primary{
         background: $dark !important;
@@ -102,9 +135,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    &:hover{
-        opacity: 0.5;
     }
 
     &.has-bg-primary {
@@ -117,6 +147,24 @@
         width: 60%;
         height: 14%;
 
+    }
+}
+.markdown__button__overlay{
+    position:absolute;
+    padding:0;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius:50px;
+    margin:0 auto;
+    background:$dark-grey;
+    opacity: 0.4;
+    z-index: 2;
+    transition: opacity .5s ease-in-out;
+
+    &:hover{
+        opacity: 0;
     }
 }
 
