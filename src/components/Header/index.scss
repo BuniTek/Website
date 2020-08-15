@@ -39,7 +39,6 @@
   display: none;
   border: none;
   outline: none;
-  background: white;
   @include mediaSm {
     margin-top: -30px;
     display: block;
@@ -86,9 +85,10 @@ nav {
   }
 
   .brand-logo {
-    left: 2rem;
+    left: 5vw;
     @include mediaSm{
-      left:3rem;
+      left:15vw;
+      top:1vh;
     }
   }
 }

@@ -337,7 +337,8 @@
       margin-top: -60vh;
       margin-left: -22vw;
       @include mediaSm{
-        width: 92vw;
+        margin-top:-58vh;
+        width: 100vw;
         height: 100vh;
       }
     }

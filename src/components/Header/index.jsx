@@ -7,7 +7,7 @@ import "./index.scss"
 import Sidebar from "./Sidebar"
 
 const Logo = styled.img`
-  width: 5rem;
+  width: 7rem;
   height: auto;
 `
 
