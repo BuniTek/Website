@@ -12,6 +12,8 @@ import brendaPicture from '../../assets/images/team/brendaCropped2.jpg';
 import ivyPicture from '../../assets/images/team/ivyCropped.jpg';
 import elysePicture from '../../assets/images/team/elyseCropped.jpeg';
 import abbyPicture from '../../assets/images/team/AbbyCropped.jpg';
+import penielPicture from '../../assets/images/team/penielCropped.jpg';
+import kettyPicture from '../../assets/images/team/kettyCropped.jpg';
 
 const Team = () => (
   <div className="team">
@@ -57,37 +59,37 @@ const Team = () => (
         profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
       />
       <TeamMember
-        titles="CONTENT CREATOR"
+        titles="Course Developer"
         email="xx@BuniTek.site"
         name="BRENDA NYARINGITA"
         profileUrl={brendaPicture}
       />
        <TeamMember
-        titles="CONTENT CREATOR"
+        titles="Course Developer"
         email="xx@BuniTek.site"
         name="KETTY PENDO"
-        profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        profileUrl={kettyPicture}
       />
       <TeamMember
-        titles="CONTENT CREATOR"
+        titles="Course Developer"
         email="xx@BuniTek.site"
         name="IVY KALEGI"
         profileUrl={ivyPicture}
       />
        <TeamMember
-        titles="CONTENT CREATOR"
+        titles="Course Developer"
         email="xx@BuniTek.site"
         name="PENIEL MUBITA"
-        profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        profileUrl={penielPicture}
       />
      <TeamMember
-        titles="DESIGNER"
+        titles="Graphic Designer"
         email="xx@BuniTek.site"
         name="ABIGAIL AGYEMANG"
         profileUrl={abbyPicture}
       />
        <TeamMember
-        titles="DESIGNER"
+        titles="Content Developer"
         email="xx@BuniTek.site"
         name="ELYSE UWIMPAYE"
         profileUrl={elysePicture}

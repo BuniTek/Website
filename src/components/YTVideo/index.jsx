@@ -11,9 +11,6 @@ const Video = () => (
       allow="autoplay; fullscreen"
       allowFullScreen
     />
-    <p>
-      BuniTek Intro Video
-    </p>
   </div>
 );
 export default Video;
