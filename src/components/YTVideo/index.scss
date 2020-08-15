@@ -1,0 +1,20 @@
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss";
+
+
+  .video-container{
+      border-radius: 10px;
+     
+      @include mediaMd {
+        width: 350px;
+      }
+
+      p{
+        color: $dark;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+      } 
+  }
+  
