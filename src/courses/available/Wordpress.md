@@ -2,7 +2,7 @@
 title: Wordpress
 author: BuniTek Team
 date: "2020-05-17"
-keywords: "BuniTek, BuniTek, mark-down, blogs"
+keywords: "BuniTek, BuniTek, WordPress, Blog, Website, Development"
 type: course
 description: " An introduction to Web Development with Wordpress"
 category: available

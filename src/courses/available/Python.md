@@ -57,7 +57,7 @@ image: "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?ixlib=rb-1.2.1
 
 <img class="markdown__image" src="../../assets/images/results.png" />
 
-<a href="course/enRoll"><button class="markdown__button is-primary has-bg-primary">Register <div class="markdown__button__overlay"></div></button> </a>
+<a href="course/enRoll"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE  <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

@@ -1,12 +1,12 @@
 ---
-title: Game Development with Java.md
+title: Website Development with Wordpress
 author: BuniTek Team
-date: "2020-05-17"
-keywords: "BuniTek, BuniTek, Wordpress, Introduction, Website, Deveopment"
+date: "2020-08-15"
+keywords: "BuniTek, BuniTech, wordPress, Web development, blog, Introduction"
 type: course
-category: available
 description: "Introduction to Web Development with Wordpress"
-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0_tO8HgJiLQ%2Fmaxresdefault.jpg&f=1&nofb=1"
+category: available
+image: "https://www.brandadvokates.com/wp-content/uploads/2018/04/wordpress-web-development-pakistan.jpg"
 ---
 
 <div class ="markdown__content">
@@ -15,7 +15,7 @@ image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%
     In this course, students will get an introduction to WordPress. This beginner’s course gives young minds a head-start to creating fun and interesting websites
   </p>
 
-  <img class="markdown__image" src="../../assets/images/image.tp" />
+  <img class="markdown__image" src="../../assets/images/courses/wordpress3.jpg" />
 
 <h2 class='markdown__section'> Course Highlights </h2>
 
@@ -37,7 +37,7 @@ image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%
      Students will familiarize themselves with common features in WordPress that they will need to create their own website     
     </p>
 
-<img class="markdown__image" src="../../assets/images/code2.png" />
+<img class="markdown__image" src="../../assets/images/courses/wordpress2.png" />
 
 
 <h2 class='markdown__section'> Course Overview </h2>
@@ -56,7 +56,7 @@ image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%
     <li>How to put your website online using a web hosting services</li>
   </ol>
 
-<img class="markdown__image" src="../../assets/images/results.png" />
+<img class="markdown__image" src="../../assets/images/courses/wordpress1.jpg" />
 
 <a href="course/enRoll"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
 
