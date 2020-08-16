@@ -15,7 +15,7 @@ image: "https://www.codeforchildren.com/wp-content/uploads/2016/10/scratch_logo.
     This course gives learners an introduction to programming in the most playful way while maintaining the goal of sparking their curiosity. Using block-based syntax to bring together logic, Scratch mildly but powerfully keeps students engaged in programming concepts while having fun working on their projects. 
   </p>
 
-  <img class="markdown__image" src="../../assets/images/courses/scratch-1.png" />
+  <img class="markdown__image" src="../../assets/images/courses/scratch-2.png" />
 
 <h2 class='markdown__section'> Course Highlights </h2>
 
@@ -71,7 +71,7 @@ image: "https://www.codeforchildren.com/wp-content/uploads/2016/10/scratch_logo.
     <li>Create a game while feeding a hungry parrot: Variables introduction </li>
   </ol>
 
-<img class="markdown__image" src="../../assets/images/courses/scratch-2.png" />
+<img class="markdown__image" src="../../assets/images/courses/scratch-1.png" />
 
 
 <a href="course/enRoll"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>

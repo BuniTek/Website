@@ -1,15 +1,12 @@
 ---
-title: Video Animation and Graphic Design
-author: BuniTek Team
-date: "2020-05-17"
-keywords: "BuniTek, BuniTek, mark-down, blogs"
+title: Digital Animation
+author: BuniTek
+date: ""
+keywords: "BuniTek, BuniTech, "
 type: course
+description: " "
 category: upcoming
-description: " Video Animation and Graphic Design"
-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsabe.io%2Fclasses%2Fjavascript%2Fhero.png&f=1&nofb=1"
+image: "https://www.lambdafilms.co.uk/wp-content/uploads/Screenshot-2019-05-16-at-09.37.08.png"
 ---
 
-
-
 Content to be added soon!
-

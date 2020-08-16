@@ -1,6 +1,6 @@
 ---
 title: <Course_Title>
-author: auth_ name
+author: BuniTek
 date: ""
 keywords: "BuniTek, BuniTech, "
 type: course
