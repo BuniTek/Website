@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
-import { graphql, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 import { useDispatch } from 'react-redux';
 import Typed from 'react-typed';
 import Img from 'gatsby-image';
@@ -55,6 +55,9 @@ const IndexPage = () => {
       visible: true,
 	})(dispatch);
 
+}, []);
+
+
 	return (
 		<Layout>
 			<SEO title="Home" />
@@ -90,27 +93,8 @@ const IndexPage = () => {
 							</span>
 						</div>
 						<div className="home__grid--item">
-						   <div
-								className="hero__play"
-								style={{
-									backgroundImage: `url(${!state.isOpened? play:'none'})`
-								}}
-								onClick={(e) => {
-									setState({
-									  isOpened: true,
-									});
-									e.preventDefault();
-								  }}
-							/>
-							{!state.isOpened && (
-							<Img
-								fluid={videoPreview.childImageSharp.fluid}
-								alt="Hero"
-								className="hero__image"
-							/> )}
-							{state.isOpened && (
-							<Video videoSrcURL="https://www.youtube.com/embed/w7VSXm4SsNw?controls=0&rel=0"videoTitle="Official Music Video on YouTube" />
-							)}
+						   
+							<Video />
 							
 						</div>
 					</div>
@@ -320,6 +304,5 @@ const IndexPage = () => {
 		</Layout>
 	)
 }
-
 
 export default IndexPage;

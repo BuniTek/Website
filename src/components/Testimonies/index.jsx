@@ -64,7 +64,7 @@ const Testimonies = () => {
             country="Kenya"
           />
           <Testimony
-            avatar="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            avatar="https://em.wattpad.com/635b7f9bbbae78567749bfb38695c59f7385f4ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f376e5f544f4643485a626d386e513d3d2d3737333036383637322e31356262393563616165653739376637363438333036353938352e6a7067?s=fit&w=720&h=720"
             author="Clementine"
             text="Before starting BuniTek courses, I had always felt technology wasn’t for me. A month down the lane, I am a proficient web developer and have built my mom a small website for her clothing business. 
 I want to study Software Engineering at the university, a course I previously didn’t even know existed."

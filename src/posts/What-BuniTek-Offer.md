@@ -3,7 +3,7 @@ title: The Current and Future BuniTek's Services
 author: BuniTek Team
 date: "2020-06-22"
 keywords: "BuniTek, BuniTek, Youth, Technology, Africa, Youth, Bootcamps, Tutoring, Servieces, Rwanda, Kenya"
-featuredImage: "https://mcfsp-blogs.ed.ac.uk/scholarslab/wp-content/uploads/sites/17/2020/07/blog.png"
+featuredImage: "https://www.criticalmissioncomputing.co.uk/wp-content/uploads/2020/02/wordpress-header-img.png"
 type: post
 ---
 
