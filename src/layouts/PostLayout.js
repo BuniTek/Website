@@ -14,14 +14,10 @@ import SiteHeader from '../components/Header/index';
 import Footer from '../components/Footer/index';
 import SEO from '../components/seo';
 
-// Styles imports
-import 'antd/dist/antd.css';
-import 'semantic-ui-css/semantic.min.css';
-import './layout.css';
 import './postLayout.scss';
 
 import { setLogoUrl } from '../redux/actions';
-import logo from '../assets/images/BuniTek_dark.png';
+import logo from '../assets/images/darkish.png';
 
 
 
@@ -43,17 +39,21 @@ const PostLayout = ({ data }) => {
         image={post.frontmatter.image}
         keywords={post.frontmatter.keywords}
       />
-      <div>
+      <div className="content">
         <SiteHeader />
         <main className="post">
-          <div>
-            <h1 className="post__title">{post.frontmatter.title}</h1>
-            <h3 className="post__author">{post.frontmatter.author}</h3>
-            <i>
-              Posted &nbsp;
-              {post.frontmatter.date}
-            </i>
-            {post.frontmatter.featuredImage && <img className="post-featured" src={post.frontmatter.featuredImage} />}
+          <div className="post__content">
+            <div className="row">
+            <div class="col s9"><h2 className="post__title">{post.frontmatter.title}</h2></div>
+            <div class="col s3 "><h3 className="post__author">{post.frontmatter.author}</h3></div>
+            </div>
+            <div className="post__date">
+              <i>
+                Posted &nbsp;
+                {post.frontmatter.date}
+              </i>
+            </div>
+              
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
         </main>

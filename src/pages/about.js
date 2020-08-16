@@ -11,7 +11,7 @@ import Line from '../components/VerticalLine';
 import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
-import logo from '../assets/images/milkish.png';
+import logo from '../assets/images/darkish.png';
 import quoteImage from '../assets/images/quote-right-solid.svg';
 import earsLogo from '../assets/images/partner-ears.png';
 import cgiLogo from '../assets/images/partner-cgi.png';
@@ -43,7 +43,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
               <div className="section__content">
                 <div className="section__sub-content">
                   <div className="section__title--container">
-                    <span className="section__title">Who Are WE?</span>
+                    <span className="section__title">Who are WE?</span>
                     <img src={quoteImage} alt="quote" />
                   </div>
                   <div className="about__first-section-description">
@@ -81,7 +81,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                     <div className="about__shadow circle absolute-left" />
                     <div>
                       <p>
-                        To inspire, encourage and give African high school students a fair shot
+                        To inspire, encourage and give African young people a fair shot
                         at discovering technology potential and provide a ground for them to
                         explore and employ their skills to solve problems and invent the future.
                       </p>
@@ -110,8 +110,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
 
                   <li>
                     <span>
-                      To give students a chance to discover or explore their passion in technology
-                      and to experiment on its possibilities at a younger age so that it doesn't feel
+                      To give students a chance to discover and explore their passion in technology
+                      and experiment its possibilities at a younger age so that it doesn't feel
                       like an exotic concept.
                     </span>
                   </li>
@@ -140,7 +140,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                 <div className="section__grid-item">
                   <InfoCard
                     title="Simplified and Insightful"
-                    description="Our courses are simple and taught at a higher level focussing
+                    description="Our courses are simple and taught at a high level focussing
                      on introducing concepts while providing the bigger picture rather than the fine,
                       low level details.
                    "
@@ -162,8 +162,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   />
                   <InfoCard
                     title="Practical and Creative"
-                    description="The power of technology is in creating. We have matched every lesson
-                     is accompanied by a relatable practical activities which gives you are chance to
+                    description="The power of technology is in creating. We have every lesson with a relatable practical activity which gives you a chance to
                       play around with your imagination.
                    "
                   />
@@ -203,7 +202,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   <InfoCard
                     title="BuniTek Clubs"
                     description="We believe that learning shouldn’t just be limited by the classroom.
-                     We are giving you opportunity and support to build a club in your school
+                     We are giving you the opportunity and support to build a club in your school
                       and keep on experimenting with technology.
                    "
                   />
@@ -223,7 +222,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
         <Team />
         <div className="partners">
           <div className="partners__container">
-            <h1 className="partners__title">They will trust us</h1>
+            <h1 className="partners__title">Our Partners</h1>
             <div className="partners__grid">
               
               <div>

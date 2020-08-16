@@ -1,27 +1,27 @@
 /* eslint-disable no-console */
-import React, { useEffect, useState} from "react"
-import { graphql, navigate } from "gatsby"
-import { useDispatch } from "react-redux"
-import Typed from "react-typed"
-import Img from "gatsby-image"
-import Layout from "../layouts/layout"
-import SEO from "../components/seo"
-import Button from "../components/Button"
-import NewsCard from "../components/News"
-import Form from "../components/Form"
-import Reaveler from "../components/Reaveler"
-import Input from "../components/Form/Input"
-import Topic from "../components/Topic"
-import Testimonies from "../components/Testimonies"
-import Line from "../components/VerticalLine"
-import { setLogoUrl, setFooterVisible } from "../redux/actions"
-import Video from "../components/YTVideo"
+import React, { useEffect, useState } from 'react';
+import { graphql, navigate } from 'gatsby';
+import { useDispatch } from 'react-redux';
+import Typed from 'react-typed';
+import Img from 'gatsby-image';
+import Layout from '../layouts/layout';
+import SEO from '../components/seo';
+import Button from '../components/Button';
+import NewsCard from '../components/News';
+import Form from '../components/Form';
+import Reaveler from '../components/Reaveler';
+import Input from '../components/Form/Input';
+import Topic from '../components/Topic';
+import Testimonies from '../components/Testimonies';
+import Line from '../components/VerticalLine';
+import { setLogoUrl, setFooterVisible } from '../redux/actions';
+import Video from '../components/YTVideo';
 
-import homeBanner from "../assets/images/undraw_web_developer_p3e5.svg"
-
+import homeBanner from '../assets/images/undraw_web_developer_p3e5.svg';
 
 import lightLogo from '../assets/images/milkish.png';
 import background from '../assets/images/home_top-left.svg';
+
 import ill2 from '../assets/images/ill1.png';
 import ill3 from '../assets/images/ill2.png';
 import ill4 from '../assets/images/ill3.png';
@@ -39,21 +39,21 @@ import homeMiddleThird from "../assets/images/homeMiddleThird.svg"
 import "../assets/styles/pages/home.scss"
 
 
+import '../assets/styles/pages/home.scss';
+
 const IndexPage = ({ data: { videoPreview } }) => {
-	const dispatch = useDispatch()
-	useEffect(() => {
-		dispatch(
-			setLogoUrl({
-				logo: lightLogo,
-			})
-		)
-		setFooterVisible({
-			visible: true,
-		})(dispatch)
-	}, [])
-	const [state, setState] = useState({
-		isOpened: false,
-	  });
+  const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    dispatch(
+      setLogoUrl({
+        logo: lightLogo,
+      }),
+    );
+    setFooterVisible({
+      visible: true,
+	})(dispatch);
 
 	return (
 		<Layout>
@@ -321,16 +321,17 @@ const IndexPage = ({ data: { videoPreview } }) => {
 	)
 }
 
+
 export const query = graphql`
 	{
 		videoPreview: file(relativePath: { eq: "video-preview.png" }) {
 			childImageSharp {
-				fluid {
-					...GatsbyImageSharpFluid
+                fluid {
+                  ...GatsbyImageSharpFluid
 				}
 			}
 		}
 	}
-`
+`;
 
-export default IndexPage
+export default IndexPage;

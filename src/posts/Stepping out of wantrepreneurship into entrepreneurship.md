@@ -1,6 +1,6 @@
 ---
-title: Stepping out of wantrepreneurship into entrepreneurship
-author: brendamionki
+title: Stepping out of Wantrepreneurship into Entrepreneurship
+author: Brenda Mionki
 date: "2020-07-29"
 keywords: "BuniTek, BuniTek, Youth, Technology, Africa, Youth, Mission, Vision, Online, Rwanda, Kenya"
 featuredImage: "https://mcfsp-blogs.ed.ac.uk/scholarslab/wp-content/uploads/sites/17/2020/07/blog.png"

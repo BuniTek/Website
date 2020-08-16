@@ -1,5 +1,5 @@
 ---
-title: Mission Statement of BuniTek
+title: BuniTek's Mission Statement
 author: BuniTek Team
 date: "2020-06-20"
 keywords: "BuniTek, BuniTek, Youth, Technology, Africa, Youth, Mission, Vision, Online, Rwanda, Kenya"

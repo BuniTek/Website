@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from "react"
 import Slick from "react-slick"
-import DanielsAvatar from "../../assets/images/about-image2.jpg"
 
 import Testimony from "./Testimony"
 import "./index.scss"
@@ -59,18 +58,17 @@ const Testimonies = () => {
       <div className="testimonies__slider">
         <Slick {...settings}>
           <Testimony
-            avatar={DanielsAvatar}
-            author="Daniel"
-            text="Before starting Africa-I, I had always felt technology wasn’t for me. A month down the lane, I am a proficient web developer and have built my mom a small website for her clothing business. 
-I want to study Software Engineering at the university, a course I previously didn’t even know existed."
+            avatar="https://image.freepik.com/free-vector/young-man-avatar-cartoon-character-profile-picture_18591-55058.jpg"
+            author="Zawadi"
+            text="I was not able to discover my passion through BuniTek, but also I relised my problem-solving ability. Their hands-on courses are fun and offers an opportunity to learn technology that apply to our daily lives "
             country="Kenya"
           />
           <Testimony
             avatar="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
             author="Clementine"
-            text="Before starting Africa-I, I had always felt technology wasn’t for me. A month down the lane, I am a proficient web developer and have built my mom a small website for her clothing business. 
+            text="Before starting BuniTek courses, I had always felt technology wasn’t for me. A month down the lane, I am a proficient web developer and have built my mom a small website for her clothing business. 
 I want to study Software Engineering at the university, a course I previously didn’t even know existed."
-            country="Unknown"          
+            country="Rwanda"          
 
           />
         </Slick>
