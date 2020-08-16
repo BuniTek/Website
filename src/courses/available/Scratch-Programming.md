@@ -74,7 +74,7 @@ image: "https://www.codeforchildren.com/wp-content/uploads/2016/10/scratch_logo.
 <img class="markdown__image" src="../../assets/images/courses/scratch-1.png" />
 
 
-<a href="course/enRoll"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

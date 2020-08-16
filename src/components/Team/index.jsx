@@ -14,6 +14,7 @@ import elysePicture from '../../assets/images/team/elyseCropped.jpeg';
 import abbyPicture from '../../assets/images/team/AbbyCropped.jpg';
 import penielPicture from '../../assets/images/team/penielCropped.jpg';
 import kettyPicture from '../../assets/images/team/kettyCropped.jpg';
+import { Link } from "gatsby"
 
 const Team = () => (
   <div className="team">
@@ -96,7 +97,9 @@ const Team = () => (
       />
     </div>
     <div className="join__team-button">
+    <a href="https://forms.gle/ogvg6Ym45GA5p5ks7" target="_blank">
       <Button>Join Team</Button>
+    </a>
     </div>
   </div>
 );

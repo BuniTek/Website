@@ -50,7 +50,7 @@ image: "https://cdn.cyberchimps.com/wp-content/uploads/2019/03/build-WordPress-e
 
   <img class="markdown__image" src="../../assets/images/courses/e-wordpress1.jpg" />
 
-<a href="course/enRoll"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

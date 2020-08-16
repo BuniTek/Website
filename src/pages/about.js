@@ -162,8 +162,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   />
                   <InfoCard
                     title="Practical and Creative"
-                    description="The power of technology is in creating. We have matched every lesson
-                     is accompanied by a relatable practical activities which gives you are chance to
+                    description="The power of technology is in creating. We have every lesson with a relatable practical activity which gives you a chance to
                       play around with your imagination.
                    "
                   />
@@ -203,7 +202,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   <InfoCard
                     title="BuniTek Clubs"
                     description="We believe that learning shouldn’t just be limited by the classroom.
-                     We are giving you opportunity and support to build a club in your school
+                     We are giving you the opportunity and support to build a club in your school
                       and keep on experimenting with technology.
                    "
                   />

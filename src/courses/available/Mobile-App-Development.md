@@ -58,7 +58,7 @@ image: "https://appinventor.mit.edu/images/logo.png"
     <li>Testing your application before building </li>
   </ol>
 
-<a href="course/enRoll"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

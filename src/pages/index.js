@@ -168,7 +168,7 @@ const IndexPage = ({ data: { videoPreview } }) => {
               style={{ backgroundImage: `url(${point})` }}
             />
             <p>
-              Technology relates to our every day life, wherever we are from.
+              Technology relates to our everyday life, wherever we are from and whatever our interests might be.
             </p>
           </div>
           <div className="home__third__left--item">
@@ -219,11 +219,11 @@ const IndexPage = ({ data: { videoPreview } }) => {
         <div className="home__topics--container">
           <h1 className="home__topics--title">Our courses</h1>
           <div className="home__topics--grid">
-            <Topic caption="Python Programming" link="/testing" />
+            <Topic caption="Python Programming" link="/courses" />
             <Topic caption="Scratch Programming" link="/courses" />
-            <Topic caption="App Develpment" link="/electronics" />
-            <Topic caption="Web Development" link="/school-clubs" />
-            <Topic caption="Game Development" link="/science" />
+            <Topic caption="App Development" link="/courses" />
+            <Topic caption="Web Development" link="/courses" />
+            <Topic caption="Game Development" link="/courses" />
           </div>
         </div>
       </div>
