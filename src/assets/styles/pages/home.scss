@@ -341,6 +341,7 @@
   }
   &__overlay {
     width: 100vw;
+    overflow-x: hidden;
     &--1 {
       @include overlayItem;
       width: 75vw;
@@ -348,7 +349,7 @@
       margin-top: -60vh;
       margin-left: -22vw;
       @include mediaSm{
-        width: 92vw;
+        width: 100vw;
         height: 100vh;
       }
     }
@@ -401,9 +402,12 @@
       z-index: 0;
       margin-top: -50vh;
       margin-left: -14vw;
+      
+      @include mediaMd{
+      }
       @include mediaSm{
         display: none;
-      }
+     }
     }
   }
 }

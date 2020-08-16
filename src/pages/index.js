@@ -304,7 +304,6 @@ const IndexPage = ({ data: { videoPreview } }) => {
 						<Topic caption="Game Development" link="/science" />
 					</div>
 				</div>
-				
 			</div>
 			<div className="home__sixth">
 				<div className="home__overlay">

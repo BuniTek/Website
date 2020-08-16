@@ -3,7 +3,7 @@ title: Mission Statement of BuniTek
 author: BuniTek Team
 date: "2020-06-20"
 keywords: "BuniTek, BuniTek, Youth, Technology, Africa, Youth, Mission, Vision, Online, Rwanda, Kenya"
-featuredImage: "https://www.africandevmag.com/wp-content/uploads/2017/08/kids.jpg"
+featuredImage: "https://mcfsp-blogs.ed.ac.uk/scholarslab/wp-content/uploads/sites/17/2020/07/blog.png"
 type: post
 ---
 

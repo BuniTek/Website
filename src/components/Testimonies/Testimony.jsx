@@ -8,6 +8,7 @@ import './index.scss';
 const Testimony = ({ avatar, author, text, country }) => (
   <div className="testimony__item">
     <div className="testimony__item__left">
+      <h2 className="testimonies__title">What I Think</h2>
       <p className="testimony__item__left--info">{text}</p>
       <h2 className="testimony__item__left--author"> ~ {author} - {country}</h2>
     </div>
