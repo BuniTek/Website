@@ -3,7 +3,7 @@
 @import "../../assets/styles/fonts.scss";
 
 
-  .intro__video-containerr{
+  .intro__video-container{
       border-radius: 10px;
       position: relative;
       padding-bottom: 56.25%;
@@ -22,14 +22,14 @@
       } 
   }
   
-  .intro__video-containerr {
+  .intro__video-container {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
   }
   
-  .intro__video-containerr iframe, .intro__video-containerr object, .intro__video-containerr embed {
+  .intro__video-container iframe, .intro__video-container object, .intro__video-container embed {
     position: absolute;
     top: 0;
     left: 0;
