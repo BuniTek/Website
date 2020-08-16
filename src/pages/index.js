@@ -35,7 +35,7 @@ import homeMiddleThird from '../assets/images/homeMiddleThird.svg';
 
 import '../assets/styles/pages/home.scss';
 
-const IndexPage = ({ data: { videoPreview } }) => {
+const IndexPage = () => {
   const dispatch = useDispatch();
 
 
@@ -231,17 +231,5 @@ const IndexPage = ({ data: { videoPreview } }) => {
     </Layout>
   );
 };
-
-export const query = graphql`
-	{
-		videoPreview: file(relativePath: { eq: "video-preview.png" }) {
-			childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-				}
-			}
-		}
-	}
-`;
 
 export default IndexPage;
