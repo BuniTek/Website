@@ -17,7 +17,7 @@ import SEO from '../components/seo';
 import './postLayout.scss';
 
 import { setLogoUrl } from '../redux/actions';
-import logo from '../assets/images/milkish.png';
+import logo from '../assets/images/darkish.png';
 
 
 

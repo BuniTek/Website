@@ -14,6 +14,8 @@ import elysePicture from '../../assets/images/team/elyseCropped.jpeg';
 import abbyPicture from '../../assets/images/team/AbbyCropped.jpg';
 import penielPicture from '../../assets/images/team/penielCropped.jpg';
 import kettyPicture from '../../assets/images/team/kettyCropped.jpg';
+import adwoaPicture from '../../assets/images/team/AdwoaCropped.jpg';
+import { Link } from "gatsby"
 
 const Team = () => (
   <div className="team">
@@ -56,7 +58,7 @@ const Team = () => (
         titles="UI/UX DEVELOPER"
         email="xx@BuniTek.site"
         name="ADWOA KONADU"
-        profileUrl="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        profileUrl={adwoaPicture}
       />
       <TeamMember
         titles="Course Developer"
@@ -96,7 +98,9 @@ const Team = () => (
       />
     </div>
     <div className="join__team-button">
+    <a href="https://forms.gle/ogvg6Ym45GA5p5ks7" target="_blank">
       <Button>Join Team</Button>
+    </a>
     </div>
   </div>
 );

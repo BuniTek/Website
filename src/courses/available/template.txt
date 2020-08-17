@@ -1,0 +1,64 @@
+---
+title: <Course_Title>
+author: BuniTek
+date: ""
+keywords: "BuniTek, BuniTech, "
+type: course
+description: " "
+category: available
+image: ""
+---
+<div class ="markdown__content">
+<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+  <p class="markdown_paragraph ">
+    (Summary goes here)
+  </p>
+
+  <img class="markdown__image" src="../../assets/images/image.tp" />
+  <p class ="markdown__caption">(caption)</p>
+
+<h2 class='markdown__section'> Course Highlights </h2>
+
+  <h4 class="markdown__sub-section"><span>Learn world-changing skills</span></h4>
+    <p class="markdown_paragraph">
+     (Content goes here)
+    </p>
+
+
+
+  <h4 class="markdown__sub-section"> <span>Who this course is for</span> </h4>
+    <p class="markdown_paragraph">
+     (Content goes here)
+    </p>
+
+
+  <h4 class="markdown__sub-section"> <span>Fun learning environment</span> </h4>
+    <p class="markdown_paragraph">
+     (Content goes here)    
+    </p>
+
+<img class="markdown__image" src="../../assets/images/code2.png" />
+
+
+<h2 class='markdown__section'> Course Overview </h2>
+  <p class="markdown_paragraph">
+  (Content goes here) 
+  </p>
+
+
+
+<h2 class='markdown__section'>  What you will learn </h2>
+  <ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
+
+<img class="markdown__image" src="../../assets/images/results.png" />
+
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+
+
+</div>
