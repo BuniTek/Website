@@ -81,7 +81,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                     <div className="about__shadow circle absolute-left" />
                     <div>
                       <p>
-                        To inspire, encourage and give African young people a fair shot
+                        To inspire, encourage and give African youth a fair shot
                         at discovering technology potential and provide a ground for them to
                         explore and employ their skills to solve problems and invent the future.
                       </p>

@@ -60,7 +60,7 @@ const Testimonies = () => {
           <Testimony
             avatar="https://image.freepik.com/free-vector/young-man-avatar-cartoon-character-profile-picture_18591-55058.jpg"
             author="Zawadi"
-            text="I was not able to discover my passion through BuniTek, but also I relised my problem-solving ability. Their hands-on courses are fun and offers an opportunity to learn technology that apply to our daily lives "
+            text="Through BuniTek I not only discovered my passion in programming but was also able to realise my problem solving ability. Their hands-on courses are fun and offers an opportunity to learn tech that applies to our daily lives."
             country="Kenya"
           />
           <Testimony
