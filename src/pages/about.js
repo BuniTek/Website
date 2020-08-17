@@ -162,7 +162,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   />
                   <InfoCard
                     title="Practical and Creative"
-                    description="The power of technology is in creating. We have every lesson with a relatable practical activity which gives you a chance to
+                    description="The power of technology is in creating. We have accompanied every lesson with a relatable practical activity which gives you a chance to
                       play around with your imagination.
                    "
                   />

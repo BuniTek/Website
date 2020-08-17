@@ -115,7 +115,7 @@ const Contact = () => {
           <form
             // onSubmit={onSubmit}
             method="POST"
-            action="https://formspree.io/mpzyqpnp"
+            action="https://formspree.io/xzbjqbvj"
           >
             <Input
               type="email"
@@ -173,7 +173,7 @@ const Contact = () => {
                   color: "white",
                 }}
               >
-                {text}
+                Go to a page of the course you are interested in. At the bottom, there is a "Book This Course" button that will redirect you to registration page.
               </p>
             </Panel>
             <Panel
@@ -181,28 +181,28 @@ const Contact = () => {
               key="2"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>Most of our courses don't have pre-requisites. More Information can be found on a specific <a href="/courses">course's page</a></p>
             </Panel>
             <Panel
               header="Where should I find courses and how to start learning?"
               key="3"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>Register your interest in a particular course, then we will email you all information about getting started with our courses</p>
             </Panel>
             <Panel
-              header="Who is in charge of an individual or a group study?"
+              header="How are courses delivered?"
               key="4"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>Due to the Pandemic restrictions, we are currently offering our courses remotely. But the experience is still first-rate as we are using various tools such as Google Classroom, Cloud solutions, live streaming services, and chats to make sure courses are delivered with high quality and allow our students to access the materials and support even after the delivery</p>
             </Panel>
             <Panel
-              header="How am I going to ask questions if I get any and who will I be contacting?"
+              header="Are the courses free of charge?"
               key="5"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>One of our core values is about democratising tech which means one shouldn't be denied of our services based on their finance. We are only charging a small amount for commitent purposes. However, if that still poses a financial problem for you, please don't hesitate to contact us at info@buni.tech </p>
             </Panel>
           </Collapse>
         </div>

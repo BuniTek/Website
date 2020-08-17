@@ -61,37 +61,37 @@ const Team = () => (
         profileUrl={adwoaPicture}
       />
       <TeamMember
-        titles="Course Developer"
+        titles="COURSE DEVELOPER"
         email="xx@BuniTek.site"
         name="BRENDA NYARINGITA"
         profileUrl={brendaPicture}
       />
        <TeamMember
-        titles="Course Developer"
+        titles="COURSE DEVELOPER"
         email="xx@BuniTek.site"
         name="KETTY PENDO"
         profileUrl={kettyPicture}
       />
       <TeamMember
-        titles="Course Developer"
+        titles="COURSE DEVELOPER"
         email="xx@BuniTek.site"
         name="IVY KALEGI"
         profileUrl={ivyPicture}
       />
        <TeamMember
-        titles="Course Developer"
+        titles="COURSE DEVELOPER"
         email="xx@BuniTek.site"
         name="PENIEL MUBITA"
         profileUrl={penielPicture}
       />
      <TeamMember
-        titles="Graphic Designer"
+        titles="GRAPHIC DESIGNER"
         email="xx@BuniTek.site"
         name="ABIGAIL AGYEMANG"
         profileUrl={abbyPicture}
       />
        <TeamMember
-        titles="Content Developer"
+        titles="CONTENT DEVELOPER"
         email="xx@BuniTek.site"
         name="ELYSE UWIMPAYE"
         profileUrl={elysePicture}
