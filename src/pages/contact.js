@@ -173,7 +173,7 @@ const Contact = () => {
                   color: "white",
                 }}
               >
-                Go to a page of the course you are interested in. At the bottom, there is a "Book This Course" button that will redirect you to registration page.
+                Go to a page of the course you are interested in. At the bottom, there is a "Book This Course" button that will redirect you to the registration page.
               </p>
             </Panel>
             <Panel
@@ -188,21 +188,21 @@ const Contact = () => {
               key="3"
               className="site-collapse-custom-panel"
             >
-              <p>Register your interest in a particular course, then we will email you all information about getting started with our courses</p>
+              <p>Register your interest in a particular course, then we will contact you informing you all information about how to get started with our courses</p>
             </Panel>
             <Panel
               header="How are courses delivered?"
               key="4"
               className="site-collapse-custom-panel"
             >
-              <p>Due to the Pandemic restrictions, we are currently offering our courses remotely. But the experience is still first-rate as we are using various tools such as Google Classroom, Cloud solutions, live streaming services, and chats to make sure courses are delivered with high quality and allow our students to access the materials and support even after the delivery</p>
+              <p>Due to the Pandemic restrictions, we are currently offering our courses remotely. But the experience is still first-rate as we are using various modern tools such as Google Classroom, Cloud solutions, live streaming services, and chats to make sure that our courses are delivered with high quality. We also allow our students to access all of the materials and get support even after the delivery</p>
             </Panel>
             <Panel
               header="Are the courses free of charge?"
               key="5"
               className="site-collapse-custom-panel"
             >
-              <p>One of our core values is about democratising tech which means one shouldn't be denied of our services based on their finance. We are only charging a small amount for commitent purposes. However, if that still poses a financial problem for you, please don't hesitate to contact us at info@buni.tech </p>
+              <p>One of our core values is about democratising tech, which means one shouldn't be denied of our services based on their finance. We are only charging a small amount for commitent purposes. However, if that still poses a financial challenge for you, please don't hesitate to contact us at support@buni.tech </p>
             </Panel>
           </Collapse>
         </div>
