@@ -48,6 +48,7 @@
 .markdown__image{
     box-shadow:none;
     margin-bottom:1rem;
+    width: 80vw;
 }
 
 .markdown__content{
@@ -122,12 +123,16 @@ ol{
     border: none;
     outline: none;
     color: $white;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     border-radius: 50px;
     cursor: pointer;
     margin:0 auto;
     font-family: $title-font !important;
     font-weight:bold;
+    @include mediaSm{
+        width: 90%;
+        font-size: 1rem;
+    }
 
     &.is-primary{
         background: $dark !important;

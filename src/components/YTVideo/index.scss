@@ -9,6 +9,9 @@
       @include mediaMd {
         width: 350px;
       }
+      @include mediaSm {
+        width: 300px;
+      }
 
       p{
         color: $dark;

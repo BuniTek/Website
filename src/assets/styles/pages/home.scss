@@ -109,22 +109,27 @@
       font-family: $title-font !important;
       color:$dark !important;
       line-height: 1;
+      @include mediaSm{
+        margin-top:2vh ;
+        font-size: 2rem;
+      }
     }
     p{
       font-size: 1.4rem;
       font-family: $mincho-font !important;
       @include mediaSm{
-        bottom: 1rem;
+        margin-bottom: 1vh;
+        font-size: 1.2rem;
       }
     }
     @include mediaMd{
       min-height: 30vh;
     }
     @include mediaSm{
-      margin-right: 5vw;
+      margin-top: -10vh;
       text-align: center;
       min-height: 20vh;
-      min-width: 300px;
+      width:90vw;
     }
   }
   &__second{
