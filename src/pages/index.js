@@ -3,12 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { navigate } from 'gatsby';
 import { useDispatch } from 'react-redux';
 import Typed from 'react-typed';
-import Img from 'gatsby-image';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Button from '../components/Button';
-import NewsCard from '../components/News';
-import Form from '../components/Form';
 import Reaveler from '../components/Reaveler';
 import Input from '../components/Form/Input';
 import Topic from '../components/Topic';
@@ -85,10 +82,10 @@ const IndexPage = () => {
 									type="primary"
 									onClick={e => {
 										e.preventDefault()
-										navigate("/signup/")
+										navigate("/courses/")
 									}}
 								>
-									Get involved
+									Go to Our Courses
 								</Button>
 							</span>
 						</div>
