@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import { useDispatch } from 'react-redux';
 import Img from 'gatsby-image';
@@ -18,10 +18,78 @@ import cgiLogo from '../assets/images/partner-cgi.png';
 
 const AboutUs = ({
   data: {
-    firstSectionImage, secondSectionImage, billyPicture, danielPicture,elysePicture, eliePicture, willyPicture, alainPicture, brendaPicture, ivyPicture, abbyPicture, penielPicture, kettyPicture, adwoaPicture,
+    firstSectionImage, secondSectionImage,
+    billyPicture, danielPicture, elysePicture,
+    eliePicture, willyPicture, alainPicture,
+    brendaPicture, ivyPicture, abbyPicture,
+    penielPicture, kettyPicture, adwoaPicture,
   },
 }) => {
   const dispatch = useDispatch();
+
+  const team_members = [
+    {
+      name: 'BILLY BYIRINGIRO',
+      titles: 'CO-FOUNDER',
+      profileUrl: billyPicture,
+    },
+    {
+      name: 'DANIEL MUTIA',
+      titles: 'CO-FOUNDER',
+      profileUrl: danielPicture,
+    },
+    {
+      name: 'ELIE MUGENZI',
+      titles: 'SOFTWARE DEVELOPER',
+      profileUrl: eliePicture,
+    },
+    {
+      name: 'WILLY SERGE IRADUKUNDA',
+      titles: 'SOFTWARE DEVELOPER',
+      profileUrl: willyPicture,
+    },
+    {
+      name: 'ALAIN EROS PRESTIGE',
+      titles: 'UI/UX DEVELOPER',
+      profileUrl: alainPicture,
+    },
+    {
+      name: 'ADWOA KONADU',
+      titles: 'UI/UX DEVELOPER',
+      profileUrl: adwoaPicture,
+    },
+    {
+      name: 'BRENDA NYARINGITA',
+      titles: 'Course Developer',
+      profileUrl: brendaPicture,
+    }, {
+      name: 'KETTY PENDO',
+      titles: 'Course Developer',
+      profileUrl: kettyPicture,
+    }, {
+      name: 'IVY KALEGI',
+      titles: 'Course Developer',
+      profileUrl: ivyPicture,
+    },
+    {
+      name: 'PENIEL MUBITA',
+      titles: 'Course Developer',
+      profileUrl: penielPicture,
+    },
+    {
+      name: 'ABIGAIL AGYEMANG',
+      titles: 'Graphic Designer',
+      profileUrl: abbyPicture,
+    },
+    {
+      name: 'ELYSE UWIMPAYE',
+      titles: 'Content Developer',
+      profileUrl: elysePicture,
+    },
+  ];
+
+  const [members, setMembers] = useState(team_members);
+
   useEffect(() => {
     const body = document.querySelector('body');
     body.classList.remove('home');
@@ -219,21 +287,7 @@ const AboutUs = ({
           </section>
 
         </div>
-        <Team
-          billyPicture={billyPicture}
-          danielPicture={danielPicture}
-          eliePicture={eliePicture}
-          willyPicture={willyPicture}
-          alainPicture={alainPicture}
-          brendaPicture={brendaPicture}
-          ivyPicture={ivyPicture}
-          abbyPicture={abbyPicture}
-          penielPicture={penielPicture}
-          kettyPicture={kettyPicture}
-          adwoaPicture={adwoaPicture}
-          elysePicture={elysePicture}
-
-        />
+        <Team members={members} />
         <div className="partners">
           <div className="partners__container">
             <h1 className="partners__title">Our Partners</h1>
