@@ -103,7 +103,7 @@ const Contact = () => {
             Contact us by sending us an email here.
           </h1>
           <p className="contact__description">
-            You can reach us various platforms, don't hesitate to contact us if
+            You can reach us on various platforms, don't hesitate to contact us if
             you need any assistance
           </p>
           <div className="contact__social">
@@ -202,7 +202,7 @@ const Contact = () => {
               key="5"
               className="site-collapse-custom-panel"
             >
-              <p>One of our core values is about democratising tech, which means one shouldn't be denied of our services based on their finance. We are only charging a small amount for commitent purposes. However, if that still poses a financial challenge for you, please don't hesitate to contact us at support@buni.tech </p>
+              <p>One of our core values is about democratising tech, which means one shouldn't be denied of our services based on their finance. We are only charging a small amount for commitment purposes. However, if that still poses a financial challenge for you, please don't hesitate to contact us at support@buni.tech </p>
             </Panel>
           </Collapse>
         </div>

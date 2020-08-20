@@ -6,7 +6,7 @@ keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 category: upcoming
 description: " Learn Cool Robotics and Electronics"
-image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lform.com%2F_assets%2Fpackages%2Fwp%2Fassets%2Fuploaded%2F2017%2F08%2Flform_javascript_blog_header_image-1600x1080.jpg&f=1&nofb=1"
+image: "https://prod-discovery.edx-cdn.org/media/course/image/bf9f18e0-2bab-4600-ae3e-64d0743d9482-321df2b18306.small.png"
 ---
 
 Content to be added soon!
