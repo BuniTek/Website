@@ -16,8 +16,11 @@ import quoteImage from '../assets/images/quote-right-solid.svg';
 import earsLogo from '../assets/images/partner-ears.png';
 import cgiLogo from '../assets/images/partner-cgi.png';
 
-
-const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
+const AboutUs = ({
+  data: {
+    firstSectionImage, secondSectionImage, billyPicture, danielPicture,elysePicture, eliePicture, willyPicture, alainPicture, brendaPicture, ivyPicture, abbyPicture, penielPicture, kettyPicture, adwoaPicture,
+  },
+}) => {
   const dispatch = useDispatch();
   useEffect(() => {
     const body = document.querySelector('body');
@@ -29,14 +32,13 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
     setFooterVisible({ visible: true })(dispatch);
   }, []);
 
-
   return (
     <Layout>
       <SEO title="About Us" />
-      <div className="about" >
+      <div className="about">
         <div className="about__container">
           <section>
-            <div className="about__first-section" >
+            <div className="about__first-section">
               <div className="first-section__image about__first-section-image">
                 <Img fluid={firstSectionImage.childImageSharp.fluid} alt="Our story" className="section__image" />
               </div>
@@ -49,7 +51,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   <div className="about__first-section-description">
                     <div className="about__shadow rounded absolute-right" />
                     <div>
-                      <p >
+                      <p>
                         <span className="company__name">BuniTek </span>
                         {' '}
                         is a digital literacy venture working to create
@@ -81,8 +83,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                     <div className="about__shadow circle absolute-left" />
                     <div>
                       <p>
-                      To inspire, encourage and give African youth a fair shot at discovering
-                       technology potential and provide a ground for them to explore and employ
+                        To inspire, encourage and give African youth a fair shot at discovering
+                        technology potential and provide a ground for them to explore and employ
                         their skills to solve problems and invent the future.
                       </p>
                     </div>
@@ -95,7 +97,6 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
             </div>
           </section>
 
-
           <div className="about__third-section">
             <div className="section__title--container section__title-centered">
               <span className="section__title">Why are we Doing This?</span>
@@ -105,8 +106,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
             <div className="about__third-section-content">
               <div className="about__shadow rounded absolute-right" />
 
-              <div >
-                <ol className="imglist" >
+              <div>
+                <ol className="imglist">
 
                   <li>
                     <span>
@@ -162,8 +163,8 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   />
                   <InfoCard
                     title="Practical and Creative"
-                    description="The power of technology is in creating. We have accompanied every 
-                               lesson with a relatable practical activity which gives you a chance to play 
+                    description="The power of technology is in creating. We have accompanied every
+                               lesson with a relatable practical activity which gives you a chance to play
                                around with your imagination."
                   />
                 </div>
@@ -176,7 +177,7 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
             <div className="about__fifth--section">
               <div className="section__title--container section__title-centered">
 
-                <span className="section__title" >Content Delivery</span>
+                <span className="section__title">Content Delivery</span>
                 <img src={quoteImage} alt="quote" />
               </div>
 
@@ -217,27 +218,39 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
             </div>
           </section>
 
-
         </div>
-        <Team />
+        <Team
+          billyPicture={billyPicture}
+          danielPicture={danielPicture}
+          eliePicture={eliePicture}
+          willyPicture={willyPicture}
+          alainPicture={alainPicture}
+          brendaPicture={brendaPicture}
+          ivyPicture={ivyPicture}
+          abbyPicture={abbyPicture}
+          penielPicture={penielPicture}
+          kettyPicture={kettyPicture}
+          adwoaPicture={adwoaPicture}
+          elysePicture={elysePicture}
+
+        />
         <div className="partners">
           <div className="partners__container">
             <h1 className="partners__title">Our Partners</h1>
             <div className="partners__grid">
-              
+
               <div>
-                <img className="partners__grid--item" src={earsLogo} alt="Embedded and Robotics Society"/>
+                <img className="partners__grid--item" src={earsLogo} alt="Embedded and Robotics Society" />
                 <h4 className="robotics-society-logo__title">Embedded and Robotics Society</h4>
               </div>
               <div>
                 <img className="partners__grid--item" src={cgiLogo} />
               </div>
               <div className="partners__logo--grouped">
-                <img className="partners__grid--item" src="https://800664.smushcdn.com/1566666/wp-content/uploads/2018/09/EI-Top-Logo.png?size=500x300" alt="Edinburgh Innovations"/>
-                <img className="partners__grid--item" src="https://theturingtrust.files.wordpress.com/2017/08/tt-logo-new-final-300dpi.png?w=500" alt="Turing Trust"/>
+                <img className="partners__grid--item" src="https://800664.smushcdn.com/1566666/wp-content/uploads/2018/09/EI-Top-Logo.png?size=500x300" alt="Edinburgh Innovations" />
+                <img className="partners__grid--item" src="https://theturingtrust.files.wordpress.com/2017/08/tt-logo-new-final-300dpi.png?w=500" alt="Turing Trust" />
               </div>
-             
-              
+
             </div>
           </div>
         </div>
@@ -265,8 +278,104 @@ query {
     }
   }
 
+  billyPicture: file(relativePath: { eq: "team/billyCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  danielPicture: file(relativePath: { eq: "team/DanielMutiaCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  eliePicture: file(relativePath: { eq: "team/elieCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  willyPicture: file(relativePath: { eq: "team/willyCropped.png" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  alainPicture: file(relativePath: { eq: "team/alainCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  brendaPicture: file(relativePath: { eq: "team/brendaCropped2.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  ivyPicture: file(relativePath: { eq: "team/ivyCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  abbyPicture: file(relativePath: { eq: "team/AbbyCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  penielPicture: file(relativePath: { eq: "team/PenielCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  kettyPicture: file(relativePath: { eq: "team/kettyCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  adwoaPicture: file(relativePath: { eq: "team/AdwoaCropped.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  elysePicture: file(relativePath: { eq: "team/elyseCropped.jpeg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+
 }
 `;
-
 
 export default AboutUs;
