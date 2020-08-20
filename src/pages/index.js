@@ -85,7 +85,7 @@ const IndexPage = () => {
 									type="primary"
 									onClick={e => {
 										e.preventDefault()
-										navigate("/signup/")
+										navigate("/courses/")
 									}}
 								>
 									Get involved
