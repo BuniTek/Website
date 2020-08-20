@@ -100,7 +100,7 @@ const Contact = () => {
             }}
           />
           <h1 className="contact__heading">
-            Contact us by sending us an email here.
+            Contact us here
           </h1>
           <p className="contact__description">
             You can reach us on various platforms, don't hesitate to contact us if
@@ -108,7 +108,7 @@ const Contact = () => {
           </p>
           <div className="contact__social">
 
-            <a href="https://m.me/buniteki/" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook</AntBtn></a>
+            <a href="https://m.me/buniteki/" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook Messenger</AntBtn></a>
             <a href="https://www.instagram.com/buni_tek/" target="_blank"><AntBtn className="contact__social--button"> {" "} <InstagramOutlined /> Instagram</AntBtn></a>
             <a href="#FAQ" ><AntBtn className="contact__social--button">FAQ</AntBtn></a>
           </div>

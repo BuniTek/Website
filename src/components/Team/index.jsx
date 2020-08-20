@@ -98,9 +98,9 @@ const Team = () => (
         profileUrl={elysePicture}
       />
       <TeamMember
-        titles="Social Media Coordinator"
+        titles="Digital Marketing Strategist"
         email="Team@buni.tech"
-        name="Lorraine Francis"
+        name="Lulu Isdory"
         profileUrl={luluPicture}
       />
     </div>
