@@ -61,35 +61,35 @@ const AboutUs = ({
     },
     {
       name: 'BRENDA NYARINGITA',
-      titles: 'Course Developer',
+      titles: 'COURSE DEVELOPER',
       profileUrl: brendaPicture,
     }, {
       name: 'KETTY PENDO',
-      titles: 'Course Developer',
+      titles: 'COURSE DEVELOPER',
       profileUrl: kettyPicture,
     }, {
       name: 'IVY KALEGI',
-      titles: 'Course Developer',
+      titles: 'COURSE DEVELOPER',
       profileUrl: ivyPicture,
     },
     {
       name: 'PENIEL MUBITA',
-      titles: 'Course Developer',
+      titles: 'COURSE DEVELOPER',
       profileUrl: penielPicture,
     },
     {
       name: 'ABIGAIL AGYEMANG',
-      titles: 'Graphic Designer',
+      titles: 'GRAPHIC DESIGNER',
       profileUrl: abbyPicture,
     },
     {
       name: 'ELYSE UWIMPAYE',
-      titles: 'Content Developer',
+      titles: 'CONTENT DEVELOPER',
       profileUrl: elysePicture,
     },
     {
       name: 'LULU ISDORY',
-      titles: 'Digital Marketing Strategist',
+      titles: 'DIGITAL MARKETING STRATEGIST',
       profileUrl: luluPicture,
     },
   ];
