@@ -12,10 +12,6 @@
     background: transparent;
     margin: auto 10%;
   }
-  @include mediaSm {
-    font-size: 10px;
-    
-  }
 
   &__grid {
     display: grid;

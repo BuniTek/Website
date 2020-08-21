@@ -257,7 +257,7 @@
         position: relative;
         top: 30px;
         @include mediaSm {
-            font-size: 1.6em;
+            font-size: 2em;
             
         }
     }
@@ -439,6 +439,10 @@ li span{
 
 .company__name{
     font-family: 'Archivo Black', sans-serif !important; 
+    @include mediaSm {
+        font-size: 17px;
+        
+     }
 }
 .robotics-society-logo__title{
     text-align: center;
