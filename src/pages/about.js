@@ -120,7 +120,7 @@ const AboutUs = ({
                 <div className="section__sub-content">
                   <div className="section__title--container">
                     <span className="section__title">Who are WE?</span>
-                    <img src={quoteImage} alt="quote" />
+                    <img src={quoteImage} alt="quote" className="quote" />
                   </div>
                   <div className="about__first-section-description">
                     <div className="about__shadow rounded absolute-right" />
@@ -150,7 +150,7 @@ const AboutUs = ({
                 <div className="section__sub-content">
                   <div className="section__title--container">
 
-                    <img src={quoteImage} alt="quote" className="quote__heading-rotated" />
+                    <img src={quoteImage} alt="quote" className="quote__heading-rotated"  />
                     <span className="section__title">Our Mission</span>
                   </div>
                   <div className="section__content-description ">
@@ -174,7 +174,7 @@ const AboutUs = ({
           <div className="about__third-section">
             <div className="section__title--container section__title-centered">
               <span className="section__title">Why are we Doing This?</span>
-              <img src={quoteImage} alt="quote" className="quote-visibility" />
+              <img src={quoteImage} alt="quote" className="quote-visibility"  className="quote"/>
             </div>
 
             <div className="about__third-section-content">
@@ -252,7 +252,7 @@ const AboutUs = ({
               <div className="section__title--container section__title-centered">
 
                 <span className="section__title">Content Delivery</span>
-                <img src={quoteImage} alt="quote" />
+                <img src={quoteImage} alt="quote"  className="quote"/>
               </div>
 
               <div className="section__three-grid">

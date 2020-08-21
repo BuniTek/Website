@@ -14,10 +14,10 @@
         height: 60vh;
     }
     @include mediaSm {
-      padding: 150px;
-      padding-bottom: 300px;
-      padding-top: 250px;
-      height: 120vh;
+      padding: 0 150px;
+      padding-bottom: 50px;
+      height: 150vh;
+    
   }
     &__list{
         display: grid;
