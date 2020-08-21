@@ -12,6 +12,10 @@
     background: transparent;
     margin: auto 10%;
   }
+  @include mediaSm {
+    font-size: 10px;
+    
+  }
 
   &__grid {
     display: grid;
@@ -31,11 +35,13 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
       justify-items: center;
+      
     }
     @include mediaSm {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
       justify-items: center;
+      
     }
 
     &--item {

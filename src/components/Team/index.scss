@@ -2,11 +2,11 @@
 @import '../../assets/styles/colors.scss';
 @import '../../assets/styles/fonts.scss';
 .team{
-    padding: 250px;
+    padding: 300px;
     background: lighten($h-color, 68%);
     margin-top: -160px;
     margin-bottom: -100px;
-    padding-bottom: 300px;
+    padding-bottom: 350px;
     @include mediaMd {
         padding: 100px;
         padding-bottom: 300px;
@@ -14,14 +14,15 @@
         height: 60vh;
     }
     @include mediaSm {
-      padding: 150px;
-      padding-bottom: 300px;
-      padding-top: 250px;
-      height: 120vh;
+      padding: 0 150px;
+      padding-bottom: 50px;
+      height: 150vh;
+    
   }
     &__list{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 50px;
         grid-gap: 30px;
         margin-top: 30px;
         margin-bottom: 100px;
