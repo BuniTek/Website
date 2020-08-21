@@ -2,11 +2,11 @@
 @import '../../assets/styles/colors.scss';
 @import '../../assets/styles/fonts.scss';
 .team{
-    padding: 250px;
+    padding: 300px;
     background: lighten($h-color, 68%);
     margin-top: -160px;
     margin-bottom: -100px;
-    padding-bottom: 300px;
+    padding-bottom: 350px;
     @include mediaMd {
         padding: 100px;
         padding-bottom: 300px;
