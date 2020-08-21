@@ -15,6 +15,7 @@ import abbyPicture from '../../assets/images/team/AbbyCropped.jpg';
 import penielPicture from '../../assets/images/team/penielCropped.jpg';
 import kettyPicture from '../../assets/images/team/kettyCropped.jpg';
 import adwoaPicture from '../../assets/images/team/AdwoaCropped.jpg';
+import luluPicture from '../../assets/images/team/luluCropped.jpg';
 import { Link } from "gatsby"
 
 const Team = () => (
@@ -23,78 +24,84 @@ const Team = () => (
     <div className="team__list">
       <TeamMember
         titles="CO-FOUNDER"
-        email="xx@theBuniTek.com"
+        email="Billy.Byiringiro@buni.tech"
         name="BILLY BYIRINGIRO"
         profileUrl={billyPicture}
       />
 
       <TeamMember
         titles="CO-FOUNDER"
-        email="xx@theBuniTek.com"
+        email="Mutia.Daniel@buni.tech"
         name="DANIEL MUTIA"
         profileUrl={danielPicture}
       />
 
       <TeamMember
         titles="SOFTWARE DEVELOPER"
-        email="XX@theBuniTek.com"
+        email="Team@buni.tech"
         name="ELIE MUGENZI"
         profileUrl={eliePicture}
       />
 
       <TeamMember
         titles="SOFTWARE DEVELOPER"
-        email="xx@theBuniTek.com"
+        email="Team@buni.tech"
         name="WILLY SERGE IRADUKUNDA"
         profileUrl={willyPicture}
       />
       <TeamMember
         titles="UI/UX DEVELOPER"
-        email="xx@BuniTek.site"
+        email="Team@buni.tech"
         name="ALAIN EROS PRESTIGE"
         profileUrl={alainPicture}
       />
       <TeamMember
         titles="UI/UX DEVELOPER"
-        email="xx@BuniTek.site"
+        email="Team@buni.tech"
         name="ADWOA KONADU"
         profileUrl={adwoaPicture}
       />
       <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
+        titles="COURSE DEVELOPER"
+        email="Team@buni.tech"
         name="BRENDA NYARINGITA"
         profileUrl={brendaPicture}
       />
        <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
+        titles="COURSE DEVELOPER"
+        email="Team@buni.tech"
         name="KETTY PENDO"
         profileUrl={kettyPicture}
       />
       <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
+        titles="COURSE DEVELOPER"
+        email="Team@buni.tech"
         name="IVY KALEGI"
         profileUrl={ivyPicture}
       />
        <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
+        titles="COURSE DEVELOPER"
+        email="Team@buni.tech"
         name="PENIEL MUBITA"
         profileUrl={penielPicture}
       />
      <TeamMember
-        titles="Graphic Designer"
-        email="xx@BuniTek.site"
+        titles="GRAPHIC DESIGNER"
+        email="Team@buni.tech"
         name="ABIGAIL AGYEMANG"
         profileUrl={abbyPicture}
       />
        <TeamMember
-        titles="Content Developer"
-        email="xx@BuniTek.site"
+        titles="CONTENT DEVELOPER"
+        email="Team@buni.tech"
         name="ELYSE UWIMPAYE"
         profileUrl={elysePicture}
+      />
+      <TeamMember
+        titles="Digital Marketing Strategist"
+        email="Team@buni.tech"
+        name="Lulu Isdory"
+        profileUrl={luluPicture}
       />
     </div>
     <div className="join__team-button">

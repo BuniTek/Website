@@ -100,22 +100,22 @@ const Contact = () => {
             }}
           />
           <h1 className="contact__heading">
-            Contact us by sending us an email here.
+            Contact us here
           </h1>
           <p className="contact__description">
-            You can reach us various platforms, don't hesitate to contact us if
+            You can reach us on various platforms, don't hesitate to contact us if
             you need any assistance
           </p>
           <div className="contact__social">
 
-            <a href="https://m.me/buniteki/" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook</AntBtn></a>
+            <a href="https://m.me/buniteki/" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook Messenger</AntBtn></a>
             <a href="https://www.instagram.com/buni_tek/" target="_blank"><AntBtn className="contact__social--button"> {" "} <InstagramOutlined /> Instagram</AntBtn></a>
             <a href="#FAQ" ><AntBtn className="contact__social--button">FAQ</AntBtn></a>
           </div>
           <form
             // onSubmit={onSubmit}
             method="POST"
-            action="https://formspree.io/mpzyqpnp"
+            action="https://formspree.io/xzbjqbvj"
           >
             <Input
               type="email"
@@ -173,7 +173,7 @@ const Contact = () => {
                   color: "white",
                 }}
               >
-                {text}
+                Go to a page of the course you are interested in. At the bottom, there is a "Book This Course" button that will redirect you to the registration page.
               </p>
             </Panel>
             <Panel
@@ -181,28 +181,28 @@ const Contact = () => {
               key="2"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>Most of our courses don't have pre-requisites. More Information can be found on a specific <a href="/courses">course's page</a></p>
             </Panel>
             <Panel
               header="Where should I find courses and how to start learning?"
               key="3"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>Register your interest in a particular course, then we will contact you informing you all information about how to get started with our courses</p>
             </Panel>
             <Panel
-              header="Who is in charge of an individual or a group study?"
+              header="How are courses delivered?"
               key="4"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>Due to the Pandemic restrictions, we are currently offering our courses remotely. But the experience is still first-rate as we are using various modern tools such as Google Classroom, Cloud solutions, live streaming services, and chats to make sure that our courses are delivered with high quality. We also allow our students to access all of the materials and get support even after the delivery</p>
             </Panel>
             <Panel
-              header="How am I going to ask questions if I get any and who will I be contacting?"
+              header="Are the courses free of charge?"
               key="5"
               className="site-collapse-custom-panel"
             >
-              <p>{text}</p>
+              <p>One of our core values is about democratising tech, which means one shouldn't be denied of our services based on their finance. We are only charging a small amount for commitment purposes. However, if that still poses a financial challenge for you, please don't hesitate to contact us at support@buni.tech </p>
             </Panel>
           </Collapse>
         </div>

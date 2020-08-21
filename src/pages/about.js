@@ -81,9 +81,9 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                     <div className="about__shadow circle absolute-left" />
                     <div>
                       <p>
-                      To inspire, encourage and give African youth a fair shot at discovering
-                       technology potential and provide a ground for them to explore and employ
-                        their skills to solve problems and invent the future.
+                        To inspire, encourage and give African youth a fair shot
+                        at discovering technology potential and provide a ground for them to
+                        explore and employ their skills to solve problems and invent the future.
                       </p>
                     </div>
                   </div>
@@ -162,9 +162,9 @@ const AboutUs = ({ data: { firstSectionImage, secondSectionImage } }) => {
                   />
                   <InfoCard
                     title="Practical and Creative"
-                    description="The power of technology is in creating. We have accompanied every 
-                               lesson with a relatable practical activity which gives you a chance to play 
-                               around with your imagination."
+                    description="The power of technology is in creating. We have accompanied every lesson with a relatable practical activity which gives you a chance to
+                      play around with your imagination.
+                   "
                   />
                 </div>
               </div>
