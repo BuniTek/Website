@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://db.onlinewebfonts.com/c/e1ac498516da18eec7c7b667b7cde758?family=MS+Mincho');
+@font-face {font-family: "MS Mincho";
+    src: url("//db.onlinewebfonts.com/t/e1ac498516da18eec7c7b667b7cde758.eot"); /* IE9*/
+    src: url("//db.onlinewebfonts.com/t/e1ac498516da18eec7c7b667b7cde758.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("//db.onlinewebfonts.com/t/e1ac498516da18eec7c7b667b7cde758.woff2") format("woff2"), /* chrome firefox */
+    url("//db.onlinewebfonts.com/t/e1ac498516da18eec7c7b667b7cde758.woff") format("woff"), /* chrome firefox */
+    url("//db.onlinewebfonts.com/t/e1ac498516da18eec7c7b667b7cde758.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("//db.onlinewebfonts.com/t/e1ac498516da18eec7c7b667b7cde758.svg#MS Mincho") format("svg"); /* iOS 4.1- */
+}
 @font-face{
 	font-family: titiliumWeb;
 	src: url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
