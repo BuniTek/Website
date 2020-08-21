@@ -105,9 +105,9 @@ const Team = () => (
       />
     </div>
     <div className="join__team-button">
-    <a href="https://forms.gle/ogvg6Ym45GA5p5ks7" target="_blank">
-      <Button>Join Team</Button>
-    </a>
+      <a href="https://forms.gle/ogvg6Ym45GA5p5ks7" target="_blank">
+        <Button>Join Team</Button>
+      </a>
     </div>
   </div>
 );

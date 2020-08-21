@@ -7,17 +7,18 @@
     margin-top: -160px;
     margin-bottom: -100px;
     padding-bottom: 300px;
+    height: 80vh !important;
     @include mediaMd {
         padding: 100px;
         padding-bottom: 300px;
         padding-top: 250px;
-        height: 60vh;
+        height: 60vh !important;
     }
     @include mediaSm {
       padding: 150px;
       padding-bottom: 300px;
       padding-top: 250px;
-      height: 120vh;
+      height: 120vh !important;
   }
     &__list{
         display: grid;
@@ -57,10 +58,15 @@
   }
 
     &__title {
-        margin-bottom: 50px;
-        margin-top: 50px !important;
-        font-size: 2.2em;
+        margin-top: 5vh !important;
+        font-size: 1.8rem;
         font-family: $title-font !important;
+        font-weight: bold;
         color: $h-color;
     }
+}
+.join{
+  &__team-button{
+   
+  }
 }

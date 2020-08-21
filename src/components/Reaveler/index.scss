@@ -27,12 +27,15 @@
 			height: 20px;
 		}
 		&__heading {
-			padding: 10px;
+			padding: 5px 10px;
 			margin-left: 10px;
 			background: $white;
 			border-radius: 50px;
 			height: 40px;
 			text-align: center;
+			@include mediaSm{
+				padding: 10px 10px;
+			}
 			span {
 				font-size: 1.2rem;
 				font-family: $title-font !important;
