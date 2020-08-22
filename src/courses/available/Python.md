@@ -59,7 +59,7 @@ image: "https://content.techgig.com/thumb/msid-76632883,width-1200,height-900,re
 
   <img class="markdown__image" src="https://opensource.com/sites/default/files/lead-images/header.png" />
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE  <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">Book this course  <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

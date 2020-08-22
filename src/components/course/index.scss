@@ -20,7 +20,10 @@
       font-weight: bold;
       color: $h-color;
       font-family: $title-font !important;
-      font-size: 1rem;
+      font-size: 0.8rem;
+      @include mediaSm{
+        font-size: 1rem;
+      }
     }
     &__content{
       font-family: $text-font;
@@ -33,7 +36,7 @@
       p{
         font-size: 0.7rem;
         @include mediaSm{
-          font-size: 1rem;
+          font-size: 0.8rem;
         }
       }
       
