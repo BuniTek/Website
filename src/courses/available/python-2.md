@@ -1,7 +1,7 @@
 ---
-title: Python Programming for Intermediate Programmers
+title: Intermediate Python Programming
 author: BuniTek Team
-date: "2020-05-18"
+date: "2020-07-30"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 description: "Go Further with Advanced Programming using Python"

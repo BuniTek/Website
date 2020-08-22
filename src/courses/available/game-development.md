@@ -1,7 +1,7 @@
 ---
 title: Game Development with Java and Tynker
 author: BuniTek Team
-date: "2020-05-17"
+date: "2020-07-25"
 keywords: "BuniTek, BuniTek, Wordpress, Introduction, Website, Deveopment"
 type: course
 category: available

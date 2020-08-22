@@ -1,7 +1,7 @@
 ---
 title: E-commerce Website with WordPress
 author: BuniTek Team
-date: "2020-05-17"
+date: "2020-07-27"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 description: " Learn to develop an e-commerce Website with Wordpress"

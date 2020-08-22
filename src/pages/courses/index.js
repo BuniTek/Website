@@ -86,7 +86,7 @@ AvailableCourses.propTypes = {
 };
 
 export const query = graphql` {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC },filter: { 
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC },filter: { 
         frontmatter: { 
             type: { eq: "course" },
             category: { eq: "available" } 

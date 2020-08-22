@@ -1,7 +1,7 @@
 ---
 title: Scratch Programming
 author: BuniTek Team
-date: "2020-05-17"
+date: "2020-07-23"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 category: available

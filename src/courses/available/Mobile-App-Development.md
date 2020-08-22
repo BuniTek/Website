@@ -1,7 +1,7 @@
 ---
 title: Mobile App Development
 author: BuniTek Team
-date: "2020-05-17"
+date: "2020-07-24"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 category: available

@@ -1,7 +1,7 @@
 ---
 title: Introductiong to Python Programming
 author: BuniTek Team
-date: "2020-05-17"
+date: "2020-08-01"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 description: "Introduction to the World of programming using Python"

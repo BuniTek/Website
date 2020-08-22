@@ -1,7 +1,7 @@
 ---
 title: Website Development with Wordpress
 author: BuniTek Team
-date: "2020-08-15"
+date: "2020-07-28"
 keywords: "BuniTek, BuniTech, wordPress, Web development, blog, Introduction"
 type: course
 description: "Introduction to Web Development with Wordpress"
