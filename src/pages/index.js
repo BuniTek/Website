@@ -3,12 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { navigate } from 'gatsby';
 import { useDispatch } from 'react-redux';
 import Typed from 'react-typed';
-import Img from 'gatsby-image';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Button from '../components/Button';
-import NewsCard from '../components/News';
-import Form from '../components/Form';
 import Reaveler from '../components/Reaveler';
 import Input from '../components/Form/Input';
 import Topic from '../components/Topic';
@@ -77,7 +74,7 @@ const IndexPage = () => {
 								<h1>Gain the Power to Bring Your Ideas to Life!</h1>
 								<p>
 								We are offering simple, hands-on tech courses to inspire young 
-								people to creatively use technology to invent solutions.
+								people to creatively use technology to invent the future.
 								</p>
 							</div>
 							<span>
@@ -85,10 +82,10 @@ const IndexPage = () => {
 									type="primary"
 									onClick={e => {
 										e.preventDefault()
-										navigate("/signup/")
+										navigate("/courses/")
 									}}
 								>
-									Get involved
+									Go to Our Courses
 								</Button>
 							</span>
 						</div>
@@ -127,7 +124,7 @@ const IndexPage = () => {
 										backgroundImage: `url(${point})`,
 									}}
 								/>
-								<p>We want to give you a chance to interact with and to create technology.</p>
+								<p>We want to give you a chance to create and interact with technology.</p>
 							</div>
 						</div>
 						<Line color="white"/>
@@ -187,7 +184,7 @@ const IndexPage = () => {
 								}}
 							/>
 							<p>
-								We are committed to introducing every African High School Student to Technology in a relatable way.
+								We are committed to introducing every African young people to Technology in a relatable way.
 							</p>
 						</div>
 
@@ -203,7 +200,7 @@ const IndexPage = () => {
 								}}
 							/>
 							<p>
-								Technology relates to our every day life, wherever we are from.
+								Technology relates to our everyday lives, wherever we are from and whatever our interests are.
 							</p>
 						</div>
 						<div className="home__third__container__left--item">
@@ -214,7 +211,7 @@ const IndexPage = () => {
 								}}
 							/>
 							<p>
-								We are offering you simplified, carefully selected, specialised, hands-on and contextualised technology courses.
+								We are offering you simplified, carefully selected, fun, hands-on and contextualised technology courses.
 							</p>
 						</div>
 					</div>
@@ -243,7 +240,7 @@ const IndexPage = () => {
 					<div className="home__fourth__container__left">
 						<Reaveler
 							heading="Learn at Your Convenience"
-							content="We have varied innovative ways to support your learning regardless of your circumstances."
+							content="We have various innovative ways to support your learning regardless of your circumstances."
 						/>
 						<Reaveler
 							heading="Learn from Your Future Selves"
@@ -253,7 +250,7 @@ const IndexPage = () => {
 						<Reaveler
 							heading="Learn to Imagine and Create"
 							content="Technology is only useful if used to create solutions to problems humanity faces.
-							Our courses are designed to trigger your imagination and to make you a problem solver through real world projects."
+							Our courses are designed to trigger your imagination and make you a problem-solver through real-world projects and challenges."
 						/>
 					</div>
 
@@ -281,11 +278,11 @@ const IndexPage = () => {
 				<div className="home__topics--container">
 					<h1 className="home__topics--title">Our courses</h1>
 					<div className="home__topics--grid">
-						<Topic caption="Python Programming" link="/testing" />
+						<Topic caption="Python Programming" link="/courses" />
 						<Topic caption="Scratch Programming" link="/courses" />
-						<Topic caption="App Develpment" link="/electronics" />
-						<Topic caption="Web Development" link="/school-clubs" />
-						<Topic caption="Game Development" link="/science" />
+						<Topic caption="App Development" link="/courses" />
+						<Topic caption="Web Development" link="/courses" />
+						<Topic caption="Game Development" link="/courses" />
 					</div>
 				</div>
 			</div>

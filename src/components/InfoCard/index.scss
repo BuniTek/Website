@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import '../../assets/styles/fonts.scss';
+@import '../../assets/styles/mixins';
 
 p{
     line-height: 1.6;
+    @include mediaSm {
+        font-size: 17px !important;  
+      
+     }
 }
 h3{
     text-align: center;
     font-family: $title-font !important;
 }
-

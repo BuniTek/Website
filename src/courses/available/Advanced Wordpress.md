@@ -4,7 +4,7 @@ author: BuniTek Team
 date: "2020-05-17"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
-description: " Learn to to develop an e-commerce Website with Wordpress"
+description: " Learn to develop an e-commerce Website with Wordpress"
 category: available
 image: "https://cdn.cyberchimps.com/wp-content/uploads/2019/03/build-WordPress-ecommerce-store.jpg"
 ---

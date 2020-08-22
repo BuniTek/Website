@@ -33,7 +33,7 @@ const Sidebar = ({ open, setOpen }) => (
           <Link to="/about">About Us</Link>
         </li>
         <li>
-          <Link to="/blog">posts</Link>
+          <Link to="/blog">Posts</Link>
         </li>
         <li>
           <Link to="/contact">Contact Us</Link>

@@ -1,106 +1,26 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import TeamMember from './TeamMember';
 import Button from '../Button';
 import './index.scss';
 
-import billyPicture from '../../assets/images/team/billyCropped.jpg';
-import danielPicture from '../../assets/images/team/DanielMutiaCropped.jpg';
-import eliePicture from '../../assets/images/team/elieCropped.jpg';
-import willyPicture from '../../assets/images/team/willyCropped.png';
-import alainPicture from '../../assets/images/team/alainCropped.jpg';
-import brendaPicture from '../../assets/images/team/brendaCropped2.jpg';
-import ivyPicture from '../../assets/images/team/ivyCropped.jpg';
-import elysePicture from '../../assets/images/team/elyseCropped.jpeg';
-import abbyPicture from '../../assets/images/team/AbbyCropped.jpg';
-import penielPicture from '../../assets/images/team/penielCropped.jpg';
-import kettyPicture from '../../assets/images/team/kettyCropped.jpg';
-import adwoaPicture from '../../assets/images/team/AdwoaCropped.jpg';
-import { Link } from "gatsby"
-
-const Team = () => (
+const Team = ({ members }) => (
   <div className="team">
     <h1 className="team__title">Our Team</h1>
     <div className="team__list">
-      <TeamMember
-        titles="CO-FOUNDER"
-        email="xx@theBuniTek.com"
-        name="BILLY BYIRINGIRO"
-        profileUrl={billyPicture}
-      />
 
-      <TeamMember
-        titles="CO-FOUNDER"
-        email="xx@theBuniTek.com"
-        name="DANIEL MUTIA"
-        profileUrl={danielPicture}
-      />
-
-      <TeamMember
-        titles="SOFTWARE DEVELOPER"
-        email="XX@theBuniTek.com"
-        name="ELIE MUGENZI"
-        profileUrl={eliePicture}
-      />
-
-      <TeamMember
-        titles="SOFTWARE DEVELOPER"
-        email="xx@theBuniTek.com"
-        name="WILLY SERGE IRADUKUNDA"
-        profileUrl={willyPicture}
-      />
-      <TeamMember
-        titles="UI/UX DEVELOPER"
-        email="xx@BuniTek.site"
-        name="ALAIN EROS PRESTIGE"
-        profileUrl={alainPicture}
-      />
-      <TeamMember
-        titles="UI/UX DEVELOPER"
-        email="xx@BuniTek.site"
-        name="ADWOA KONADU"
-        profileUrl={adwoaPicture}
-      />
-      <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
-        name="BRENDA NYARINGITA"
-        profileUrl={brendaPicture}
-      />
-       <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
-        name="KETTY PENDO"
-        profileUrl={kettyPicture}
-      />
-      <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
-        name="IVY KALEGI"
-        profileUrl={ivyPicture}
-      />
-       <TeamMember
-        titles="Course Developer"
-        email="xx@BuniTek.site"
-        name="PENIEL MUBITA"
-        profileUrl={penielPicture}
-      />
-     <TeamMember
-        titles="Graphic Designer"
-        email="xx@BuniTek.site"
-        name="ABIGAIL AGYEMANG"
-        profileUrl={abbyPicture}
-      />
-       <TeamMember
-        titles="Content Developer"
-        email="xx@BuniTek.site"
-        name="ELYSE UWIMPAYE"
-        profileUrl={elysePicture}
-      />
+      {members.map(({ name, titles, profileUrl }) => (
+        <TeamMember
+          titles={titles}
+          name={name}
+          profileUrl={profileUrl}
+        />
+      ))}
     </div>
     <div className="join__team-button">
-    <a href="https://forms.gle/ogvg6Ym45GA5p5ks7" target="_blank">
-      <Button>Join Team</Button>
-    </a>
+      <a href="https://forms.gle/ogvg6Ym45GA5p5ks7" target="_blank">
+        <Button>Join Team</Button>
+      </a>
     </div>
   </div>
 );
