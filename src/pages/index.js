@@ -73,7 +73,7 @@ const IndexPage = () => {
 							<div className="home__typed">
 								<h1>Gain the Power to Bring Your Ideas to Life!</h1>
 								<p>
-								We are offering simple, hands-on tech courses to inspire young 
+								We are offering simplified, hands-on tech courses to inspire young 
 								people to creatively use technology to invent the future.
 								</p>
 							</div>

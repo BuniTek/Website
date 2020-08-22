@@ -54,7 +54,7 @@ We are currently in a few countries, but we hope to expand to all countries in A
 
 # Parting shot?
 
-“We are creating simple, hands-on tech courses to inspire young people to use technology to create solutions.”
+“We are creating simplified, hands-on tech courses to inspire young people to use technology to create solutions.”
 
 There are so many applications of technology. We aspire for tech to be incorporated in everyday life be it controlling traffic, small scale and large-scale agriculture, in schools etc. By doing this, we hope to have Africa with the power to bring ideas to life.
 
