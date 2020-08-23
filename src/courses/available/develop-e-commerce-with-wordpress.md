@@ -10,7 +10,7 @@ image: "https://cdn.cyberchimps.com/wp-content/uploads/2019/03/build-WordPress-e
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary <i>(7th - 12th September)</i></span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(7th - 11th September)</i></span> </h2>
   <p class="markdown_paragraph ">
     Build an E-Commerce Website using WordPress.  
   </p>
@@ -50,7 +50,7 @@ image: "https://cdn.cyberchimps.com/wp-content/uploads/2019/03/build-WordPress-e
 
   <img class="markdown__image" src="../../assets/images/courses/e-wordpress1.jpg" />
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/9UkSiRDy7WTMathR6" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

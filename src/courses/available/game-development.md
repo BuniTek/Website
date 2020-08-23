@@ -10,7 +10,7 @@ image: "https://cdn-images-1.medium.com/max/2600/1*jMDG7pTIaVeP5bQnE1RuXg.png"
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary <i>(14th - 19th September)</i></span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(14th - 18th September)</i></span> </h2>
   <p class="markdown_paragraph ">
     This course dives into coding games using java and Greenfoot library. Afterward, it eill provide a brief introduction to video games design using Tynker
   </p>
@@ -44,7 +44,7 @@ image: "https://cdn-images-1.medium.com/max/2600/1*jMDG7pTIaVeP5bQnE1RuXg.png"
 
 <img class="markdown__image" src="https://sylvan.tynker.com/image/course/school/programming-201-game-sidescroller-survival.jpg" />
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/5CT5HEqQMhveVxUA9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>
