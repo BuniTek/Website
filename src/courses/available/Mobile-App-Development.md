@@ -10,7 +10,7 @@ image: "https://appinventor.mit.edu/images/logo.png"
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(14th - 19th September)</i></span> </h2>
   <p class="markdown_paragraph ">
     How boring would your phone be without your favorite apps? Instagram, Tiktok, YouTube, you name it! Well in this course, students will get an introduction into the field of mobile applications development. It provides a great platform for young and innovative minds to discover, explore and bring to life ideas on applications they could build.  
   </p>

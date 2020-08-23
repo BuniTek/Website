@@ -10,7 +10,7 @@ image: "https://cdn-images-1.medium.com/max/2600/1*jMDG7pTIaVeP5bQnE1RuXg.png"
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(14th - 19th September)</i></span> </h2>
   <p class="markdown_paragraph ">
     This course dives into coding games using java and Greenfoot library. Afterward, it eill provide a brief introduction to video games design using Tynker
   </p>
@@ -18,7 +18,7 @@ image: "https://cdn-images-1.medium.com/max/2600/1*jMDG7pTIaVeP5bQnE1RuXg.png"
 
 <h2 class='markdown__section'> Course Overview </h2>
   <p class="markdown_paragraph">
-  Put your gaming experience and imagination into action, ending up with an original creation that you can take home, play and show to family and friends. This is a course for students ages 12-15. Using the Greenfoot programming environment, students will learn to code in Java to create their own amazing games. Coding concepts will include iteration, variables, Boolean logic, methods, functions and classes. In addition, students will work on creating their own graphics and animations for use in their games. Our goal in this course is to get young people creating, and not just consuming – technology and to show them that coding can be exciting and relevant. We want every student to come away ready to learn more and to continue their coding journey independently. 
+  Put your gaming experience and imagination into action, ending up with an original creation that you can take home, play and show to family and friends. Using the Greenfoot programming environment, students will learn to code in Java to create their own amazing games. Coding concepts will include iteration, variables, Boolean logic, methods, functions and classes. In addition, students will work on creating their own graphics and animations for use in their games. Our goal in this course is to get young people creating, and not just consuming – technology and to show them that coding can be exciting and relevant. We want every student to come away ready to learn more and to continue their coding journey independently. 
 
   </p>
 

@@ -5,11 +5,11 @@ date: "2020-07-30"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 description: "Go Further with Advanced Programming using Python"
-category: available
+category: upcoming
 image: "https://media.wired.com/photos/5e59a85635982c0009f6eb8a/master/w_2560%2Cc_limit/python-popularity.jpg"
 ---
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(coming soon)</i></span> </h2>
   <p class="markdown_paragraph ">
   The course seeks to take the students' experiences from completing our <a href="/courses/available/python/">Introduction to Python course </a> and enable them to look at some of the topics in more depth. It also introduces some of the concepts that software developers have to deal with on a daily basis, but which aren't directly programming related such as installing libraries, evaluating code editors and automated testing of software. 
   </p>
@@ -35,7 +35,8 @@ image: "https://media.wired.com/photos/5e59a85635982c0009f6eb8a/master/w_2560%2C
   </ol>
 
 <img class="markdown__image" src="https://d31ezp3r8jwmks.cloudfront.net/variants/ZnTFGoiQcUK8G592RqXyodbQ/d2e337a4f6900f8d0798c596eb0607a8e0c2fbddb6a7ab7afcd60009c119d4c7" />
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE  <div class="markdown__button__overlay"></div></button> </a>
+
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">Register Your Interest  <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

@@ -4,7 +4,7 @@ author: BuniTek Team
 date: "2020-07-23"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
-category: available
+category: upcoming
 description: " An introduction to Scratch Programming"
 image: "https://www.codeforchildren.com/wp-content/uploads/2016/10/scratch_logo.jpg"
 ---
@@ -74,7 +74,7 @@ image: "https://www.codeforchildren.com/wp-content/uploads/2016/10/scratch_logo.
 <img class="markdown__image" src="../../assets/images/courses/scratch-1.png" />
 
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">Register Your Interest <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

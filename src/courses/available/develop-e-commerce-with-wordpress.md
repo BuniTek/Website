@@ -1,7 +1,7 @@
 ---
 title: E-commerce Website with WordPress
 author: BuniTek Team
-date: "2020-07-27"
+date: "2020-08-17"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 description: " Learn to develop an e-commerce Website with Wordpress"
@@ -10,7 +10,7 @@ image: "https://cdn.cyberchimps.com/wp-content/uploads/2019/03/build-WordPress-e
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(7th - 12th September)</i></span> </h2>
   <p class="markdown_paragraph ">
     Build an E-Commerce Website using WordPress.  
   </p>

@@ -1,11 +1,11 @@
 ---
 title: TurtleStitch
 author: BuniTek
-date: "2020-04-04"
+date: "2020-07-04"
 keywords: "BuniTek, BuniTech, "
 type: course
 description: "It is based on a browser-based educational programming language to generate patterns for embroidery machines."
-category: available
+category: upcoming
 image: "https://www.turtlestitch.org/api/users/saniyadarby/projects/project/thumblink"
 ---
 <div class ="markdown__content">
@@ -51,7 +51,7 @@ Educators are encouraged to introduce the concepts briefly and allow students us
     <li>Lots of fun collaborating on projects and sharing the final designs online and/or with teams. </li>
   </ol>
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">Register Your Interest <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>
