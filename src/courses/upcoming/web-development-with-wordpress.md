@@ -1,16 +1,16 @@
 ---
 title: Website Development with Wordpress
 author: BuniTek Team
-date: "2020-08-15"
+date: "2020-07-28"
 keywords: "BuniTek, BuniTech, wordPress, Web development, blog, Introduction"
 type: course
 description: "Introduction to Web Development with Wordpress"
-category: available
+category: upcoming
 image: "https://www.brandadvokates.com/wp-content/uploads/2018/04/wordpress-web-development-pakistan.jpg"
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(coming soon)</i></span> </h2>
   <p class="markdown_paragraph ">
     In this course, students will get an introduction to WordPress. This beginner’s course gives young minds a head-start to creating fun and interesting websites
   </p>
@@ -58,7 +58,7 @@ image: "https://www.brandadvokates.com/wp-content/uploads/2018/04/wordpress-web-
 
 <img class="markdown__image" src="../../assets/images/courses/wordpress1.jpg" />
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">Register Your Interest <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

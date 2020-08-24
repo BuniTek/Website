@@ -1,7 +1,7 @@
 ---
 title: Introductiong to Python Programming
 author: BuniTek Team
-date: "2020-05-17"
+date: "2020-08-18"
 keywords: "BuniTek, BuniTek, mark-down, blogs"
 type: course
 description: "Introduction to the World of programming using Python"
@@ -9,7 +9,7 @@ category: available
 image: "https://content.techgig.com/thumb/msid-76632883,width-1200,height-900,resizemode-4/76632883.jpg"
 ---
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(7th - 11th September)</i></span> </h2>
   <p class="markdown_paragraph ">
   In this course, students will get an introduction to the world of programming. This beginner’s course gives bright young minds a head-start on one of the world’s most in-demand programming languages and the latest super-smart technology! Instagram. Spotify. Pinterest. All built on Python. 
   </p>
@@ -59,7 +59,7 @@ image: "https://content.techgig.com/thumb/msid-76632883,width-1200,height-900,re
 
   <img class="markdown__image" src="https://opensource.com/sites/default/files/lead-images/header.png" />
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE  <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/m6iuP7JjJ9DynKqo9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE  <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

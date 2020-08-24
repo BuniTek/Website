@@ -80,7 +80,7 @@ const AboutUsMore = () => {
           <h2 className="about__more--title">A Purpose-Driven Company </h2>
           <p className="about__more--description">
 
-            Create, offer, skills, simple, fun, movement, technology, future relavant 
+            Create, offer, skills, simplified, fun, movement, technology, future relavant 
           </p>
 
           <LinkAnchor to="/about/#more">

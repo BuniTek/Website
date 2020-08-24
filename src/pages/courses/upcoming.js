@@ -90,7 +90,8 @@ export const query = graphql` {
             type: { eq: "course" },
             category: { eq: "upcoming" } 
             } 
-        }
+        },
+        sort: { fields: [frontmatter___date], order: DESC }
         ) {
       nodes {
         frontmatter {
