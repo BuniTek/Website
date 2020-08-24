@@ -9,7 +9,7 @@ category: upcoming
 image: "https://www.turtlestitch.org/api/users/saniyadarby/projects/project/thumblink"
 ---
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(coming soon)</i></span> </h2>
   <p class="markdown_paragraph ">
     This course blends creativity in art and design with programming concepts. The course uses Snap! to introduce block-based programming and incorporates short projects that help students tweak their curiosity in coming up with unique designs.
     This is a great chance for students interested in embroidery to have fun digitally.

@@ -10,7 +10,7 @@ image: "https://www.codeforchildren.com/wp-content/uploads/2016/10/scratch_logo.
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(coming soon)</i></span> </h2>
   <p class="markdown_paragraph ">
     This course gives learners an introduction to programming in the most playful way while maintaining the goal of sparking their curiosity. Using block-based syntax to bring together logic, Scratch mildly but powerfully keeps students engaged in programming concepts while having fun working on their projects. 
   </p>

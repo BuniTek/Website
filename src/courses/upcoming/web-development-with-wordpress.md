@@ -10,7 +10,7 @@ image: "https://www.brandadvokates.com/wp-content/uploads/2018/04/wordpress-web-
 ---
 
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(coming soon)</i></span> </h2>
   <p class="markdown_paragraph ">
     In this course, students will get an introduction to WordPress. This beginner’s course gives young minds a head-start to creating fun and interesting websites
   </p>
