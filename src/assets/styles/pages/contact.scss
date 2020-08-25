@@ -13,6 +13,7 @@
       background: $dark;
       color: $white;
       border-radius: 50px;
+      padding: 0px 10px 0px 10px;
       /*
             &:first-child {
                 background: #4267B2;
@@ -36,14 +37,20 @@
   }
 
   &__heading {
-    font-size: 2em;
+    font-size: 2rem;
     font-family: $title-font !important;
     color: $h-color;
+    @include mediaSm{
+      font-size: 1.2rem;
+    }
   }
   &__description {
     font-size: 1.2em;
     font-family: $text-font !important;
     color: $p-color;
+    @include mediaSm{
+      font-size: 1rem;
+    }
   }
 
   &__overlay {
@@ -93,22 +100,22 @@
   }
 
   &__container {
-    margin: auto 10%;
+    margin: 5% 10%;
   }
 
   &__heading {
     color: $border-color;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: $title-font !important;
     @include mediaSm{
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
   }
 
   .ant-collapse-header {
     color: $border-color !important;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: $title-font !important;
     @include mediaSm{
       font-size: 1.2rem;
@@ -117,7 +124,7 @@
 
   .ant-collapse-content-box p {
     color: $white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: $mincho-font !important;
     @include mediaSm{
       font-size: 1rem;

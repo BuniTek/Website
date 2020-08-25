@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 @import "../mixins";
 @import "../colors.scss";
@@ -49,6 +49,7 @@
         
         p{
             font-family: $mincho-font !important;
+            font-size: 1.3rem;
         }
         @include mediaSm {
             font-size: 17px;    
@@ -95,7 +96,7 @@
       p{
         padding-left: 90px;
         padding-top: 60px;
-        font-size: 20px;
+        font-size: 1.3rem;
 
         @include mediaSm {
             padding-left: 0;
@@ -111,18 +112,9 @@
 
     &__third-section{
 
-     z-index: 5;
-     position: relative; 
-     line-height: 1.5;
-
-     @include mediaSm {
-       margin: 5px;
-    }
-    &-content{
-        padding: 0 25%;
-        padding-bottom: 10%;
         z-index: 5;
         position: relative; 
+        line-height: 1.5;
        @include mediaSm {
         padding: 20px;
         padding-bottom: 60px;
@@ -133,7 +125,23 @@
         
     }
 
-    }
+        @include mediaSm {
+        margin: 5px;
+        }
+        &-content{
+            padding: 0 25%;
+            padding-bottom: 10%;
+            z-index: 5;
+            position: relative; 
+            @include mediaSm {
+                padding: 20px;
+                padding-bottom: 60px;
+            }
+            @include mediaMd {
+                padding: 0 40px;
+                padding-bottom: 60px;
+            }
+        }
         
     }
 
@@ -214,7 +222,7 @@
         &.absolute-right {
             position: absolute;
             top: 0;
-            left: 40%;
+            left: 40;
             z-index: -1;
             &-third-section{
                 position: absolute;
@@ -245,7 +253,13 @@
 
         &--container{
             padding-bottom: 30px;
-            
+            img{
+                @include mediaSm{
+                    width: 3rem;
+                }
+            }
+            @include mediaSm{
+            }
         }
         &-centered{
             text-align: center;
@@ -298,6 +312,9 @@
                     font-family: $title-font !important;
                     font-weight: bold;
                     color:$h-color;
+                    @include mediaSm{
+                        font-size: 1.2rem;
+                    }
                 }
                 p{
                     font-size: 1.3rem;
@@ -336,8 +353,11 @@
     }
 
     &__title {
-        font-size: 2.5em;
+
+        margin-top: 5vh;
+        font-size: 1.8em;
         font-family: $title-font !important;
+        font-weight: bold;
         color: $h-color;
         text-align: center;
         padding-bottom: 40px;
@@ -384,8 +404,8 @@ body{
     span{
         font-size: 20px;
         font-family: $mincho-font !important;
-        @include mediaSm {
-            font-size: 17px;
+        @include mediaSm{
+            font-size: 1.2rem;
         }
     }
 }

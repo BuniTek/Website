@@ -1,5 +1,6 @@
 @import "../../assets/styles/colors.scss";
 @import "../../assets/styles/fonts.scss";
+@import "../../assets/styles/mixins.scss";
 
 .revealer {
 	display: flex;
@@ -26,17 +27,23 @@
 			height: 20px;
 		}
 		&__heading {
-			padding: 10px;
+			padding: 5px 10px;
 			margin-left: 10px;
 			background: $white;
 			border-radius: 50px;
 			height: 40px;
 			text-align: center;
+			@include mediaSm{
+				padding: 10px 10px;
+			}
 			span {
-				font-size: 1.2em;
+				font-size: 1.2rem;
 				font-family: $title-font !important;
 				font-weight: bold;
 				color: $dark;
+				@include mediaSm{
+					font-size: 1rem;
+				}
 			}
 
 			&:hover {
@@ -52,6 +59,9 @@
 		margin-bottom: 1rem;
 		border-radius: 100px;
 		font-family: $mincho-font !important;
+		@include mediaSm{
+			font-size: 0.9rem;
+		}
 		
 		&--hide {
 			display: none;

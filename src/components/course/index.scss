@@ -1,6 +1,6 @@
 @import "../../assets/styles/colors.scss";
 @import "../../assets/styles/fonts.scss";
-
+@import "../../assets/styles/mixins.scss";
 .course{
     &__header{
       width: 100%;
@@ -20,16 +20,25 @@
       font-weight: bold;
       color: $h-color;
       font-family: $title-font !important;
-      
+      font-size: 0.8rem;
+      @include mediaSm{
+        font-size: 1rem;
+      }
     }
     &__content{
       font-family: $text-font;
       line-height: 1.5;
-      font-size: 1em;
       padding: 15px;
       height: 140px;
       background: $white; 
       color: $h-color;
+
+      p{
+        font-size: 0.7rem;
+        @include mediaSm{
+          font-size: 0.8rem;
+        }
+      }
       
     }
 }
