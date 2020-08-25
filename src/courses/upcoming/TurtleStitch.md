@@ -1,15 +1,15 @@
 ---
 title: TurtleStitch
 author: BuniTek
-date: "2020-04-04"
+date: "2020-07-04"
 keywords: "BuniTek, BuniTech, "
 type: course
 description: "It is based on a browser-based educational programming language to generate patterns for embroidery machines."
-category: available
+category: upcoming
 image: "https://www.turtlestitch.org/api/users/saniyadarby/projects/project/thumblink"
 ---
 <div class ="markdown__content">
-<h2 class='markdown__section'> <span class="test">Summary</span> </h2>
+<h2 class='markdown__section'> <span class="test">Summary <i>(coming soon)</i></span> </h2>
   <p class="markdown_paragraph ">
     This course blends creativity in art and design with programming concepts. The course uses Snap! to introduce block-based programming and incorporates short projects that help students tweak their curiosity in coming up with unique designs.
     This is a great chance for students interested in embroidery to have fun digitally.
@@ -51,7 +51,7 @@ Educators are encouraged to introduce the concepts briefly and allow students us
     <li>Lots of fun collaborating on projects and sharing the final designs online and/or with teams. </li>
   </ol>
 
-<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">BOOK THIS COURSE <div class="markdown__button__overlay"></div></button> </a>
+<br><a href="https://forms.gle/YshP2RryEUeqiXqH9" target="_blank"><button class="markdown__button is-primary has-bg-primary">Register Your Interest <div class="markdown__button__overlay"></div></button> </a>
 
 
 </div>

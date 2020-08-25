@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 @import "../mixins";
 @import "../colors.scss";
@@ -115,6 +115,15 @@
         z-index: 5;
         position: relative; 
         line-height: 1.5;
+       @include mediaSm {
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+    @include mediaMd {
+        padding: 0 40px;
+        padding-bottom: 60px;
+        
+    }
 
         @include mediaSm {
         margin: 5px;
@@ -196,14 +205,18 @@
             width: 200px;
             height: 200px;
             border-radius: 100%;
+            @include mediaSm {
+                width: 120px;
+                height: 120px;
+            }
         }
 
         &.rounded {
            width: 433px;
            border-radius: 300px;
            @include mediaSm {
-               width: 250px;
-               height: 150px;
+               width: 150px;
+               height: 100px;
            }
         }
         &.absolute-right {
@@ -258,7 +271,7 @@
         position: relative;
         top: 30px;
         @include mediaSm {
-            font-size: 1.6em;
+            font-size: 2em;
             
         }
     }
@@ -389,7 +402,7 @@ body{
     padding-top: 30px;
     list-style-image: url(../../images/plus-solid-6.png);
     span{
-        font-size: 1.6rem;
+        font-size: 20px;
         font-family: $mincho-font !important;
         @include mediaSm{
             font-size: 1.2rem;
@@ -400,12 +413,16 @@ li span{
     position: relative;
     top:-10px;
     font-size: 20px;
-    @include mediaSm {
-        font-size: 17px;
-    }
+    
 }
 
 .quote{
+
+    @include mediaSm {
+        width: 50px !important;
+        height: 44px !important;
+    }
+
     &-visibility{
         @include mediaSm {
             display: none;
@@ -413,6 +430,10 @@ li span{
     }
     &__heading-rotated{
         transform: rotateY(180deg);
+        @include mediaSm {
+            width: 50px !important;
+            height: 44px !important;
+        }
     
         &-shrinkable{
             transform: rotateY(180deg);
@@ -438,6 +459,10 @@ li span{
 
 .company__name{
     font-family: 'Archivo Black', sans-serif !important; 
+    @include mediaSm {
+        font-size: 17px;
+        
+     }
 }
 .robotics-society-logo__title{
     text-align: center;

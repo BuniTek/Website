@@ -2,7 +2,7 @@
 @import '../../assets/styles/colors.scss';
 @import '../../assets/styles/fonts.scss';
 .team{
-    padding: 250px;
+    padding: 300px;
     background: lighten($h-color, 68%);
     margin-top: -160px;
     margin-bottom: -100px;
@@ -23,6 +23,7 @@
     &__list{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 50px;
         grid-gap: 30px;
         margin-top: 30px;
         margin-bottom: 100px;

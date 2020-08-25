@@ -11,7 +11,8 @@ const paginate = async ({graphql, actions, pathPrefix, component, reporter, type
                eq: "${type}"
              }
            }
-         }
+         },
+         sort: {fields: frontmatter___date,  order: DESC}
        ) {
          totalCount
        }

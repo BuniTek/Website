@@ -3,12 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { navigate } from 'gatsby';
 import { useDispatch } from 'react-redux';
 import Typed from 'react-typed';
-import Img from 'gatsby-image';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Button from '../components/Button';
-import NewsCard from '../components/News';
-import Form from '../components/Form';
 import Reaveler from '../components/Reaveler';
 import Input from '../components/Form/Input';
 import Topic from '../components/Topic';
@@ -76,7 +73,7 @@ const IndexPage = () => {
 							<div className="home__typed">
 								<h1>Gain the Power to Bring Your Ideas to Life!</h1>
 								<p>
-								We are offering simple, hands-on tech courses to inspire young 
+								We are offering simplified, hands-on tech courses to inspire young 
 								people to creatively use technology to invent the future.
 								</p>
 							</div>
@@ -85,10 +82,10 @@ const IndexPage = () => {
 									type="primary"
 									onClick={e => {
 										e.preventDefault()
-										navigate("/signup/")
+										navigate("/courses/")
 									}}
 								>
-									Get involved
+									Go to Our Courses
 								</Button>
 							</span>
 						</div>
@@ -243,7 +240,7 @@ const IndexPage = () => {
 					<div className="home__fourth__container__left">
 						<Reaveler
 							heading="Learn at Your Convenience"
-							content="We have various innovative ways to support your learning regardless of your circumstances."
+							content="We have various innovative ways to support your learning regardless of your circumstances. E.I, By using Google Classrom you will be able to access all materials even after the courses are delivered"
 						/>
 						<Reaveler
 							heading="Learn from Your Future Selves"
