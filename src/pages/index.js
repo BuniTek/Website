@@ -2,19 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import { navigate } from 'gatsby';
 import { useDispatch } from 'react-redux';
-import Typed from 'react-typed';
 import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import Button from '../components/Button';
 import Reaveler from '../components/Reaveler';
-import Input from '../components/Form/Input';
 import Topic from '../components/Topic';
 import Testimonies from '../components/Testimonies';
 import Line from '../components/VerticalLine';
 import { setLogoUrl, setFooterVisible } from '../redux/actions';
 import Video from '../components/YTVideo';
-
-import homeBanner from '../assets/images/undraw_web_developer_p3e5.svg';
 
 import lightLogo from '../assets/images/milkish.png';
 import background from '../assets/images/home_top-left.svg';
