@@ -150,7 +150,9 @@
       grid-gap: 30px;
       align-items: center;
       color: $white;
-      
+      @include mediaMd{
+        grid-template-columns: repeat(2, 1fr);
+      }
       @include mediaSm{
         grid-template-columns: 1fr;
       }
@@ -173,6 +175,9 @@
           p {
             font-family: $mincho-font !important;
             font-size: 1.4rem;
+            @include mediaMd{
+              font-size: 1.2rem;
+            }
           }
         }
         @include mediaSm{
@@ -192,10 +197,11 @@
           @include mediaSm{
             width: 80vw;
           }
+          @include mediaMd{
+            width:30vw;
+            height: 20vh;
+          }
         }
-      }
-      @include mediaMd {
-        display: block;
       }
     }
   }
@@ -237,6 +243,9 @@
           p {
             font-family: $mincho-font !important;
             font-size: 1.4rem;
+            @include mediaMd{
+              font-size: 1.2rem;
+            }
           }
         }
         
@@ -268,6 +277,11 @@
             height: 30vh;
             margin-top: -5vh;
           }
+          @include mediaMd{
+            max-width: 90vw;
+            height: 30vh;
+            margin-top: 20vh;
+          }
         }
       }
     }
@@ -286,10 +300,17 @@
       @include mediaSm{
         flex-direction: column-reverse;
       }
+      @include mediaMd{
+        flex-direction: column-reverse;
+      }
   
       &__left {
         max-width: 40vw;
         @include mediaSm{
+          min-width: 100%;
+        }
+        @include mediaMd{
+          margin-top: 2vh;
           min-width: 100%;
         }
       }
@@ -301,6 +322,10 @@
           width: 90vw;
           height: 30vh;
         }
+        @include mediaMd{
+          width: 90vw;
+          height: 30vh;
+        }
         &--image {
           position: absolute;
           width: 50vw;
@@ -309,6 +334,10 @@
           background-position: center;
           background-size: contain;
           @include mediaSm{
+            width: 90vw;
+            height: 30vh;
+          }
+          @include mediaMd{
             width: 90vw;
             height: 30vh;
           }
@@ -359,6 +388,10 @@
         width: 100vw;
         height: 100vh;
       }
+      @include mediaMd{
+        width: 100vw;
+        height: 100vh;
+      }
     }
     &--2{
       @include overlayItem;
@@ -367,6 +400,9 @@
       margin-top: -50vh;
       margin-left: -20vw;
       @include mediaSm{
+        display: none;
+      }
+      @include mediaMd{
         display: none;
       }
     }
@@ -380,6 +416,9 @@
       @include mediaSm{
         display: none;
       }
+      @include mediaMd{
+        display: none;
+      }
     }
     &--4{
       @include overlayItem;
@@ -389,6 +428,9 @@
       margin-top: -50vh;
       margin-left: -18vw;
       @include mediaSm{
+        display: none;
+      }
+      @include mediaMd{
         display: none;
       }
     }
@@ -401,6 +443,9 @@
       @include mediaSm{
         display: none;
       }
+      @include mediaMd{
+        display: none;
+      }
     }
     &--6{
       @include overlayItem;
@@ -410,11 +455,12 @@
       margin-top: -50vh;
       margin-left: -14vw;
       
-      @include mediaMd{
-      }
       @include mediaSm{
         display: none;
      }
+     @include mediaMd{
+        display: none;
+      }
     }
   }
 }

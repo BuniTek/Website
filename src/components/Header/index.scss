@@ -45,6 +45,11 @@
     display: block;
     transform: translateY(10px);
   }
+  @include mediaMd {
+    margin-top: -30px;
+    display: block;
+    transform: translateY(10px);
+  }
 
   @media (max-width: 768px) {
     display: inline;
@@ -62,6 +67,9 @@
   background: transparent !important;
   @include mediaSm{
     margin-left: 4vw;
+  }
+  @include mediaMd{
+    margin-left: 0vw;
   }
   &__container {
     margin: 1vw 5vw;
@@ -89,6 +97,9 @@ nav {
     left: 2rem;
     @include mediaSm{
       left:3rem;
+    }
+    @include mediaMd{
+      margin-left:5rem;
     }
   }
 }

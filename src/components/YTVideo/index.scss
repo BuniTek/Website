@@ -7,11 +7,12 @@
       border-radius: 10px;
      
       @include mediaMd {
-        width: 350px;
+        width: 550px;
       }
       @include mediaSm {
         width: 300px;
       }
+     
 
       p{
         color: $dark;

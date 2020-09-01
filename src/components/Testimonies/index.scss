@@ -36,6 +36,9 @@
     @include mediaSm{
       flex-direction: column-reverse;
     }
+    @include mediaMd{
+      flex-direction: column-reverse;
+    }
     .line{
       @include mediaSm{
         display: none;
@@ -50,6 +53,10 @@
       color: $dark;
       width: 20vw;
       @include mediaSm{
+        width: 80vw;
+        margin: 1rem;
+      }
+      @include mediaMd{
         width: 80vw;
         margin: 1rem;
       }
@@ -73,6 +80,9 @@
         background-size: cover;
         background-position: center;
         @include mediaSm{
+          width: 80vw;
+        }
+        @include mediaMd{
           width: 80vw;
         }
       }
