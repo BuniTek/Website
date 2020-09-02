@@ -78,7 +78,7 @@ const IndexPage = () => {
 									type="primary"
 									onClick={e => {
 										e.preventDefault()
-										navigate("https://forms.gle/m6iuP7JjJ9DynKqo9")
+										navigate("https://forms.gle/URBfDJSAtCvxgFNG6")
 									}}
 								>
 									BOOK OUR COURSES
