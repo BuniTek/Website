@@ -136,12 +136,22 @@
   }
   &__second{
     background: $dark;
+    height: 60vh;
     padding: 5vh 5vw 10vh 5vw;
+    @include mediaMd{
+      height: 80vh;
+    }
+    @include mediaSm{
+      height: 100vh;
+    }
     &--title{
       font-size: 1.8rem;
       text-align: center;
       font-family: $title-font !important;
       color: $border-color;
+      @include mediaSm{
+        margin-top: 5vh;
+      }
     }
     &__container {
       display: grid;
