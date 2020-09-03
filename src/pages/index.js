@@ -78,10 +78,10 @@ const IndexPage = () => {
 									type="primary"
 									onClick={e => {
 										e.preventDefault()
-										navigate("/courses/")
+										navigate("https://forms.gle/UXVNEYaS4yNQrNPi6")
 									}}
 								>
-									Go to Our Courses
+									BOOK OUR COURSES
 								</Button>
 							</span>
 						</div>
