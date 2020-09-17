@@ -116,14 +116,10 @@
         position: relative; 
         line-height: 1.5;
        @include mediaSm {
-        padding: 20px;
-        padding-bottom: 60px;
-    }
-    @include mediaMd {
-        padding: 0 40px;
-        padding-bottom: 60px;
         
+        padding-bottom: 60px;
     }
+    
 
         @include mediaSm {
         margin: 5px;
@@ -222,7 +218,7 @@
         &.absolute-right {
             position: absolute;
             top: 0;
-            left: 40;
+            left: 40%;
             z-index: -1;
             &-third-section{
                 position: absolute;
@@ -271,7 +267,7 @@
         position: relative;
         top: 30px;
         @include mediaSm {
-            font-size: 2em;
+            font-size: 1.4em;
             
         }
     }
@@ -402,10 +398,10 @@ body{
     padding-top: 30px;
     list-style-image: url(../../images/plus-solid-6.png);
     span{
-        font-size: 20px;
+        font-size: 18px;
         font-family: $mincho-font !important;
         @include mediaSm{
-            font-size: 1.2rem;
+            font-size: 17px;
         }
     }
 }
@@ -459,6 +455,7 @@ li span{
 
 .company__name{
     font-family: 'Archivo Black', sans-serif !important; 
+    font-size: 20px;
     @include mediaSm {
         font-size: 17px;
         
