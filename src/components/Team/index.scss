@@ -15,11 +15,14 @@
         height: 60vh !important;
     }
     @include mediaSm {
-      padding: 150px;
-      padding-bottom: 300px;
-      padding-top: 250px;
-      height: 120vh !important;
-  }
+      padding: 0 150px;
+      height: 140vh !important;
+    }
+
+    @media (max-width: 320px){
+      height: 150vh !important;
+     }
+     
     &__list{
         display: grid;
         grid-template-columns: repeat(4, 1fr);

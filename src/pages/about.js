@@ -8,10 +8,10 @@ import Layout from '../layouts/layout';
 import SEO from '../components/seo';
 import InfoCard from '../components/InfoCard';
 import Line from '../components/VerticalLine';
-import { setLogoUrl, setFooterVisible } from '../redux/actions';
+import { setLogoUrl } from '../redux/actions';
 
 import '../assets/styles/pages/about.scss';
-import logo from '../assets/images/darkish.png';
+import darkLogo from '../assets/images/darkish.png';
 import quoteImage from '../assets/images/quote-right-solid.svg';
 import earsLogo from '../assets/images/partner-ears.png';
 import cgiLogo from '../assets/images/partner-cgi.png';
@@ -97,13 +97,7 @@ const AboutUs = ({
   const [members, setMembers] = useState(team_members);
 
   useEffect(() => {
-    const body = document.querySelector('body');
-    body.classList.remove('home');
-
-    dispatch(setLogoUrl({
-      logo,
-    }));
-    setFooterVisible({ visible: true })(dispatch);
+    dispatch(setLogoUrl({ logo: darkLogo }));
   }, []);
 
   return (
