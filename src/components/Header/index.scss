@@ -20,8 +20,6 @@
     padding-top: 5%;
     list-style: none;
 
-    
-
     &--item {
       margin-right: 30px;
       a {
@@ -60,16 +58,14 @@
 
 .nav-wrapper {
   background: transparent !important;
-  @include mediaSm{
+  @include mediaSm {
     margin-left: 4vw;
   }
   &__container {
     margin: 1vw 5vw;
-    @include mediaSm{
-      
+    @include mediaSm {
     }
   }
-  
 }
 
 nav {
@@ -87,8 +83,8 @@ nav {
 
   .brand-logo {
     left: 2rem;
-    @include mediaSm{
-      left:3rem;
+    @include mediaSm {
+      left: 3rem;
     }
   }
 }
@@ -105,9 +101,9 @@ nav {
 }
 
 .nav__active {
-  //color: #0066ff;
   border-bottom: solid 2px $dark;
   transition: border-width 0.1s ease-in-out;
-  height: 45px;
+  height: 55px;
   width: auto;
+  padding-bottom: 60px !important;
 }

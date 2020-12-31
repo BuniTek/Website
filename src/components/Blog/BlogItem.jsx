@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LinkAnchor from '../Link';
 
-import HeartIcon from '../../assets/images/heart-regular.png';
-
 import './blogitem.scss';
 
-const BlogItem = ({ title, description, readMore, featured }) => (
+const BlogItem = ({
+  title, description, readMore, featured,
+}) => (
   <div className="blog__item">
-    <div className={featured ? "blog__item--grid" : ""}>
+    <div className={featured ? 'blog__item--grid' : ''}>
       {featured && (
-          <div className="blog__item--grid-item">
-          <img className="blog__item--featured" src={featured} />
-        </div>
+      <div className="blog__item--grid-item">
+        <img className="blog__item--featured" src={featured} alt="Featured" />
+      </div>
       )}
-      
+
       <div className="blog__item--grid-item">
         <div className="blog__item--heading">
           <LinkAnchor to={readMore}>
@@ -34,13 +34,15 @@ const BlogItem = ({ title, description, readMore, featured }) => (
         </div>
       </div>
     </div>
-    
+
   </div>
 );
 
 BlogItem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  readMore: PropTypes.string.isRequired,
+  featured: PropTypes.bool.isRequired,
 };
 
 export default BlogItem;

@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -9,7 +10,7 @@ const Button = ({
   children,
   style,
   bgColor,
-  htmlType
+  htmlType,
 }) => (
   <button
     type={htmlType}
@@ -17,7 +18,7 @@ const Button = ({
     onClick={onClick}
     style={style}
   >
-  <div className="btn__overlay"></div>
+    <div className="btn__overlay" />
     {children}
   </button>
 );
@@ -28,14 +29,14 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   style: PropTypes.instanceOf(Object),
   bgColor: PropTypes.string,
-  htmlType: PropTypes.string
+  htmlType: PropTypes.string,
 };
 
 Button.defaultProps = {
   type: 'primary',
   style: {},
   bgColor: 'primary',
-  htmlType: 'button'
+  htmlType: 'button',
 };
 
 export default Button;

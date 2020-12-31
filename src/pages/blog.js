@@ -11,7 +11,6 @@ import SEO from '../components/seo';
 import Pagination from '../components/Pagination';
 import BlogItem from '../components/Blog/BlogItem';
 
-
 import '../assets/styles/pages/blog.scss';
 import darkLogo from '../assets/images/darkish.png';
 import Search from '../components/Search';

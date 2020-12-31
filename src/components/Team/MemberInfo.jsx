@@ -9,6 +9,7 @@ const Title = styled.h3`
   &:hover {
     text-decoration: underline;
     cursor: pointer;
+    transition: 0.5s ease-out;
   }
 `;
 
