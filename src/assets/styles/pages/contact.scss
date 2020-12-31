@@ -5,6 +5,15 @@
 .contact {
   margin: auto;
 
+  &__form {
+    width: 80%;
+
+    @include mediaSm {
+      width: 100%;
+      margin: auto 10%;
+    }
+  }
+
   &__social {
     display: flex;
     justify-content: flex-start;

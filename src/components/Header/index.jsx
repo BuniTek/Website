@@ -1,19 +1,19 @@
-import React, { useState } from "react"
-import { useSelector } from "react-redux"
-import { Link } from "gatsby"
-import styled from "styled-components"
-import { MenuOutlined } from "@ant-design/icons"
-import "./index.scss"
-import Sidebar from "./Sidebar"
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import { MenuOutlined } from '@ant-design/icons';
+import './index.scss';
+import Sidebar from './Sidebar';
 
 const Logo = styled.img`
   width: 5rem;
   height: auto;
-`
+`;
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
-  const logoUrl = useSelector(state => state.ui.logoUrl)
+  const [open, setOpen] = useState(false);
+  const logoUrl = useSelector((state) => state.ui.logoUrl);
 
   return (
     <header>
@@ -75,7 +75,7 @@ const Header = () => {
       </nav>
       <Sidebar open={open} setOpen={setOpen} />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

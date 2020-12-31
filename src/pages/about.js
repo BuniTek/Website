@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable max-len */
+/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import { useDispatch } from 'react-redux';
@@ -23,12 +26,12 @@ const AboutUs = ({
     eliePicture, willyPicture, alainPicture,
     brendaPicture, ivyPicture, abbyPicture,
     penielPicture, kettyPicture, adwoaPicture,
-    luluPicture
+    luluPicture,
   },
 }) => {
   const dispatch = useDispatch();
 
-  const team_members = [
+  const teamMembers = [
     {
       name: 'BILLY BYIRINGIRO',
       titles: 'CO-FOUNDER',
@@ -94,7 +97,7 @@ const AboutUs = ({
     },
   ];
 
-  const [members, setMembers] = useState(team_members);
+  const [members] = useState(teamMembers);
 
   useEffect(() => {
     dispatch(setLogoUrl({ logo: darkLogo }));
@@ -144,7 +147,7 @@ const AboutUs = ({
                 <div className="section__sub-content">
                   <div className="section__title--container">
 
-                    <img src={quoteImage} alt="quote" className="quote__heading-rotated"  />
+                    <img src={quoteImage} alt="quote" className="quote__heading-rotated" />
                     <span className="section__title">Our Mission</span>
                   </div>
                   <div className="section__content-description ">
@@ -168,7 +171,7 @@ const AboutUs = ({
           <div className="about__third-section">
             <div className="section__title--container section__title-centered">
               <span className="section__title">Why are we Doing This?</span>
-              <img src={quoteImage} alt="quote" className="quote-visibility"  className="quote"/>
+              <img src={quoteImage} alt="quote" className="quote-visibility quote" />
             </div>
 
             <div className="about__third-section-content">
@@ -246,7 +249,7 @@ const AboutUs = ({
               <div className="section__title--container section__title-centered">
 
                 <span className="section__title">Content Delivery</span>
-                <img src={quoteImage} alt="quote"  className="quote"/>
+                <img src={quoteImage} alt="quote" className="quote" />
               </div>
 
               <div className="section__three-grid">
@@ -298,7 +301,7 @@ const AboutUs = ({
                 <h4 className="robotics-society-logo__title">Embedded and Robotics Society</h4>
               </div>
               <div>
-                <img className="partners__grid--item" src={cgiLogo} />
+                <img className="partners__grid--item" src={cgiLogo} alt="Stuff" />
               </div>
               <div className="partners__logo--grouped">
                 <img className="partners__grid--item" src="https://800664.smushcdn.com/1566666/wp-content/uploads/2018/09/EI-Top-Logo.png?size=500x300" alt="Edinburgh Innovations" />

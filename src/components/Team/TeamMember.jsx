@@ -7,23 +7,19 @@ import MemberInfo from './MemberInfo';
 import defaultProfile from '../../assets/images/user-profile.png';
 import './TeamMember.scss';
 
-const TeamMember = ({
-  profileUrl,
-  titles,
-  name,
-}) => {
-  const content = (
-    <MemberInfo
-      name={name}
-      title={titles}
-    />
-  );
+const TeamMember = ({ profileUrl, titles, name }) => {
+  const content = <MemberInfo name={name} title={titles} />;
   return (
     <div className="team__member">
-      <Popover placement="bottom" trigger="hover" content={content} title={name}>
-        <Button className="avatar__button" type="link" >
-           <Avatar url={profileUrl} />
-        </Button>   
+      <Popover
+        placement="bottom"
+        trigger="hover"
+        content={content}
+        title={name}
+      >
+        <Button className="avatar__button" type="link">
+          <Avatar url={profileUrl} />
+        </Button>
       </Popover>
     </div>
   );
@@ -36,8 +32,7 @@ TeamMember.propTypes = {
 };
 
 TeamMember.defaultProps = {
-  profileUrl:
-    defaultProfile,
+  profileUrl: defaultProfile,
 };
 
 export default TeamMember;
