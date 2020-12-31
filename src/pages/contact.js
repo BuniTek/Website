@@ -1,85 +1,82 @@
-import React, { useState, useEffect } from "react"
-import { useDispatch } from "react-redux"
-import { Collapse, Button as AntBtn } from "antd"
+/* eslint-disable max-len */
+/* eslint-disable react/no-unescaped-entities */
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Collapse, Button as AntBtn } from 'antd';
 import {
   PlusOutlined,
   MinusOutlined,
   FacebookOutlined,
   InstagramOutlined,
-} from "@ant-design/icons"
+} from '@ant-design/icons';
 
-import Input from "../components/Form/Input"
-import Textarea from "../components/Form/Textarea"
-import Button from "../components/Button"
-import Layout from "../layouts/layout"
-import SEO from "../components/seo"
-import { setLogoUrl, setFooterVisible } from "../redux/actions"
+import Input from '../components/Form/Input';
+import Textarea from '../components/Form/Textarea';
+import Button from '../components/Button';
+import Layout from '../layouts/layout';
+import SEO from '../components/seo';
+import { setLogoUrl, setFooterVisible } from '../redux/actions';
 
-import "../assets/styles/pages/contact.scss"
-import contactTopLeft from "../assets/images/contact_top-left.svg"
-import contactMiddleRight from "../assets/images/contact_middle-right.svg"
-import logo from "../assets/images/milkish.png"
+import '../assets/styles/pages/contact.scss';
+import contactTopLeft from '../assets/images/contact_top-left.svg';
+import contactMiddleRight from '../assets/images/contact_middle-right.svg';
+import logo from '../assets/images/milkish.png';
 
-const { Panel } = Collapse
-
-const text = `
-  Contact us at info@buni.tech
-`
-
+const { Panel } = Collapse;
 
 const Contact = () => {
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   // eslint-disable-next-line no-unused-vars
   const [state, setState] = useState({
-    status: "ERROR",
-  })
+    status: 'ERROR',
+  });
 
-  const onEmailChange = e => {
-    setEmail(e.target.value)
-  }
+  const onEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
   // eslint-disable-next-line no-unused-vars
-  const onSubmit = ev => {
+  const onSubmit = (ev) => {
     //  if we decide to use ajax and not thirdparty recapture.
-    ev.preventDefault()
-    const form = ev.target
-    const data = new FormData(form)
-    const xhr = new XMLHttpRequest()
-    xhr.open(form.method, form.action)
-    xhr.setRequestHeader("Accept", "application/json")
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
-        form.reset()
-        setState({ status: "SUCCESS", ...state })
+        form.reset();
+        setState({ status: 'SUCCESS', ...state });
       } else {
-        setState({ status: "ERROR", ...state })
+        setState({ status: 'ERROR', ...state });
       }
-    }
-    xhr.send(data)
-  }
+    };
+    xhr.send(data);
+  };
 
-  const onMessageChange = e => {
-    setMessage(e.target.value)
-  }
+  const onMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const body = document.querySelector("body")
-    body.classList.remove("home")
+    const body = document.querySelector('body');
+    body.classList.remove('home');
 
     dispatch(
       setLogoUrl({
         logo,
-      })
-    )
+      }),
+    );
 
     setFooterVisible({
       visible: true,
-    })(dispatch)
-  }, [])
+    })(dispatch);
+  }, []);
 
   return (
     <Layout>
@@ -108,14 +105,33 @@ const Contact = () => {
           </p>
           <div className="contact__social">
 
-            <a href="https://m.me/buniteki/" target="_blank"><AntBtn className="contact__social--button"> {" "} <FacebookOutlined />  Facebook Messenger</AntBtn></a>
-            <a href="https://www.instagram.com/buni_tek/" target="_blank"><AntBtn className="contact__social--button"> {" "} <InstagramOutlined /> Instagram</AntBtn></a>
-            <a href="#FAQ" ><AntBtn className="contact__social--button">FAQ</AntBtn></a>
+            <a href="https://m.me/buniteki/" target="_blank" rel="noreferrer">
+              <AntBtn className="contact__social--button">
+                {' '}
+                {' '}
+                {' '}
+                <FacebookOutlined />
+                {' '}
+                Facebook Messenger
+              </AntBtn>
+            </a>
+            <a href="https://www.instagram.com/buni_tek/" target="_blank" rel="noreferrer">
+              <AntBtn className="contact__social--button">
+                {' '}
+                {' '}
+                {' '}
+                <InstagramOutlined />
+                {' '}
+                Instagram
+              </AntBtn>
+            </a>
+            <a href="#FAQ"><AntBtn className="contact__social--button">FAQ</AntBtn></a>
           </div>
           <form
             // onSubmit={onSubmit}
             method="POST"
             action="https://formspree.io/xzbjqbvj"
+            className="contact__form"
           >
             <Input
               type="email"
@@ -124,10 +140,10 @@ const Contact = () => {
               value={email}
               onChange={onEmailChange}
               name="_replyto"
-              required={true}
+              required
               style={{
                 height: 40,
-                width: "100%",
+                width: '100%',
               }}
             />
             <Textarea
@@ -136,9 +152,9 @@ const Contact = () => {
               placeholder="Tell us what you think"
               label="Message"
               name="message"
-              required={true}
+              required
             />
-            <Button htmlType="submit" style={{ marginTop: 10, width: "100%" }}>
+            <Button htmlType="submit" style={{ marginTop: 10, width: '100%', marginLeft: 0 }}>
               Send
             </Button>
           </form>
@@ -149,28 +165,26 @@ const Contact = () => {
           <h1 className="faq__heading">Questions? We've got answers</h1>
           <Collapse
             bordered={false}
-            defaultActiveKey={["1"]}
-            expandIcon={({ isActive }) => {
-              return isActive ? <MinusOutlined /> : <PlusOutlined />
-            }}
+            defaultActiveKey={['1']}
+            expandIcon={({ isActive }) => (isActive ? <MinusOutlined /> : <PlusOutlined />)}
             className="site-collapse-custom-collapse"
             style={{
-              backgroundColor: "#363333",
-              color: "white",
+              backgroundColor: '#363333',
+              color: 'white',
             }}
           >
             <Panel
-            bordered={false}
+              bordered={false}
               header="How do I enroll in a course?"
               key="1"
               className="site-collapse-custom-panel"
               style={{
-                color: "white",
+                color: 'white',
               }}
             >
               <p
                 style={{
-                  color: "white",
+                  color: 'white',
                 }}
               >
                 Go to a page of the course you are interested in. At the bottom, there is a "Book This Course" button that will redirect you to the registration page.
@@ -181,7 +195,10 @@ const Contact = () => {
               key="2"
               className="site-collapse-custom-panel"
             >
-              <p>Most of our courses don't have pre-requisites. More Information can be found on a specific <a href="/courses">course's page</a></p>
+              <p>
+                Most of our courses don't have pre-requisites. More Information can be found on a specific
+                <a href="/courses">course's page</a>
+              </p>
             </Panel>
             <Panel
               header="Where should I find courses and how to start learning?"
@@ -208,7 +225,7 @@ const Contact = () => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
